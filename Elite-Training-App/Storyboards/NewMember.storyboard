@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Au7-qb-1nR">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Elite_Training_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeVC" id="BYZ-38-t0r" customClass="WelcomeVC" customModule="Elite_Training_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,23 +22,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1e-CB-usa">
-                                <rect key="frame" x="288" y="497" width="193" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Elite Photo" translatesAutoresizingMaskIntoConstraints="NO" id="t1M-wL-OJH">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Elite Logo" translatesAutoresizingMaskIntoConstraints="NO" id="gFR-wu-WV5">
+                                <rect key="frame" x="234" y="242" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Press me"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Come train with us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ild-X8-zln" userLabel="label">
+                                <rect key="frame" x="276" y="564" width="216" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxz-nn-7Ir" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                <rect key="frame" x="282" y="819" width="204" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Join now">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="joinNowButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PAA-uF-Bc2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZK-65-hw7">
+                                <rect key="frame" x="698" y="28" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Elite Logo"/>
+                                <connections>
+                                    <action selector="EliteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D2w-eF-AOM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="t1M-wL-OJH" secondAttribute="trailing" id="5zU-fB-dxw"/>
+                            <constraint firstItem="t1M-wL-OJH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XpM-Zf-LJq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="t1M-wL-OJH" secondAttribute="bottom" id="gvo-Lf-Gol"/>
+                            <constraint firstItem="t1M-wL-OJH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zCW-gh-Hkx"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Y8e-pp-1YY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="-36"/>
+            <point key="canvasLocation" x="620" y="-31"/>
         </scene>
-        <!--View Controller-->
+        <!--ContactVC-->
         <scene sceneID="ndo-2t-7HF">
             <objects>
-                <viewController id="UxE-Nf-uUW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactVC" id="UxE-Nf-uUW" customClass="ContactVC" customModule="Elite_Training_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cEG-PM-e1e"/>
                         <viewControllerLayoutGuide type="bottom" id="yiX-jk-saQ"/>
@@ -46,51 +83,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xoQ-zx-2QU">
-                                <rect key="frame" x="139" y="113" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-Z1-kNv">
+                                <rect key="frame" x="60" y="342" width="648" height="230"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xoQ-zx-2QU">
+                                        <rect key="frame" x="0.0" y="0.0" width="648" height="50"/>
+                                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Fhy-XI-yu5"/>
+                                        </constraints>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3S-Uv-ELy">
+                                        <rect key="frame" x="0.0" y="90" width="648" height="50"/>
+                                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="zUO-LD-KT5"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL ADDRESS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nss-iY-ydv">
+                                        <rect key="frame" x="0.0" y="180" width="648" height="50"/>
+                                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OhF-Zq-cGj"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xoQ-zx-2QU" secondAttribute="trailing" id="6n7-Lk-XkD"/>
+                                    <constraint firstItem="Nss-iY-ydv" firstAttribute="leading" secondItem="pXZ-Z1-kNv" secondAttribute="leading" id="7wX-5Q-Dkx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nss-iY-ydv" secondAttribute="trailing" id="OsS-9H-uek"/>
+                                    <constraint firstItem="O3S-Uv-ELy" firstAttribute="leading" secondItem="pXZ-Z1-kNv" secondAttribute="leading" id="Ud5-Ec-aqf"/>
+                                    <constraint firstAttribute="trailing" secondItem="O3S-Uv-ELy" secondAttribute="trailing" id="YTr-ph-yRu"/>
+                                    <constraint firstItem="xoQ-zx-2QU" firstAttribute="leading" secondItem="pXZ-Z1-kNv" secondAttribute="leading" id="vYD-Ox-mEx"/>
+                                </constraints>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lets get to know each other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT1-It-7sy">
-                                <rect key="frame" x="16" y="20" width="213" height="21"/>
+                                <rect key="frame" x="278" y="28" width="213" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3S-Uv-ELy">
-                                <rect key="frame" x="336" y="271" width="97" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVu-bE-cim">
+                                <rect key="frame" x="282" y="842" width="204" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL ADDRESS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nss-iY-ydv">
-                                <rect key="frame" x="313" y="376" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="UxE-Nf-uUW" eventType="touchUpInside" id="Q7b-Dg-rMw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeX-L8-Wpf">
+                                <rect key="frame" x="698" y="28" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krT-xd-7Qu">
-                                <rect key="frame" x="331" y="616" width="106" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="Elite Logo"/>
+                                <connections>
+                                    <action selector="eliteButtonPressed:" destination="UxE-Nf-uUW" eventType="touchUpInside" id="cb8-jB-gWH"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pXZ-Z1-kNv" firstAttribute="top" secondItem="cEG-PM-e1e" secondAttribute="bottom" constant="322" id="9QJ-rJ-Xc9"/>
+                            <constraint firstItem="pXZ-Z1-kNv" firstAttribute="leading" secondItem="lCS-Jn-QXz" secondAttribute="leadingMargin" constant="40" id="TS1-mf-p0p"/>
+                            <constraint firstItem="pXZ-Z1-kNv" firstAttribute="centerX" secondItem="lCS-Jn-QXz" secondAttribute="centerX" id="YGa-fh-WaE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pXZ-Z1-kNv" secondAttribute="trailing" constant="40" id="cQl-nV-04W"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailAddressTF" destination="Nss-iY-ydv" id="6xu-MM-BQ4"/>
+                        <outlet property="firstNameTF" destination="xoQ-zx-2QU" id="rfa-eu-SbY"/>
+                        <outlet property="lastNameTF" destination="O3S-Uv-ELy" id="4aB-tS-9Xz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UuA-4t-jVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="600.79999999999995" y="-36.431784107946029"/>
+            <point key="canvasLocation" x="1280" y="-31"/>
         </scene>
-        <!--View Controller-->
+        <!--Trainer PrefVC-->
         <scene sceneID="QpH-MH-Uck">
             <objects>
-                <viewController id="QTO-0b-OZT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TrainerPrefVC" id="QTO-0b-OZT" customClass="TrainerPrefVC" customModule="Elite_Training_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TkV-0M-UnZ"/>
                         <viewControllerLayoutGuide type="bottom" id="eJC-Tc-fCZ"/>
@@ -99,115 +183,197 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trainer preferences " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p63-sb-laQ">
-                                <rect key="frame" x="311" y="20" width="154" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-tc-rEg">
-                                <rect key="frame" x="247" y="87" width="33" height="30"/>
+                                <rect key="frame" x="254" y="131" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Male"/>
+                                <connections>
+                                    <action selector="genderButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="GUR-Cy-flt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="110" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAM-wa-C2u">
-                                <rect key="frame" x="363" y="87" width="50" height="30"/>
+                                <rect key="frame" x="360" y="131" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Female"/>
+                                <connections>
+                                    <action selector="genderButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="ReL-zQ-ZC9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="120" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-Nt-YZL">
-                                <rect key="frame" x="508" y="87" width="30" height="30"/>
+                                <rect key="frame" x="513" y="131" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="N/A"/>
+                                <connections>
+                                    <action selector="genderButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="evt-Al-pAp"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="220" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS4-Xw-crJ">
+                            <button opaque="NO" tag="210" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS4-Xw-crJ">
                                 <rect key="frame" x="387" y="234" width="165" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Strength &amp; Conditioning"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="YYl-CE-x7E"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="230" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLQ-m8-YWZ">
+                            <button opaque="NO" tag="220" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLQ-m8-YWZ">
                                 <rect key="frame" x="228" y="293" width="84" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Weight Loss"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="dXc-8J-FKc"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="240" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCE-Bo-k4u">
+                            <button opaque="NO" tag="230" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCE-Bo-k4u">
                                 <rect key="frame" x="423" y="293" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Rehabilitation"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="stX-mO-sbg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="250" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="047-pm-O92">
+                            <button opaque="NO" tag="240" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="047-pm-O92">
                                 <rect key="frame" x="193" y="348" width="155" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Olympic / PowerLifting"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="BpA-xk-EWD"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="260" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9q-Zq-JRY">
+                            <button opaque="NO" tag="250" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9q-Zq-JRY">
                                 <rect key="frame" x="412" y="348" width="115" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Obstacle Course"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="lpN-17-s5b"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="270" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5k-SM-n9K">
+                            <button opaque="NO" tag="260" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5k-SM-n9K">
                                 <rect key="frame" x="234" y="397" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Corrective"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="TIZ-Ou-nFa"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="280" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-E5-3y8">
+                            <button opaque="NO" tag="270" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-E5-3y8">
                                 <rect key="frame" x="427" y="397" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Lean &amp; Tone"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="KNw-vC-q0l"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="290" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2b-7q-PMg">
+                            <button opaque="NO" tag="280" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2b-7q-PMg">
                                 <rect key="frame" x="200" y="446" width="141" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Nutritional Guidance"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="F6M-TO-WPM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="300" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-xe-mUk">
+                            <button opaque="NO" tag="290" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-xe-mUk">
                                 <rect key="frame" x="391" y="446" width="157" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Balance &amp; Stabilization"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="2DU-m5-Kpv"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="310" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZu-Vz-bJv">
+                            <button opaque="NO" tag="300" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZu-Vz-bJv">
                                 <rect key="frame" x="222" y="499" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Core Strength"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="U4v-gc-Tb0"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="320" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRC-oK-cjj">
+                            <button opaque="NO" tag="310" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRC-oK-cjj">
                                 <rect key="frame" x="427" y="499" width="84" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Small Group"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="O9W-7q-3se"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="330" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8M-3u-y97">
+                            <button opaque="NO" tag="320" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8M-3u-y97">
                                 <rect key="frame" x="221" y="553" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pre/Post Natal"/>
                             </button>
-                            <button opaque="NO" tag="340" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-Sg-QFk">
+                            <button opaque="NO" tag="330" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-Sg-QFk">
                                 <rect key="frame" x="395" y="553" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Running &amp; Endurance"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="GZZ-PA-boz"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="210" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY5-N7-rBD">
+                            <button opaque="NO" tag="200" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY5-N7-rBD">
                                 <rect key="frame" x="217" y="234" width="148" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Functional Movement"/>
+                                <connections>
+                                    <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="P6R-8E-lTq"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgw-t9-h9N">
-                                <rect key="frame" x="369" y="888" width="32" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gK-QO-agI">
+                                <rect key="frame" x="283" y="888" width="204" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nexButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="q0o-uV-kfc"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-pZ-Qia">
+                                <rect key="frame" x="698" y="28" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Elite Logo"/>
+                                <connections>
+                                    <action selector="eliteButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="Y1s-r6-WGf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trainer preferences " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p63-sb-laQ">
+                                <rect key="frame" x="308" y="43" width="154" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="balanceAndStabiButton" destination="uNb-xe-mUk" id="D9G-US-xEL"/>
+                        <outlet property="coreStrengthButton" destination="SZu-Vz-bJv" id="ZXA-dY-p2i"/>
+                        <outlet property="correctiveButton" destination="Y5k-SM-n9K" id="Nn9-Mu-48Z"/>
+                        <outlet property="femaleButton" destination="TAM-wa-C2u" id="g3x-dM-8Rp"/>
+                        <outlet property="functionalMovementButton" destination="KY5-N7-rBD" id="lk4-g9-Ech"/>
+                        <outlet property="leanAndToneButton" destination="bzh-E5-3y8" id="alC-kt-ePq"/>
+                        <outlet property="maleButton" destination="Cil-tc-rEg" id="N0J-Uj-x0W"/>
+                        <outlet property="natalButton" destination="L8M-3u-y97" id="ECG-e8-Nrm"/>
+                        <outlet property="notApplicableButton" destination="pXZ-Nt-YZL" id="5bP-A6-iYa"/>
+                        <outlet property="nutritionalGuidButton" destination="x2b-7q-PMg" id="NT4-4J-qyg"/>
+                        <outlet property="obstacleCourseButton" destination="k9q-Zq-JRY" id="PIB-xD-LUR"/>
+                        <outlet property="olympicAndPLButton" destination="047-pm-O92" id="sKD-sY-iwP"/>
+                        <outlet property="rehabilitationButton" destination="YCE-Bo-k4u" id="RTy-H8-9BP"/>
+                        <outlet property="runningAndEndButton" destination="V1D-Sg-QFk" id="gNQ-uq-XF5"/>
+                        <outlet property="smallGroupButton" destination="mRC-oK-cjj" id="nRU-o4-J9L"/>
+                        <outlet property="strengthAndCondButton" destination="YS4-Xw-crJ" id="Jli-o5-LhF"/>
+                        <outlet property="weightLossButton" destination="MLQ-m8-YWZ" id="88f-Eq-uDv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Uj-s0-oS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1219" y="-37"/>
+            <point key="canvasLocation" x="1945" y="-31"/>
         </scene>
-        <!--View Controller-->
+        <!--Hours Of WorkoutVC-->
         <scene sceneID="cvA-IS-yXs">
             <objects>
-                <viewController id="EsD-IU-qty" sceneMemberID="viewController">
+                <viewController id="EsD-IU-qty" customClass="HoursOfWorkoutVC" customModule="Elite_Training_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tav-Hb-Rdx"/>
                         <viewControllerLayoutGuide type="bottom" id="Zyj-7S-yPQ"/>
@@ -217,10 +383,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How often do you work out per week?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvB-Qc-v37">
-                                <rect key="frame" x="242" y="28" width="289" height="21"/>
+                                <rect key="frame" x="240" y="90" width="289" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qh-6f-aBw">
@@ -243,13 +409,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="10+ Hours"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DR-7v-3vO">
+                                <rect key="frame" x="284" y="891" width="204" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTO-0L-Y44">
+                                <rect key="frame" x="698" y="28" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Elite Logo"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5lY-qt-K1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1853.90625" y="-37.5"/>
+            <point key="canvasLocation" x="2607" y="-31"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="29n-mk-h3r">
@@ -263,20 +442,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When are you free to train?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jho-Xb-S6t">
-                                <rect key="frame" x="281" y="28" width="207" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdr-84-r53">
+                                <rect key="frame" x="291" y="903" width="204" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Select Trainer">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="When are you free to train?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jho-Xb-S6t">
+                                <rect key="frame" x="265" y="69" width="207" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8D8-Ew-9XL">
+                                <rect key="frame" x="698" y="28" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Elite Logo"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jR9-rZ-TjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2496.875" y="-37.5"/>
+            <point key="canvasLocation" x="3252" y="-31"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ip7-bp-Snm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Au7-qb-1nR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HKv-B2-Yz3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1LD-pK-e5A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z0T-Mb-HpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78.125" y="-31.054687499999996"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Elite Logo" width="341" height="341"/>
+        <image name="Elite Photo" width="768" height="1023"/>
+    </resources>
 </document>

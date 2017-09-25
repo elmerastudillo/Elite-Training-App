@@ -21,7 +21,15 @@ class WelcomeVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func EliteButtonPressed(_ sender: UIButton) {
+    }
 
+    @IBAction func joinNowButtonPressed(_ sender: UIButton) {
+        
+        let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
+        let contactVC = storyboard.instantiateViewController(withIdentifier: "ContactVC") as! ContactVC
+        navigationController?.pushViewController(contactVC, animated: true)
+    }
     /*
     // MARK: - Navigation
 

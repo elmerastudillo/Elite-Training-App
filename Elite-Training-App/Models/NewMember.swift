@@ -16,16 +16,33 @@ class NewMember
     var genderPreference : String
     var trainingPreference : String
     var workoutHours : String
-    var schedule : [String]
-    // Need to implement schedule
+    var creationDate: Date
+    //var schedule : [String]
+    //TODO: Need to implement schedule
     
-    init(firstName: String, lastName: String, email: String, genderPreference: String, trainingPreference: String, workoutHours: String, schedule : [String]) {
+    
+    init(firstName: String, lastName: String, email: String, genderPreference: String, trainingPreference: String, workoutHours: String) {
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
         self.genderPreference = genderPreference
         self.trainingPreference = trainingPreference
         self.workoutHours = workoutHours
-        self.schedule = schedule
+        self.creationDate = Date()
+        //self.schedule = schedule
+    }
+    
+    var dictValue: [String : Any]
+    {
+        let createdAgo = creationDate.timeIntervalSince1970
+        
+        return ["firstName" : firstName,
+                "lastName" : lastName,
+                "email" : email,
+                "genderPreference" : genderPreference,
+                "trainingPreference" : trainingPreference,
+                "workoutHours" : workoutHours,
+                "creationDate" : createdAgo]
+//                "schedule" : schedule]
     }
 }

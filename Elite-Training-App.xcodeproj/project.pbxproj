@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		279F0D3E1F70E4EC00C0C132 /* NewMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279F0D3D1F70E4EC00C0C132 /* NewMember.storyboard */; };
-		279F0D431F70E53300C0C132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279F0D421F70E53300C0C132 /* LaunchScreen.storyboard */; };
-		279F0D451F70E9F200C0C132 /* TrainerSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279F0D441F70E9F200C0C132 /* TrainerSelect.storyboard */; };
-		279F0D471F70EDE600C0C132 /* TrainerLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279F0D461F70EDE600C0C132 /* TrainerLogin.storyboard */; };
-		279F0D491F70EDF700C0C132 /* TrainerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279F0D481F70EDF700C0C132 /* TrainerProfile.storyboard */; };
+		271F28E81F71945200176F34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 271F28E71F71945200176F34 /* GoogleService-Info.plist */; };
+		271F28EA1F719E3800176F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271F28E91F719E3800176F34 /* Assets.xcassets */; };
+		271F28EE1F71AED900176F34 /* TrainerPrefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F28ED1F71AED900176F34 /* TrainerPrefVC.swift */; };
+		271F28F11F7210CA00176F34 /* EliteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F28F01F7210CA00176F34 /* EliteButton.swift */; };
+		271F28F31F72E15A00176F34 /* EliteButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F28F21F72E15A00176F34 /* EliteButtonDelegate.swift */; };
+		271F28F51F72E83300176F34 /* NewMemberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F28F41F72E83300176F34 /* NewMemberService.swift */; };
+		277EAD3C1F7890E70048B177 /* TrainerSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD371F7890E60048B177 /* TrainerSelect.storyboard */; };
+		277EAD3D1F7890E70048B177 /* NewMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD381F7890E60048B177 /* NewMember.storyboard */; };
+		277EAD3E1F7890E70048B177 /* TrainerLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD391F7890E60048B177 /* TrainerLogin.storyboard */; };
+		277EAD3F1F7890E70048B177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD3A1F7890E70048B177 /* LaunchScreen.storyboard */; };
+		277EAD401F7890E70048B177 /* TrainerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD3B1F7890E70048B177 /* TrainerProfile.storyboard */; };
+		277EAD421F78916D0048B177 /* TrainerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277EAD411F78916D0048B177 /* TrainerService.swift */; };
 		279F0D4B1F70EF9A00C0C132 /* NewMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D4A1F70EF9A00C0C132 /* NewMember.swift */; };
 		279F0D4D1F70EFC400C0C132 /* Trainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D4C1F70EFC400C0C132 /* Trainer.swift */; };
 		279F0D4F1F70F01200C0C132 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D4E1F70F01200C0C132 /* WelcomeVC.swift */; };
 		279F0D511F70F02D00C0C132 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D501F70F02D00C0C132 /* ContactVC.swift */; };
-		279F0D531F70F06600C0C132 /* TrainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D521F70F06600C0C132 /* TrainerVC.swift */; };
-		279F0D551F70F08800C0C132 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D541F70F08800C0C132 /* WorkoutVC.swift */; };
+		279F0D551F70F08800C0C132 /* HoursOfWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D541F70F08800C0C132 /* HoursOfWorkoutVC.swift */; };
 		279F0D571F70F09B00C0C132 /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D561F70F09B00C0C132 /* ScheduleVC.swift */; };
 		279F0D591F70F0D600C0C132 /* TrainerSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D581F70F0D600C0C132 /* TrainerSelectVC.swift */; };
 		279F0D5B1F70F1A800C0C132 /* TrainerLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D5A1F70F1A800C0C132 /* TrainerLoginVC.swift */; };
@@ -25,22 +31,29 @@
 		279F0D5F1F70F1E000C0C132 /* TrainerInfoSpecVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D5E1F70F1E000C0C132 /* TrainerInfoSpecVC.swift */; };
 		279F0D611F70F1FF00C0C132 /* TrainerScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D601F70F1FF00C0C132 /* TrainerScheduleVC.swift */; };
 		27E3166A1F70E2AC00E30E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E316691F70E2AC00E30E69 /* AppDelegate.swift */; };
-		27E3166C1F70E2EA00E30E69 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27E3166B1F70E2EA00E30E69 /* Info.plist */; };
+		59F4C4AE5CB9EE045458CB72 /* Pods_Elite_Training_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE03A2E4113E281B17B845B0 /* Pods_Elite_Training_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		163F1D4D1321D5441E10D931 /* Pods-Elite-Training-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elite-Training-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elite-Training-App/Pods-Elite-Training-App.release.xcconfig"; sourceTree = "<group>"; };
+		271F28E71F71945200176F34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		271F28E91F719E3800176F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Elite-Training-App/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		271F28ED1F71AED900176F34 /* TrainerPrefVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerPrefVC.swift; path = Controllers/TrainerPrefVC.swift; sourceTree = "<group>"; };
+		271F28F01F7210CA00176F34 /* EliteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EliteButton.swift; path = Views/EliteButton.swift; sourceTree = "<group>"; };
+		271F28F21F72E15A00176F34 /* EliteButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EliteButtonDelegate.swift; path = Views/EliteButtonDelegate.swift; sourceTree = "<group>"; };
+		271F28F41F72E83300176F34 /* NewMemberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewMemberService.swift; path = Services/NewMemberService.swift; sourceTree = "<group>"; };
 		276283201F70D18E002046CE /* Elite-Training-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elite-Training-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		279F0D3D1F70E4EC00C0C132 /* NewMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NewMember.storyboard; path = "Elite-Training-App/Storyboards/NewMember.storyboard"; sourceTree = SOURCE_ROOT; };
-		279F0D421F70E53300C0C132 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Elite-Training-App/Storyboards/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
-		279F0D441F70E9F200C0C132 /* TrainerSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerSelect.storyboard; path = "Elite-Training-App/Storyboards/TrainerSelect.storyboard"; sourceTree = SOURCE_ROOT; };
-		279F0D461F70EDE600C0C132 /* TrainerLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerLogin.storyboard; path = "Elite-Training-App/Storyboards/TrainerLogin.storyboard"; sourceTree = SOURCE_ROOT; };
-		279F0D481F70EDF700C0C132 /* TrainerProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerProfile.storyboard; path = "Elite-Training-App/Storyboards/TrainerProfile.storyboard"; sourceTree = SOURCE_ROOT; };
+		277EAD371F7890E60048B177 /* TrainerSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerSelect.storyboard; path = Storyboards/TrainerSelect.storyboard; sourceTree = "<group>"; };
+		277EAD381F7890E60048B177 /* NewMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NewMember.storyboard; path = Storyboards/NewMember.storyboard; sourceTree = "<group>"; };
+		277EAD391F7890E60048B177 /* TrainerLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerLogin.storyboard; path = Storyboards/TrainerLogin.storyboard; sourceTree = "<group>"; };
+		277EAD3A1F7890E70048B177 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		277EAD3B1F7890E70048B177 /* TrainerProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerProfile.storyboard; path = Storyboards/TrainerProfile.storyboard; sourceTree = "<group>"; };
+		277EAD411F78916D0048B177 /* TrainerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerService.swift; path = Services/TrainerService.swift; sourceTree = "<group>"; };
 		279F0D4A1F70EF9A00C0C132 /* NewMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewMember.swift; path = Models/NewMember.swift; sourceTree = "<group>"; };
 		279F0D4C1F70EFC400C0C132 /* Trainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trainer.swift; path = Models/Trainer.swift; sourceTree = "<group>"; };
 		279F0D4E1F70F01200C0C132 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeVC.swift; path = Controllers/WelcomeVC.swift; sourceTree = "<group>"; };
 		279F0D501F70F02D00C0C132 /* ContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactVC.swift; path = Controllers/ContactVC.swift; sourceTree = "<group>"; };
-		279F0D521F70F06600C0C132 /* TrainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerVC.swift; path = Controllers/TrainerVC.swift; sourceTree = "<group>"; };
-		279F0D541F70F08800C0C132 /* WorkoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutVC.swift; path = Controllers/WorkoutVC.swift; sourceTree = "<group>"; };
+		279F0D541F70F08800C0C132 /* HoursOfWorkoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HoursOfWorkoutVC.swift; path = Controllers/HoursOfWorkoutVC.swift; sourceTree = "<group>"; };
 		279F0D561F70F09B00C0C132 /* ScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleVC.swift; path = Controllers/ScheduleVC.swift; sourceTree = "<group>"; };
 		279F0D581F70F0D600C0C132 /* TrainerSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerSelectVC.swift; path = Controllers/TrainerSelectVC.swift; sourceTree = "<group>"; };
 		279F0D5A1F70F1A800C0C132 /* TrainerLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerLoginVC.swift; path = Controllers/TrainerLoginVC.swift; sourceTree = "<group>"; };
@@ -49,6 +62,8 @@
 		279F0D601F70F1FF00C0C132 /* TrainerScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerScheduleVC.swift; path = Controllers/TrainerScheduleVC.swift; sourceTree = "<group>"; };
 		27E316691F70E2AC00E30E69 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27E3166B1F70E2EA00E30E69 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE03A2E4113E281B17B845B0 /* Pods_Elite_Training_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elite_Training_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA1B3DE1A568529455B9FEC2 /* Pods-Elite-Training-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elite-Training-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elite-Training-App/Pods-Elite-Training-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,17 +71,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F4C4AE5CB9EE045458CB72 /* Pods_Elite_Training_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		122980BEF6CADA500776F45A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA1B3DE1A568529455B9FEC2 /* Pods-Elite-Training-App.debug.xcconfig */,
+				163F1D4D1321D5441E10D931 /* Pods-Elite-Training-App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		276283171F70D18E002046CE = {
 			isa = PBXGroup;
 			children = (
 				276283221F70D18E002046CE /* Elite-Training-App */,
 				276283211F70D18E002046CE /* Products */,
+				122980BEF6CADA500776F45A /* Pods */,
+				87E29E60DFF54272B8DDDAA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +108,10 @@
 		276283221F70D18E002046CE /* Elite-Training-App */ = {
 			isa = PBXGroup;
 			children = (
+				277EAD361F7890900048B177 /* Storyboards */,
 				279F0D3C1F70E47F00C0C132 /* Services */,
 				279F0D3B1F70E47300C0C132 /* Models */,
 				279F0D391F70E45E00C0C132 /* Views */,
-				27E316701F70E36E00E30E69 /* Storyboards */,
 				279F0D371F70E42100C0C132 /* Controllers */,
 				279F0D411F70E50F00C0C132 /* Supporting */,
 				27E316691F70E2AC00E30E69 /* AppDelegate.swift */,
@@ -92,13 +119,25 @@
 			path = "Elite-Training-App";
 			sourceTree = "<group>";
 		};
+		277EAD361F7890900048B177 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				277EAD3A1F7890E70048B177 /* LaunchScreen.storyboard */,
+				277EAD381F7890E60048B177 /* NewMember.storyboard */,
+				277EAD391F7890E60048B177 /* TrainerLogin.storyboard */,
+				277EAD3B1F7890E70048B177 /* TrainerProfile.storyboard */,
+				277EAD371F7890E60048B177 /* TrainerSelect.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		279F0D371F70E42100C0C132 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				279F0D4E1F70F01200C0C132 /* WelcomeVC.swift */,
-				279F0D521F70F06600C0C132 /* TrainerVC.swift */,
 				279F0D501F70F02D00C0C132 /* ContactVC.swift */,
-				279F0D541F70F08800C0C132 /* WorkoutVC.swift */,
+				271F28ED1F71AED900176F34 /* TrainerPrefVC.swift */,
+				279F0D541F70F08800C0C132 /* HoursOfWorkoutVC.swift */,
 				279F0D561F70F09B00C0C132 /* ScheduleVC.swift */,
 				279F0D581F70F0D600C0C132 /* TrainerSelectVC.swift */,
 				279F0D5A1F70F1A800C0C132 /* TrainerLoginVC.swift */,
@@ -112,6 +151,8 @@
 		279F0D391F70E45E00C0C132 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				271F28F01F7210CA00176F34 /* EliteButton.swift */,
+				271F28F21F72E15A00176F34 /* EliteButtonDelegate.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -128,6 +169,8 @@
 		279F0D3C1F70E47F00C0C132 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				271F28F41F72E83300176F34 /* NewMemberService.swift */,
+				277EAD411F78916D0048B177 /* TrainerService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -135,22 +178,19 @@
 		279F0D411F70E50F00C0C132 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				271F28E91F719E3800176F34 /* Assets.xcassets */,
+				271F28E71F71945200176F34 /* GoogleService-Info.plist */,
 				27E3166B1F70E2EA00E30E69 /* Info.plist */,
 			);
 			name = Supporting;
 			sourceTree = "<group>";
 		};
-		27E316701F70E36E00E30E69 /* Storyboards */ = {
+		87E29E60DFF54272B8DDDAA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				279F0D421F70E53300C0C132 /* LaunchScreen.storyboard */,
-				279F0D3D1F70E4EC00C0C132 /* NewMember.storyboard */,
-				279F0D441F70E9F200C0C132 /* TrainerSelect.storyboard */,
-				279F0D461F70EDE600C0C132 /* TrainerLogin.storyboard */,
-				279F0D481F70EDF700C0C132 /* TrainerProfile.storyboard */,
+				AE03A2E4113E281B17B845B0 /* Pods_Elite_Training_App.framework */,
 			);
-			name = Storyboards;
-			path = "New Group1";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 276283321F70D18E002046CE /* Build configuration list for PBXNativeTarget "Elite-Training-App" */;
 			buildPhases = (
+				E4C5A687A1140E60293F938D /* [CP] Check Pods Manifest.lock */,
 				2762831C1F70D18E002046CE /* Sources */,
 				2762831D1F70D18E002046CE /* Frameworks */,
 				2762831E1F70D18E002046CE /* Resources */,
+				C96344B194799CA4908DC6A6 /* [CP] Embed Pods Frameworks */,
+				B6BC8428C80CAEEF272354DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,16 +257,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279F0D431F70E53300C0C132 /* LaunchScreen.storyboard in Resources */,
-				279F0D3E1F70E4EC00C0C132 /* NewMember.storyboard in Resources */,
-				279F0D491F70EDF700C0C132 /* TrainerProfile.storyboard in Resources */,
-				279F0D451F70E9F200C0C132 /* TrainerSelect.storyboard in Resources */,
-				279F0D471F70EDE600C0C132 /* TrainerLogin.storyboard in Resources */,
-				27E3166C1F70E2EA00E30E69 /* Info.plist in Resources */,
+				271F28E81F71945200176F34 /* GoogleService-Info.plist in Resources */,
+				277EAD3D1F7890E70048B177 /* NewMember.storyboard in Resources */,
+				271F28EA1F719E3800176F34 /* Assets.xcassets in Resources */,
+				277EAD401F7890E70048B177 /* TrainerProfile.storyboard in Resources */,
+				277EAD3F1F7890E70048B177 /* LaunchScreen.storyboard in Resources */,
+				277EAD3E1F7890E70048B177 /* TrainerLogin.storyboard in Resources */,
+				277EAD3C1F7890E70048B177 /* TrainerSelect.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B6BC8428C80CAEEF272354DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elite-Training-App/Pods-Elite-Training-App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C96344B194799CA4908DC6A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elite-Training-App/Pods-Elite-Training-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4C5A687A1140E60293F938D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2762831C1F70D18E002046CE /* Sources */ = {
@@ -233,16 +325,20 @@
 				279F0D5D1F70F1C000C0C132 /* TrainerInfoVC.swift in Sources */,
 				279F0D4B1F70EF9A00C0C132 /* NewMember.swift in Sources */,
 				279F0D4F1F70F01200C0C132 /* WelcomeVC.swift in Sources */,
+				277EAD421F78916D0048B177 /* TrainerService.swift in Sources */,
+				271F28F11F7210CA00176F34 /* EliteButton.swift in Sources */,
+				271F28F51F72E83300176F34 /* NewMemberService.swift in Sources */,
 				279F0D5F1F70F1E000C0C132 /* TrainerInfoSpecVC.swift in Sources */,
 				279F0D5B1F70F1A800C0C132 /* TrainerLoginVC.swift in Sources */,
-				279F0D551F70F08800C0C132 /* WorkoutVC.swift in Sources */,
+				279F0D551F70F08800C0C132 /* HoursOfWorkoutVC.swift in Sources */,
+				271F28F31F72E15A00176F34 /* EliteButtonDelegate.swift in Sources */,
 				279F0D611F70F1FF00C0C132 /* TrainerScheduleVC.swift in Sources */,
 				279F0D591F70F0D600C0C132 /* TrainerSelectVC.swift in Sources */,
 				279F0D571F70F09B00C0C132 /* ScheduleVC.swift in Sources */,
 				279F0D4D1F70EFC400C0C132 /* Trainer.swift in Sources */,
 				27E3166A1F70E2AC00E30E69 /* AppDelegate.swift in Sources */,
 				279F0D511F70F02D00C0C132 /* ContactVC.swift in Sources */,
-				279F0D531F70F06600C0C132 /* TrainerVC.swift in Sources */,
+				271F28EE1F71AED900176F34 /* TrainerPrefVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +440,7 @@
 		};
 		276283331F70D18E002046CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA1B3DE1A568529455B9FEC2 /* Pods-Elite-Training-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -360,6 +457,7 @@
 		};
 		276283341F70D18E002046CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 163F1D4D1321D5441E10D931 /* Pods-Elite-Training-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

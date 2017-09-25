@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
             endingLineNumber = "29"
-            landmarkName = "init(firstName:lastName:email:genderPreference:trainingPreference:workoutHours:schedule:)"
+            landmarkName = "init(firstName:lastName:email:genderPreference:trainingPreference:workoutHours:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
