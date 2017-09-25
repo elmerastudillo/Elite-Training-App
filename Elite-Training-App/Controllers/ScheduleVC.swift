@@ -21,6 +21,15 @@ class ScheduleVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func selectTime(sender: UIButton)
+    {
+        
+    }
+    
+    @IBAction func next(sender:UIButton)
+    {
+        
+    }
 
     /*
     // MARK: - Navigation

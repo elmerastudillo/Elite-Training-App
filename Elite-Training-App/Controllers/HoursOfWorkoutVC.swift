@@ -10,6 +10,16 @@ import UIKit
 
 class HoursOfWorkoutVC: UIViewController {
 
+    // MARK: - Button Outlets
+    
+    @IBOutlet weak var lessThenThreeButton: UIButton!
+    @IBOutlet weak var lessThenFiveButton: UIButton!
+    @IBOutlet weak var lessThenSevenButton: UIButton!
+    @IBOutlet weak var lessThenTenButton: UIButton!
+    
+    var hoursPerWeek : String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +31,35 @@ class HoursOfWorkoutVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Mark: - IBActions
+    
+    @IBAction func hoursButtonpressed(_ sender: UIButton)
+    {
+        let buttons : [UIButton] = [lessThenThreeButton, lessThenFiveButton, lessThenSevenButton, lessThenTenButton]
+        
+        for button in buttons
+        {
+            if sender.tag == button.tag
+            {
+                button.isSelected = true
+                hoursPerWeek = sender.titleLabel?.text?.lowercased()
+            }
+            else
+            {
+                button.isSelected = false
+            }
+        }
+    }
+    
+    @IBAction func nextButtonPressed(_ sender: UIButton) {
+        guard let hoursPerWeek = self.hoursPerWeek else { return }
+        let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
+        let trainerVC = storyboard.instantiateViewController(withIdentifier: "")
+        navigationController?.pushViewController(trainerVC, animated: true)
+    }
+    
+    @IBAction func eliteButtonPressed(_ sender: UIButton) {
+    }
 
     /*
     // MARK: - Navigation

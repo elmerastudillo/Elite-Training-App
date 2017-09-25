@@ -13,6 +13,7 @@
 		271F28F11F7210CA00176F34 /* EliteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F28F01F7210CA00176F34 /* EliteButton.swift */; };
 		271F28F31F72E15A00176F34 /* EliteButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F28F21F72E15A00176F34 /* EliteButtonDelegate.swift */; };
 		271F28F51F72E83300176F34 /* NewMemberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F28F41F72E83300176F34 /* NewMemberService.swift */; };
+		272613BC1F78ED73006947D4 /* TrainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272613BB1F78ED73006947D4 /* TrainerCollectionViewCell.swift */; };
 		277EAD3C1F7890E70048B177 /* TrainerSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD371F7890E60048B177 /* TrainerSelect.storyboard */; };
 		277EAD3D1F7890E70048B177 /* NewMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD381F7890E60048B177 /* NewMember.storyboard */; };
 		277EAD3E1F7890E70048B177 /* TrainerLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD391F7890E60048B177 /* TrainerLogin.storyboard */; };
@@ -42,6 +43,7 @@
 		271F28F01F7210CA00176F34 /* EliteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EliteButton.swift; path = Views/EliteButton.swift; sourceTree = "<group>"; };
 		271F28F21F72E15A00176F34 /* EliteButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EliteButtonDelegate.swift; path = Views/EliteButtonDelegate.swift; sourceTree = "<group>"; };
 		271F28F41F72E83300176F34 /* NewMemberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewMemberService.swift; path = Services/NewMemberService.swift; sourceTree = "<group>"; };
+		272613BB1F78ED73006947D4 /* TrainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerCollectionViewCell.swift; path = Views/TrainerCollectionViewCell.swift; sourceTree = "<group>"; };
 		276283201F70D18E002046CE /* Elite-Training-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elite-Training-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277EAD371F7890E60048B177 /* TrainerSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerSelect.storyboard; path = Storyboards/TrainerSelect.storyboard; sourceTree = "<group>"; };
 		277EAD381F7890E60048B177 /* NewMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NewMember.storyboard; path = Storyboards/NewMember.storyboard; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				271F28F01F7210CA00176F34 /* EliteButton.swift */,
 				271F28F21F72E15A00176F34 /* EliteButtonDelegate.swift */,
+				272613BB1F78ED73006947D4 /* TrainerCollectionViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				279F0D591F70F0D600C0C132 /* TrainerSelectVC.swift in Sources */,
 				279F0D571F70F09B00C0C132 /* ScheduleVC.swift in Sources */,
 				279F0D4D1F70EFC400C0C132 /* Trainer.swift in Sources */,
+				272613BC1F78ED73006947D4 /* TrainerCollectionViewCell.swift in Sources */,
 				27E3166A1F70E2AC00E30E69 /* AppDelegate.swift in Sources */,
 				279F0D511F70F02D00C0C132 /* ContactVC.swift in Sources */,
 				271F28EE1F71AED900176F34 /* TrainerPrefVC.swift in Sources */,

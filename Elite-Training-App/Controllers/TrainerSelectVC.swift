@@ -9,7 +9,11 @@
 import UIKit
 
 class TrainerSelectVC: UIViewController {
+    
+    var trainers : [Trainer]?
 
+    @IBOutlet weak var trainerSelectVC: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,4 +36,25 @@ class TrainerSelectVC: UIViewController {
     }
     */
 
+}
+
+extension TrainerSelectVC : UICollectionViewDelegate
+{
+    
+}
+
+extension TrainerSelectVC : UICollectionViewDataSource
+{
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cellIdentifier = ""
+        
+        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+        return trainers!.count
+    }
+    
 }

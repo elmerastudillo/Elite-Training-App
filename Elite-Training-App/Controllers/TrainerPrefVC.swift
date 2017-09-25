@@ -69,9 +69,9 @@ class TrainerPrefVC: UIViewController {
         {
             if button.tag == sender.tag
             {
-                button.isSelected = !button.isSelected
+                button.isSelected = true
+                //button.isSelected = !button.isSelected
                 genderPreference = (button.titleLabel?.text?.lowercased())!
-                print(genderPreference)
             }
             else
             {
@@ -88,8 +88,8 @@ class TrainerPrefVC: UIViewController {
         {
             if button.tag == sender.tag
             {
-                button.isSelected = !button.isSelected
-                trainingFocusPref = button.titleLabel?.text?.lowercased()
+                button.isSelected = true
+                trainingFocusPref = (button.titleLabel?.text?.lowercased())!
             }
             else
             {
