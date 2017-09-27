@@ -1,5 +1,5 @@
 //
-//  TrainerScheduleVC.swift
+//  TrainerBioVC.swift
 //  Elite-Training-App
 //
 //  Created by Elmer Astudillo on 9/18/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TrainerScheduleVC: UIViewController {
+class TrainerBioVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

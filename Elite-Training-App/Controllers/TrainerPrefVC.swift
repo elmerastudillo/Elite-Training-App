@@ -59,6 +59,10 @@ class TrainerPrefVC: UIViewController {
             else { return alertController() }
         print(gender + focus)
         
+        let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
+        let hoursOfWorkoutVC = storyboard.instantiateViewController(withIdentifier: "HoursOfWorkoutVC")
+        navigationController?.pushViewController(hoursOfWorkoutVC, animated: true)
+        
     }
     
     @IBAction func genderButtonPressed(_ sender: UIButton)

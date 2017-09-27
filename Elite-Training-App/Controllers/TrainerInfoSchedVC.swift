@@ -1,5 +1,5 @@
 //
-//  TrainerInfoVC.swift
+//  TrainerInfoSchedVC.swift
 //  Elite-Training-App
 //
 //  Created by Elmer Astudillo on 9/18/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TrainerInfoVC: UIViewController {
+class TrainerInfoSchedVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

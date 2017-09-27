@@ -53,8 +53,8 @@ class HoursOfWorkoutVC: UIViewController {
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
         guard let hoursPerWeek = self.hoursPerWeek else { return }
-        let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
-        let trainerVC = storyboard.instantiateViewController(withIdentifier: "")
+        let storyboard = UIStoryboard.init(name: "NMSchedule", bundle: nil)
+        let trainerVC = storyboard.instantiateViewController(withIdentifier: "ScheduleVC")
         navigationController?.pushViewController(trainerVC, animated: true)
     }
     

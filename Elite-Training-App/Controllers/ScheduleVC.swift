@@ -21,16 +21,20 @@ class ScheduleVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func selectTime(sender: UIButton)
+    @IBAction func selectTrainerButtonPressed(_ sender: UIButton)
     {
+        let storyboard = UIStoryboard(name: "TrainerSelect", bundle: nil)
         
+        let trainerSelectVC = storyboard.instantiateViewController(withIdentifier: "TrainerSelectVC")
+            
+        navigationController?.pushViewController(trainerSelectVC, animated: true)
     }
     
-    @IBAction func next(sender:UIButton)
+
+    @IBAction func eliteButtonPressed(_ sender: UIButton)
     {
         
     }
-
     /*
     // MARK: - Navigation
 

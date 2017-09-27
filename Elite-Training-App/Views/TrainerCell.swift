@@ -1,5 +1,5 @@
 //
-//  TrainerCollectionViewCell.swift
+//  TrainerCell.swift
 //  Elite-Training-App
 //
 //  Created by Elmer Astudillo on 9/25/17.
@@ -8,10 +8,14 @@
 
 import UIKit
 
-class TrainerCollectionViewCell: UICollectionViewCell {
+class TrainerCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var focusLabel: UILabel!
+    @IBOutlet weak var selectButton: UIButton!
+    @IBOutlet weak var infoButton: UIButton!
+    
+    
     
 }
