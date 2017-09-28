@@ -890,6 +890,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="selectTrainerButton" destination="rdr-84-r53" id="qeB-Ff-kZP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jR9-rZ-TjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

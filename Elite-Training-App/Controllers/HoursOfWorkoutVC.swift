@@ -12,6 +12,7 @@ class HoursOfWorkoutVC: UIViewController {
 
     // MARK: - Button Outlets
     
+    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var lessThenThreeButton: UIButton!
     @IBOutlet weak var lessThenFiveButton: UIButton!
     @IBOutlet weak var lessThenSevenButton: UIButton!

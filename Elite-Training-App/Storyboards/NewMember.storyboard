@@ -40,13 +40,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxz-nn-7Ir" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
                                 <rect key="frame" x="282" y="819" width="204" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Join now">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="joinNowButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PAA-uF-Bc2"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZK-65-hw7">
                                 <rect key="frame" x="698" y="28" width="50" height="50"/>
@@ -66,6 +63,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y8e-pp-1YY"/>
+                    <connections>
+                        <outlet property="joinNowButton" destination="Sxz-nn-7Ir" id="x2r-rU-9QG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,6 +165,7 @@
                         <outlet property="emailAddressTF" destination="Nss-iY-ydv" id="6xu-MM-BQ4"/>
                         <outlet property="firstNameTF" destination="xoQ-zx-2QU" id="rfa-eu-SbY"/>
                         <outlet property="lastNameTF" destination="O3S-Uv-ELy" id="4aB-tS-9Xz"/>
+                        <outlet property="nextButton" destination="kVu-bE-cim" id="mrh-ZB-Ewf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UuA-4t-jVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -358,6 +359,7 @@
                         <outlet property="leanAndToneButton" destination="bzh-E5-3y8" id="alC-kt-ePq"/>
                         <outlet property="maleButton" destination="Cil-tc-rEg" id="N0J-Uj-x0W"/>
                         <outlet property="natalButton" destination="L8M-3u-y97" id="J2l-2T-2Er"/>
+                        <outlet property="nextButton" destination="9gK-QO-agI" id="EyR-XM-T8D"/>
                         <outlet property="notApplicableButton" destination="pXZ-Nt-YZL" id="5bP-A6-iYa"/>
                         <outlet property="nutritionalGuidButton" destination="x2b-7q-PMg" id="NT4-4J-qyg"/>
                         <outlet property="obstacleCourseButton" destination="k9q-Zq-JRY" id="PIB-xD-LUR"/>
@@ -451,6 +453,7 @@
                         <outlet property="lessThenSevenButton" destination="1ym-AS-GuI" id="PZK-FZ-PVP"/>
                         <outlet property="lessThenTenButton" destination="bff-kX-iL3" id="CGH-XL-GpL"/>
                         <outlet property="lessThenThreeButton" destination="7qh-6f-aBw" id="JdD-HB-Xpu"/>
+                        <outlet property="nextButton" destination="9DR-7v-3vO" id="HmG-vn-JWt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5lY-qt-K1c" userLabel="First Responder" sceneMemberID="firstResponder"/>

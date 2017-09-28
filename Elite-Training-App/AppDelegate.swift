@@ -1,4 +1,4 @@
-//
+///
 //  AppDelegate.swift
 //  Elite-Training-App
 //
@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+
+typealias FIRUser = FirebaseAuth.User
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

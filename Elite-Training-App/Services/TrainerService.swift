@@ -22,9 +22,11 @@ struct TrainerService
         })
     }
     
-    
+    // TODO: Implemente query for trainer
     static func queryForTrainer(focus: String, gender: String,  completion: @escaping ([Trainer]) -> Void)
     {
         
     }
+    
+    
 }

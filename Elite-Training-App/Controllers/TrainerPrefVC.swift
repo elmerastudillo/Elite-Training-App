@@ -13,7 +13,9 @@ class TrainerPrefVC: UIViewController {
     var genderPreference : String?
     var trainingFocusPref: String?
     
+   
     // MARK: - Button Outlets
+     @IBOutlet weak var nextButton: EliteButton!
     // MARK: - Gender Preference
     @IBOutlet weak var maleButton: UIButton!
     @IBOutlet weak var femaleButton: UIButton!

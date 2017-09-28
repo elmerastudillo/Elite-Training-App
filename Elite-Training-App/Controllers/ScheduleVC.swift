@@ -10,6 +10,8 @@ import UIKit
 
 class ScheduleVC: UIViewController {
 
+    @IBOutlet weak var selectTrainerButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

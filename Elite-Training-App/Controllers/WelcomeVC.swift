@@ -9,10 +9,12 @@
 import UIKit
 
 class WelcomeVC: UIViewController {
-
+    
+    @IBOutlet weak var joinNowButton: EliteButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //joinNowButton.layer.addSublayer(GradientLayer.gradientLayer(frame: joinNowButton.bounds))
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +24,8 @@ class WelcomeVC: UIViewController {
     }
     
     @IBAction func EliteButtonPressed(_ sender: UIButton) {
+        
+        //joinNowButton.isSelected = true
     }
 
     @IBAction func joinNowButtonPressed(_ sender: UIButton) {

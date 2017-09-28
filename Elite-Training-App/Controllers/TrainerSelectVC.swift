@@ -47,6 +47,9 @@ class TrainerSelectVC: UIViewController {
     @IBAction func infoButtonPressed()
     {
         // Create a UIView that pops open when info is clicked
+        let storyboard = UIStoryboard.init(name: "", bundle: nil)
+        let trainerBioVC = storyboard.instantiateViewController(withIdentifier: "")
+        navigationController?.pushViewController(trainerBioVC, animated: true)
     }
     
 //    func addViewToCell(collectionView: UICollectionView, indexPath: IndexPath)

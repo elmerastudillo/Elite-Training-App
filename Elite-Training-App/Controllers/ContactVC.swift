@@ -13,12 +13,12 @@ class ContactVC: UIViewController {
     @IBOutlet weak var firstNameTF: UITextField!
     @IBOutlet weak var lastNameTF: UITextField!
     @IBOutlet weak var emailAddressTF: UITextField!
+    @IBOutlet weak var nextButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+       // nextButton.layer.addSublayer(GradientLayer.gradientLayer(frame: nextButton.bounds))
     }
 
     override func didReceiveMemoryWarning() {
