@@ -10,12 +10,21 @@ import UIKit
 
 class TrainerSelectVC: UIViewController {
     
+    var focus : String?
+    var gender: String?
     var trainers : [Trainer]?
 
     @IBOutlet weak var trainerSelectVC: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let focus = self.focus else { return }
+        guard let gender = self.gender else { return }
+        
+        NewMemberService.queryForTrainer(focus: focus, gender: gender) { (trainers) in
+            print(trainers)
+        }
 
         // Do any additional setup after loading the view.
     }

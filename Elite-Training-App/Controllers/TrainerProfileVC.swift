@@ -11,10 +11,19 @@ import UIKit
 class TrainerProfileVC: UIViewController {
     @IBOutlet weak var trainerImageView: UIImageView!
     @IBOutlet weak var fullNameLabel: UILabel!
+    @IBOutlet weak var bioButton: UIButton!
+    @IBOutlet weak var updateFocusButton: UIButton!
+    @IBOutlet weak var updateScheduleButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        bioButton.layer.addSublayer(GradientLayer.gradient(bounds: bioButton.bounds))
+        logoutButton.layer.addSublayer(GradientLayer.gradient(bounds: logoutButton.bounds))
+        updateFocusButton.layer.addSublayer(GradientLayer.gradient(bounds: updateFocusButton.bounds))
+        updateScheduleButton.layer.addSublayer(GradientLayer.gradient(bounds: updateScheduleButton.bounds))
     }
 
     override func didReceiveMemoryWarning() {

@@ -13,6 +13,11 @@ class TrainerPrefVC: UIViewController {
     var genderPreference : String?
     var trainingFocusPref: String?
     
+    // Passing User Info
+    var firstname : String?
+    var lastname : String?
+    var emailAdress : String?
+    
    
     // MARK: - Button Outlets
      @IBOutlet weak var nextButton: EliteButton!
@@ -39,6 +44,8 @@ class TrainerPrefVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nextButton.layer.addSublayer(GradientLayer.gradient(bounds: nextButton.bounds))
 
         // Do any additional setup after loading the view.
     }
@@ -62,7 +69,12 @@ class TrainerPrefVC: UIViewController {
         print(gender + focus)
         
         let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
-        let hoursOfWorkoutVC = storyboard.instantiateViewController(withIdentifier: "HoursOfWorkoutVC")
+        let hoursOfWorkoutVC = storyboard.instantiateViewController(withIdentifier: "HoursOfWorkoutVC") as! HoursOfWorkoutVC
+        hoursOfWorkoutVC.firstname = firstname
+        hoursOfWorkoutVC.lastname = lastname
+        hoursOfWorkoutVC.emailAddress = emailAdress
+        hoursOfWorkoutVC.genderPreference = genderPreference
+        hoursOfWorkoutVC.trainingFocusPref = trainingFocusPref
         navigationController?.pushViewController(hoursOfWorkoutVC, animated: true)
         
     }

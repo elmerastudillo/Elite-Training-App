@@ -15,21 +15,19 @@ class NewMember
     var email : String
     var genderPreference : String
     var trainingPreference : String
-    var workoutHours : String
     var creationDate: Date
-    //var schedule : [String]
+    var hoursPerWeek : String
     //TODO: Need to implement schedule
     
     
-    init(firstName: String, lastName: String, email: String, genderPreference: String, trainingPreference: String, workoutHours: String) {
+    init(firstName: String, lastName: String, email: String, genderPreference: String, trainingPreference: String, hoursPerWeek: String) {
         self.firstName = firstName
         self.lastName = lastName
         self.email = email
         self.genderPreference = genderPreference
         self.trainingPreference = trainingPreference
-        self.workoutHours = workoutHours
         self.creationDate = Date()
-        //self.schedule = schedule
+        self.hoursPerWeek = hoursPerWeek
     }
     
     var dictValue: [String : Any]
@@ -41,8 +39,7 @@ class NewMember
                 "email" : email,
                 "genderPreference" : genderPreference,
                 "trainingPreference" : trainingPreference,
-                "workoutHours" : workoutHours,
+                "hoursPerWeek" : hoursPerWeek,
                 "creationDate" : createdAgo]
-//                "schedule" : schedule]
     }
 }

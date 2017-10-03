@@ -12,10 +12,12 @@ class TrainerLoginVC: UIViewController {
 
     @IBOutlet weak var emailAddress: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loginButton.layer.addSublayer(GradientLayer.gradient(bounds: loginButton.bounds))
         // Do any additional setup after loading the view.
         configureView()
     }
@@ -27,45 +29,42 @@ class TrainerLoginVC: UIViewController {
     
     @IBAction func loginButtonPressed(_ sender: UIButton)
     {
-        
-    }
-//    {
-//        dismissKeyboard()
-//        guard let email = emailAddress.text,
-//            let password = password.text else{
-//                return
-//        }
-//        AuthService.signIn(controller: self, email: email, password: password) { (trainer) in
-//            guard let trainer = trainer else {
-//                print("error: FIRUser does not exist!")
+        dismissKeyboard()
+        guard let email = emailAddress.text,
+            let password = password.text else{
+                return
+        }
+        AuthService.signIn(controller: self, email: email, password: password) { (trainer) in
+            guard let trainer = trainer else {
+                print("error: FIRUser does not exist!")
 //                DispatchQueue.main.async {
-////                    SVProgressHUD.dismiss()
-//                    // self.errorAlertViewController()
+//                    SVProgressHUD.dismiss()
+                // self.errorAlertViewController()
 //                }
-//                return
-//            }
-//
-////            TrainerService.fetchTrainer(forUID: trainer.uid) { (user) in
-////                {
-//////                if let trainer = trainer {
-//////                    Trainer.setCurrent(trainer, writeToUserDefaults: true)
-//////                    //TODO: Need to set the view controller to go to once signed in
-////////                    let initialViewController = UIStoryboard.initialViewController(for: .main)
-////////                    self.view.window?.rootViewController = initialViewController
-//////                    self.view.window?.makeKeyAndVisible()
-////                    let user = user
-////                }
-////                else {
-////                    print("error: User does not exist!")
-////
-////                    //                    DispatchQueue.main.async {
-////                    //                        self.errorAlertViewController()
-////                    //                    }
-////
-////                    return
-////                }
-//            }
-//        }
+                return
+            }
+            
+            TrainerService.fetchTrainer(forUID: trainer.uid) { (trainer) in
+                if let trainer = trainer {
+                    Trainer.setCurrent(trainer, writeToUserDefaults: true)
+//                    let initialViewController = UIStoryboard.initialViewController(for: .main)
+//                    self.view.window?.rootViewController = initialViewController
+//                    self.view.window?.makeKeyAndVisible()
+                
+                }
+                else {
+                    print("error: User does not exist!")
+                    
+                    //                    DispatchQueue.main.async {
+                    //                        self.errorAlertViewController()
+                    //                    }
+                    
+                    return
+                }
+            }
+        }
+    }
+
 }
 
 

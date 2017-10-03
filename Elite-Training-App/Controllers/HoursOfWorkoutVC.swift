@@ -18,6 +18,14 @@ class HoursOfWorkoutVC: UIViewController {
     @IBOutlet weak var lessThenSevenButton: UIButton!
     @IBOutlet weak var lessThenTenButton: UIButton!
     
+    // Passing User Info
+    var genderPreference : String?
+    var trainingFocusPref: String?
+    var firstname : String?
+    var lastname : String?
+    var emailAddress : String?
+    
+    // Hours per week
     var hoursPerWeek : String?
     
     
@@ -25,6 +33,7 @@ class HoursOfWorkoutVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        nextButton.layer.addSublayer(GradientLayer.gradient(bounds: nextButton.bounds))
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,10 +62,22 @@ class HoursOfWorkoutVC: UIViewController {
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
-        guard let hoursPerWeek = self.hoursPerWeek else { return }
-        let storyboard = UIStoryboard.init(name: "NMSchedule", bundle: nil)
-        let trainerVC = storyboard.instantiateViewController(withIdentifier: "ScheduleVC")
-        navigationController?.pushViewController(trainerVC, animated: true)
+        guard let hoursPerWeek = self.hoursPerWeek,
+        let firstname = self.firstname,
+        let lastname = self.lastname,
+        let emailAddress = self.emailAddress,
+        let genderPreference = self.genderPreference,
+        let trainingFocusPref = self.trainingFocusPref
+            else { return }
+        
+        print(firstname + lastname + emailAddress + genderPreference + trainingFocusPref + hoursPerWeek)
+        
+        NewMemberService.createNewMember(firstName: firstname, lastName: lastname, email: emailAddress, genderPreference: genderPreference, trainingPreference: trainingFocusPref, hoursPerWeek: hoursPerWeek)
+        let storyboard = UIStoryboard.init(name: "TrainerSelect", bundle: nil)
+        let trainerSelVC = storyboard.instantiateViewController(withIdentifier: "TrainerSelectVC") as! TrainerSelectVC
+        trainerSelVC.focus = trainingFocusPref
+        trainerSelVC.gender = genderPreference
+        navigationController?.pushViewController(trainerSelVC, animated: true)
     }
     
     @IBAction func eliteButtonPressed(_ sender: UIButton) {

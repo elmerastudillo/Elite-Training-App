@@ -14,8 +14,6 @@
 		271F28F51F72E83300176F34 /* NewMemberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F28F41F72E83300176F34 /* NewMemberService.swift */; };
 		272613BC1F78ED73006947D4 /* TrainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272613BB1F78ED73006947D4 /* TrainerCell.swift */; };
 		272613C01F798870006947D4 /* TrainerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272613BF1F798870006947D4 /* TrainerProfileVC.swift */; };
-		272613C41F7993F2006947D4 /* NMSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272613C31F7993F2006947D4 /* NMSchedule.storyboard */; };
-		277EAD3C1F7890E70048B177 /* TrainerSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD371F7890E60048B177 /* TrainerSelect.storyboard */; };
 		277EAD3D1F7890E70048B177 /* NewMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD381F7890E60048B177 /* NewMember.storyboard */; };
 		277EAD3E1F7890E70048B177 /* TrainerLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD391F7890E60048B177 /* TrainerLogin.storyboard */; };
 		277EAD3F1F7890E70048B177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD3A1F7890E70048B177 /* LaunchScreen.storyboard */; };
@@ -24,12 +22,12 @@
 		278466991F7AD2940031B7BF /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278466981F7AD2940031B7BF /* UIImageView+Extension.swift */; };
 		2784669C1F7B756D0031B7BF /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2784669B1F7B756D0031B7BF /* GradientLayer.swift */; };
 		2784669E1F7C1B000031B7BF /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2784669D1F7C1B000031B7BF /* AuthService.swift */; };
+		27915B651F80C79E00ADEC9D /* TimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27915B641F80C79E00ADEC9D /* TimeSlot.swift */; };
 		279F0D4B1F70EF9A00C0C132 /* NewMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D4A1F70EF9A00C0C132 /* NewMember.swift */; };
 		279F0D4D1F70EFC400C0C132 /* Trainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D4C1F70EFC400C0C132 /* Trainer.swift */; };
 		279F0D4F1F70F01200C0C132 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D4E1F70F01200C0C132 /* WelcomeVC.swift */; };
 		279F0D511F70F02D00C0C132 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D501F70F02D00C0C132 /* ContactVC.swift */; };
 		279F0D551F70F08800C0C132 /* HoursOfWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D541F70F08800C0C132 /* HoursOfWorkoutVC.swift */; };
-		279F0D571F70F09B00C0C132 /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D561F70F09B00C0C132 /* ScheduleVC.swift */; };
 		279F0D591F70F0D600C0C132 /* TrainerSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D581F70F0D600C0C132 /* TrainerSelectVC.swift */; };
 		279F0D5B1F70F1A800C0C132 /* TrainerLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D5A1F70F1A800C0C132 /* TrainerLoginVC.swift */; };
 		279F0D5D1F70F1C000C0C132 /* TrainerBioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D5C1F70F1C000C0C132 /* TrainerBioVC.swift */; };
@@ -37,6 +35,8 @@
 		279F0D611F70F1FF00C0C132 /* TrainerInfoSchedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D601F70F1FF00C0C132 /* TrainerInfoSchedVC.swift */; };
 		27DA06541F7C20FB0073A1AA /* UIViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA06531F7C20FB0073A1AA /* UIViewController+Utilities.swift */; };
 		27DA06561F7C51810073A1AA /* TrainerBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA06551F7C51810073A1AA /* TrainerBio.swift */; };
+		27E248371F83221B00A3DB37 /* TrainerSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E248361F83221B00A3DB37 /* TrainerSelect.storyboard */; };
+		27E248391F8354DB00A3DB37 /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E248381F8354DB00A3DB37 /* Focus.swift */; };
 		27E3166A1F70E2AC00E30E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E316691F70E2AC00E30E69 /* AppDelegate.swift */; };
 		59F4C4AE5CB9EE045458CB72 /* Pods_Elite_Training_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE03A2E4113E281B17B845B0 /* Pods_Elite_Training_App.framework */; };
 /* End PBXBuildFile section */
@@ -50,9 +50,7 @@
 		271F28F41F72E83300176F34 /* NewMemberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewMemberService.swift; path = Services/NewMemberService.swift; sourceTree = "<group>"; };
 		272613BB1F78ED73006947D4 /* TrainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerCell.swift; path = Views/TrainerCell.swift; sourceTree = "<group>"; };
 		272613BF1F798870006947D4 /* TrainerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerProfileVC.swift; path = Controllers/TrainerProfileVC.swift; sourceTree = "<group>"; };
-		272613C31F7993F2006947D4 /* NMSchedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NMSchedule.storyboard; path = Storyboards/NMSchedule.storyboard; sourceTree = "<group>"; };
 		276283201F70D18E002046CE /* Elite-Training-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elite-Training-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		277EAD371F7890E60048B177 /* TrainerSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerSelect.storyboard; path = Storyboards/TrainerSelect.storyboard; sourceTree = "<group>"; };
 		277EAD381F7890E60048B177 /* NewMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NewMember.storyboard; path = Storyboards/NewMember.storyboard; sourceTree = "<group>"; };
 		277EAD391F7890E60048B177 /* TrainerLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerLogin.storyboard; path = Storyboards/TrainerLogin.storyboard; sourceTree = "<group>"; };
 		277EAD3A1F7890E70048B177 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,12 +59,12 @@
 		278466981F7AD2940031B7BF /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImageView+Extension.swift"; path = "Extensions/UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		2784669B1F7B756D0031B7BF /* GradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GradientLayer.swift; path = "Gradient-Color/GradientLayer.swift"; sourceTree = "<group>"; };
 		2784669D1F7C1B000031B7BF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = Services/AuthService.swift; sourceTree = "<group>"; };
+		27915B641F80C79E00ADEC9D /* TimeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeSlot.swift; path = Models/TimeSlot.swift; sourceTree = "<group>"; };
 		279F0D4A1F70EF9A00C0C132 /* NewMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewMember.swift; path = Models/NewMember.swift; sourceTree = "<group>"; };
 		279F0D4C1F70EFC400C0C132 /* Trainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trainer.swift; path = Models/Trainer.swift; sourceTree = "<group>"; };
 		279F0D4E1F70F01200C0C132 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeVC.swift; path = Controllers/WelcomeVC.swift; sourceTree = "<group>"; };
 		279F0D501F70F02D00C0C132 /* ContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactVC.swift; path = Controllers/ContactVC.swift; sourceTree = "<group>"; };
 		279F0D541F70F08800C0C132 /* HoursOfWorkoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HoursOfWorkoutVC.swift; path = Controllers/HoursOfWorkoutVC.swift; sourceTree = "<group>"; };
-		279F0D561F70F09B00C0C132 /* ScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleVC.swift; path = Controllers/ScheduleVC.swift; sourceTree = "<group>"; };
 		279F0D581F70F0D600C0C132 /* TrainerSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerSelectVC.swift; path = Controllers/TrainerSelectVC.swift; sourceTree = "<group>"; };
 		279F0D5A1F70F1A800C0C132 /* TrainerLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerLoginVC.swift; path = Controllers/TrainerLoginVC.swift; sourceTree = "<group>"; };
 		279F0D5C1F70F1C000C0C132 /* TrainerBioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerBioVC.swift; path = Controllers/TrainerBioVC.swift; sourceTree = "<group>"; };
@@ -74,6 +72,8 @@
 		279F0D601F70F1FF00C0C132 /* TrainerInfoSchedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerInfoSchedVC.swift; path = Controllers/TrainerInfoSchedVC.swift; sourceTree = "<group>"; };
 		27DA06531F7C20FB0073A1AA /* UIViewController+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+Utilities.swift"; path = "Extensions/UIViewController+Utilities.swift"; sourceTree = "<group>"; };
 		27DA06551F7C51810073A1AA /* TrainerBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerBio.swift; path = Controllers/TrainerBio.swift; sourceTree = "<group>"; };
+		27E248361F83221B00A3DB37 /* TrainerSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerSelect.storyboard; path = Storyboards/TrainerSelect.storyboard; sourceTree = "<group>"; };
+		27E248381F8354DB00A3DB37 /* Focus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Focus.swift; path = Models/Focus.swift; sourceTree = "<group>"; };
 		27E316691F70E2AC00E30E69 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27E3166B1F70E2EA00E30E69 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE03A2E4113E281B17B845B0 /* Pods_Elite_Training_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elite_Training_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,8 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				277EAD381F7890E60048B177 /* NewMember.storyboard */,
-				272613C31F7993F2006947D4 /* NMSchedule.storyboard */,
-				277EAD371F7890E60048B177 /* TrainerSelect.storyboard */,
+				27E248361F83221B00A3DB37 /* TrainerSelect.storyboard */,
 			);
 			name = NewMember;
 			sourceTree = "<group>";
@@ -132,18 +131,17 @@
 			name = "Trainer-VC";
 			sourceTree = "<group>";
 		};
-		272613C21F7988A9006947D4 /* NewMembmer-VC */ = {
+		272613C21F7988A9006947D4 /* NewMember-VC */ = {
 			isa = PBXGroup;
 			children = (
 				279F0D4E1F70F01200C0C132 /* WelcomeVC.swift */,
 				279F0D501F70F02D00C0C132 /* ContactVC.swift */,
 				271F28ED1F71AED900176F34 /* TrainerPrefVC.swift */,
 				279F0D541F70F08800C0C132 /* HoursOfWorkoutVC.swift */,
-				279F0D561F70F09B00C0C132 /* ScheduleVC.swift */,
 				279F0D581F70F0D600C0C132 /* TrainerSelectVC.swift */,
 				279F0D5C1F70F1C000C0C132 /* TrainerBioVC.swift */,
 			);
-			name = "NewMembmer-VC";
+			name = "NewMember-VC";
 			sourceTree = "<group>";
 		};
 		276283171F70D18E002046CE = {
@@ -210,7 +208,7 @@
 		279F0D371F70E42100C0C132 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				272613C21F7988A9006947D4 /* NewMembmer-VC */,
+				272613C21F7988A9006947D4 /* NewMember-VC */,
 				272613C11F798884006947D4 /* Trainer-VC */,
 			);
 			name = Controllers;
@@ -230,6 +228,8 @@
 			children = (
 				279F0D4A1F70EF9A00C0C132 /* NewMember.swift */,
 				279F0D4C1F70EFC400C0C132 /* Trainer.swift */,
+				27915B641F80C79E00ADEC9D /* TimeSlot.swift */,
+				27E248381F8354DB00A3DB37 /* Focus.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -328,12 +328,11 @@
 			files = (
 				271F28E81F71945200176F34 /* GoogleService-Info.plist in Resources */,
 				277EAD3D1F7890E70048B177 /* NewMember.storyboard in Resources */,
-				272613C41F7993F2006947D4 /* NMSchedule.storyboard in Resources */,
 				271F28EA1F719E3800176F34 /* Assets.xcassets in Resources */,
 				277EAD401F7890E70048B177 /* TrainerProfile.storyboard in Resources */,
+				27E248371F83221B00A3DB37 /* TrainerSelect.storyboard in Resources */,
 				277EAD3F1F7890E70048B177 /* LaunchScreen.storyboard in Resources */,
 				277EAD3E1F7890E70048B177 /* TrainerLogin.storyboard in Resources */,
-				277EAD3C1F7890E70048B177 /* TrainerSelect.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,17 +397,18 @@
 				279F0D4F1F70F01200C0C132 /* WelcomeVC.swift in Sources */,
 				277EAD421F78916D0048B177 /* TrainerService.swift in Sources */,
 				2784669E1F7C1B000031B7BF /* AuthService.swift in Sources */,
+				27E248391F8354DB00A3DB37 /* Focus.swift in Sources */,
 				27DA06541F7C20FB0073A1AA /* UIViewController+Utilities.swift in Sources */,
 				272613C01F798870006947D4 /* TrainerProfileVC.swift in Sources */,
 				278466991F7AD2940031B7BF /* UIImageView+Extension.swift in Sources */,
 				271F28F11F7210CA00176F34 /* EliteButton.swift in Sources */,
+				27915B651F80C79E00ADEC9D /* TimeSlot.swift in Sources */,
 				271F28F51F72E83300176F34 /* NewMemberService.swift in Sources */,
 				279F0D5F1F70F1E000C0C132 /* TrainerInfoSpecVC.swift in Sources */,
 				279F0D5B1F70F1A800C0C132 /* TrainerLoginVC.swift in Sources */,
 				279F0D551F70F08800C0C132 /* HoursOfWorkoutVC.swift in Sources */,
 				279F0D611F70F1FF00C0C132 /* TrainerInfoSchedVC.swift in Sources */,
 				279F0D591F70F0D600C0C132 /* TrainerSelectVC.swift in Sources */,
-				279F0D571F70F09B00C0C132 /* ScheduleVC.swift in Sources */,
 				27DA06561F7C51810073A1AA /* TrainerBio.swift in Sources */,
 				279F0D4D1F70EFC400C0C132 /* Trainer.swift in Sources */,
 				272613BC1F78ED73006947D4 /* TrainerCell.swift in Sources */,
@@ -527,7 +527,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -543,7 +543,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AI.Elite-Training-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

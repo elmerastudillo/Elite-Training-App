@@ -10,12 +10,14 @@ import UIKit
 
 class WelcomeVC: UIViewController {
     
-    @IBOutlet weak var joinNowButton: EliteButton!
+    @IBOutlet weak var joinNowButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //joinNowButton.layer.addSublayer(GradientLayer.gradientLayer(frame: joinNowButton.bounds))
         // Do any additional setup after loading the view.
+        
+        joinNowButton.layer.addSublayer(GradientLayer.gradient(bounds: joinNowButton.bounds))
     }
 
     override func didReceiveMemoryWarning() {

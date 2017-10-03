@@ -18,7 +18,7 @@ class ContactVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // nextButton.layer.addSublayer(GradientLayer.gradientLayer(frame: nextButton.bounds))
+        nextButton.layer.addSublayer(GradientLayer.gradient(bounds: nextButton.bounds))
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,15 +31,15 @@ class ContactVC: UIViewController {
     }
 
     @IBAction func nextButtonPressed(_ sender: Any) {
-       if let firstName = firstNameTF.text,
-        let lastName = lastNameTF.text,
-        let emailAddress = emailAddressTF.text,
-        !firstName.isEmpty,
-        !lastName.isEmpty,
-        !emailAddress.isEmpty
+       if let firstName = firstNameTF.text, !firstName.isEmpty,
+        let lastName = lastNameTF.text, !lastName.isEmpty,
+        let emailAddress = emailAddressTF.text, !emailAddress.isEmpty
        {
             let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
-            let trainerPrefVC = storyboard.instantiateViewController(withIdentifier: "TrainerPrefVC")
+            let trainerPrefVC = storyboard.instantiateViewController(withIdentifier: "TrainerPrefVC") as! TrainerPrefVC
+            trainerPrefVC.firstname = firstName
+            trainerPrefVC.lastname = lastName
+            trainerPrefVC.emailAdress = emailAddress
             self.navigationController?.pushViewController(trainerPrefVC, animated: true)
        }
        else
