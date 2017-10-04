@@ -30,11 +30,11 @@
 		279F0D551F70F08800C0C132 /* HoursOfWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D541F70F08800C0C132 /* HoursOfWorkoutVC.swift */; };
 		279F0D591F70F0D600C0C132 /* TrainerSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D581F70F0D600C0C132 /* TrainerSelectVC.swift */; };
 		279F0D5B1F70F1A800C0C132 /* TrainerLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D5A1F70F1A800C0C132 /* TrainerLoginVC.swift */; };
-		279F0D5D1F70F1C000C0C132 /* TrainerBioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D5C1F70F1C000C0C132 /* TrainerBioVC.swift */; };
 		279F0D5F1F70F1E000C0C132 /* TrainerInfoSpecVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D5E1F70F1E000C0C132 /* TrainerInfoSpecVC.swift */; };
 		279F0D611F70F1FF00C0C132 /* TrainerInfoSchedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D601F70F1FF00C0C132 /* TrainerInfoSchedVC.swift */; };
+		279FD1A91F84B565008EC6C2 /* TrainerPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279FD1A81F84B565008EC6C2 /* TrainerPopUp.storyboard */; };
 		27DA06541F7C20FB0073A1AA /* UIViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA06531F7C20FB0073A1AA /* UIViewController+Utilities.swift */; };
-		27DA06561F7C51810073A1AA /* TrainerBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA06551F7C51810073A1AA /* TrainerBio.swift */; };
+		27DA06561F7C51810073A1AA /* TrainerBioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA06551F7C51810073A1AA /* TrainerBioVC.swift */; };
 		27E248371F83221B00A3DB37 /* TrainerSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E248361F83221B00A3DB37 /* TrainerSelect.storyboard */; };
 		27E248391F8354DB00A3DB37 /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E248381F8354DB00A3DB37 /* Focus.swift */; };
 		27E3166A1F70E2AC00E30E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E316691F70E2AC00E30E69 /* AppDelegate.swift */; };
@@ -67,11 +67,11 @@
 		279F0D541F70F08800C0C132 /* HoursOfWorkoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HoursOfWorkoutVC.swift; path = Controllers/HoursOfWorkoutVC.swift; sourceTree = "<group>"; };
 		279F0D581F70F0D600C0C132 /* TrainerSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerSelectVC.swift; path = Controllers/TrainerSelectVC.swift; sourceTree = "<group>"; };
 		279F0D5A1F70F1A800C0C132 /* TrainerLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerLoginVC.swift; path = Controllers/TrainerLoginVC.swift; sourceTree = "<group>"; };
-		279F0D5C1F70F1C000C0C132 /* TrainerBioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerBioVC.swift; path = Controllers/TrainerBioVC.swift; sourceTree = "<group>"; };
 		279F0D5E1F70F1E000C0C132 /* TrainerInfoSpecVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerInfoSpecVC.swift; path = Controllers/TrainerInfoSpecVC.swift; sourceTree = "<group>"; };
 		279F0D601F70F1FF00C0C132 /* TrainerInfoSchedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerInfoSchedVC.swift; path = Controllers/TrainerInfoSchedVC.swift; sourceTree = "<group>"; };
+		279FD1A81F84B565008EC6C2 /* TrainerPopUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerPopUp.storyboard; path = Storyboards/TrainerPopUp.storyboard; sourceTree = "<group>"; };
 		27DA06531F7C20FB0073A1AA /* UIViewController+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+Utilities.swift"; path = "Extensions/UIViewController+Utilities.swift"; sourceTree = "<group>"; };
-		27DA06551F7C51810073A1AA /* TrainerBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerBio.swift; path = Controllers/TrainerBio.swift; sourceTree = "<group>"; };
+		27DA06551F7C51810073A1AA /* TrainerBioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerBioVC.swift; path = Controllers/TrainerBioVC.swift; sourceTree = "<group>"; };
 		27E248361F83221B00A3DB37 /* TrainerSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerSelect.storyboard; path = Storyboards/TrainerSelect.storyboard; sourceTree = "<group>"; };
 		27E248381F8354DB00A3DB37 /* Focus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Focus.swift; path = Models/Focus.swift; sourceTree = "<group>"; };
 		27E316691F70E2AC00E30E69 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +115,7 @@
 			children = (
 				277EAD381F7890E60048B177 /* NewMember.storyboard */,
 				27E248361F83221B00A3DB37 /* TrainerSelect.storyboard */,
+				279FD1A81F84B565008EC6C2 /* TrainerPopUp.storyboard */,
 			);
 			name = NewMember;
 			sourceTree = "<group>";
@@ -124,7 +125,7 @@
 			children = (
 				279F0D5A1F70F1A800C0C132 /* TrainerLoginVC.swift */,
 				272613BF1F798870006947D4 /* TrainerProfileVC.swift */,
-				27DA06551F7C51810073A1AA /* TrainerBio.swift */,
+				27DA06551F7C51810073A1AA /* TrainerBioVC.swift */,
 				279F0D5E1F70F1E000C0C132 /* TrainerInfoSpecVC.swift */,
 				279F0D601F70F1FF00C0C132 /* TrainerInfoSchedVC.swift */,
 			);
@@ -139,7 +140,6 @@
 				271F28ED1F71AED900176F34 /* TrainerPrefVC.swift */,
 				279F0D541F70F08800C0C132 /* HoursOfWorkoutVC.swift */,
 				279F0D581F70F0D600C0C132 /* TrainerSelectVC.swift */,
-				279F0D5C1F70F1C000C0C132 /* TrainerBioVC.swift */,
 			);
 			name = "NewMember-VC";
 			sourceTree = "<group>";
@@ -333,6 +333,7 @@
 				27E248371F83221B00A3DB37 /* TrainerSelect.storyboard in Resources */,
 				277EAD3F1F7890E70048B177 /* LaunchScreen.storyboard in Resources */,
 				277EAD3E1F7890E70048B177 /* TrainerLogin.storyboard in Resources */,
+				279FD1A91F84B565008EC6C2 /* TrainerPopUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +361,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Elite-Training-App/Pods-Elite-Training-App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -375,13 +387,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Elite-Training-App-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -391,7 +406,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279F0D5D1F70F1C000C0C132 /* TrainerBioVC.swift in Sources */,
 				279F0D4B1F70EF9A00C0C132 /* NewMember.swift in Sources */,
 				2784669C1F7B756D0031B7BF /* GradientLayer.swift in Sources */,
 				279F0D4F1F70F01200C0C132 /* WelcomeVC.swift in Sources */,
@@ -409,7 +423,7 @@
 				279F0D551F70F08800C0C132 /* HoursOfWorkoutVC.swift in Sources */,
 				279F0D611F70F1FF00C0C132 /* TrainerInfoSchedVC.swift in Sources */,
 				279F0D591F70F0D600C0C132 /* TrainerSelectVC.swift in Sources */,
-				27DA06561F7C51810073A1AA /* TrainerBio.swift in Sources */,
+				27DA06561F7C51810073A1AA /* TrainerBioVC.swift in Sources */,
 				279F0D4D1F70EFC400C0C132 /* Trainer.swift in Sources */,
 				272613BC1F78ED73006947D4 /* TrainerCell.swift in Sources */,
 				27E3166A1F70E2AC00E30E69 /* AppDelegate.swift in Sources */,

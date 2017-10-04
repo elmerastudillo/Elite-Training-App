@@ -57,7 +57,6 @@ class TrainerInfoSpecVC: UIViewController {
             {
                 sender.isSelected = true
                 self.trainingFocusPref = sender.titleLabel?.text?.lowercased()
-                
             }
             else
             {

@@ -47,9 +47,15 @@ class TrainerLoginVC: UIViewController {
             TrainerService.fetchTrainer(forUID: trainer.uid) { (trainer) in
                 if let trainer = trainer {
                     Trainer.setCurrent(trainer, writeToUserDefaults: true)
+                    print(trainer)
+                    let storyboard = UIStoryboard.init(name: "TrainerProfile", bundle: nil)
+                    let trainerProfileVC = storyboard.instantiateViewController(withIdentifier: "TrainerProfileVC")
+                    self.navigationController?.pushViewController(trainerProfileVC, animated: true)
+                    
 //                    let initialViewController = UIStoryboard.initialViewController(for: .main)
 //                    self.view.window?.rootViewController = initialViewController
 //                    self.view.window?.makeKeyAndVisible()
+                    
                 
                 }
                 else {

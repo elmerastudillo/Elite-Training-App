@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TrainerProfileVC: UIViewController {
     @IBOutlet weak var trainerImageView: UIImageView!
@@ -19,6 +20,12 @@ class TrainerProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print(Trainer.current)
+        
+        let trainerImageURL = Trainer.current.profileImage
+        self.fullNameLabel.text = Trainer.current.fullname
+        // TODO: Set profile picture in firebase
+//        self.trainerImageView.kf.setImage(with: trainerImageURL)
         
         bioButton.layer.addSublayer(GradientLayer.gradient(bounds: bioButton.bounds))
         logoutButton.layer.addSublayer(GradientLayer.gradient(bounds: logoutButton.bounds))
@@ -29,6 +36,7 @@ class TrainerProfileVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
     @IBAction func bioButtonPressed(_ sender: UIButton) {
@@ -36,14 +44,14 @@ class TrainerProfileVC: UIViewController {
     }
     
     @IBAction func updateSchedButtonPressed(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "", bundle: nil)
-        let trainerInfoSchedVC = storyboard.instantiateViewController(withIdentifier: "")
+        let storyboard = UIStoryboard(name: "TrainerProfile", bundle: nil)
+        let trainerInfoSchedVC = storyboard.instantiateViewController(withIdentifier: "TrainerInfoSchedVC")
         navigationController?.pushViewController(trainerInfoSchedVC, animated: true)
     }
     
     @IBAction func updateFocusButtonPressed(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "", bundle: nil)
-        let trainerInfoSpecVC = storyboard.instantiateViewController(withIdentifier: "")
+        let storyboard = UIStoryboard(name: "TrainerProfile", bundle: nil)
+        let trainerInfoSpecVC = storyboard.instantiateViewController(withIdentifier: "TrainerInfoSpecVC")
         navigationController?.pushViewController(trainerInfoSpecVC, animated: true)
     }
     

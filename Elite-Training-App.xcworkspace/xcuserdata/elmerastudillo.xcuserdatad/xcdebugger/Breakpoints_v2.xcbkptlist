@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Controllers/TrainerSelectVC.swift"
-            timestampString = "528746046.474374"
+            timestampString = "528791896.980787"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Services/NewMemberService.swift"
-            timestampString = "528746046.474461"
+            timestampString = "528770118.412261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "queryForTrainer(focus:gender:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Services/NewMemberService.swift"
-            timestampString = "528746046.474513"
+            timestampString = "528770118.412702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "queryForTrainer(focus:gender:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Services/NewMemberService.swift"
-            timestampString = "528746046.474556"
+            timestampString = "528770118.413015"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "queryForTrainer(focus:gender:completion:)"
             landmarkType = "7">
             <Locations>
@@ -74,11 +74,11 @@
                   moduleName = "Elite-Training-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Services/NewMemberService.swift"
-                  timestampString = "528746046.719759"
+                  timestampString = "528768976.746573"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
                   offsetFromSymbolStart = "687">
                </Location>
                <Location
@@ -89,11 +89,11 @@
                   moduleName = "Elite-Training-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Services/NewMemberService.swift"
-                  timestampString = "528746046.728501"
+                  timestampString = "528768976.75819"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
                   offsetFromSymbolStart = "37">
                </Location>
                <Location
@@ -104,11 +104,11 @@
                   moduleName = "Elite-Training-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Services/NewMemberService.swift"
-                  timestampString = "528746046.732127"
+                  timestampString = "528768976.761831"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
                   offsetFromSymbolStart = "18">
                </Location>
             </Locations>
@@ -121,11 +121,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Services/NewMemberService.swift"
-            timestampString = "528746046.47469"
+            timestampString = "528770118.413276"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "queryForTrainer(focus:gender:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -137,11 +137,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Controllers/TrainerSelectVC.swift"
-            timestampString = "528746046.474744"
+            timestampString = "528791896.981039"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -153,7 +153,7 @@
                   moduleName = "Elite-Training-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Controllers/TrainerSelectVC.swift"
-                  timestampString = "528746046.750516"
+                  timestampString = "528768976.81331"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
@@ -168,7 +168,7 @@
                   moduleName = "Elite-Training-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Controllers/TrainerSelectVC.swift"
-                  timestampString = "528746046.753591"
+                  timestampString = "528768976.817507"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "26"
@@ -185,7 +185,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Controllers/TrainerSelectVC.swift"
-            timestampString = "528746046.474793"
+            timestampString = "528791896.981121"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Elite-Training-App/Controllers/TrainerProfileVC.swift"
+            timestampString = "528770118.413579"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"

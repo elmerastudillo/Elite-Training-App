@@ -27,7 +27,9 @@ class WelcomeVC: UIViewController {
     
     @IBAction func EliteButtonPressed(_ sender: UIButton) {
         
-        //joinNowButton.isSelected = true
+        let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
+        navigationController?.pushViewController(loginVC, animated: true)
     }
 
     @IBAction func joinNowButtonPressed(_ sender: UIButton) {

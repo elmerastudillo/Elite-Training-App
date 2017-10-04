@@ -21,7 +21,13 @@ class TrainerInfoSchedVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 

@@ -12,7 +12,7 @@
         <!--Trainer LoginVC-->
         <scene sceneID="CaI-XN-ngl">
             <objects>
-                <viewController id="sUH-ux-Zze" customClass="TrainerLoginVC" customModule="Elite_Training_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TrainerLoginVC" id="sUH-ux-Zze" customClass="TrainerLoginVC" customModule="Elite_Training_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cz0-Sk-YRQ"/>
                         <viewControllerLayoutGuide type="bottom" id="XYc-Dn-tf1"/>
@@ -53,6 +53,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kNH-Wh-n5Z"/>
                     <connections>
                         <outlet property="emailAddress" destination="TlE-t2-JYV" id="73c-Lv-ZWK"/>
                         <outlet property="loginButton" destination="O2v-v9-ir1" id="GKq-CG-uHX"/>
@@ -61,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M0l-42-wX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="165.625" y="94.921875"/>
+            <point key="canvasLocation" x="380" y="100"/>
         </scene>
     </scenes>
 </document>

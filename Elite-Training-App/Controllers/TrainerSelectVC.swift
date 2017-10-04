@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Presentr
 
 class TrainerSelectVC: UIViewController {
     
@@ -23,7 +24,7 @@ class TrainerSelectVC: UIViewController {
         guard let gender = self.gender else { return }
         
         NewMemberService.queryForTrainer(focus: focus, gender: gender) { (trainers) in
-            print(trainers)
+            self.trainers = trainers
         }
 
         // Do any additional setup after loading the view.
@@ -47,18 +48,27 @@ class TrainerSelectVC: UIViewController {
     
     @IBAction func selectButtonPressed()
     {
-        // Send grid (Send email)
-        let alertController = UIAlertController(title: "Alert", message: "Message", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
-        present(alertController, animated: true, completion: nil)
+        let bioPresenter = Presentr(presentationType: .popup)
+        bioPresenter.presentationType = .popup
+        bioPresenter.backgroundOpacity = 0.50
+        bioPresenter.roundCorners = true
+        let storyboard = UIStoryboard.init(name: "TrainerPopUp", bundle: nil)
+        let trainerBioVC = storyboard.instantiateViewController(withIdentifier: "TrainerBioVC") as! TrainerBioVC
+        customPresentViewController(bioPresenter, viewController: trainerBioVC, animated: true, completion: nil)
+        
     }
     
     @IBAction func infoButtonPressed()
     {
         // Create a UIView that pops open when info is clicked
-        let storyboard = UIStoryboard.init(name: "", bundle: nil)
-        let trainerBioVC = storyboard.instantiateViewController(withIdentifier: "")
-        navigationController?.pushViewController(trainerBioVC, animated: true)
+        let bioPresenter = Presentr(presentationType: .popup)
+        bioPresenter.presentationType = .popup
+        bioPresenter.backgroundOpacity = 0.50
+        bioPresenter.roundCorners = true
+        let storyboard = UIStoryboard.init(name: "TrainerPopUp", bundle: nil)
+        let trainerBioVC = storyboard.instantiateViewController(withIdentifier: "TrainerBioVC") as! TrainerBioVC
+        customPresentViewController(bioPresenter, viewController: trainerBioVC, animated: true, completion: nil)
+        
     }
     
 //    func addViewToCell(collectionView: UICollectionView, indexPath: IndexPath)
@@ -74,6 +84,8 @@ class TrainerSelectVC: UIViewController {
 //        cell.imageView.addSubview(selectButton)
 //        cell.imageView.addSubview(infoButton)
 //    }
+    
+  
 
 }
 

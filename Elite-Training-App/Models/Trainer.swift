@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseDatabase.FIRDataSnapshot
 
-class Trainer
+class Trainer : NSObject
 {
     var emailAddress : String?
     var fullname : String
@@ -73,14 +73,14 @@ class Trainer
     }
     
     // Function to update current user properties and save them to User Defaults
-    class func setCurrent(_ user: Trainer, writeToUserDefaults: Bool = false) {
+    class func setCurrent(_ trainer: Trainer, writeToUserDefaults: Bool = false) {
         if writeToUserDefaults {
-            let data = NSKeyedArchiver.archivedData(withRootObject: user)
+            let data = NSKeyedArchiver.archivedData(withRootObject: trainer)
             
             UserDefaults.standard.set(data, forKey: "currentTrainer")
         }
         
-        _current = user
+        _current = trainer
     }
 }
 

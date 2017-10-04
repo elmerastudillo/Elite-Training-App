@@ -39,13 +39,13 @@ enum Hours : String
 
 enum day : String
 {
-    case Monday
-    case Tuesday
-    case Wednesday
-    case Thusrday
-    case Friday
-    case Saturday
-    case Sunday
+    case monday
+    case tuesday
+    case wednesday
+    case thusrday
+    case friday
+    case saturday
+    case sunday
 }
 
 class TimeSlot
