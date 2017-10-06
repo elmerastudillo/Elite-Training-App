@@ -30,13 +30,12 @@ class Focus
         self.uid = snapshot.key
     }
     
-//    var dictValue : [String: String]
-//    {
+    var dictValue : [String: String]
+    {
 //        guard let uid = self.uid else {return [:]}
-//        return [
-//            self.focus: focus,
-//            "uid" : uid
-//        ]
-//    }
+        return [
+            self.focus: focus,
+        ]
+    }
     
 }

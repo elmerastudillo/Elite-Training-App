@@ -8,12 +8,13 @@
 
 import UIKit
 import Presentr
+import Kingfisher
 
 class TrainerSelectVC: UIViewController {
     
     var focus : String?
     var gender: String?
-    var trainers : [Trainer]?
+    var trainers = [Trainer]()
 
     @IBOutlet weak var trainerSelectVC: UICollectionView!
     
@@ -25,6 +26,9 @@ class TrainerSelectVC: UIViewController {
         
         NewMemberService.queryForTrainer(focus: focus, gender: gender) { (trainers) in
             self.trainers = trainers
+            DispatchQueue.main.async {
+                self.trainerSelectVC.reloadData()
+            }
         }
 
         // Do any additional setup after loading the view.
@@ -46,27 +50,43 @@ class TrainerSelectVC: UIViewController {
     }
     */
     
-    @IBAction func selectButtonPressed()
+    @IBAction func selectButtonPressed(sender: UIButton)
     {
+        let point = trainerSelectVC.convert(CGPoint.zero, from: sender)
+        guard let indexPath = trainerSelectVC.indexPathForItem(at: point) else {
+            fatalError("can't find point in tableView")
+        }
+        let currentTrainer = trainers[indexPath.item]
         let bioPresenter = Presentr(presentationType: .popup)
         bioPresenter.presentationType = .popup
         bioPresenter.backgroundOpacity = 0.50
         bioPresenter.roundCorners = true
+        bioPresenter.dismissOnSwipe = true
         let storyboard = UIStoryboard.init(name: "TrainerPopUp", bundle: nil)
-        let trainerBioVC = storyboard.instantiateViewController(withIdentifier: "TrainerBioVC") as! TrainerBioVC
-        customPresentViewController(bioPresenter, viewController: trainerBioVC, animated: true, completion: nil)
+        let trainerTimeSlotVC = storyboard.instantiateViewController(withIdentifier: "TrainerTimeSlotVC") as! TrainerTimeSlotVC
+        trainerTimeSlotVC.trainer = currentTrainer
+        customPresentViewController(bioPresenter, viewController: trainerTimeSlotVC, animated: true, completion: nil)
         
     }
     
-    @IBAction func infoButtonPressed()
+    @IBAction func infoButtonPressed(sender: UIButton)
     {
         // Create a UIView that pops open when info is clicked
+        //Getting indexpath by using points
+        let point = trainerSelectVC.convert(CGPoint.zero, from: sender)
+        guard let indexPath = trainerSelectVC.indexPathForItem(at: point) else {
+            fatalError("can't find point in tableView")
+        }
+        let currentTrainer = trainers[indexPath.item]
         let bioPresenter = Presentr(presentationType: .popup)
         bioPresenter.presentationType = .popup
         bioPresenter.backgroundOpacity = 0.50
         bioPresenter.roundCorners = true
+        bioPresenter.dismissOnSwipe = true
         let storyboard = UIStoryboard.init(name: "TrainerPopUp", bundle: nil)
         let trainerBioVC = storyboard.instantiateViewController(withIdentifier: "TrainerBioVC") as! TrainerBioVC
+        trainerBioVC.trainer = currentTrainer
+        trainerBioVC.focus = self.focus
         customPresentViewController(bioPresenter, viewController: trainerBioVC, animated: true, completion: nil)
         
     }
@@ -116,11 +136,17 @@ extension TrainerSelectVC : UICollectionViewDataSource
         let cellIdentifier = "trainerCell"
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! TrainerCell
+        let trainer = trainers[indexPath.item]
         //cell.backgroundColor = UIColor.darkGray
         cell.imageView.backgroundColor = UIColor.purple
         cell.imageView.roundedImage()
         cell.selectButton.isHidden = true
         cell.infoButton.isHidden = true
+        cell.nameLabel.text = trainer.fullname
+        cell.focusLabel.text = focus
+        guard let imgURL = trainer.profileImage else { return cell }
+        let imageURL = URL(string:imgURL)
+        cell.imageView.kf.setImage(with:imageURL)
         
         
         
@@ -129,7 +155,7 @@ extension TrainerSelectVC : UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        return 10
+        return trainers.count
     }
     
 }

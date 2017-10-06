@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Presentr
 
 class TrainerProfileVC: UIViewController {
     @IBOutlet weak var trainerImageView: UIImageView!
@@ -40,7 +41,22 @@ class TrainerProfileVC: UIViewController {
     }
     
     @IBAction func bioButtonPressed(_ sender: UIButton) {
-        
+            // Create a UIView that pops open when info is clicked
+        //Getting indexpath by using points
+//        let point = trainerSelectVC.convert(CGPoint.zero, from: sender)
+//        guard let indexPath = trainerSelectVC.indexPathForItem(at: point) else {
+//            fatalError("can't find point in tableView")
+//        }
+//        let currentTrainer = trainers[indexPath.item]
+        let bioPresenter = Presentr(presentationType: .popup)
+        bioPresenter.presentationType = .popup
+        bioPresenter.backgroundOpacity = 0.50
+        bioPresenter.roundCorners = true
+        bioPresenter.dismissOnSwipe = true
+        let storyboard = UIStoryboard.init(name: "TrainerPopUp", bundle: nil)
+        let trainerBioVC = storyboard.instantiateViewController(withIdentifier: "TrainerBioVC") as! TrainerBioVC
+        trainerBioVC.trainer = Trainer.current
+        customPresentViewController(bioPresenter, viewController: trainerBioVC, animated: true, completion: nil)
     }
     
     @IBAction func updateSchedButtonPressed(_ sender: UIButton) {

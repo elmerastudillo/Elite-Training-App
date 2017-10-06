@@ -17,10 +17,19 @@ class TrainerBioVC : UIViewController
     @IBOutlet weak var focusLabel: UILabel!
     @IBOutlet weak var bioLabel: UILabel!
     
-    
+    var trainer : Trainer?
+    var focus: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let trainer = self.trainer else { return }
+        fullnameLabel.text = trainer.fullname
+        focusLabel.text = focus
+        bioLabel.text = trainer.bio
+        guard let imgURL = trainer.profileImage else { return }
+        let imageURL = URL(string:imgURL)
+        profileImage.kf.setImage(with: imageURL)
     }
     
 //    func configureView()

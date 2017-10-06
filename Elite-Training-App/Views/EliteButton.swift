@@ -59,7 +59,7 @@ class EliteButton: UIButton {
             } else {
                 //self.layer.removeFromSuperlayer()
                 self.titleLabel?.textColor = UIColor.black
-                self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 0)
+                self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 1)
                 //layer.borderWidth = 0.0
             }
         }

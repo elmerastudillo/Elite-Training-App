@@ -10,7 +10,7 @@ import UIKit
 
 class TrainerInfoSpecVC: UIViewController {
     
-    var trainingFocusPref : String?
+    var trainingFocusPref = [String: String]()
     
     @IBOutlet weak var functionalMovementButton: UIButton!
     @IBOutlet weak var strengthAndCondButton: UIButton!
@@ -41,7 +41,13 @@ class TrainerInfoSpecVC: UIViewController {
     }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+        
+        for (_ , value) in trainingFocusPref
+        {
+            let focusObj = Focus(focus: value)
+            TrainerService.updateTrainerFocus(forUID: Trainer.current.uid ,focus: focusObj)
+        }
+            navigationController?.popViewController(animated: true)
     }
     
     @IBAction func eliteButtonPressed(_ sender: UIButton) {
@@ -49,31 +55,18 @@ class TrainerInfoSpecVC: UIViewController {
     
     @IBAction func focusButtonPressed(_ sender: UIButton)
     {
-        let buttonArray = [functionalMovementButton, strengthAndCondButton, weightLossButton, rehabilitationButton, olympicAndPLButton, obstacleCourseButton, correctiveButton, leanAndToneButton, nutrtionalGuidButton, balanceAndStabButton, coreStrengthButton, smallGroupButton, natalButton, runningAndEndButton]
-        
-        for button in buttonArray
+        sender.isSelected = !sender.isSelected
+        if sender.isSelected
         {
-            if button?.tag == sender.tag
-            {
-                sender.isSelected = true
-                self.trainingFocusPref = sender.titleLabel?.text?.lowercased()
-            }
-            else
-            {
-                button?.isSelected = false
-            }
+            guard let focus = sender.titleLabel?.text?.lowercased() else {return}
+            trainingFocusPref[focus] = focus
+        }
+        else
+        {
+            guard let focus = sender.titleLabel?.text?.lowercased() else {return}
+            trainingFocusPref.removeValue(forKey: focus)
+            
+            
         }
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

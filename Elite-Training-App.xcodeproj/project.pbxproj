@@ -33,6 +33,7 @@
 		279F0D5F1F70F1E000C0C132 /* TrainerInfoSpecVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D5E1F70F1E000C0C132 /* TrainerInfoSpecVC.swift */; };
 		279F0D611F70F1FF00C0C132 /* TrainerInfoSchedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D601F70F1FF00C0C132 /* TrainerInfoSchedVC.swift */; };
 		279FD1A91F84B565008EC6C2 /* TrainerPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279FD1A81F84B565008EC6C2 /* TrainerPopUp.storyboard */; };
+		279FD1AB1F84D031008EC6C2 /* TrainerTimeSlotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279FD1AA1F84D031008EC6C2 /* TrainerTimeSlotVC.swift */; };
 		27DA06541F7C20FB0073A1AA /* UIViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA06531F7C20FB0073A1AA /* UIViewController+Utilities.swift */; };
 		27DA06561F7C51810073A1AA /* TrainerBioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA06551F7C51810073A1AA /* TrainerBioVC.swift */; };
 		27E248371F83221B00A3DB37 /* TrainerSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E248361F83221B00A3DB37 /* TrainerSelect.storyboard */; };
@@ -70,6 +71,7 @@
 		279F0D5E1F70F1E000C0C132 /* TrainerInfoSpecVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerInfoSpecVC.swift; path = Controllers/TrainerInfoSpecVC.swift; sourceTree = "<group>"; };
 		279F0D601F70F1FF00C0C132 /* TrainerInfoSchedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerInfoSchedVC.swift; path = Controllers/TrainerInfoSchedVC.swift; sourceTree = "<group>"; };
 		279FD1A81F84B565008EC6C2 /* TrainerPopUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerPopUp.storyboard; path = Storyboards/TrainerPopUp.storyboard; sourceTree = "<group>"; };
+		279FD1AA1F84D031008EC6C2 /* TrainerTimeSlotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerTimeSlotVC.swift; path = Controllers/TrainerTimeSlotVC.swift; sourceTree = "<group>"; };
 		27DA06531F7C20FB0073A1AA /* UIViewController+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+Utilities.swift"; path = "Extensions/UIViewController+Utilities.swift"; sourceTree = "<group>"; };
 		27DA06551F7C51810073A1AA /* TrainerBioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerBioVC.swift; path = Controllers/TrainerBioVC.swift; sourceTree = "<group>"; };
 		27E248361F83221B00A3DB37 /* TrainerSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerSelect.storyboard; path = Storyboards/TrainerSelect.storyboard; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				271F28ED1F71AED900176F34 /* TrainerPrefVC.swift */,
 				279F0D541F70F08800C0C132 /* HoursOfWorkoutVC.swift */,
 				279F0D581F70F0D600C0C132 /* TrainerSelectVC.swift */,
+				279FD1AA1F84D031008EC6C2 /* TrainerTimeSlotVC.swift */,
 			);
 			name = "NewMember-VC";
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				279F0D4B1F70EF9A00C0C132 /* NewMember.swift in Sources */,
+				279FD1AB1F84D031008EC6C2 /* TrainerTimeSlotVC.swift in Sources */,
 				2784669C1F7B756D0031B7BF /* GradientLayer.swift in Sources */,
 				279F0D4F1F70F01200C0C132 /* WelcomeVC.swift in Sources */,
 				277EAD421F78916D0048B177 /* TrainerService.swift in Sources */,

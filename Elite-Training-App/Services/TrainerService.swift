@@ -22,4 +22,32 @@ struct TrainerService
         })
     }
     
+    static func updateTrainerSchedule(forUID uid: String, timeSlot: TimeSlot)
+    {
+        let ref = Database.database().reference().child("schedule").child(uid).childByAutoId()
+        
+        let dict = timeSlot.dictValue
+        
+        ref.updateChildValues(dict) { (error, reference) in
+            if (error != nil)
+            {
+                print("Failure to insert")
+            }
+        }
+    }
+    
+    static func updateTrainerFocus(forUID uid: String, focus: Focus)
+    {
+        let ref = Database.database().reference().child("focus").child(uid)
+        let dict = focus.dictValue
+        ref.updateChildValues(dict) { (error, reference) in
+            if (error != nil)
+            {
+                print("Failure to insert")
+            }
+        }
+    }
+    
+    
+    
 }

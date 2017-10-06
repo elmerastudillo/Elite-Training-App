@@ -85,4 +85,27 @@ struct NewMemberService
         }
     }
     
+    static func fetchSchedule(uid: String, completion: @escaping ([TimeSlot]) -> Void)
+    {
+        let ref = Database.database().reference().child("schedule").child(uid)
+        
+        ref.observeSingleEvent(of: .value, with: { (snapshot) -> Void in
+            guard let snapshot = snapshot.children.allObjects as? [DataSnapshot] else { return completion([]) }
+            print(snapshot)
+            
+            let timeSlots : [TimeSlot] =
+            snapshot
+                .flatMap{
+                    guard let timeslot = TimeSlot(snapshot: $0)
+                        else {return nil}
+                    
+                    return timeslot
+            }
+            print(timeSlots)
+            completion(timeSlots)
+            
+        })
+        
+    }
+    
 }
