@@ -26,7 +26,6 @@ class WelcomeVC: UIViewController {
     }
     
     @IBAction func EliteButtonPressed(_ sender: UIButton) {
-        
         let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
         let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
         navigationController?.pushViewController(loginVC, animated: true)

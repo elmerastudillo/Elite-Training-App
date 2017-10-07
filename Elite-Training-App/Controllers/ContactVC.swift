@@ -19,6 +19,7 @@ class ContactVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.layer.addSublayer(GradientLayer.gradient(bounds: nextButton.bounds))
+        configureView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +32,7 @@ class ContactVC: UIViewController {
     }
 
     @IBAction func nextButtonPressed(_ sender: Any) {
+        dismissKeyboard()
        if let firstName = firstNameTF.text, !firstName.isEmpty,
         let lastName = lastNameTF.text, !lastName.isEmpty,
         let emailAddress = emailAddressTF.text, !emailAddress.isEmpty
@@ -85,4 +87,13 @@ class ContactVC: UIViewController {
     }
     */
 
+}
+
+extension ContactVC
+{
+    func configureView()
+    {
+        applyKeyboardPush()
+        applyKeyboardDismisser()
+    }
 }

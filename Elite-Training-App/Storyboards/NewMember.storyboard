@@ -165,7 +165,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXy-Mm-M6a">
-                                <rect key="frame" x="209" y="888" width="350" height="80"/>
+                                <rect key="frame" x="209" y="757" width="350" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="KyU-W2-Xcw"/>
                                     <constraint firstAttribute="height" constant="80" id="R8Q-nv-MJv"/>
@@ -180,7 +180,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8hV-F6-s3y" firstAttribute="top" secondItem="kXy-Mm-M6a" secondAttribute="bottom" constant="56" id="3Y8-xO-3VL"/>
+                            <constraint firstItem="8hV-F6-s3y" firstAttribute="top" secondItem="kXy-Mm-M6a" secondAttribute="bottom" constant="187" id="3Y8-xO-3VL"/>
                             <constraint firstItem="Ozc-G3-sFk" firstAttribute="centerX" secondItem="bux-gP-aRT" secondAttribute="centerX" id="9dx-yv-K3x"/>
                             <constraint firstItem="IHm-qx-jT2" firstAttribute="top" secondItem="bux-gP-aRT" secondAttribute="topMargin" constant="40" id="SFJ-fT-xmq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ozc-G3-sFk" secondAttribute="trailing" constant="40" id="ZP7-60-Djo"/>
