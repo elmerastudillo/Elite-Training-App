@@ -26,27 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
-            timestampString = "528964231.039042"
+            timestampString = "529043916.963291"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "createViewBasedOnTimeSlot()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
-            timestampString = "528964231.039381"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "createViewBasedOnTimeSlot()"
             landmarkType = "7">
             <Locations>
@@ -54,16 +38,16 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;Elite_Training_App.TimeSlot&gt;) -&gt; () in Elite_Training_App.TrainerTimeSlotVC.createViewBasedOnTimeSlot() -&gt; ()"
+                  symbolName = "Elite_Training_App.TrainerTimeSlotVC.createViewBasedOnTimeSlot() -&gt; ()"
                   moduleName = "Elite-Training-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
-                  timestampString = "528965777.048384"
+                  timestampString = "529053855.587863"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "2659">
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "79">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -73,46 +57,14 @@
                   moduleName = "Elite-Training-App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
-                  timestampString = "528965777.05193"
+                  timestampString = "529053855.602284"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "2862">
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Elite-Training-App/Views/EliteButton.swift"
-            timestampString = "528967480.803787"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "isHighlighted"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Elite-Training-App/Views/EliteButton.swift"
-            timestampString = "528967480.803879"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "isSelected"
-            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -128,6 +80,102 @@
             startingLineNumber = "54"
             endingLineNumber = "54"
             landmarkName = "timeSlotPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Elite-Training-App/Controllers/TrainerProfileVC.swift"
+            timestampString = "529069791.435816"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "logoutButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Elite-Training-App/Controllers/TrainerEditBioVC.swift"
+            timestampString = "529069791.435941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Elite-Training-App/Controllers/TrainerProfileVC.swift"
+            timestampString = "529069791.435997"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Elite_Training_App.TrainerProfileVC.viewDidLoad() -&gt; ()"
+                  moduleName = "Elite-Training-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Controllers/TrainerProfileVC.swift"
+                  timestampString = "529053855.667431"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "317">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.UIImage) -&gt; () in Elite_Training_App.TrainerProfileVC.viewDidLoad() -&gt; ()"
+                  moduleName = "Elite-Training-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Controllers/TrainerProfileVC.swift"
+                  timestampString = "529053855.670855"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Elite-Training-App/Controllers/TrainerProfileVC.swift"
+            timestampString = "529069791.436063"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "handleTapGesture(gesture:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

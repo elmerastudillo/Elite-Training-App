@@ -29,37 +29,70 @@ class EliteButton: UIButton {
         //self.layer.cornerRadius = 10.0
         //self.clipsToBounds = true
         
-        self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 0)
-        self.titleLabel?.textColor = UIColor.white
+//        self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 0)
+//        self.titleLabel?.textColor = UIColor.white
+//        
+//        self.addTarget(self, action: #selector(touchDown(sender:)), for: .touchDown);
+//        self.addTarget(self, action: #selector(touchDownAgain(sender:)), for: .touchDownRepeat)
+        self.layer.addSublayer(GradientLayer.gradientBorder(bounds: self.bounds))
     }
     
-    override var isHighlighted: Bool {
-        get {
-            return super.isHighlighted
-        }
-        set {
-            //Checking to see the state of the button. If selected or unselected
-            if(newValue){
-                print(newValue)
-                self.isSelected = !self.isSelected
-            }
-
-            super.isHighlighted = newValue
-        }
-    }
-
+    //target functions
+//    @objc func touchDown(sender:UIButton)
+//    {
+//        self.layer.insertSublayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
+////        zeroButton.backgroundColor = UIColor.blueColor()
+//        self.layer.sublayers?[0].removeFromSuperlayer()
+//        self.layer.insertSublayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
+//    }
+//
+//    @objc func touchDownAgain(sender:UIButton)
+//    {
+//        self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 1)
+//        self.layer.insertSublayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
+////        zeroButton.backgroundColor = UIColor.whiteColor()
+    
+//    override var isHighlighted: Bool {
+//        get {
+//            return super.isHighlighted
+//        }
+//        set {
+//            //Checking to see the state of the button. If selected or unselected
+//            if(newValue){
+//                print(newValue)
+//                self.isSelected = !self.isSelected
+//            }
+//
+//            super.isHighlighted = newValue
+//        }
+//    }
+//
+//    override var isSelected: Bool{
+//
+//    }
     override var isSelected: Bool {
         willSet(newValue) {
             super.isSelected = newValue;
             print(newValue)
             // If newValue is true change the gradient colorway
             if isSelected {
-                self.layer.insertSublayer(GradientLayer.gradient(bounds: self.bounds), at: 1)
+                //self.layer.sublayers?[0].removeFromSuperlayer()
+                self.layer.insertSublayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
+                //self.layer.insertSubLayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
+                self.setNeedsDisplay()
+//                self.layer.insertSublayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
                 //layer.borderWidth = 5.0
             } else {
                 //self.layer.removeFromSuperlayer()
                 self.titleLabel?.textColor = UIColor.black
+//                view.layer.sublayers?[0].removeFromSuperLayer()
+//                view.layer.insertSubLayer(MyLayer, at: 0)
+                //self.layer.sublayers?[0].removeFromSuperlayer()
                 self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 1)
+                //self.layer.insertSubLayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
+                self.setNeedsDisplay()
+//                self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 2)
+//                self.setNeedsDisplay()
                 //layer.borderWidth = 0.0
             }
         }

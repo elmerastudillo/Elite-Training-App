@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27134A3E1F88935C009BF91D /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27134A3D1F88935C009BF91D /* PhotoHelper.swift */; };
+		27134A401F88AD49009BF91D /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27134A3F1F88AD48009BF91D /* StorageService.swift */; };
 		271F28E81F71945200176F34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 271F28E71F71945200176F34 /* GoogleService-Info.plist */; };
 		271F28EA1F719E3800176F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271F28E91F719E3800176F34 /* Assets.xcassets */; };
 		271F28EE1F71AED900176F34 /* TrainerPrefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F28ED1F71AED900176F34 /* TrainerPrefVC.swift */; };
@@ -14,6 +16,8 @@
 		271F28F51F72E83300176F34 /* NewMemberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F28F41F72E83300176F34 /* NewMemberService.swift */; };
 		272613BC1F78ED73006947D4 /* TrainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272613BB1F78ED73006947D4 /* TrainerCell.swift */; };
 		272613C01F798870006947D4 /* TrainerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272613BF1F798870006947D4 /* TrainerProfileVC.swift */; };
+		272C34211F87FCCE005ED814 /* TrainerEditBioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C34201F87FCCE005ED814 /* TrainerEditBioVC.swift */; };
+		272C34231F888B98005ED814 /* StorageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C34221F888B98005ED814 /* StorageReference.swift */; };
 		277EAD3D1F7890E70048B177 /* NewMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD381F7890E60048B177 /* NewMember.storyboard */; };
 		277EAD3E1F7890E70048B177 /* TrainerLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD391F7890E60048B177 /* TrainerLogin.storyboard */; };
 		277EAD3F1F7890E70048B177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD3A1F7890E70048B177 /* LaunchScreen.storyboard */; };
@@ -44,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		163F1D4D1321D5441E10D931 /* Pods-Elite-Training-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elite-Training-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elite-Training-App/Pods-Elite-Training-App.release.xcconfig"; sourceTree = "<group>"; };
+		27134A3D1F88935C009BF91D /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoHelper.swift; path = Helper/PhotoHelper.swift; sourceTree = "<group>"; };
+		27134A3F1F88AD48009BF91D /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		271F28E71F71945200176F34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		271F28E91F719E3800176F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Elite-Training-App/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		271F28ED1F71AED900176F34 /* TrainerPrefVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerPrefVC.swift; path = Controllers/TrainerPrefVC.swift; sourceTree = "<group>"; };
@@ -51,6 +57,8 @@
 		271F28F41F72E83300176F34 /* NewMemberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewMemberService.swift; path = Services/NewMemberService.swift; sourceTree = "<group>"; };
 		272613BB1F78ED73006947D4 /* TrainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerCell.swift; path = Views/TrainerCell.swift; sourceTree = "<group>"; };
 		272613BF1F798870006947D4 /* TrainerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerProfileVC.swift; path = Controllers/TrainerProfileVC.swift; sourceTree = "<group>"; };
+		272C34201F87FCCE005ED814 /* TrainerEditBioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerEditBioVC.swift; path = Controllers/TrainerEditBioVC.swift; sourceTree = "<group>"; };
+		272C34221F888B98005ED814 /* StorageReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorageReference.swift; path = Extensions/StorageReference.swift; sourceTree = "<group>"; };
 		276283201F70D18E002046CE /* Elite-Training-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elite-Training-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277EAD381F7890E60048B177 /* NewMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NewMember.storyboard; path = Storyboards/NewMember.storyboard; sourceTree = "<group>"; };
 		277EAD391F7890E60048B177 /* TrainerLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerLogin.storyboard; path = Storyboards/TrainerLogin.storyboard; sourceTree = "<group>"; };
@@ -103,6 +111,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		27134A3C1F88934A009BF91D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				27134A3D1F88935C009BF91D /* PhotoHelper.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		272613BD1F79864A006947D4 /* Trainer */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +143,7 @@
 			children = (
 				279F0D5A1F70F1A800C0C132 /* TrainerLoginVC.swift */,
 				272613BF1F798870006947D4 /* TrainerProfileVC.swift */,
-				27DA06551F7C51810073A1AA /* TrainerBioVC.swift */,
+				272C34201F87FCCE005ED814 /* TrainerEditBioVC.swift */,
 				279F0D5E1F70F1E000C0C132 /* TrainerInfoSpecVC.swift */,
 				279F0D601F70F1FF00C0C132 /* TrainerInfoSchedVC.swift */,
 			);
@@ -143,6 +159,7 @@
 				279F0D541F70F08800C0C132 /* HoursOfWorkoutVC.swift */,
 				279F0D581F70F0D600C0C132 /* TrainerSelectVC.swift */,
 				279FD1AA1F84D031008EC6C2 /* TrainerTimeSlotVC.swift */,
+				27DA06551F7C51810073A1AA /* TrainerBioVC.swift */,
 			);
 			name = "NewMember-VC";
 			sourceTree = "<group>";
@@ -168,6 +185,7 @@
 		276283221F70D18E002046CE /* Elite-Training-App */ = {
 			isa = PBXGroup;
 			children = (
+				27134A3C1F88934A009BF91D /* Helper */,
 				2784669A1F7B75430031B7BF /* Gradient-Color */,
 				278466971F7AD2840031B7BF /* Extensions */,
 				277EAD361F7890900048B177 /* Storyboards */,
@@ -194,6 +212,7 @@
 		278466971F7AD2840031B7BF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				272C34221F888B98005ED814 /* StorageReference.swift */,
 				278466981F7AD2940031B7BF /* UIImageView+Extension.swift */,
 				27DA06531F7C20FB0073A1AA /* UIViewController+Utilities.swift */,
 			);
@@ -240,6 +259,7 @@
 		279F0D3C1F70E47F00C0C132 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				27134A3F1F88AD48009BF91D /* StorageService.swift */,
 				271F28F41F72E83300176F34 /* NewMemberService.swift */,
 				277EAD411F78916D0048B177 /* TrainerService.swift */,
 				2784669D1F7C1B000031B7BF /* AuthService.swift */,
@@ -369,6 +389,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
+				"${BUILT_PRODUCTS_DIR}/SendGrid/SendGrid.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -377,6 +398,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SendGrid.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,19 +435,23 @@
 				279FD1AB1F84D031008EC6C2 /* TrainerTimeSlotVC.swift in Sources */,
 				2784669C1F7B756D0031B7BF /* GradientLayer.swift in Sources */,
 				279F0D4F1F70F01200C0C132 /* WelcomeVC.swift in Sources */,
+				272C34211F87FCCE005ED814 /* TrainerEditBioVC.swift in Sources */,
 				277EAD421F78916D0048B177 /* TrainerService.swift in Sources */,
+				272C34231F888B98005ED814 /* StorageReference.swift in Sources */,
 				2784669E1F7C1B000031B7BF /* AuthService.swift in Sources */,
 				27E248391F8354DB00A3DB37 /* Focus.swift in Sources */,
 				27DA06541F7C20FB0073A1AA /* UIViewController+Utilities.swift in Sources */,
 				272613C01F798870006947D4 /* TrainerProfileVC.swift in Sources */,
 				278466991F7AD2940031B7BF /* UIImageView+Extension.swift in Sources */,
 				271F28F11F7210CA00176F34 /* EliteButton.swift in Sources */,
+				27134A401F88AD49009BF91D /* StorageService.swift in Sources */,
 				27915B651F80C79E00ADEC9D /* TimeSlot.swift in Sources */,
 				271F28F51F72E83300176F34 /* NewMemberService.swift in Sources */,
 				279F0D5F1F70F1E000C0C132 /* TrainerInfoSpecVC.swift in Sources */,
 				279F0D5B1F70F1A800C0C132 /* TrainerLoginVC.swift in Sources */,
 				279F0D551F70F08800C0C132 /* HoursOfWorkoutVC.swift in Sources */,
 				279F0D611F70F1FF00C0C132 /* TrainerInfoSchedVC.swift in Sources */,
+				27134A3E1F88935C009BF91D /* PhotoHelper.swift in Sources */,
 				279F0D591F70F0D600C0C132 /* TrainerSelectVC.swift in Sources */,
 				27DA06561F7C51810073A1AA /* TrainerBioVC.swift in Sources */,
 				279F0D4D1F70EFC400C0C132 /* Trainer.swift in Sources */,

@@ -13,10 +13,10 @@ class HoursOfWorkoutVC: UIViewController {
     // MARK: - Button Outlets
     
     @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var lessThenThreeButton: UIButton!
-    @IBOutlet weak var lessThenFiveButton: UIButton!
-    @IBOutlet weak var lessThenSevenButton: UIButton!
-    @IBOutlet weak var lessThenTenButton: UIButton!
+    @IBOutlet weak var lessThenThreeButton: EliteButton!
+    @IBOutlet weak var lessThenFiveButton: EliteButton!
+    @IBOutlet weak var lessThenSevenButton: EliteButton!
+    @IBOutlet weak var lessThenTenButton: EliteButton!
     
     // Passing User Info
     var genderPreference : String?

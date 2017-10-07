@@ -87,13 +87,13 @@ class TrainerPrefVC: UIViewController {
         {
             if button.tag == sender.tag
             {
-                button.isSelected = true
+//                button.isSelected = true
                 //button.isSelected = !button.isSelected
                 genderPreference = (button.titleLabel?.text?.lowercased())!
             }
             else
             {
-                button.isSelected = false
+//                button.isSelected = false
             }
         }
     }
@@ -106,12 +106,13 @@ class TrainerPrefVC: UIViewController {
         {
             if button.tag == sender.tag
             {
-                button.isSelected = true
+                //button.isSelected = true
+                
                 trainingFocusPref = (button.titleLabel?.text?.lowercased())!
             }
             else
             {
-                button.isSelected = false
+                //button.isSelected = false
             }
         }
     }

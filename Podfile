@@ -12,4 +12,5 @@ target 'Elite-Training-App' do
   pod 'Firebase/Storage'
   pod 'Kingfisher'
   pod 'Presentr'
+  pod 'SendGrid', :git => 'https://github.com/scottkawai/sendgrid-swift.git'
 end

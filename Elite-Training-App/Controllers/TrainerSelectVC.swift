@@ -16,6 +16,7 @@ class TrainerSelectVC: UIViewController {
     var gender: String?
     var trainers = [Trainer]()
 
+    @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var trainerSelectVC: UICollectionView!
     
     override func viewDidLoad() {
@@ -23,6 +24,8 @@ class TrainerSelectVC: UIViewController {
         
         guard let focus = self.focus else { return }
         guard let gender = self.gender else { return }
+        
+        doneButton.layer.addSublayer(GradientLayer.gradient(bounds: doneButton.bounds))
         
         NewMemberService.queryForTrainer(focus: focus, gender: gender) { (trainers) in
             self.trainers = trainers
@@ -38,17 +41,6 @@ class TrainerSelectVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     @IBAction func selectButtonPressed(sender: UIButton)
     {
@@ -91,22 +83,9 @@ class TrainerSelectVC: UIViewController {
         
     }
     
-//    func addViewToCell(collectionView: UICollectionView, indexPath: IndexPath)
-//    {
-//        let cell = collectionView.cellForItem(at: indexPath) as! TrainerCollectionViewCell
-//        let view =
-//        let selectButton = UIButton(frame: CGRect(x: 0, y: 20, width: 20, height: 20))
-//        selectButton.titleLabel?.text = "Select"
-//        selectButton.addTarget(self, action: #selector(selectButtonPressed), for: UIControlEvents.touchDown)
-//        let infoButton = UIButton(frame: CGRect(x: 0, y: 30, width: 20, height: 20))
-//        infoButton.titleLabel?.text = "i"
-//        infoButton.addTarget(self, action: #selector(infoButtonPressed), for: UIControlEvents.touchDown)
-//        cell.imageView.addSubview(selectButton)
-//        cell.imageView.addSubview(infoButton)
-//    }
-    
-  
-
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+        navigationController?.popToRootViewController(animated: true)
+    }
 }
 
 extension TrainerSelectVC : UICollectionViewDelegate
@@ -138,8 +117,10 @@ extension TrainerSelectVC : UICollectionViewDataSource
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! TrainerCell
         let trainer = trainers[indexPath.item]
         //cell.backgroundColor = UIColor.darkGray
-        cell.imageView.backgroundColor = UIColor.purple
+//        cell.imageView.backgroundColor = UIColor.purple
         cell.imageView.roundedImage()
+        cell.imageView.layer.addSublayer(GradientLayer.gradientBorder(bounds: cell.bounds))
+        
         cell.selectButton.isHidden = true
         cell.infoButton.isHidden = true
         cell.nameLabel.text = trainer.fullname
@@ -157,22 +138,12 @@ extension TrainerSelectVC : UICollectionViewDataSource
     {
         return trainers.count
     }
-    
 }
 
 extension TrainerSelectVC: UICollectionViewDelegateFlowLayout
 {
     //we use the number of columns to calculate the item size of each UICollectionViewCell. This guarentees we'll have a evenly sized 3x3 row regardless of the device we're using.
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-//        var itemSize = CGSize()
-//        let columns: CGFloat = 2
-//        let spacing: CGFloat = 1.5
-//        let totalHorizontalSpacing = (columns - 1) * spacing
-//        let itemWidth = (collectionView.bounds.width - totalHorizontalSpacing) / columns
-//        let itemHeight = (collectionView.bounds.width - totalHorizontalSpacing) / columns
-//        let newItemSize = CGSize(width: itemWidth, height: itemHeight)
-//        itemSize = newItemSize
         
         let columns: CGFloat = 2
         let spacing: CGFloat = 5.0

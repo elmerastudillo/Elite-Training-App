@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
@@ -47,20 +52,6 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="TeQ-Fd-nvk"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxz-nn-7Ir">
-                                <rect key="frame" x="346.5" y="909" width="75" height="35"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="Bex-3E-vFN"/>
-                                    <constraint firstAttribute="height" constant="35" id="kq7-lf-9BX"/>
-                                </constraints>
-                                <state key="normal" title="Join now">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="joinNowButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="36h-Mf-RXk"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.25" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZK-65-hw7">
                                 <rect key="frame" x="683" y="35" width="50" height="50"/>
                                 <constraints>
@@ -70,6 +61,20 @@
                                 <state key="normal" backgroundImage="Elite Logo"/>
                                 <connections>
                                     <action selector="EliteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D2w-eF-AOM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxz-nn-7Ir">
+                                <rect key="frame" x="209" y="864" width="350" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Bex-3E-vFN"/>
+                                    <constraint firstAttribute="height" constant="80" id="kq7-lf-9BX"/>
+                                </constraints>
+                                <state key="normal" title="Join now">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="joinNowButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="36h-Mf-RXk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -95,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="618.39999999999998" y="-31.934032983508249"/>
+            <point key="canvasLocation" x="617.96875" y="-32.2265625"/>
         </scene>
         <!--ContactVC-->
         <scene sceneID="iBz-h1-aMa">
@@ -110,33 +115,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ozc-G3-sFk">
-                                <rect key="frame" x="60" y="319.5" width="648" height="270"/>
+                                <rect key="frame" x="60" y="319.5" width="648" height="300"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FIRST NAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KWT-Lf-Fu0">
-                                        <rect key="frame" x="0.0" y="0.0" width="648" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="648" height="80"/>
                                         <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="b3v-YB-doE"/>
+                                            <constraint firstAttribute="height" constant="80" id="b3v-YB-doE"/>
                                         </constraints>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LAST NAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dLm-xc-iEf">
-                                        <rect key="frame" x="0.0" y="100" width="648" height="70"/>
+                                        <rect key="frame" x="0.0" y="110" width="648" height="80"/>
                                         <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="9ff-We-cNc"/>
+                                            <constraint firstAttribute="height" constant="80" id="9ff-We-cNc"/>
                                         </constraints>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL ADDRESS" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G6e-F7-CX9">
-                                        <rect key="frame" x="0.0" y="200" width="648" height="70"/>
+                                        <rect key="frame" x="0.0" y="220" width="648" height="80"/>
                                         <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="syM-Wn-LI2"/>
+                                            <constraint firstAttribute="height" constant="80" id="syM-Wn-LI2"/>
                                         </constraints>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -150,15 +155,6 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXy-Mm-M6a">
-                                <rect key="frame" x="328" y="938" width="112" height="30"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="nextButtonPressed:" destination="4MC-Pg-Gg4" eventType="touchUpInside" id="ifx-b5-zyh"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.25" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e92-l1-0kn">
                                 <rect key="frame" x="698" y="28" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -166,6 +162,19 @@
                                 <connections>
                                     <action selector="eliteButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="SIy-wX-Qu2"/>
                                     <action selector="eliteButtonPressed:" destination="4MC-Pg-Gg4" eventType="touchUpInside" id="qCD-1S-8Yk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXy-Mm-M6a">
+                                <rect key="frame" x="209" y="888" width="350" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="KyU-W2-Xcw"/>
+                                    <constraint firstAttribute="height" constant="80" id="R8Q-nv-MJv"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="4MC-Pg-Gg4" eventType="touchUpInside" id="ifx-b5-zyh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -381,8 +390,12 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gK-QO-agI">
-                                <rect key="frame" x="368" y="881" width="32" height="30"/>
+                                <rect key="frame" x="209" y="831" width="350" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="93h-mi-Qbg"/>
+                                    <constraint firstAttribute="width" constant="350" id="vsx-VK-8QK"/>
+                                </constraints>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -446,16 +459,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DR-7v-3vO">
-                                <rect key="frame" x="284" y="891" width="200" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="nextButtonPressed:" destination="EsD-IU-qty" eventType="touchUpInside" id="DQp-ek-tSg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.25" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTO-0L-Y44">
                                 <rect key="frame" x="698" y="28" width="50" height="50"/>
                                 <state key="normal" backgroundImage="Elite Logo"/>
@@ -473,33 +476,72 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="11N-z3-X2d">
-                                <rect key="frame" x="90" y="288" width="588" height="270"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DR-7v-3vO">
+                                <rect key="frame" x="209" y="841" width="350" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="dpt-rM-Izn"/>
+                                    <constraint firstAttribute="height" constant="80" id="iMH-yb-cQi"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="EsD-IU-qty" eventType="touchUpInside" id="DQp-ek-tSg"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="11N-z3-X2d">
+                                <rect key="frame" x="90" y="277" width="588" height="470"/>
                                 <subviews>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qh-6f-aBw" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="588" height="30"/>
-                                        <state key="normal" title="&lt;3 Hours"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="588" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="580" id="9fg-7a-ffX"/>
+                                            <constraint firstAttribute="height" constant="80" id="Hz2-Xw-5lf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="&lt;3 Hours">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="hoursButtonpressed:" destination="EsD-IU-qty" eventType="touchUpInside" id="USF-5V-0fi"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3n-lf-wCU" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="80" width="588" height="30"/>
-                                        <state key="normal" title="&lt;5 Hours"/>
+                                        <rect key="frame" x="0.0" y="130" width="588" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="81o-EW-VWo"/>
+                                            <constraint firstAttribute="width" constant="580" id="A5K-W0-azh"/>
+                                        </constraints>
+                                        <state key="normal" title="&lt;5 Hours">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="hoursButtonpressed:" destination="EsD-IU-qty" eventType="touchUpInside" id="VRt-hE-y55"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="120" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ym-AS-GuI" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="160" width="588" height="30"/>
-                                        <state key="normal" title="&lt; 7 Hours"/>
+                                        <rect key="frame" x="0.0" y="260" width="588" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="580" id="DNX-hg-Upc"/>
+                                            <constraint firstAttribute="height" constant="80" id="eoY-iO-lFV"/>
+                                        </constraints>
+                                        <state key="normal" title="&lt; 7 Hours">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="hoursButtonpressed:" destination="EsD-IU-qty" eventType="touchUpInside" id="bFk-Zb-waS"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="130" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bff-kX-iL3" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="240" width="588" height="30"/>
-                                        <state key="normal" title="10+ Hours"/>
+                                        <rect key="frame" x="0.0" y="390" width="588" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="1Tn-7a-7cW"/>
+                                            <constraint firstAttribute="width" constant="580" id="krv-ye-Ygh"/>
+                                        </constraints>
+                                        <state key="normal" title="10+ Hours">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="hoursButtonpressed:" destination="EsD-IU-qty" eventType="touchUpInside" id="Ewj-cO-M8c"/>
                                         </connections>
@@ -518,7 +560,6 @@
                             <constraint firstItem="gTO-0L-Y44" firstAttribute="top" secondItem="Tav-Hb-Rdx" secondAttribute="bottom" constant="8" symbolic="YES" id="TPH-YK-dVH"/>
                             <constraint firstItem="11N-z3-X2d" firstAttribute="top" secondItem="MvB-Qc-v37" secondAttribute="bottom" constant="78" id="auH-PN-oTv"/>
                             <constraint firstItem="MvB-Qc-v37" firstAttribute="top" secondItem="Tav-Hb-Rdx" secondAttribute="bottom" constant="53" id="erj-q8-RpD"/>
-                            <constraint firstItem="9DR-7v-3vO" firstAttribute="leading" secondItem="11N-z3-X2d" secondAttribute="trailing" constant="-394" id="fep-MO-v0y"/>
                             <constraint firstItem="Zyj-7S-yPQ" firstAttribute="top" secondItem="gTO-0L-Y44" secondAttribute="bottom" constant="946" id="jRV-CG-DLR"/>
                             <constraint firstItem="9DR-7v-3vO" firstAttribute="centerX" secondItem="BMx-K7-YjY" secondAttribute="centerX" id="tlp-ke-7fl"/>
                             <constraint firstItem="11N-z3-X2d" firstAttribute="centerX" secondItem="BMx-K7-YjY" secondAttribute="centerX" id="xWV-9l-Pon"/>

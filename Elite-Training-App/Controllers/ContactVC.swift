@@ -35,27 +35,43 @@ class ContactVC: UIViewController {
         let lastName = lastNameTF.text, !lastName.isEmpty,
         let emailAddress = emailAddressTF.text, !emailAddress.isEmpty
        {
-            let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
-            let trainerPrefVC = storyboard.instantiateViewController(withIdentifier: "TrainerPrefVC") as! TrainerPrefVC
-            trainerPrefVC.firstname = firstName
-            trainerPrefVC.lastname = lastName
-            trainerPrefVC.emailAdress = emailAddress
-            self.navigationController?.pushViewController(trainerPrefVC, animated: true)
+            if isValidEmail(testStr: emailAddress)
+            {
+                let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
+                let trainerPrefVC = storyboard.instantiateViewController(withIdentifier: "TrainerPrefVC") as! TrainerPrefVC
+                trainerPrefVC.firstname = firstName
+                trainerPrefVC.lastname = lastName
+                trainerPrefVC.emailAdress = emailAddress
+                self.navigationController?.pushViewController(trainerPrefVC, animated: true)
+            }
+            else
+            {
+                presentAlertController(errorString: "Invalid e-mail format")
+            }
        }
        else
        {
-            presentAlertController()
+            presentAlertController(errorString: "There can be no empty fields")
        }
       
         
     }
     
-    func presentAlertController()
+    // MARK: - Helper functions
+    func presentAlertController(errorString: String)
     {
-        let alertController = UIAlertController(title: "Error", message: "There can be no empty fields", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Error", message: errorString, preferredStyle: .alert)
         //alertController.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
         alertController.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func isValidEmail(testStr:String) -> Bool {
+        // print("validate calendar: \(testStr)")
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: testStr)
     }
 
     
