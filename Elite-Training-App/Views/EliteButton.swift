@@ -10,34 +10,18 @@ import UIKit
 
 class EliteButton: UIButton {
     
-    // Delegate for EliteButton
-    //weak var delegate: EliteButtonDelegate?
-    
-    private var isSetup : Bool = false
-    private var notChange : Bool = false
-    var myValue : Int?
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        //let bthWidth = 300
-        //let btnHeight = 60
-
-        //self.layer.cornerRadius = 10.0
-        //self.clipsToBounds = true
+        let borderAlpha : CGFloat = 0.7
+        let cornderRadius : CGFloat = 5.0
         
-//        self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 0)
-//        self.titleLabel?.textColor = UIColor.white
-//        
-//        self.addTarget(self, action: #selector(touchDown(sender:)), for: .touchDown);
-//        self.addTarget(self, action: #selector(touchDownAgain(sender:)), for: .touchDownRepeat)
-        
-//        self.layer.addSublayer(GradientLayer.gradientBorder(bounds: self.bounds))
-        
-        
-        
-        self.backgroundColor = UIColor.gray
-        self.titleLabel?.textColor = UIColor.white
+//        self.backgroundColor = UIColor.clear
+        //self.layer.borderWidth = 1.0
+//        self.layer.borderColor = UIColor(red: CGFloat(), green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
+        self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 0)
+        self.layer.cornerRadius = cornderRadius
+        self.layer.masksToBounds = true
     }
     
     //target functions

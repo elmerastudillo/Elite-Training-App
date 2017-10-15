@@ -46,7 +46,8 @@ class TrainerInfoSchedVC: UIViewController {
         {
             TrainerService.updateTrainerSchedule(forUID: Trainer.current.uid, timeSlot: value)
         }
-        navigationController?.popViewController(animated: true)
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func timeSlotPressed(_ sender: UIButton) {

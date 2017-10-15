@@ -56,10 +56,10 @@ class TrainerPrefVC: UIViewController {
     }
     
     @IBAction func eliteButtonPressed(_ sender: UIButton) {
-        
-        let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
-        let workoutVC = storyboard.instantiateViewController(withIdentifier: "WorkoutVC")
-        navigationController?.pushViewController(workoutVC, animated: true)
+        let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.pushViewController(loginVC, animated: false)
         
     }
 
@@ -75,7 +75,8 @@ class TrainerPrefVC: UIViewController {
         hoursOfWorkoutVC.emailAddress = emailAdress
         hoursOfWorkoutVC.genderPreference = genderPreference
         hoursOfWorkoutVC.trainingFocusPref = trainingFocusPref
-        navigationController?.pushViewController(hoursOfWorkoutVC, animated: true)
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.pushViewController(hoursOfWorkoutVC, animated: false)
         
     }
     

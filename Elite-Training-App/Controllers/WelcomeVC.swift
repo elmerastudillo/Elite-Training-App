@@ -28,14 +28,22 @@ class WelcomeVC: UIViewController {
     @IBAction func EliteButtonPressed(_ sender: UIButton) {
         let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
         let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
-        navigationController?.pushViewController(loginVC, animated: true)
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.pushViewController(loginVC, animated: false)
     }
 
     @IBAction func joinNowButtonPressed(_ sender: UIButton) {
         
+//        let transition: CATransition = CATransition()
+//        transition.duration = 0.4
+//        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+//        transition.type = kCATransitionFade
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        
+        
         let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
         let contactVC = storyboard.instantiateViewController(withIdentifier: "ContactVC") as! ContactVC
-        navigationController?.pushViewController(contactVC, animated: true)
+        self.navigationController?.pushViewController(contactVC, animated: false)
     }
     /*
     // MARK: - Navigation

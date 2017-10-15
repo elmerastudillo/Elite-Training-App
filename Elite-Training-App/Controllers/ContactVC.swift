@@ -28,7 +28,10 @@ class ContactVC: UIViewController {
     }
     
     @IBAction func eliteButtonPressed(_ sender: UIButton) {
-        
+        let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.pushViewController(loginVC, animated: false)
     }
 
     @IBAction func nextButtonPressed(_ sender: Any) {
@@ -44,7 +47,8 @@ class ContactVC: UIViewController {
                 trainerPrefVC.firstname = firstName
                 trainerPrefVC.lastname = lastName
                 trainerPrefVC.emailAdress = emailAddress
-                self.navigationController?.pushViewController(trainerPrefVC, animated: true)
+                self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+                self.navigationController?.pushViewController(trainerPrefVC, animated: false)
             }
             else
             {

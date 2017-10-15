@@ -101,21 +101,24 @@ class TrainerProfileVC: UIViewController {
     }
     
     @IBAction func updateSchedButtonPressed(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "TrainerProfile", bundle: nil)
+        let storyboard = UIStoryboard(name: "TrainerSched", bundle: nil)
         let trainerInfoSchedVC = storyboard.instantiateViewController(withIdentifier: "TrainerInfoSchedVC")
-        navigationController?.pushViewController(trainerInfoSchedVC, animated: true)
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.pushViewController(trainerInfoSchedVC, animated: false)
     }
     
     @IBAction func updateFocusButtonPressed(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "TrainerProfile", bundle: nil)
         let trainerInfoSpecVC = storyboard.instantiateViewController(withIdentifier: "TrainerInfoSpecVC")
-        navigationController?.pushViewController(trainerInfoSpecVC, animated: true)
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.pushViewController(trainerInfoSpecVC, animated: false)
     }
     
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
         do {
             try Auth.auth().signOut()
-            navigationController?.popToRootViewController(animated: true)
+            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+            self.navigationController?.popToRootViewController(animated: false)
         } catch let error as NSError {
             assertionFailure("Error signing out: \(error.localizedDescription)")
         }

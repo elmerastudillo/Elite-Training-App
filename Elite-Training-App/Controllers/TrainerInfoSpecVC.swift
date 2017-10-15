@@ -47,7 +47,8 @@ class TrainerInfoSpecVC: UIViewController {
             let focusObj = Focus(focus: value)
             TrainerService.updateTrainerFocus(forUID: Trainer.current.uid ,focus: focusObj)
         }
-            navigationController?.popViewController(animated: true)
+            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+            self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func eliteButtonPressed(_ sender: UIButton) {

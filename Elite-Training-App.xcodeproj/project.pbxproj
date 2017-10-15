@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		27134A3E1F88935C009BF91D /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27134A3D1F88935C009BF91D /* PhotoHelper.swift */; };
 		27134A401F88AD49009BF91D /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27134A3F1F88AD48009BF91D /* StorageService.swift */; };
+		27187F391F9423AB009D33E9 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27187F381F9423AB009D33E9 /* Transition.swift */; };
 		271F28E81F71945200176F34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 271F28E71F71945200176F34 /* GoogleService-Info.plist */; };
 		271F28EA1F719E3800176F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271F28E91F719E3800176F34 /* Assets.xcassets */; };
 		271F28EE1F71AED900176F34 /* TrainerPrefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271F28ED1F71AED900176F34 /* TrainerPrefVC.swift */; };
@@ -52,6 +53,7 @@
 		163F1D4D1321D5441E10D931 /* Pods-Elite-Training-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elite-Training-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elite-Training-App/Pods-Elite-Training-App.release.xcconfig"; sourceTree = "<group>"; };
 		27134A3D1F88935C009BF91D /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoHelper.swift; path = Helper/PhotoHelper.swift; sourceTree = "<group>"; };
 		27134A3F1F88AD48009BF91D /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		27187F381F9423AB009D33E9 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Transition.swift; path = Helper/Transition.swift; sourceTree = "<group>"; };
 		271F28E71F71945200176F34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		271F28E91F719E3800176F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Elite-Training-App/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		271F28ED1F71AED900176F34 /* TrainerPrefVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerPrefVC.swift; path = Controllers/TrainerPrefVC.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				27134A3D1F88935C009BF91D /* PhotoHelper.swift */,
+				27187F381F9423AB009D33E9 /* Transition.swift */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				2784669C1F7B756D0031B7BF /* GradientLayer.swift in Sources */,
 				279F0D4F1F70F01200C0C132 /* WelcomeVC.swift in Sources */,
 				272C34211F87FCCE005ED814 /* TrainerEditBioVC.swift in Sources */,
+				27187F391F9423AB009D33E9 /* Transition.swift in Sources */,
 				277EAD421F78916D0048B177 /* TrainerService.swift in Sources */,
 				272C34231F888B98005ED814 /* StorageReference.swift in Sources */,
 				2784669E1F7C1B000031B7BF /* AuthService.swift in Sources */,

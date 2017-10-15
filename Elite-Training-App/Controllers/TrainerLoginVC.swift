@@ -50,7 +50,8 @@ class TrainerLoginVC: UIViewController {
                     print(trainer)
                     let storyboard = UIStoryboard.init(name: "TrainerProfile", bundle: nil)
                     let trainerProfileVC = storyboard.instantiateViewController(withIdentifier: "TrainerProfileVC")
-                    self.navigationController?.pushViewController(trainerProfileVC, animated: true)
+                    self.self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+                    self.navigationController?.pushViewController(trainerProfileVC, animated: false)
                     
 //                    let initialViewController = UIStoryboard.initialViewController(for: .main)
 //                    self.view.window?.rootViewController = initialViewController

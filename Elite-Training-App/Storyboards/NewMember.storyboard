@@ -59,7 +59,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxz-nn-7Ir">
-                                <rect key="frame" x="209" y="864" width="350" height="80"/>
+                                <rect key="frame" x="204" y="894" width="350" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="Bex-3E-vFN"/>
@@ -82,10 +82,10 @@
                             <constraint firstItem="t1M-wL-OJH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PXj-LJ-II8"/>
                             <constraint firstItem="efc-60-7qR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Rv9-VB-455"/>
                             <constraint firstAttribute="trailing" secondItem="t1M-wL-OJH" secondAttribute="trailing" id="ZHg-vC-JPB"/>
-                            <constraint firstItem="Sxz-nn-7Ir" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bRE-ew-dLl"/>
+                            <constraint firstItem="Sxz-nn-7Ir" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5" id="bRE-ew-dLl"/>
                             <constraint firstItem="efc-60-7qR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="crJ-eP-E20"/>
                             <constraint firstItem="Sxz-nn-7Ir" firstAttribute="top" relation="greaterThanOrEqual" secondItem="efc-60-7qR" secondAttribute="bottom" constant="200" id="gId-4z-2aq"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sxz-nn-7Ir" secondAttribute="bottom" constant="80" id="gQb-uD-DAf"/>
+                            <constraint firstAttribute="bottom" secondItem="Sxz-nn-7Ir" secondAttribute="bottom" constant="50" id="qFm-3v-DSI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y8e-pp-1YY"/>
@@ -209,30 +209,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" alpha="0.25" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-pZ-Qia">
-                                <rect key="frame" x="698" y="28" width="50" height="50"/>
+                            <button opaque="NO" alpha="0.25" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-pZ-Qia">
+                                <rect key="frame" x="738" y="28" width="10" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Elite Logo"/>
                                 <connections>
                                     <action selector="eliteButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="Y1s-r6-WGf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trainer preferences." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p63-sb-laQ">
-                                <rect key="frame" x="131" y="48" width="506" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="506" id="oxi-DR-zks"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Trainer preferences." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p63-sb-laQ">
+                                <rect key="frame" x="131" y="28" width="506" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-En-24d">
-                                <rect key="frame" x="174" y="249" width="420" height="418"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="t5w-5a-HTL">
+                                <rect key="frame" x="114" y="136" width="540" height="55"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZgH-Mz-N8N">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="418"/>
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-tc-rEg" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="55"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="Dws-tb-8t3"/>
+                                            <constraint firstAttribute="width" constant="80" id="peW-3r-IHA"/>
+                                        </constraints>
+                                        <state key="normal" title="Male">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="genderButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="GUR-Cy-flt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAM-wa-C2u" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                        <rect key="frame" x="230" y="0.0" width="80" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="1ei-vG-eHx"/>
+                                            <constraint firstAttribute="width" constant="80" id="IWp-mC-cM7"/>
+                                        </constraints>
+                                        <state key="normal" title="Female">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="genderButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="ReL-zQ-ZC9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="120" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-Nt-YZL" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                        <rect key="frame" x="460" y="0.0" width="80" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="PN5-C4-Wil"/>
+                                            <constraint firstAttribute="height" constant="55" id="htY-Ba-75I"/>
+                                        </constraints>
+                                        <state key="normal" title="N/A">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="genderButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="evt-Al-pAp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gK-QO-agI">
+                                <rect key="frame" x="209" y="894" width="350" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Rik-ST-vtv"/>
+                                    <constraint firstAttribute="height" constant="80" id="sPo-gK-V8u"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nexButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="q0o-uV-kfc"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-En-24d">
+                                <rect key="frame" x="114" y="230" width="540" height="565"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZgH-Mz-N8N">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="565"/>
                                         <subviews>
-                                            <button opaque="NO" tag="200" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY5-N7-rBD">
-                                                <rect key="frame" x="0.0" y="0.0" width="145" height="34"/>
+                                            <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY5-N7-rBD" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="0.0" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="GG2-Zh-MBU"/>
+                                                    <constraint firstAttribute="height" constant="55" id="qIr-WF-6eD"/>
+                                                </constraints>
                                                 <state key="normal" title="Functional Movement">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -240,8 +301,12 @@
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="P6R-8E-lTq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="220" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLQ-m8-YWZ">
-                                                <rect key="frame" x="0.0" y="64" width="145" height="34"/>
+                                            <button opaque="NO" tag="220" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLQ-m8-YWZ" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="85" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="20k-vA-gy4"/>
+                                                    <constraint firstAttribute="height" constant="55" id="Ifk-fq-ZDh"/>
+                                                </constraints>
                                                 <state key="normal" title="Weight Loss">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -249,8 +314,12 @@
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="dXc-8J-FKc"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="240" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="047-pm-O92">
-                                                <rect key="frame" x="0.0" y="128" width="145" height="34"/>
+                                            <button opaque="NO" tag="240" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="047-pm-O92" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="170" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="dq9-ax-dh8"/>
+                                                    <constraint firstAttribute="height" constant="55" id="tBV-is-pBv"/>
+                                                </constraints>
                                                 <state key="normal" title="Olympic PowerLifting">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -258,8 +327,12 @@
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="BpA-xk-EWD"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="260" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5k-SM-n9K">
-                                                <rect key="frame" x="0.0" y="192" width="145" height="34"/>
+                                            <button opaque="NO" tag="260" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5k-SM-n9K" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="255" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="UlO-pe-XJb"/>
+                                                    <constraint firstAttribute="height" constant="55" id="xGT-UP-F6Z"/>
+                                                </constraints>
                                                 <state key="normal" title="Corrective">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -267,8 +340,12 @@
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="TIZ-Ou-nFa"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="280" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2b-7q-PMg">
-                                                <rect key="frame" x="0.0" y="256" width="145" height="34"/>
+                                            <button opaque="NO" tag="280" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2b-7q-PMg" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="340" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="Bgf-WV-U7w"/>
+                                                    <constraint firstAttribute="width" constant="200" id="Oi5-mb-V9Z"/>
+                                                </constraints>
                                                 <state key="normal" title="Nutritional Guidance">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -276,8 +353,12 @@
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="F6M-TO-WPM"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="300" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZu-Vz-bJv">
-                                                <rect key="frame" x="0.0" y="320" width="145" height="34"/>
+                                            <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZu-Vz-bJv" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="425" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="6uE-vu-3H8"/>
+                                                    <constraint firstAttribute="width" constant="200" id="MC6-RN-vpC"/>
+                                                </constraints>
                                                 <state key="normal" title="Core Strength">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -285,8 +366,12 @@
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="U4v-gc-Tb0"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="320" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8M-3u-y97">
-                                                <rect key="frame" x="0.0" y="384" width="145" height="34"/>
+                                            <button opaque="NO" tag="320" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8M-3u-y97" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="510" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="Jbb-j4-z2G"/>
+                                                    <constraint firstAttribute="height" constant="55" id="kIa-M9-3Pv"/>
+                                                </constraints>
                                                 <state key="normal" title="Pre/Post Natal">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -296,19 +381,18 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="KY5-N7-rBD" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="8i5-MX-GYR"/>
-                                            <constraint firstItem="MLQ-m8-YWZ" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="CvG-cK-6mJ"/>
-                                            <constraint firstItem="x2b-7q-PMg" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="edS-Ra-PfU"/>
-                                            <constraint firstItem="Y5k-SM-n9K" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="huU-lL-hsV"/>
-                                            <constraint firstItem="SZu-Vz-bJv" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="iQk-Q3-3oQ"/>
-                                            <constraint firstItem="L8M-3u-y97" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="nbb-1x-rgV"/>
+                                            <constraint firstItem="KY5-N7-rBD" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" constant="20" symbolic="YES" id="qKj-CZ-MuE"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="h0Z-HE-zzC">
-                                        <rect key="frame" x="245" y="0.0" width="175" height="418"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="h0Z-HE-zzC">
+                                        <rect key="frame" x="340" y="0.0" width="200" height="565"/>
                                         <subviews>
-                                            <button opaque="NO" tag="210" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS4-Xw-crJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="175" height="34"/>
+                                            <button opaque="NO" tag="210" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS4-Xw-crJ" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="AkM-PR-UA1"/>
+                                                    <constraint firstAttribute="width" constant="200" id="VBt-Nk-Lcr"/>
+                                                </constraints>
                                                 <state key="normal" title="Strength &amp; Conditioning">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -322,8 +406,12 @@
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="YYl-CE-x7E"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="230" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCE-Bo-k4u">
-                                                <rect key="frame" x="0.0" y="64" width="175" height="34"/>
+                                            <button opaque="NO" tag="230" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCE-Bo-k4u" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="85" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="0yu-Lw-GhS"/>
+                                                    <constraint firstAttribute="height" constant="55" id="Dca-ST-ofw"/>
+                                                </constraints>
                                                 <state key="normal" title="Rehabilitation">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -337,8 +425,12 @@
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="stX-mO-sbg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="250" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9q-Zq-JRY">
-                                                <rect key="frame" x="0.0" y="128" width="175" height="34"/>
+                                            <button opaque="NO" tag="250" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9q-Zq-JRY" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="170" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="It1-wO-HuL"/>
+                                                    <constraint firstAttribute="width" constant="200" id="VX6-aw-kQk"/>
+                                                </constraints>
                                                 <state key="normal" title="Obstacle Course">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -352,8 +444,12 @@
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="lpN-17-s5b"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="270" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-E5-3y8">
-                                                <rect key="frame" x="0.0" y="192" width="175" height="34"/>
+                                            <button opaque="NO" tag="270" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-E5-3y8" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="255" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="2IQ-g8-4sy"/>
+                                                    <constraint firstAttribute="width" constant="200" id="Ggc-Px-UgJ"/>
+                                                </constraints>
                                                 <state key="normal" title="Lean &amp; Tone">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -367,8 +463,12 @@
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="KNw-vC-q0l"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="290" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-xe-mUk">
-                                                <rect key="frame" x="0.0" y="256" width="175" height="34"/>
+                                            <button opaque="NO" tag="290" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-xe-mUk" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="340" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="RN7-Cq-B3G"/>
+                                                    <constraint firstAttribute="width" constant="200" id="RRi-rR-RUk"/>
+                                                </constraints>
                                                 <state key="normal" title="Balance &amp; Stabilization">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -382,8 +482,12 @@
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="2DU-m5-Kpv"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="310" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRC-oK-cjj">
-                                                <rect key="frame" x="0.0" y="320" width="175" height="34"/>
+                                            <button opaque="NO" tag="310" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRC-oK-cjj" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="425" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="5c9-S3-o2u"/>
+                                                    <constraint firstAttribute="height" constant="55" id="Hgm-DF-w6a"/>
+                                                </constraints>
                                                 <state key="normal" title="Small Group">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -397,8 +501,12 @@
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="O9W-7q-3se"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="330" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-Sg-QFk">
-                                                <rect key="frame" x="0.0" y="384" width="175" height="34"/>
+                                            <button opaque="NO" tag="330" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-Sg-QFk" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="510" width="200" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="9hd-df-6zL"/>
+                                                    <constraint firstAttribute="height" constant="55" id="nPj-DP-T1I"/>
+                                                </constraints>
                                                 <state key="normal" title="Running &amp; Endurance">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -413,84 +521,20 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="V1D-Sg-QFk" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="342-oD-zow"/>
-                                            <constraint firstItem="mRC-oK-cjj" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="DY2-oN-NDB"/>
-                                            <constraint firstItem="YCE-Bo-k4u" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="LFl-Uj-RG6"/>
-                                            <constraint firstItem="uNb-xe-mUk" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="Muf-jx-rAh"/>
-                                            <constraint firstItem="bzh-E5-3y8" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="N0x-ly-sJU"/>
-                                            <constraint firstItem="k9q-Zq-JRY" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="tWd-Qe-nxF"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="148" translatesAutoresizingMaskIntoConstraints="NO" id="t5w-5a-HTL">
-                                <rect key="frame" x="174" y="160" width="420" height="34"/>
-                                <subviews>
-                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-tc-rEg">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="34"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="h5d-Tl-nxj"/>
-                                        </constraints>
-                                        <state key="normal" title="Male">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="genderButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="GUR-Cy-flt"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="110" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAM-wa-C2u">
-                                        <rect key="frame" x="192" y="0.0" width="59" height="34"/>
-                                        <state key="normal" title="Female">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="genderButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="ReL-zQ-ZC9"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="120" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-Nt-YZL">
-                                        <rect key="frame" x="399" y="0.0" width="21" height="34"/>
-                                        <state key="normal" title="N/A">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="genderButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="evt-Al-pAp"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gK-QO-agI">
-                                <rect key="frame" x="209" y="831" width="350" height="80"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="93h-mi-Qbg"/>
-                                    <constraint firstAttribute="width" constant="350" id="vsx-VK-8QK"/>
-                                </constraints>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="nexButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="q0o-uV-kfc"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="t5w-5a-HTL" firstAttribute="centerX" secondItem="YDN-En-24d" secondAttribute="centerX" id="3Fj-oy-Yt9"/>
-                            <constraint firstItem="nR8-pZ-Qia" firstAttribute="top" secondItem="TkV-0M-UnZ" secondAttribute="bottom" constant="8" symbolic="YES" id="6MJ-5p-Jk1"/>
-                            <constraint firstItem="nR8-pZ-Qia" firstAttribute="leading" secondItem="p63-sb-laQ" secondAttribute="trailing" constant="61" id="99r-cO-pD8"/>
-                            <constraint firstItem="p63-sb-laQ" firstAttribute="top" secondItem="TkV-0M-UnZ" secondAttribute="bottom" constant="28" id="Dx4-0U-zWj"/>
-                            <constraint firstItem="t5w-5a-HTL" firstAttribute="width" secondItem="YDN-En-24d" secondAttribute="width" id="EI1-r9-LCM"/>
-                            <constraint firstItem="9gK-QO-agI" firstAttribute="centerX" secondItem="oEZ-Kh-mGw" secondAttribute="centerX" id="Eb0-im-Wue"/>
-                            <constraint firstItem="eJC-Tc-fCZ" firstAttribute="top" secondItem="nR8-pZ-Qia" secondAttribute="bottom" constant="946" id="Ehg-bk-RAV"/>
-                            <constraint firstItem="nR8-pZ-Qia" firstAttribute="trailing" secondItem="oEZ-Kh-mGw" secondAttribute="trailingMargin" id="I4E-Wz-zDB"/>
-                            <constraint firstItem="t5w-5a-HTL" firstAttribute="leading" secondItem="oEZ-Kh-mGw" secondAttribute="leading" constant="174" id="NK1-gw-JEc"/>
-                            <constraint firstItem="t5w-5a-HTL" firstAttribute="centerX" secondItem="p63-sb-laQ" secondAttribute="centerX" id="Voi-GS-29c"/>
-                            <constraint firstItem="YDN-En-24d" firstAttribute="top" secondItem="t5w-5a-HTL" secondAttribute="bottom" constant="55" id="XV3-bi-69G"/>
-                            <constraint firstItem="p63-sb-laQ" firstAttribute="centerX" secondItem="oEZ-Kh-mGw" secondAttribute="centerX" id="mPa-ko-S6C"/>
-                            <constraint firstItem="eJC-Tc-fCZ" firstAttribute="top" secondItem="9gK-QO-agI" secondAttribute="bottom" constant="113" id="phT-ch-zvb"/>
-                            <constraint firstItem="t5w-5a-HTL" firstAttribute="top" secondItem="p63-sb-laQ" secondAttribute="bottom" constant="40" id="uoI-OA-p6q"/>
+                            <constraint firstItem="t5w-5a-HTL" firstAttribute="centerX" secondItem="YDN-En-24d" secondAttribute="centerX" id="BDD-36-hPr"/>
+                            <constraint firstItem="YDN-En-24d" firstAttribute="width" secondItem="t5w-5a-HTL" secondAttribute="width" id="HhM-Np-PG6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="9gK-QO-agI" secondAttribute="bottom" constant="50" id="ILt-x7-m29"/>
+                            <constraint firstItem="YDN-En-24d" firstAttribute="top" secondItem="t5w-5a-HTL" secondAttribute="bottom" constant="39" id="RBo-Vj-Ruf"/>
+                            <constraint firstItem="YDN-En-24d" firstAttribute="centerX" secondItem="oEZ-Kh-mGw" secondAttribute="centerX" id="WVj-Le-bXl"/>
+                            <constraint firstItem="t5w-5a-HTL" firstAttribute="top" secondItem="p63-sb-laQ" secondAttribute="bottom" constant="36" id="qbN-wf-61b"/>
+                            <constraint firstItem="t5w-5a-HTL" firstAttribute="centerX" secondItem="9gK-QO-agI" secondAttribute="centerX" id="sFn-SN-z5q"/>
+                            <constraint firstItem="t5w-5a-HTL" firstAttribute="top" secondItem="oEZ-Kh-mGw" secondAttribute="top" constant="136" id="wmp-7y-Z69"/>
                         </constraints>
                     </view>
                     <connections>
@@ -548,7 +592,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9DR-7v-3vO">
-                                <rect key="frame" x="209" y="841" width="350" height="80"/>
+                                <rect key="frame" x="209" y="894" width="350" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="dpt-rM-Izn"/>
@@ -626,13 +670,13 @@
                             <constraint firstItem="gTO-0L-Y44" firstAttribute="trailing" secondItem="BMx-K7-YjY" secondAttribute="trailingMargin" id="39A-gT-yyo"/>
                             <constraint firstItem="gTO-0L-Y44" firstAttribute="leading" secondItem="MvB-Qc-v37" secondAttribute="trailing" constant="65" id="4UR-bc-oRS"/>
                             <constraint firstItem="MvB-Qc-v37" firstAttribute="centerX" secondItem="11N-z3-X2d" secondAttribute="centerX" id="698-Sk-3fm"/>
-                            <constraint firstItem="Zyj-7S-yPQ" firstAttribute="top" secondItem="9DR-7v-3vO" secondAttribute="bottom" constant="103" id="6j6-dq-BlP"/>
                             <constraint firstItem="gTO-0L-Y44" firstAttribute="top" secondItem="Tav-Hb-Rdx" secondAttribute="bottom" constant="8" symbolic="YES" id="TPH-YK-dVH"/>
                             <constraint firstItem="11N-z3-X2d" firstAttribute="top" secondItem="MvB-Qc-v37" secondAttribute="bottom" constant="78" id="auH-PN-oTv"/>
                             <constraint firstItem="MvB-Qc-v37" firstAttribute="top" secondItem="Tav-Hb-Rdx" secondAttribute="bottom" constant="53" id="erj-q8-RpD"/>
                             <constraint firstItem="Zyj-7S-yPQ" firstAttribute="top" secondItem="gTO-0L-Y44" secondAttribute="bottom" constant="946" id="jRV-CG-DLR"/>
                             <constraint firstItem="9DR-7v-3vO" firstAttribute="centerX" secondItem="BMx-K7-YjY" secondAttribute="centerX" id="tlp-ke-7fl"/>
                             <constraint firstItem="11N-z3-X2d" firstAttribute="centerX" secondItem="BMx-K7-YjY" secondAttribute="centerX" id="xWV-9l-Pon"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="9DR-7v-3vO" secondAttribute="bottom" constant="50" id="yJD-u7-SeM"/>
                         </constraints>
                     </view>
                     <connections>

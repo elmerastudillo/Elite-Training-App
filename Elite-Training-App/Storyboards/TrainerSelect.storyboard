@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -103,6 +104,17 @@
                                     <action selector="doneButtonPressed:" destination="QX5-1J-FwL" eventType="touchUpInside" id="MKp-SM-Uaf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.25" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZq-me-b93">
+                                <rect key="frame" x="698" y="30" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8ix-fS-bGq"/>
+                                    <constraint firstAttribute="width" constant="50" id="odt-3B-s9H"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Elite Logo"/>
+                                <connections>
+                                    <action selector="eliteButtonPressed:" destination="QX5-1J-FwL" eventType="touchUpInside" id="Aoq-9U-tKb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -112,6 +124,8 @@
                             <constraint firstItem="y6T-zh-jVz" firstAttribute="leading" secondItem="p4w-YL-1aC" secondAttribute="leading" id="Yuv-sP-ir9"/>
                             <constraint firstItem="sSw-ts-siO" firstAttribute="centerX" secondItem="p4w-YL-1aC" secondAttribute="centerX" id="gRp-bx-hXR"/>
                             <constraint firstItem="y6T-zh-jVz" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" constant="120" id="gSY-Zx-L5Z"/>
+                            <constraint firstItem="YZq-me-b93" firstAttribute="trailing" secondItem="p4w-YL-1aC" secondAttribute="trailingMargin" id="vQZ-KU-bFR"/>
+                            <constraint firstItem="YZq-me-b93" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" constant="10" id="vpK-xU-v4K"/>
                         </constraints>
                     </view>
                     <connections>
@@ -124,4 +138,7 @@
             <point key="canvasLocation" x="77.34375" y="79.1015625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Elite Logo" width="341" height="341"/>
+    </resources>
 </document>

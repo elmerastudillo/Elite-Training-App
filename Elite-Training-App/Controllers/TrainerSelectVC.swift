@@ -42,6 +42,13 @@ class TrainerSelectVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func eliteButtonPressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.pushViewController(loginVC, animated: false)
+    }
+    
     @IBAction func selectButtonPressed(sender: UIButton)
     {
         let point = trainerSelectVC.convert(CGPoint.zero, from: sender)
@@ -84,7 +91,8 @@ class TrainerSelectVC: UIViewController {
     }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
-        navigationController?.popToRootViewController(animated: true)
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.popToRootViewController(animated: false)
     }
 }
 
