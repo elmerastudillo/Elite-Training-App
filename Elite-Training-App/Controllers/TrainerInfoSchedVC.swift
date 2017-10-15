@@ -55,26 +55,32 @@ class TrainerInfoSchedVC: UIViewController {
             switch sender.tag
             {
             case 100..<200:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "sunday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 200..<300:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "monday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 300..<400:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "tuesday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 400..<500:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "wednesday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 500..<600:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "thursday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 600..<700:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "friday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
@@ -84,6 +90,14 @@ class TrainerInfoSchedVC: UIViewController {
         }
         else
         {
+            guard let layers = sender.layer.sublayers else {return}
+            for layer in layers
+            {
+                if layer.name == "GradientLayer"
+                {
+                    layer.removeFromSuperlayer()
+                }
+            }
             timeSlotDictionary.removeValue(forKey: sender.tag)
         }
         

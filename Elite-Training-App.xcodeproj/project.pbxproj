@@ -18,6 +18,7 @@
 		272613C01F798870006947D4 /* TrainerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272613BF1F798870006947D4 /* TrainerProfileVC.swift */; };
 		272C34211F87FCCE005ED814 /* TrainerEditBioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C34201F87FCCE005ED814 /* TrainerEditBioVC.swift */; };
 		272C34231F888B98005ED814 /* StorageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C34221F888B98005ED814 /* StorageReference.swift */; };
+		273017C01F9304B7003C8EE8 /* TrainerSched.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273017BF1F9304B7003C8EE8 /* TrainerSched.storyboard */; };
 		277EAD3D1F7890E70048B177 /* NewMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD381F7890E60048B177 /* NewMember.storyboard */; };
 		277EAD3E1F7890E70048B177 /* TrainerLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD391F7890E60048B177 /* TrainerLogin.storyboard */; };
 		277EAD3F1F7890E70048B177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277EAD3A1F7890E70048B177 /* LaunchScreen.storyboard */; };
@@ -38,6 +39,7 @@
 		279F0D611F70F1FF00C0C132 /* TrainerInfoSchedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D601F70F1FF00C0C132 /* TrainerInfoSchedVC.swift */; };
 		279FD1A91F84B565008EC6C2 /* TrainerPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279FD1A81F84B565008EC6C2 /* TrainerPopUp.storyboard */; };
 		279FD1AB1F84D031008EC6C2 /* TrainerTimeSlotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279FD1AA1F84D031008EC6C2 /* TrainerTimeSlotVC.swift */; };
+		27D667D41F93071C00D72097 /* proxima in Resources */ = {isa = PBXBuildFile; fileRef = 27D667D31F93071C00D72097 /* proxima */; };
 		27DA06541F7C20FB0073A1AA /* UIViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA06531F7C20FB0073A1AA /* UIViewController+Utilities.swift */; };
 		27DA06561F7C51810073A1AA /* TrainerBioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA06551F7C51810073A1AA /* TrainerBioVC.swift */; };
 		27E248371F83221B00A3DB37 /* TrainerSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E248361F83221B00A3DB37 /* TrainerSelect.storyboard */; };
@@ -59,6 +61,7 @@
 		272613BF1F798870006947D4 /* TrainerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerProfileVC.swift; path = Controllers/TrainerProfileVC.swift; sourceTree = "<group>"; };
 		272C34201F87FCCE005ED814 /* TrainerEditBioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerEditBioVC.swift; path = Controllers/TrainerEditBioVC.swift; sourceTree = "<group>"; };
 		272C34221F888B98005ED814 /* StorageReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorageReference.swift; path = Extensions/StorageReference.swift; sourceTree = "<group>"; };
+		273017BF1F9304B7003C8EE8 /* TrainerSched.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TrainerSched.storyboard; path = Storyboards/TrainerSched.storyboard; sourceTree = "<group>"; };
 		276283201F70D18E002046CE /* Elite-Training-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elite-Training-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277EAD381F7890E60048B177 /* NewMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = NewMember.storyboard; path = Storyboards/NewMember.storyboard; sourceTree = "<group>"; };
 		277EAD391F7890E60048B177 /* TrainerLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerLogin.storyboard; path = Storyboards/TrainerLogin.storyboard; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		279F0D601F70F1FF00C0C132 /* TrainerInfoSchedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerInfoSchedVC.swift; path = Controllers/TrainerInfoSchedVC.swift; sourceTree = "<group>"; };
 		279FD1A81F84B565008EC6C2 /* TrainerPopUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerPopUp.storyboard; path = Storyboards/TrainerPopUp.storyboard; sourceTree = "<group>"; };
 		279FD1AA1F84D031008EC6C2 /* TrainerTimeSlotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerTimeSlotVC.swift; path = Controllers/TrainerTimeSlotVC.swift; sourceTree = "<group>"; };
+		27D667D31F93071C00D72097 /* proxima */ = {isa = PBXFileReference; lastKnownFileType = folder; name = proxima; path = "Elite-Training-App/proxima"; sourceTree = SOURCE_ROOT; };
 		27DA06531F7C20FB0073A1AA /* UIViewController+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+Utilities.swift"; path = "Extensions/UIViewController+Utilities.swift"; sourceTree = "<group>"; };
 		27DA06551F7C51810073A1AA /* TrainerBioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerBioVC.swift; path = Controllers/TrainerBioVC.swift; sourceTree = "<group>"; };
 		27E248361F83221B00A3DB37 /* TrainerSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerSelect.storyboard; path = Storyboards/TrainerSelect.storyboard; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 			children = (
 				277EAD391F7890E60048B177 /* TrainerLogin.storyboard */,
 				277EAD3B1F7890E70048B177 /* TrainerProfile.storyboard */,
+				273017BF1F9304B7003C8EE8 /* TrainerSched.storyboard */,
 			);
 			name = Trainer;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 		276283221F70D18E002046CE /* Elite-Training-App */ = {
 			isa = PBXGroup;
 			children = (
+				27D667D31F93071C00D72097 /* proxima */,
 				27134A3C1F88934A009BF91D /* Helper */,
 				2784669A1F7B75430031B7BF /* Gradient-Color */,
 				278466971F7AD2840031B7BF /* Extensions */,
@@ -350,7 +356,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				271F28E81F71945200176F34 /* GoogleService-Info.plist in Resources */,
+				273017C01F9304B7003C8EE8 /* TrainerSched.storyboard in Resources */,
 				277EAD3D1F7890E70048B177 /* NewMember.storyboard in Resources */,
+				27D667D41F93071C00D72097 /* proxima in Resources */,
 				271F28EA1F719E3800176F34 /* Assets.xcassets in Resources */,
 				277EAD401F7890E70048B177 /* TrainerProfile.storyboard in Resources */,
 				27E248371F83221B00A3DB37 /* TrainerSelect.storyboard in Resources */,
@@ -388,6 +396,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PMSuperButton/PMSuperButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Presentr/Presentr.framework",
 				"${BUILT_PRODUCTS_DIR}/SendGrid/SendGrid.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -397,6 +406,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PMSuperButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Presentr.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SendGrid.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",

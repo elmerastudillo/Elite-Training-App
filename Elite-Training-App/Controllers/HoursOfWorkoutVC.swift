@@ -49,16 +49,31 @@ class HoursOfWorkoutVC: UIViewController {
         
         for button in buttons
         {
-            if sender.tag == button.tag
+            if button.tag == sender.tag
             {
                 button.isSelected = true
-                hoursPerWeek = sender.titleLabel?.text?.lowercased()
+                
+                button.layer.insertSublayer(GradientLayer.gradient(bounds: button.bounds), at: 0)
+                button.setNeedsDisplay()
+                hoursPerWeek = (button.titleLabel?.text?.lowercased())!
             }
             else
             {
-                button.isSelected = false
+                if button.isSelected == true
+                {
+                    button.isSelected = false
+                    guard let layers = button.layer.sublayers else {return}
+                    for layer in layers
+                    {
+                        if layer.name == "GradientLayer"
+                        {
+                            layer.removeFromSuperlayer()
+                        }
+                    }
+                }
             }
         }
+        
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
@@ -79,8 +94,8 @@ class HoursOfWorkoutVC: UIViewController {
         trainerSelVC.gender = genderPreference
         navigationController?.pushViewController(trainerSelVC, animated: true)
     }
-    
     @IBAction func eliteButtonPressed(_ sender: UIButton) {
+        
     }
 
     /*

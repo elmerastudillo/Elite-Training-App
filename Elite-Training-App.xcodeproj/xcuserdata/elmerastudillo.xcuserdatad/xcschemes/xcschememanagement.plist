@@ -7,15 +7,7 @@
 		<key>Elite-Training-App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>2762831F1F70D18E002046CE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
+			<integer>8</integer>
 		</dict>
 	</dict>
 </dict>

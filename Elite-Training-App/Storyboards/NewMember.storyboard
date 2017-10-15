@@ -9,11 +9,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
@@ -231,56 +226,70 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-En-24d">
-                                <rect key="frame" x="174" y="245" width="420" height="390"/>
+                                <rect key="frame" x="174" y="249" width="420" height="418"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZgH-Mz-N8N">
-                                        <rect key="frame" x="0.0" y="0.0" width="155" height="390"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZgH-Mz-N8N">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="418"/>
                                         <subviews>
-                                            <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY5-N7-rBD" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="155" height="30"/>
-                                                <state key="normal" title="Functional Movement"/>
+                                            <button opaque="NO" tag="200" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY5-N7-rBD">
+                                                <rect key="frame" x="0.0" y="0.0" width="145" height="34"/>
+                                                <state key="normal" title="Functional Movement">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="P6R-8E-lTq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="220" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLQ-m8-YWZ" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="60" width="155" height="30"/>
-                                                <state key="normal" title="Weight Loss"/>
+                                            <button opaque="NO" tag="220" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLQ-m8-YWZ">
+                                                <rect key="frame" x="0.0" y="64" width="145" height="34"/>
+                                                <state key="normal" title="Weight Loss">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="dXc-8J-FKc"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="240" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="047-pm-O92" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="120" width="155" height="30"/>
-                                                <state key="normal" title="Olympic / PowerLifting"/>
+                                            <button opaque="NO" tag="240" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="047-pm-O92">
+                                                <rect key="frame" x="0.0" y="128" width="145" height="34"/>
+                                                <state key="normal" title="Olympic PowerLifting">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="BpA-xk-EWD"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="260" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5k-SM-n9K" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="180" width="155" height="30"/>
-                                                <state key="normal" title="Corrective"/>
+                                            <button opaque="NO" tag="260" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5k-SM-n9K">
+                                                <rect key="frame" x="0.0" y="192" width="145" height="34"/>
+                                                <state key="normal" title="Corrective">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="TIZ-Ou-nFa"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="280" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2b-7q-PMg" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="240" width="155" height="30"/>
-                                                <state key="normal" title="Nutritional Guidance"/>
+                                            <button opaque="NO" tag="280" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2b-7q-PMg">
+                                                <rect key="frame" x="0.0" y="256" width="145" height="34"/>
+                                                <state key="normal" title="Nutritional Guidance">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="F6M-TO-WPM"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZu-Vz-bJv" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="300" width="155" height="30"/>
-                                                <state key="normal" title="Core Strength"/>
+                                            <button opaque="NO" tag="300" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZu-Vz-bJv">
+                                                <rect key="frame" x="0.0" y="320" width="145" height="34"/>
+                                                <state key="normal" title="Core Strength">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="U4v-gc-Tb0"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="320" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8M-3u-y97" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="360" width="155" height="30"/>
-                                                <state key="normal" title="Pre/Post Natal"/>
+                                            <button opaque="NO" tag="320" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8M-3u-y97">
+                                                <rect key="frame" x="0.0" y="384" width="145" height="34"/>
+                                                <state key="normal" title="Pre/Post Natal">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="smR-vt-WWO"/>
                                                 </connections>
@@ -295,54 +304,110 @@
                                             <constraint firstItem="L8M-3u-y97" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="nbb-1x-rgV"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="h0Z-HE-zzC">
-                                        <rect key="frame" x="255" y="0.0" width="165" height="390"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="h0Z-HE-zzC">
+                                        <rect key="frame" x="245" y="0.0" width="175" height="418"/>
                                         <subviews>
-                                            <button opaque="NO" tag="210" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS4-Xw-crJ" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="165" height="30"/>
-                                                <state key="normal" title="Strength &amp; Conditioning"/>
+                                            <button opaque="NO" tag="210" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS4-Xw-crJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="175" height="34"/>
+                                                <state key="normal" title="Strength &amp; Conditioning">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="YYl-CE-x7E"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="230" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCE-Bo-k4u" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="60" width="165" height="30"/>
-                                                <state key="normal" title="Rehabilitation"/>
+                                            <button opaque="NO" tag="230" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCE-Bo-k4u">
+                                                <rect key="frame" x="0.0" y="64" width="175" height="34"/>
+                                                <state key="normal" title="Rehabilitation">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="stX-mO-sbg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="250" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9q-Zq-JRY" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="120" width="165" height="30"/>
-                                                <state key="normal" title="Obstacle Course"/>
+                                            <button opaque="NO" tag="250" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9q-Zq-JRY">
+                                                <rect key="frame" x="0.0" y="128" width="175" height="34"/>
+                                                <state key="normal" title="Obstacle Course">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="lpN-17-s5b"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="270" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-E5-3y8" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="180" width="165" height="30"/>
-                                                <state key="normal" title="Lean &amp; Tone"/>
+                                            <button opaque="NO" tag="270" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-E5-3y8">
+                                                <rect key="frame" x="0.0" y="192" width="175" height="34"/>
+                                                <state key="normal" title="Lean &amp; Tone">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="KNw-vC-q0l"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="290" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-xe-mUk" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="240" width="165" height="30"/>
-                                                <state key="normal" title="Balance &amp; Stabilization"/>
+                                            <button opaque="NO" tag="290" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-xe-mUk">
+                                                <rect key="frame" x="0.0" y="256" width="175" height="34"/>
+                                                <state key="normal" title="Balance &amp; Stabilization">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="2DU-m5-Kpv"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="310" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRC-oK-cjj" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="300" width="165" height="30"/>
-                                                <state key="normal" title="Small Group"/>
+                                            <button opaque="NO" tag="310" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRC-oK-cjj">
+                                                <rect key="frame" x="0.0" y="320" width="175" height="34"/>
+                                                <state key="normal" title="Small Group">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="O9W-7q-3se"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="330" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-Sg-QFk" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="360" width="165" height="30"/>
-                                                <state key="normal" title="Running &amp; Endurance"/>
+                                            <button opaque="NO" tag="330" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-Sg-QFk">
+                                                <rect key="frame" x="0.0" y="384" width="175" height="34"/>
+                                                <state key="normal" title="Running &amp; Endurance">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="GZZ-PA-boz"/>
                                                 </connections>
@@ -360,29 +425,35 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="148" translatesAutoresizingMaskIntoConstraints="NO" id="t5w-5a-HTL">
-                                <rect key="frame" x="174" y="160" width="420" height="30"/>
+                                <rect key="frame" x="174" y="160" width="420" height="34"/>
                                 <subviews>
-                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-tc-rEg" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="30"/>
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-tc-rEg">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="34"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="h5d-Tl-nxj"/>
                                         </constraints>
-                                        <state key="normal" title="Male"/>
+                                        <state key="normal" title="Male">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="genderButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="GUR-Cy-flt"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAM-wa-C2u" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                        <rect key="frame" x="192" y="0.0" width="50" height="30"/>
-                                        <state key="normal" title="Female"/>
+                                    <button opaque="NO" tag="110" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAM-wa-C2u">
+                                        <rect key="frame" x="192" y="0.0" width="59" height="34"/>
+                                        <state key="normal" title="Female">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="genderButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="ReL-zQ-ZC9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="120" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-Nt-YZL" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                        <rect key="frame" x="390" y="0.0" width="30" height="30"/>
-                                        <state key="normal" title="N/A"/>
+                                    <button opaque="NO" tag="120" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-Nt-YZL">
+                                        <rect key="frame" x="399" y="0.0" width="21" height="34"/>
+                                        <state key="normal" title="N/A">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="genderButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="evt-Al-pAp"/>
                                         </connections>
@@ -487,19 +558,18 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextButtonPressed:" destination="EsD-IU-qty" eventType="touchUpInside" id="DQp-ek-tSg"/>
+                                    <action selector="nextButtonPressed:" destination="EsD-IU-qty" eventType="touchUpInside" id="ISB-g5-cEP"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="11N-z3-X2d">
                                 <rect key="frame" x="90" y="277" width="588" height="470"/>
                                 <subviews>
-                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qh-6f-aBw" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qh-6f-aBw" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="588" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="580" id="9fg-7a-ffX"/>
                                             <constraint firstAttribute="height" constant="80" id="Hz2-Xw-5lf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="&lt;3 Hours">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -507,7 +577,7 @@
                                             <action selector="hoursButtonpressed:" destination="EsD-IU-qty" eventType="touchUpInside" id="USF-5V-0fi"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3n-lf-wCU" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                    <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3n-lf-wCU" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="130" width="588" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="81o-EW-VWo"/>
@@ -520,7 +590,7 @@
                                             <action selector="hoursButtonpressed:" destination="EsD-IU-qty" eventType="touchUpInside" id="VRt-hE-y55"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="120" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ym-AS-GuI" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                    <button opaque="NO" tag="120" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ym-AS-GuI" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="260" width="588" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="580" id="DNX-hg-Upc"/>
@@ -533,7 +603,7 @@
                                             <action selector="hoursButtonpressed:" destination="EsD-IU-qty" eventType="touchUpInside" id="bFk-Zb-waS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="130" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bff-kX-iL3" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                    <button opaque="NO" tag="130" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bff-kX-iL3" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="390" width="588" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="1Tn-7a-7cW"/>

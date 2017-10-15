@@ -23,31 +23,32 @@ struct GradientLayer
     
     // Views
     // Gradient Layer
-    static func gradientBorder(bounds: CGRect) -> CAGradientLayer
-    {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = colorSet()
-        gradientLayer.frame = bounds
-        //Make color gradient start from left to right
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
-        //gradientLayer.cornerRadius = 10
-        
-        let shape = CAShapeLayer()
-        shape.lineWidth = 4
-        shape.path = UIBezierPath(rect: bounds).cgPath
-        shape.strokeColor = UIColor.black.cgColor
-        shape.fillColor = UIColor.clear.cgColor
-        shape.cornerRadius = 10
-        gradientLayer.mask = shape
-        
-        return gradientLayer
-    }
+//    static func gradientBorder(bounds: CGRect) -> CAGradientLayer
+//    {
+//        let gradientLayer = CAGradientLayer()
+//        gradientLayer.colors = colorSet()
+//        gradientLayer.frame = bounds
+//        //Make color gradient start from left to right
+//        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+//        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+//        //gradientLayer.cornerRadius = 10
+//        
+//        let shape = CAShapeLayer()
+//        shape.lineWidth = 4
+//        shape.path = UIBezierPath(rect: bounds).cgPath
+//        shape.strokeColor = UIColor.black.cgColor
+//        shape.fillColor = UIColor.clear.cgColor
+//        shape.cornerRadius = 10
+//        gradientLayer.mask = shape
+//        
+//        return gradientLayer
+//    }
     
     // Gradient border with transparent fill
     static func gradient(bounds: CGRect) -> CAGradientLayer
     {
         let gradientLayer = CAGradientLayer()
+        gradientLayer.name = "GradientLayer"
         gradientLayer.colors = colorSet()
         gradientLayer.frame = bounds
         //Make color gradient start from left to right

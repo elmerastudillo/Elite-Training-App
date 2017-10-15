@@ -60,6 +60,7 @@ class TrainerInfoSpecVC: UIViewController {
         {
             guard let focus = sender.titleLabel?.text?.lowercased() else {return}
             trainingFocusPref[focus] = focus
+            
         }
         else
         {

@@ -23,9 +23,6 @@ class EliteButton: UIButton {
         //let bthWidth = 300
         //let btnHeight = 60
 
-        //self.frame.size = CGSize(width: bthWidth, height: btnHeight)
-//        self.frame.origin = CGPoint(x: (((superview?.frame.width)! / 2) - (self.frame.width / 2)), y: self.frame.origin.y)
-//
         //self.layer.cornerRadius = 10.0
         //self.clipsToBounds = true
         
@@ -34,7 +31,13 @@ class EliteButton: UIButton {
 //        
 //        self.addTarget(self, action: #selector(touchDown(sender:)), for: .touchDown);
 //        self.addTarget(self, action: #selector(touchDownAgain(sender:)), for: .touchDownRepeat)
-        self.layer.addSublayer(GradientLayer.gradientBorder(bounds: self.bounds))
+        
+//        self.layer.addSublayer(GradientLayer.gradientBorder(bounds: self.bounds))
+        
+        
+        
+        self.backgroundColor = UIColor.gray
+        self.titleLabel?.textColor = UIColor.white
     }
     
     //target functions
@@ -61,6 +64,7 @@ class EliteButton: UIButton {
 //            if(newValue){
 //                print(newValue)
 //                self.isSelected = !self.isSelected
+//                self.titleLabel?.textColor = UIColor.white
 //            }
 //
 //            super.isHighlighted = newValue
@@ -70,33 +74,38 @@ class EliteButton: UIButton {
 //    override var isSelected: Bool{
 //
 //    }
-    override var isSelected: Bool {
-        willSet(newValue) {
-            super.isSelected = newValue;
-            print(newValue)
-            // If newValue is true change the gradient colorway
-            if isSelected {
-                //self.layer.sublayers?[0].removeFromSuperlayer()
-                self.layer.insertSublayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
-                //self.layer.insertSubLayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
-                self.setNeedsDisplay()
+//    override var isSelected: Bool {
+//        willSet(newValue) {
+//            super.isSelected = newValue;
+//            print(newValue)
+//            // If newValue is true change the gradient colorway
+//            if isSelected {
+//                //self.layer.sublayers?[0].removeFromSuperlayer()
 //                self.layer.insertSublayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
-                //layer.borderWidth = 5.0
-            } else {
-                //self.layer.removeFromSuperlayer()
-                self.titleLabel?.textColor = UIColor.black
-//                view.layer.sublayers?[0].removeFromSuperLayer()
-//                view.layer.insertSubLayer(MyLayer, at: 0)
-                //self.layer.sublayers?[0].removeFromSuperlayer()
-                self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 1)
-                //self.layer.insertSubLayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
-                self.setNeedsDisplay()
-//                self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 2)
+//                //self.layer.insertSubLayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
 //                self.setNeedsDisplay()
-                //layer.borderWidth = 0.0
-            }
-        }
-    }
+////                self.layer.insertSublayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
+//                //layer.borderWidth = 5.0
+//            } else {
+//                self.layer.removeAllAnimations()
+//                self.backgroundColor = UIColor.gray
+//                self.titleLabel?.textColor = UIColor.white
+//               
+//            }
+//        }
+//    }
+//    
+    //self.layer.removeFromSuperlayer()
+//    self.titleLabel?.textColor = UIColor.black
+    //                view.layer.sublayers?[0].removeFromSuperLayer()
+    //                view.layer.insertSubLayer(MyLayer, at: 0)
+    //self.layer.sublayers?[0].removeFromSuperlayer()
+//    self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 1)
+    //self.layer.insertSubLayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
+//    self.setNeedsDisplay()
+    //                self.layer.insertSublayer(GradientLayer.gradientBorder(bounds: self.bounds), at: 2)
+    //                self.setNeedsDisplay()
+    //layer.borderWidth = 0.0
     
     
     

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SendGrid
+//import SendGrid
 
 class TrainerTimeSlotVC: UIViewController {
     
@@ -88,6 +88,7 @@ class TrainerTimeSlotVC: UIViewController {
 //                print(error)
 //            }
 //        }
+        print(timeSlotDictionary)
         dismiss(animated: true, completion: nil)
     }
     
@@ -99,26 +100,32 @@ class TrainerTimeSlotVC: UIViewController {
             switch sender.tag
             {
             case 100..<200:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "sunday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 200..<300:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "monday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 300..<400:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "tuesday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 400..<500:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "wednesday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 500..<600:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "thursday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 600..<700:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "friday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
@@ -129,6 +136,14 @@ class TrainerTimeSlotVC: UIViewController {
         else
         {
             timeSlotDictionary.removeValue(forKey: sender.tag)
+            guard let layers = sender.layer.sublayers else {return}
+            for layer in layers
+            {
+                if layer.name == "GradientLayer"
+                {
+                    layer.removeFromSuperlayer()
+                }
+            }
         }
         
         print(timeSlotDictionary)
@@ -137,7 +152,8 @@ class TrainerTimeSlotVC: UIViewController {
     // MARK: - Helper Functions
     func createBttnTimeSlotWithStackV(stackView: UIStackView, time: String, tag: Int)
     {
-        let slotButton = EliteButton(frame:CGRect(x: 0, y: 0, width: stackView.frame.width, height: 20.0))
+        let slotButton = UIButton(type: .custom)
+        slotButton.frame = CGRect(x: 0, y: 0, width: stackView.frame.width, height: 20.0)
         slotButton.tintColor = UIColor.white
         slotButton.setTitle(time, for: UIControlState())
         slotButton.tag = tag

@@ -20,7 +20,7 @@ class TrainerPrefVC: UIViewController {
     
    
     // MARK: - Button Outlets
-     @IBOutlet weak var nextButton: EliteButton!
+     @IBOutlet weak var nextButton: UIButton!
     // MARK: - Gender Preference
     @IBOutlet weak var maleButton: UIButton!
     @IBOutlet weak var femaleButton: UIButton!
@@ -87,13 +87,24 @@ class TrainerPrefVC: UIViewController {
         {
             if button.tag == sender.tag
             {
-//                button.isSelected = true
-                //button.isSelected = !button.isSelected
+                button.isSelected = true
+                 button.layer.insertSublayer(GradientLayer.gradient(bounds: button.bounds), at: 0)
+                button.setNeedsDisplay()
                 genderPreference = (button.titleLabel?.text?.lowercased())!
             }
             else
             {
-//                button.isSelected = false
+                if button.isSelected == true
+                {
+                    button.isSelected = false
+                    for layer in button.layer.sublayers!
+                    {
+                        if layer.name == "GradientLayer"
+                        {
+                            layer.removeFromSuperlayer()
+                        }
+                    }
+                }
             }
         }
     }
@@ -106,13 +117,29 @@ class TrainerPrefVC: UIViewController {
         {
             if button.tag == sender.tag
             {
-                //button.isSelected = true
+                button.isSelected = true
                 
+                //self.layer.sublayers?[0].removeFromSuperlayer()
+                button.layer.insertSublayer(GradientLayer.gradient(bounds: button.bounds), at: 0)
+                //self.layer.insertSubLayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
+                button.setNeedsDisplay()
+                //                self.layer.insertSublayer(Grad
                 trainingFocusPref = (button.titleLabel?.text?.lowercased())!
             }
             else
             {
-                //button.isSelected = false
+                if button.isSelected == true
+                {
+                    button.isSelected = false
+                    guard let layers = button.layer.sublayers else {return}
+                    for layer in layers
+                    {
+                        if layer.name == "GradientLayer"
+                        {
+                            layer.removeFromSuperlayer()
+                        }
+                    }
+                }
             }
         }
     }
@@ -124,6 +151,8 @@ class TrainerPrefVC: UIViewController {
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
+    
+    
     
 
 }

@@ -50,15 +50,15 @@ class TrainerSelectVC: UIViewController {
         }
         let currentTrainer = trainers[indexPath.item]
         let bioPresenter = Presentr(presentationType: .popup)
-        bioPresenter.presentationType = .popup
+        bioPresenter.presentationType = .custom(width: .sideMargin(value: 60), height: .sideMargin(value: 60), center: .center)
         bioPresenter.backgroundOpacity = 0.50
+        bioPresenter.blurBackground = true
         bioPresenter.roundCorners = true
         bioPresenter.dismissOnSwipe = true
         let storyboard = UIStoryboard.init(name: "TrainerPopUp", bundle: nil)
         let trainerTimeSlotVC = storyboard.instantiateViewController(withIdentifier: "TrainerTimeSlotVC") as! TrainerTimeSlotVC
         trainerTimeSlotVC.trainer = currentTrainer
         customPresentViewController(bioPresenter, viewController: trainerTimeSlotVC, animated: true, completion: nil)
-        
     }
     
     @IBAction func infoButtonPressed(sender: UIButton)
@@ -119,7 +119,7 @@ extension TrainerSelectVC : UICollectionViewDataSource
         //cell.backgroundColor = UIColor.darkGray
 //        cell.imageView.backgroundColor = UIColor.purple
         cell.imageView.roundedImage()
-        cell.imageView.layer.addSublayer(GradientLayer.gradientBorder(bounds: cell.bounds))
+//        cell.imageView.layer.addSublayer(GradientLayer.gradientBorder(bounds: cell.bounds))
         
         cell.selectButton.isHidden = true
         cell.infoButton.isHidden = true
