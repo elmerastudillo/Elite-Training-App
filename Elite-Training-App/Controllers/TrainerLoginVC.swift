@@ -89,7 +89,6 @@ extension TrainerLoginVC
 {
     func configureView()
     {
-        applyKeyboardPush()
         applyKeyboardDismisser()
     }
 }

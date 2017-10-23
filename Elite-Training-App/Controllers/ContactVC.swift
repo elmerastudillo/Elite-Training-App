@@ -109,7 +109,6 @@ extension ContactVC
 {
     func configureView()
     {
-        applyKeyboardPush()
         applyKeyboardDismisser()
     }
 }
