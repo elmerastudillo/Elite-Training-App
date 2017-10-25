@@ -243,7 +243,7 @@
                                             <constraint firstAttribute="height" constant="55" id="Dws-tb-8t3"/>
                                             <constraint firstAttribute="width" constant="80" id="peW-3r-IHA"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                         <state key="normal" title="Male">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -257,7 +257,7 @@
                                             <constraint firstAttribute="height" constant="55" id="1ei-vG-eHx"/>
                                             <constraint firstAttribute="width" constant="80" id="IWp-mC-cM7"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                         <state key="normal" title="Female">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -271,7 +271,7 @@
                                             <constraint firstAttribute="width" constant="80" id="PN5-C4-Wil"/>
                                             <constraint firstAttribute="height" constant="55" id="htY-Ba-75I"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                         <state key="normal" title="N/A">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -308,7 +308,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="GG2-Zh-MBU"/>
                                                     <constraint firstAttribute="height" constant="55" id="qIr-WF-6eD"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Functional Movement">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -322,7 +322,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="20k-vA-gy4"/>
                                                     <constraint firstAttribute="height" constant="55" id="Ifk-fq-ZDh"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Weight Loss">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -336,7 +336,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="dq9-ax-dh8"/>
                                                     <constraint firstAttribute="height" constant="55" id="tBV-is-pBv"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Olympic PowerLifting">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -350,7 +350,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="UlO-pe-XJb"/>
                                                     <constraint firstAttribute="height" constant="55" id="xGT-UP-F6Z"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Corrective">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -364,7 +364,7 @@
                                                     <constraint firstAttribute="height" constant="55" id="Bgf-WV-U7w"/>
                                                     <constraint firstAttribute="width" constant="200" id="Oi5-mb-V9Z"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Nutritional Guidance">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -378,7 +378,7 @@
                                                     <constraint firstAttribute="height" constant="55" id="6uE-vu-3H8"/>
                                                     <constraint firstAttribute="width" constant="200" id="MC6-RN-vpC"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Core Strength">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -392,7 +392,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="Jbb-j4-z2G"/>
                                                     <constraint firstAttribute="height" constant="55" id="kIa-M9-3Pv"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Pre/Post Natal">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -414,7 +414,7 @@
                                                     <constraint firstAttribute="height" constant="55" id="AkM-PR-UA1"/>
                                                     <constraint firstAttribute="width" constant="200" id="VBt-Nk-Lcr"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Strength &amp; Conditioning">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -434,7 +434,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="0yu-Lw-GhS"/>
                                                     <constraint firstAttribute="height" constant="55" id="Dca-ST-ofw"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Rehabilitation">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -454,7 +454,7 @@
                                                     <constraint firstAttribute="height" constant="55" id="It1-wO-HuL"/>
                                                     <constraint firstAttribute="width" constant="200" id="VX6-aw-kQk"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Obstacle Course">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -474,7 +474,7 @@
                                                     <constraint firstAttribute="height" constant="55" id="2IQ-g8-4sy"/>
                                                     <constraint firstAttribute="width" constant="200" id="Ggc-Px-UgJ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Lean &amp; Tone">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -494,7 +494,7 @@
                                                     <constraint firstAttribute="height" constant="55" id="RN7-Cq-B3G"/>
                                                     <constraint firstAttribute="width" constant="200" id="RRi-rR-RUk"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Balance &amp; Stabilization">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -514,7 +514,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="5c9-S3-o2u"/>
                                                     <constraint firstAttribute="height" constant="55" id="Hgm-DF-w6a"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Small Group">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -534,7 +534,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="9hd-df-6zL"/>
                                                     <constraint firstAttribute="height" constant="55" id="nPj-DP-T1I"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                                 <state key="normal" title="Running &amp; Endurance">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -632,7 +632,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="Hz2-Xw-5lf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                         <state key="normal" title="&lt;3 Hours">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -645,7 +645,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="81o-EW-VWo"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                         <state key="normal" title="&lt;5 Hours">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -658,7 +658,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="eoY-iO-lFV"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                         <state key="normal" title="&lt; 7 Hours">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -671,7 +671,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="1Tn-7a-7cW"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                         <state key="normal" title="10+ Hours">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>

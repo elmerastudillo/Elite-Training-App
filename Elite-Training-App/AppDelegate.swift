@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import IQKeyboardManager
+import IQKeyboardManagerSwift
 
 typealias FIRUser = FirebaseAuth.User
 
