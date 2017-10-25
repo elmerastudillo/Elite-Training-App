@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double PMSuperButtonVersionNumber;
-FOUNDATION_EXPORT const unsigned char PMSuperButtonVersionString[];
+FOUNDATION_EXPORT double IQKeyboardManagerSwiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char IQKeyboardManagerSwiftVersionString[];
 

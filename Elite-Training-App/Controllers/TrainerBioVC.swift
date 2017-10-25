@@ -16,12 +16,17 @@ class TrainerBioVC : UIViewController
     @IBOutlet weak var fullnameLabel: UILabel!
     @IBOutlet weak var focusLabel: UILabel!
     @IBOutlet weak var bioLabel: UILabel!
+    @IBOutlet weak var doneButton: UIButton!
     
     var trainer : Trainer?
     var focus: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        doneButton.layer.addSublayer(GradientLayer.gradient(bounds: doneButton.bounds))
+        doneButton.layer.cornerRadius = 5.0
+        doneButton.layer.masksToBounds = true
         
         guard let trainer = self.trainer else { return }
         fullnameLabel.text = trainer.fullname
@@ -32,7 +37,10 @@ class TrainerBioVC : UIViewController
         profileImage.kf.setImage(with: imageURL)
     }
     
-//    func configureView()
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    //    func configureView()
 //    {
 //        let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width - 20 , height: self.view.bounds.height - 40 ))
 //

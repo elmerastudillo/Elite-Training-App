@@ -26,6 +26,8 @@ class TrainerSelectVC: UIViewController {
         guard let gender = self.gender else { return }
         
         doneButton.layer.addSublayer(GradientLayer.gradient(bounds: doneButton.bounds))
+        doneButton.layer.cornerRadius = 5.0
+        doneButton.layer.masksToBounds = true
         
         NewMemberService.queryForTrainer(focus: focus, gender: gender) { (trainers) in
             self.trainers = trainers
@@ -43,10 +45,20 @@ class TrainerSelectVC: UIViewController {
     }
     
     @IBAction func eliteButtonPressed(_ sender: UIButton) {
-        let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
-        let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
-        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
-        self.navigationController?.pushViewController(loginVC, animated: false)
+        if Trainer.loggedIn == true
+        {
+            let storyboard = UIStoryboard.init(name: "TrainerProfile", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerProfileVC")
+            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+            self.navigationController?.pushViewController(loginVC, animated: false)
+        }
+        else
+        {
+            let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
+            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+            self.navigationController?.pushViewController(loginVC, animated: false)
+        }
     }
     
     @IBAction func selectButtonPressed(sender: UIButton)
@@ -101,8 +113,14 @@ extension TrainerSelectVC : UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)
         let cell = collectionView.cellForItem(at: indexPath) as!  TrainerCell
+        if cell.selectButton.isHidden == true
+        {
+            cell.imageView.layer.insertSublayer(GradientLayer.gradientOpaque(bounds: cell.imageView.bounds),  at: 0)
+        }
         cell.selectButton.isHidden = false
         cell.infoButton.isHidden = false
+//        cell.imageView.layer.insertSublayer(GradientLayer.gradient(bounds: cell.bounds), at: 0)
+        
         cell.selectButton.addTarget(self, action: #selector(selectButtonPressed), for: UIControlEvents.touchDown)
         cell.infoButton.addTarget(self, action: #selector(infoButtonPressed), for: UIControlEvents.touchDown)
     }
@@ -113,6 +131,15 @@ extension TrainerSelectVC : UICollectionViewDelegate
         {
             cell.selectButton.isHidden = true
             cell.infoButton.isHidden = true
+            
+            guard let layers = cell.imageView.layer.sublayers else {return}
+            for layer in layers
+            {
+                if layer.name == "GradientLayer"
+                {
+                    layer.removeFromSuperlayer()
+                }
+            }
         }
     }
 }
@@ -133,11 +160,12 @@ extension TrainerSelectVC : UICollectionViewDataSource
         cell.infoButton.isHidden = true
         cell.nameLabel.text = trainer.fullname
         cell.focusLabel.text = focus
+//        cell.layer.borderWidth = 5.0
+//        cell.imageView.layer.insertSublayer(GradientLayer.gradientBorder(bounds: cell.imageView.bounds), at: 0)
+//        cell.layer.insertSublayer(GradientLayer.gradientBorder(bounds: cell.bounds), at: 0)
         guard let imgURL = trainer.profileImage else { return cell }
         let imageURL = URL(string:imgURL)
         cell.imageView.kf.setImage(with:imageURL)
-        
-        
         
         return cell
     }
@@ -159,7 +187,6 @@ extension TrainerSelectVC: UICollectionViewDelegateFlowLayout
         
         let itemWidth = (collectionView.bounds.width - totalHorizontalSpacing) / columns
         let itemSize = CGSize(width: itemWidth, height: itemWidth)
-        
         
         return itemSize
     }

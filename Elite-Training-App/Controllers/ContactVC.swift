@@ -19,6 +19,8 @@ class ContactVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.layer.addSublayer(GradientLayer.gradient(bounds: nextButton.bounds))
+        nextButton.layer.cornerRadius = 5.0
+        nextButton.layer.masksToBounds = true
         configureView()
     }
 
@@ -28,10 +30,20 @@ class ContactVC: UIViewController {
     }
     
     @IBAction func eliteButtonPressed(_ sender: UIButton) {
-        let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
-        let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
-        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
-        self.navigationController?.pushViewController(loginVC, animated: false)
+        if Trainer.loggedIn == true
+        {
+            let storyboard = UIStoryboard.init(name: "TrainerProfile", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerProfileVC")
+            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+            self.navigationController?.pushViewController(loginVC, animated: false)
+        }
+        else
+        {
+            let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
+            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+            self.navigationController?.pushViewController(loginVC, animated: false)
+        }
     }
 
     @IBAction func nextButtonPressed(_ sender: Any) {

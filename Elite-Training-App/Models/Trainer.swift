@@ -17,6 +17,7 @@ class Trainer : NSObject
     var bio: String
     var gender : String?
     var uid : String
+    static var loggedIn : Bool = false
     
     init(uid: String, emailAddress : String, fullname: String, bio: String, profileImage: String?)
     {

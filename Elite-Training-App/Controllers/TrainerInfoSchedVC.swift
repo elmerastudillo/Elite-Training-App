@@ -26,11 +26,15 @@ class TrainerInfoSchedVC: UIViewController {
     var timeSlotButtons: [UIButton]?
     var buttonIsSelected = false
     
-
+    @IBOutlet weak var doneButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        doneButton.layer.insertSublayer(GradientLayer.gradient(bounds: doneButton.bounds), at: 0)
+        doneButton.layer.cornerRadius = 5.0
+        doneButton.layer.masksToBounds = true
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,6 +43,10 @@ class TrainerInfoSchedVC: UIViewController {
     }
     
     
+    @IBAction func eliteButtonPressed(_ sender: UIButton) {
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.popToRootViewController(animated: false)
+    }
     
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
@@ -104,8 +112,6 @@ class TrainerInfoSchedVC: UIViewController {
         
         print(timeSlotDictionary)
     }
-    
-    
     
     /*
     // MARK: - Navigation

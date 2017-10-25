@@ -18,6 +18,8 @@ class WelcomeVC: UIViewController {
         // Do any additional setup after loading the view.
         
         joinNowButton.layer.addSublayer(GradientLayer.gradient(bounds: joinNowButton.bounds))
+        joinNowButton.layer.cornerRadius = 5.0
+        joinNowButton.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,12 +28,22 @@ class WelcomeVC: UIViewController {
     }
     
     @IBAction func EliteButtonPressed(_ sender: UIButton) {
-        let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
-        let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
-        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
-        self.navigationController?.pushViewController(loginVC, animated: false)
+        if Trainer.loggedIn == true
+        {
+            let storyboard = UIStoryboard.init(name: "TrainerProfile", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerProfileVC")
+            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+            self.navigationController?.pushViewController(loginVC, animated: false)
+        }
+        else
+        {
+            let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
+            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+            self.navigationController?.pushViewController(loginVC, animated: false)
+        }
     }
-
+    
     @IBAction func joinNowButtonPressed(_ sender: UIButton) {
         
 //        let transition: CATransition = CATransition()
@@ -39,7 +51,6 @@ class WelcomeVC: UIViewController {
 //        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
 //        transition.type = kCATransitionFade
         self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
-        
         
         let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
         let contactVC = storyboard.instantiateViewController(withIdentifier: "ContactVC") as! ContactVC

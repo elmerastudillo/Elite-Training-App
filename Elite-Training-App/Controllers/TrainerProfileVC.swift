@@ -26,8 +26,26 @@ class TrainerProfileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bioButton.layer.insertSublayer(GradientLayer.gradient(bounds: bioButton.bounds), at: 0)
+        bioButton.layer.cornerRadius = 5.0
+        bioButton.layer.masksToBounds = true
+        
+        logoutButton.layer.insertSublayer(GradientLayer.gradient(bounds: bioButton.bounds), at: 0)
+        logoutButton.layer.cornerRadius = 5.0
+        logoutButton.layer.masksToBounds = true
+        
+        updateFocusButton.layer.insertSublayer(GradientLayer.gradient(bounds: bioButton.bounds), at: 0)
+        updateFocusButton.layer.cornerRadius = 5.0
+        updateFocusButton.layer.masksToBounds = true
+        
+        updateScheduleButton.layer.insertSublayer(GradientLayer.gradient(bounds: bioButton.bounds), at: 0)
+        updateScheduleButton.layer.cornerRadius = 5.0
+        updateScheduleButton.layer.masksToBounds = true
         // Do any additional setup after loading the view.
         print(Trainer.current)
+        
+        self.trainerImageView.roundedImage()
         
         photoHelper.completionHandler = { image in
             self.trainerImageView.image = image
@@ -60,16 +78,11 @@ class TrainerProfileVC: UIViewController {
         trainerImageView.backgroundColor = UIColor.blue
         
         authHandle = AuthService.authListener(viewController: self)
-        
-        let trainerImageURL = Trainer.current.profileImage
+        guard let trainerImageURL = URL(string: Trainer.current.profileImage!) else { return }
+//        let trainerImageURL = URL(string: Trainer.current.profileImage)
         self.fullNameLabel.text = Trainer.current.fullname
         // TODO: Set profile picture in firebase
-//        self.trainerImageView.kf.setImage(with: trainerImageURL)
-        
-        bioButton.layer.addSublayer(GradientLayer.gradient(bounds: bioButton.bounds))
-        logoutButton.layer.addSublayer(GradientLayer.gradient(bounds: logoutButton.bounds))
-        updateFocusButton.layer.addSublayer(GradientLayer.gradient(bounds: updateFocusButton.bounds))
-        updateScheduleButton.layer.addSublayer(GradientLayer.gradient(bounds: updateScheduleButton.bounds))
+        self.trainerImageView.kf.setImage(with: trainerImageURL)
     }
     
     deinit {
@@ -117,6 +130,7 @@ class TrainerProfileVC: UIViewController {
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
         do {
             try Auth.auth().signOut()
+            Trainer.loggedIn = false
             self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
             self.navigationController?.popToRootViewController(animated: false)
         } catch let error as NSError {
@@ -124,6 +138,11 @@ class TrainerProfileVC: UIViewController {
         }
     }
     
+    @IBAction func eliteButtonPressed(_ sender: UIButton) {
+        
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.popToRootViewController(animated: false)
+    }
     func handleTapGesture(gesture: UITapGestureRecognizer) {
         print("handleTapGesture activated")
         let alertController = photoHelper.presentActionSheet(from: self)

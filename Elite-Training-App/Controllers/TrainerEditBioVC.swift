@@ -22,6 +22,8 @@ class TrainerEditBioVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         doneButton.layer.addSublayer(GradientLayer.gradient(bounds: doneButton.bounds))
+        doneButton.layer.cornerRadius = 5.0
+        doneButton.layer.masksToBounds = true
         fullnameTF.text = Trainer.current.fullname
         bioTV.text = Trainer.current.bio
         bioTV.isEditable = true
@@ -57,6 +59,9 @@ class TrainerEditBioVC: UIViewController {
         alertController.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    
+    
     
     /*
     // MARK: - Navigation

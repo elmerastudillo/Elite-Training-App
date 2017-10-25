@@ -46,6 +46,8 @@ class TrainerPrefVC: UIViewController {
         super.viewDidLoad()
         
         nextButton.layer.addSublayer(GradientLayer.gradient(bounds: nextButton.bounds))
+        nextButton.layer.cornerRadius = 5.0
+        nextButton.layer.masksToBounds = true
 
         // Do any additional setup after loading the view.
     }
@@ -56,10 +58,20 @@ class TrainerPrefVC: UIViewController {
     }
     
     @IBAction func eliteButtonPressed(_ sender: UIButton) {
-        let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
-        let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
-        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
-        self.navigationController?.pushViewController(loginVC, animated: false)
+        if Trainer.loggedIn == true
+        {
+            let storyboard = UIStoryboard.init(name: "TrainerProfile", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerProfileVC")
+            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+            self.navigationController?.pushViewController(loginVC, animated: false)
+        }
+        else
+        {
+            let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
+            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+            self.navigationController?.pushViewController(loginVC, animated: false)
+        }
         
     }
 
@@ -152,8 +164,4 @@ class TrainerPrefVC: UIViewController {
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
-    
-    
-    
-
 }

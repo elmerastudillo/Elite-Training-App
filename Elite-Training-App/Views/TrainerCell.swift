@@ -16,6 +16,9 @@ class TrainerCell: UICollectionViewCell {
     @IBOutlet weak var selectButton: UIButton!
     @IBOutlet weak var infoButton: UIButton!
     
-    
+    override func awakeFromNib() {
+       selectButton.layer.cornerRadius = 5.0
+        infoButton.layer.cornerRadius = 5.0
+    }
     
 }

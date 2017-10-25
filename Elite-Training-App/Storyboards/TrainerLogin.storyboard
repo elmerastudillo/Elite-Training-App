@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Trainer LoginVC-->
         <scene sceneID="CaI-XN-ngl">
@@ -22,21 +27,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-v9-ir1">
-                                <rect key="frame" x="209" y="659" width="350" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="DLi-Ry-AgA"/>
-                                    <constraint firstAttribute="width" constant="350" id="a6N-GJ-lGw"/>
-                                </constraints>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginButtonPressed:" destination="sUH-ux-Zze" eventType="touchUpInside" id="vPW-A3-fvt"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pHI-vv-jEp">
-                                <rect key="frame" x="135" y="309" width="500" height="180"/>
+                                <rect key="frame" x="134" y="316" width="500" height="180"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-MAIL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vno-hQ-7Vo">
                                         <rect key="frame" x="0.0" y="0.0" width="500" height="80"/>
@@ -45,8 +37,8 @@
                                             <constraint firstAttribute="height" constant="80" id="N8D-1e-jSb"/>
                                         </constraints>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FNl-aP-S9W">
                                         <rect key="frame" x="0.0" y="100" width="500" height="80"/>
@@ -55,8 +47,8 @@
                                             <constraint firstAttribute="height" constant="80" id="bbg-2W-Q5n"/>
                                         </constraints>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -64,20 +56,47 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STa-Y4-zgQ">
-                                <rect key="frame" x="340" y="110" width="88" height="44.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <rect key="frame" x="284" y="105" width="149" height="70"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlP-Ee-6lT">
+                                <rect key="frame" x="698" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="esN-sK-W5D"/>
+                                    <constraint firstAttribute="width" constant="50" id="ryd-z5-UC9"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Elite Logo"/>
+                                <connections>
+                                    <action selector="EliteButtonPressed:" destination="sUH-ux-Zze" eventType="touchUpInside" id="zs8-xR-6Xt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-v9-ir1">
+                                <rect key="frame" x="209" y="610" width="350" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="DLi-Ry-AgA"/>
+                                    <constraint firstAttribute="width" constant="350" id="a6N-GJ-lGw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="sUH-ux-Zze" eventType="touchUpInside" id="vPW-A3-fvt"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="O2v-v9-ir1" firstAttribute="centerX" secondItem="bff-My-7z1" secondAttribute="centerX" id="29D-pV-Jnm"/>
-                            <constraint firstItem="STa-Y4-zgQ" firstAttribute="leading" secondItem="pHI-vv-jEp" secondAttribute="trailing" constant="-295" id="85y-2J-Qlf"/>
-                            <constraint firstItem="pHI-vv-jEp" firstAttribute="top" secondItem="bff-My-7z1" secondAttribute="top" constant="309" id="C70-wd-GRL"/>
-                            <constraint firstItem="STa-Y4-zgQ" firstAttribute="top" secondItem="bff-My-7z1" secondAttribute="topMargin" constant="90" id="Nla-Al-Cpb"/>
-                            <constraint firstItem="XYc-Dn-tf1" firstAttribute="top" secondItem="O2v-v9-ir1" secondAttribute="bottom" constant="285" id="Vwd-LK-Oa4"/>
-                            <constraint firstItem="pHI-vv-jEp" firstAttribute="leading" secondItem="O2v-v9-ir1" secondAttribute="trailing" constant="-424" id="arY-cv-pdF"/>
+                            <constraint firstItem="STa-Y4-zgQ" firstAttribute="leading" secondItem="pHI-vv-jEp" secondAttribute="trailing" constant="-350" id="85y-2J-Qlf"/>
+                            <constraint firstItem="pHI-vv-jEp" firstAttribute="top" secondItem="bff-My-7z1" secondAttribute="top" constant="316" id="C70-wd-GRL"/>
+                            <constraint firstItem="STa-Y4-zgQ" firstAttribute="top" secondItem="bff-My-7z1" secondAttribute="topMargin" constant="85" id="Nla-Al-Cpb"/>
+                            <constraint firstItem="XYc-Dn-tf1" firstAttribute="top" secondItem="O2v-v9-ir1" secondAttribute="bottom" constant="334" id="Vwd-LK-Oa4"/>
+                            <constraint firstItem="pHI-vv-jEp" firstAttribute="leading" secondItem="O2v-v9-ir1" secondAttribute="trailing" constant="-425" id="arY-cv-pdF"/>
+                            <constraint firstItem="dlP-Ee-6lT" firstAttribute="trailing" secondItem="bff-My-7z1" secondAttribute="trailingMargin" id="enQ-62-Yr7"/>
+                            <constraint firstItem="dlP-Ee-6lT" firstAttribute="top" secondItem="cz0-Sk-YRQ" secondAttribute="bottom" id="oOw-de-vJs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kNH-Wh-n5Z"/>
@@ -92,4 +111,7 @@
             <point key="canvasLocation" x="379.6875" y="99.609375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Elite Logo" width="341" height="341"/>
+    </resources>
 </document>

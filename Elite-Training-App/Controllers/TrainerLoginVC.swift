@@ -18,8 +18,11 @@ class TrainerLoginVC: UIViewController {
         super.viewDidLoad()
 
         loginButton.layer.addSublayer(GradientLayer.gradient(bounds: loginButton.bounds))
+        loginButton.layer.cornerRadius = 5.0
+        loginButton.layer.masksToBounds = true
         // Do any additional setup after loading the view.
         configureView()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,6 +50,7 @@ class TrainerLoginVC: UIViewController {
             TrainerService.fetchTrainer(forUID: trainer.uid) { (trainer) in
                 if let trainer = trainer {
                     Trainer.setCurrent(trainer, writeToUserDefaults: true)
+                    Trainer.loggedIn = true
                     print(trainer)
                     let storyboard = UIStoryboard.init(name: "TrainerProfile", bundle: nil)
                     let trainerProfileVC = storyboard.instantiateViewController(withIdentifier: "TrainerProfileVC")
@@ -71,6 +75,12 @@ class TrainerLoginVC: UIViewController {
             }
         }
     }
+    
+    @IBAction func EliteButtonPressed(_ sender: UIButton) {
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.popToRootViewController(animated: false)
+    }
+    
 
 }
 

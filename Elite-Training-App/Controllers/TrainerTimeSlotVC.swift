@@ -28,6 +28,8 @@ class TrainerTimeSlotVC: UIViewController {
         createViewBasedOnTimeSlot()
         // Do any additional setup after loading the view.
         doneButton.layer.addSublayer(GradientLayer.gradient(bounds: doneButton.bounds))
+        doneButton.layer.cornerRadius = 5.0
+        doneButton.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -101,31 +103,37 @@ class TrainerTimeSlotVC: UIViewController {
             {
             case 100..<200:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.layer.cornerRadius = 5.0
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "sunday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 200..<300:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.layer.cornerRadius = 5.0
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "monday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 300..<400:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.layer.cornerRadius = 5.0
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "tuesday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 400..<500:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.layer.cornerRadius = 5.0
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "wednesday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 500..<600:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.layer.cornerRadius = 5.0
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "thursday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
             case 600..<700:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.layer.cornerRadius = 5.0
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "friday", time: timeText)
                 timeSlotDictionary[sender.tag] = timeSlot
@@ -145,7 +153,6 @@ class TrainerTimeSlotVC: UIViewController {
                 }
             }
         }
-        
         print(timeSlotDictionary)
     }
     
@@ -153,8 +160,14 @@ class TrainerTimeSlotVC: UIViewController {
     func createBttnTimeSlotWithStackV(stackView: UIStackView, time: String, tag: Int)
     {
         let slotButton = UIButton(type: .custom)
-        slotButton.frame = CGRect(x: 0, y: 0, width: stackView.frame.width, height: 20.0)
-        slotButton.tintColor = UIColor.white
+        slotButton.layer.cornerRadius = 5.0
+        slotButton.clipsToBounds = true
+        //slotButton.layer.insertSublayer(GradientLayer.gradientBorder(bounds: slotButton.bounds), at: 0)
+        slotButton.layer.insertSublayer(GradientLayer.gradient(bounds: slotButton.bounds), at: 0)
+        slotButton.frame = CGRect(x: 0, y: 0, width: stackView.frame.width, height: 30.0)
+        //slotButton.titleLabel?.textColor = UIColor.blue
+        //slotButton.backgroundColor = UIColor.purple
+        //slotButton.tintColor = UIColor.white
         slotButton.setTitle(time, for: UIControlState())
         slotButton.tag = tag
         slotButton.addTarget(self, action: #selector(self.timeSlotPressed(_:)), for: UIControlEvents.touchDown)

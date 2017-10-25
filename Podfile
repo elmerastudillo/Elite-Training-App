@@ -13,5 +13,5 @@ target 'Elite-Training-App' do
   pod 'Kingfisher'
   pod 'Presentr'
   pod 'SendGrid', :git => 'https://github.com/scottkawai/sendgrid-swift.git'
-  pod 'PMSuperButton', '2.0.1'
+  pod 'IQKeyboardManagerSwift'
 end

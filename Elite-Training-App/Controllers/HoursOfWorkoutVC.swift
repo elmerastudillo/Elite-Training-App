@@ -34,6 +34,8 @@ class HoursOfWorkoutVC: UIViewController {
 
         // Do any additional setup after loading the view.
         nextButton.layer.addSublayer(GradientLayer.gradient(bounds: nextButton.bounds))
+        nextButton.layer.cornerRadius = 5.0
+        nextButton.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -95,11 +97,22 @@ class HoursOfWorkoutVC: UIViewController {
         self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
         self.navigationController?.pushViewController(trainerSelVC, animated: false)
     }
+    
     @IBAction func eliteButtonPressed(_ sender: UIButton) {
-        let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
-        let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
-        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
-        self.navigationController?.pushViewController(loginVC, animated: false)
+        if Trainer.loggedIn == true
+        {
+            let storyboard = UIStoryboard.init(name: "TrainerProfile", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerProfileVC")
+            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+            self.navigationController?.pushViewController(loginVC, animated: false)
+        }
+        else
+        {
+            let storyboard = UIStoryboard.init(name: "TrainerLogin", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "TrainerLoginVC")
+            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+            self.navigationController?.pushViewController(loginVC, animated: false)
+        }
     }
 
     /*

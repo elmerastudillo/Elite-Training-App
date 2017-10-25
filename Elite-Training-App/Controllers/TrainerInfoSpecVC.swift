@@ -52,6 +52,8 @@ class TrainerInfoSpecVC: UIViewController {
     }
     
     @IBAction func eliteButtonPressed(_ sender: UIButton) {
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func focusButtonPressed(_ sender: UIButton)
