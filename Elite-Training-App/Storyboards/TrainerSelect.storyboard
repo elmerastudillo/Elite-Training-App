@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Proxima Nova Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </array>
         <array key="ProximaNova-Regular.otf">
             <string>ProximaNova-Regular</string>
         </array>
@@ -51,25 +54,25 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi3-hQ-GfV">
                                                     <rect key="frame" x="20" y="330" width="290" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
-                                                    <color key="textColor" red="0.58039215686274503" green="0.32941176470588235" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="22"/>
+                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Focus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IH5-T7-uEi">
                                                     <rect key="frame" x="20" y="363" width="290" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
-                                                    <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
+                                                    <color key="textColor" red="0.58039215686274503" green="0.32941176470588235" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRk-rn-BzC">
-                                                    <rect key="frame" x="154" y="177" width="22" height="22"/>
+                                                    <rect key="frame" x="154" y="192" width="22" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uj8-7u-SLO">
-                                                    <rect key="frame" x="120" y="119" width="90" height="30"/>
+                                                    <rect key="frame" x="90" y="115" width="150" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
@@ -100,15 +103,26 @@
                                     <constraint firstAttribute="width" constant="350" id="MiG-ed-PdJ"/>
                                     <constraint firstAttribute="height" constant="80" id="gIM-ws-3Hp"/>
                                 </constraints>
-                                <state key="normal" title="Done">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="doneButtonPressed:" destination="QX5-1J-FwL" eventType="touchUpInside" id="MKp-SM-Uaf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select a trainer." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYl-z8-k7U">
+                                <rect key="frame" x="128" y="20" width="513" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="NNx-9B-CrQ"/>
+                                    <constraint firstAttribute="width" constant="498" id="hDh-4T-c26"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" alpha="0.25" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZq-me-b93">
-                                <rect key="frame" x="698" y="30" width="50" height="50"/>
+                                <rect key="frame" x="713" y="35" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8ix-fS-bGq"/>
                                     <constraint firstAttribute="width" constant="50" id="odt-3B-s9H"/>
@@ -125,10 +139,10 @@
                             <constraint firstAttribute="trailing" secondItem="y6T-zh-jVz" secondAttribute="trailing" id="Pky-Fa-eUY"/>
                             <constraint firstItem="G0g-mC-DLV" firstAttribute="top" secondItem="sSw-ts-siO" secondAttribute="bottom" constant="50" id="SFA-50-39Z"/>
                             <constraint firstItem="y6T-zh-jVz" firstAttribute="leading" secondItem="p4w-YL-1aC" secondAttribute="leading" id="Yuv-sP-ir9"/>
+                            <constraint firstItem="YZq-me-b93" firstAttribute="trailing" secondItem="p4w-YL-1aC" secondAttribute="trailingMargin" constant="15" id="aG2-0n-Ydx"/>
                             <constraint firstItem="sSw-ts-siO" firstAttribute="centerX" secondItem="p4w-YL-1aC" secondAttribute="centerX" id="gRp-bx-hXR"/>
                             <constraint firstItem="y6T-zh-jVz" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" constant="120" id="gSY-Zx-L5Z"/>
-                            <constraint firstItem="YZq-me-b93" firstAttribute="trailing" secondItem="p4w-YL-1aC" secondAttribute="trailingMargin" id="vQZ-KU-bFR"/>
-                            <constraint firstItem="YZq-me-b93" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" constant="10" id="vpK-xU-v4K"/>
+                            <constraint firstItem="YZq-me-b93" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" constant="15" id="yTZ-3h-ZQ7"/>
                         </constraints>
                     </view>
                     <connections>

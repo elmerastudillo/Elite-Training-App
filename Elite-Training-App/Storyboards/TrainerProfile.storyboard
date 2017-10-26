@@ -13,9 +13,6 @@
         <array key="Proxima Nova Bold.otf">
             <string>ProximaNova-Bold</string>
         </array>
-        <array key="ProximaNova-Regular.otf">
-            <string>ProximaNova-Regular</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Trainer ProfileVC-->
@@ -30,8 +27,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49w-tt-pwN">
-                                <rect key="frame" x="198" y="35" width="373" height="78"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your profile." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49w-tt-pwN">
+                                <rect key="frame" x="81" y="28" width="373" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,53 +37,44 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full Name Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWU-DA-5N0">
                                 <rect key="frame" x="211" y="370" width="347" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="25"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.3294117647" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWo-b9-cBT">
-                                <rect key="frame" x="282" y="521" width="205" height="60"/>
+                                <rect key="frame" x="224" y="495" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
                                 <state key="normal" title="BIO">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="bioButtonPressed:" destination="CNi-Dc-vSs" eventType="touchUpInside" id="xZN-Zr-IPB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aut-Rm-dmb">
-                                <rect key="frame" x="448" y="649" width="205" height="60"/>
+                                <rect key="frame" x="428" y="649" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
                                 <state key="normal" title="UPDATE SCHEDULE">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="updateSchedButtonPressed:" destination="CNi-Dc-vSs" eventType="touchUpInside" id="uJy-Lc-1zU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25f-Jc-cwA">
-                                <rect key="frame" x="100" y="649" width="205" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebz-qO-F4D">
+                                <rect key="frame" x="224" y="873" width="350" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
-                                <state key="normal" title="UPDATE FOCUS">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="updateFocusButtonPressed:" destination="CNi-Dc-vSs" eventType="touchUpInside" id="9WR-kv-Z0F"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebz-qO-F4D">
-                                <rect key="frame" x="300" y="878" width="205" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="JOf-c1-n5T"/>
+                                    <constraint firstAttribute="width" constant="320" id="Ugz-U7-fMY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
                                 <state key="normal" title="LOGOUT">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="logoutButtonPressed:" destination="CNi-Dc-vSs" eventType="touchUpInside" id="IcQ-0F-U8o"/>
@@ -96,7 +84,7 @@
                                 <rect key="frame" x="314" y="171" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bB-LN-GQl">
+                            <button opaque="NO" alpha="0.25" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bB-LN-GQl">
                                 <rect key="frame" x="698" y="28" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="P3L-5r-3Ky"/>
@@ -107,11 +95,24 @@
                                     <action selector="eliteButtonPressed:" destination="CNi-Dc-vSs" eventType="touchUpInside" id="QXg-Xx-g0Y"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25f-Jc-cwA">
+                                <rect key="frame" x="20" y="649" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
+                                <state key="normal" title="UPDATE FOCUS">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateFocusButtonPressed:" destination="CNi-Dc-vSs" eventType="touchUpInside" id="9WR-kv-Z0F"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2bB-LN-GQl" firstAttribute="trailing" secondItem="1XX-wt-drr" secondAttribute="trailingMargin" id="6UQ-vw-fIg"/>
-                            <constraint firstItem="2bB-LN-GQl" firstAttribute="top" secondItem="cvm-wq-qKk" secondAttribute="bottom" constant="15" id="xCv-5i-mbG"/>
+                            <constraint firstItem="30h-vP-VuZ" firstAttribute="top" secondItem="Ebz-qO-F4D" secondAttribute="bottom" constant="50" id="asJ-ER-HxA"/>
+                            <constraint firstItem="2bB-LN-GQl" firstAttribute="top" secondItem="cvm-wq-qKk" secondAttribute="bottom" constant="8" id="xCv-5i-mbG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fqs-lC-eex"/>
@@ -140,20 +141,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8P-dc-1bO">
-                                <rect key="frame" x="283" y="888" width="204" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8P-dc-1bO">
+                                <rect key="frame" x="209" y="894" width="350" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="LjO-Dw-XXD"/>
+                                    <constraint firstAttribute="height" constant="80" id="y6b-n5-aD8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
                                 <state key="normal" title="Done">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="doneButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="fe5-nJ-hmb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6V-By-CLW">
-                                <rect key="frame" x="698" y="35" width="50" height="50"/>
+                            <button opaque="NO" alpha="0.25" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6V-By-CLW">
+                                <rect key="frame" x="713" y="35" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Kh5-9n-7bU"/>
                                     <constraint firstAttribute="width" constant="50" id="Lr0-Vx-QDV"/>
@@ -176,7 +180,7 @@
                                                     <constraint firstAttribute="height" constant="55" id="dY4-0k-4vn"/>
                                                     <constraint firstAttribute="width" constant="200" id="ska-VP-a5y"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Functional Movement">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -190,7 +194,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="MnK-UM-rIc"/>
                                                     <constraint firstAttribute="height" constant="55" id="cOC-tr-7ae"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Weight Loss">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -204,7 +208,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="fQu-xv-w2U"/>
                                                     <constraint firstAttribute="height" constant="55" id="gKm-l5-oGF"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Olympic PowerLifting">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -218,7 +222,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="7d2-Go-rQQ"/>
                                                     <constraint firstAttribute="height" constant="55" id="iMW-ZZ-nCZ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Corrective">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -232,7 +236,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="9VV-0b-8Hf"/>
                                                     <constraint firstAttribute="height" constant="55" id="BgL-oL-cew"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Nutritional Guidance">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -246,7 +250,7 @@
                                                     <constraint firstAttribute="height" constant="55" id="2fS-xm-QRr"/>
                                                     <constraint firstAttribute="width" constant="200" id="cKq-oB-6lW"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Core Strength">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -260,7 +264,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="1n3-qD-I8a"/>
                                                     <constraint firstAttribute="height" constant="55" id="wQa-YH-kSX"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Pre/Post Natal">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -282,7 +286,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="ZoZ-g9-DyO"/>
                                                     <constraint firstAttribute="height" constant="55" id="wV3-7U-hx3"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Strength &amp; Conditioning">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -302,7 +306,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="dMy-6a-CG9"/>
                                                     <constraint firstAttribute="height" constant="55" id="f4A-ZK-Gtl"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Rehabilitation">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -322,7 +326,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="PjJ-JO-BMR"/>
                                                     <constraint firstAttribute="height" constant="55" id="w8k-ch-dzZ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Obstacle Course">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -342,7 +346,7 @@
                                                     <constraint firstAttribute="height" constant="55" id="jQI-fX-xoM"/>
                                                     <constraint firstAttribute="width" constant="200" id="k4v-Lg-Fqk"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Lean &amp; Tone">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -362,7 +366,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="S7D-98-puF"/>
                                                     <constraint firstAttribute="height" constant="55" id="drg-Ph-r05"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Balance &amp; Stabilization">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -382,7 +386,7 @@
                                                     <constraint firstAttribute="height" constant="55" id="0UM-Gc-Th0"/>
                                                     <constraint firstAttribute="width" constant="200" id="TrS-67-Tkw"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Small Group">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -402,7 +406,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="d7u-gK-mk2"/>
                                                     <constraint firstAttribute="height" constant="55" id="oWb-Ru-Ebu"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="Running &amp; Endurance">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -420,8 +424,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your focus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb4-iK-LU2">
-                                <rect key="frame" x="194" y="67" width="383" height="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your focus." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb4-iK-LU2">
+                                <rect key="frame" x="57" y="50" width="383" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -430,7 +434,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="S6V-By-CLW" firstAttribute="trailing" secondItem="XRS-74-usu" secondAttribute="trailingMargin" id="f0W-4q-Rnx"/>
+                            <constraint firstItem="05U-Ol-LdM" firstAttribute="top" secondItem="H8P-dc-1bO" secondAttribute="bottom" constant="50" id="0PI-Ot-h0e"/>
+                            <constraint firstItem="H8P-dc-1bO" firstAttribute="centerX" secondItem="XRS-74-usu" secondAttribute="centerX" id="bZ3-aV-uPR"/>
+                            <constraint firstItem="S6V-By-CLW" firstAttribute="trailing" secondItem="XRS-74-usu" secondAttribute="trailingMargin" constant="15" id="f0W-4q-Rnx"/>
                             <constraint firstItem="S6V-By-CLW" firstAttribute="top" secondItem="VnB-dj-rnW" secondAttribute="bottom" constant="15" id="uBB-Yu-PhV"/>
                         </constraints>
                     </view>

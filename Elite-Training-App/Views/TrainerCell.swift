@@ -18,7 +18,9 @@ class TrainerCell: UICollectionViewCell {
     
     override func awakeFromNib() {
        selectButton.layer.cornerRadius = 5.0
+        selectButton.layer.masksToBounds = true
         infoButton.layer.cornerRadius = 5.0
+        infoButton.layer.masksToBounds = true
     }
     
 }
