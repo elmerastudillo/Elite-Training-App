@@ -42,8 +42,7 @@ class TrainerEditBioVC: UIViewController {
             let fullnameText = fullnameTF.text, !fullnameText.isEmpty
         {
             ref.updateChildValues(["bio":bioText, "fullname":fullnameText])
-            self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
-            self.navigationController?.popViewController(animated: false)
+            self.dismiss(animated: true, completion: nil)
         }
         else
         {

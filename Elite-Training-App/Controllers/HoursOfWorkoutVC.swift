@@ -28,6 +28,7 @@ class HoursOfWorkoutVC: UIViewController {
     // Hours per week
     var hoursPerWeek : String?
     
+    var newMember : NewMember?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,21 +80,18 @@ class HoursOfWorkoutVC: UIViewController {
     }
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
-        guard let hoursPerWeek = self.hoursPerWeek,
-        let firstname = self.firstname,
-        let lastname = self.lastname,
-        let emailAddress = self.emailAddress,
-        let genderPreference = self.genderPreference,
-        let trainingFocusPref = self.trainingFocusPref
+        guard let hoursPerWeek = self.hoursPerWeek
             else { return }
+        self.newMember?.hoursPerWeek = hoursPerWeek
         
-        print(firstname + lastname + emailAddress + genderPreference + trainingFocusPref + hoursPerWeek)
+//        print(firstname + lastname + emailAddress + genderPreference + trainingFocusPref + hoursPerWeek)
+        guard let member = self.newMember else { return }
+        print(member)
         
-        NewMemberService.createNewMember(firstName: firstname, lastName: lastname, email: emailAddress, genderPreference: genderPreference, trainingPreference: trainingFocusPref, hoursPerWeek: hoursPerWeek)
+        NewMemberService.createNewMember(firstName: member.firstName, lastName: member.lastName, email: member.email, genderPreference: member.genderPreference, trainingPreference: member.trainingPreference, hoursPerWeek: member.hoursPerWeek)
         let storyboard = UIStoryboard.init(name: "TrainerSelect", bundle: nil)
         let trainerSelVC = storyboard.instantiateViewController(withIdentifier: "TrainerSelectVC") as! TrainerSelectVC
-        trainerSelVC.focus = trainingFocusPref
-        trainerSelVC.gender = genderPreference
+        trainerSelVC.newMember = member
         self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
         self.navigationController?.pushViewController(trainerSelVC, animated: false)
     }

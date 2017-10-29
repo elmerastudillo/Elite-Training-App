@@ -35,15 +35,10 @@ class TrainerBioVC : UIViewController
         guard let imgURL = trainer.profileImage else { return }
         let imageURL = URL(string:imgURL)
         profileImage.kf.setImage(with: imageURL)
+        profileImage.roundedImage()
     }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    //    func configureView()
-//    {
-//        let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width - 20 , height: self.view.bounds.height - 40 ))
-//
-//
-//    }
 }

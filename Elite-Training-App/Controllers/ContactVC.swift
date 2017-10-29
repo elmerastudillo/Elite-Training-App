@@ -56,9 +56,8 @@ class ContactVC: UIViewController {
             {
                 let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
                 let trainerPrefVC = storyboard.instantiateViewController(withIdentifier: "TrainerPrefVC") as! TrainerPrefVC
-                trainerPrefVC.firstname = firstName
-                trainerPrefVC.lastname = lastName
-                trainerPrefVC.emailAdress = emailAddress
+                let newMember = NewMember(firstName: firstName, lastName: lastName, email: emailAddress, genderPreference: "", trainingPreference: "", hoursPerWeek: "")
+                trainerPrefVC.newMember = newMember
                 self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
                 self.navigationController?.pushViewController(trainerPrefVC, animated: false)
             }

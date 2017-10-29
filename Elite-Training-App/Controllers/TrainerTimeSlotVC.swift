@@ -7,12 +7,13 @@
 //
 
 import UIKit
-//import SendGrid
+import SendGrid
 
 class TrainerTimeSlotVC: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     var trainer: Trainer?
+    var newMember: NewMember?
     var timeSlotDictionary = [Int: TimeSlot]()
     var eliteButtonArray : [EliteButton] = []
 
@@ -160,33 +161,31 @@ class TrainerTimeSlotVC: UIViewController {
     
     @IBAction func doneButtonPressed(sender: UIButton)
     {
+        // Send grid
+        guard let member = self.newMember else { return }
         
-        // Sendgrid email
-//        func sendEmailSG()
-//        {
-//            // Send a basic example
-//            let currentEmail = postUser.email
-//            let bodyString = ""
-//            let plainText = Content(contentType: ContentType.plainText, value: bodyString )
-//            //let htmlText = Content(contentType: ContentType.htmlText, value: "<h1>Hello World</h1>")
-//            let email = Email(
-//                personalizations: [personalization],
-//                from: Address("savvyinc.jobs@gmail.com"),
-//                content: [plainText],
-//                subject: "New Job Assigned!"
-//            )
-//            do {
-//                try Session.shared.send(request: email)
-//            } catch {
-//                print(error)
-//            }
-//        }
+        guard let currentEmail = trainer?.emailAddress else { return }
+        let bodyString = ""
+        let personalization = Personalization(recipients: currentEmail)
+        let plainText = Content(contentType: ContentType.plainText, value: bodyString )
+        //let htmlText = Content(contentType: ContentType.htmlText, value: "<h1>Hello World</h1>")
+        let email = Email(
+            personalizations: [personalization],
+            from: Address(email: "savvyinc.jobs@gmail.com"),
+            content: [plainText],
+            subject: "New Client: \(member.firstName) \(member.lastName)"
+        )
+        do {
+            try Session.shared.send(request: email)
+        } catch {
+            print(error)
+        }
+        
         print(timeSlotDictionary)
         dismiss(animated: true, completion: nil)
     }
     
     
-    // TODO: Fix sender
   @objc @IBAction func timeSlotPressed(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         if sender.isSelected {
@@ -253,7 +252,7 @@ class TrainerTimeSlotVC: UIViewController {
         print(timeSlotDictionary)
     }
     
-//    // MARK: - Helper Functions
+    // MARK: - Helper Functions
     
     // Using recursion to look inside nested views
     func lookForButton(view: UIView)
@@ -264,13 +263,10 @@ class TrainerTimeSlotVC: UIViewController {
         {
             if v is UIButton && v.tag != 0
             {
-                print(v)
-//                self.eliteButtonArray?.append(v)
                 let button = v as! EliteButton
                 button.isEnabled = false
                 button.alpha = 0.25
                 self.eliteButtonArray.append(button)
-//                print(self.eliteButtonArray?.count)
             }
             else
             {

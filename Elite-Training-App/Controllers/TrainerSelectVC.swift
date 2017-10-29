@@ -12,8 +12,7 @@ import Kingfisher
 
 class TrainerSelectVC: UIViewController {
     
-    var focus : String?
-    var gender: String?
+    var newMember : NewMember?
     var trainers = [Trainer]()
 
     @IBOutlet weak var doneButton: UIButton!
@@ -22,14 +21,11 @@ class TrainerSelectVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let focus = self.focus else { return }
-        guard let gender = self.gender else { return }
-        
         doneButton.layer.addSublayer(GradientLayer.gradient(bounds: doneButton.bounds))
         doneButton.layer.cornerRadius = 5.0
         doneButton.layer.masksToBounds = true
-        
-        NewMemberService.queryForTrainer(focus: focus, gender: gender) { (trainers) in
+        guard let member = newMember else { return }
+        NewMemberService.queryForTrainer(focus: member.trainingPreference, gender: member.genderPreference) { (trainers) in
             self.trainers = trainers
             DispatchQueue.main.async {
                 self.trainerSelectVC.reloadData()
@@ -76,6 +72,7 @@ class TrainerSelectVC: UIViewController {
         bioPresenter.dismissOnSwipe = true
         let storyboard = UIStoryboard.init(name: "TrainerPopUp", bundle: nil)
         let trainerTimeSlotVC = storyboard.instantiateViewController(withIdentifier: "TrainerTimeSlotVC") as! TrainerTimeSlotVC
+        trainerTimeSlotVC.newMember = self.newMember
         trainerTimeSlotVC.trainer = currentTrainer
         customPresentViewController(bioPresenter, viewController: trainerTimeSlotVC, animated: true, completion: nil)
     }
@@ -98,7 +95,7 @@ class TrainerSelectVC: UIViewController {
         let storyboard = UIStoryboard.init(name: "TrainerPopUp", bundle: nil)
         let trainerBioVC = storyboard.instantiateViewController(withIdentifier: "TrainerBioVC") as! TrainerBioVC
         trainerBioVC.trainer = currentTrainer
-        trainerBioVC.focus = self.focus
+        trainerBioVC.focus = self.newMember?.trainingPreference
         customPresentViewController(bioPresenter, viewController: trainerBioVC, animated: true, completion: nil)
         
     }
@@ -160,7 +157,7 @@ extension TrainerSelectVC : UICollectionViewDataSource
         cell.selectButton.isHidden = true
         cell.infoButton.isHidden = true
         cell.nameLabel.text = trainer.fullname
-        cell.focusLabel.text = focus
+        cell.focusLabel.text = self.newMember?.trainingPreference
 //        cell.layer.borderWidth = 5.0
 //        cell.imageView.layer.insertSublayer(GradientLayer.gradientBorder(bounds: cell.imageView.bounds), at: 0)
 //        cell.layer.insertSublayer(GradientLayer.gradientBorder(bounds: cell.bounds), at: 0)

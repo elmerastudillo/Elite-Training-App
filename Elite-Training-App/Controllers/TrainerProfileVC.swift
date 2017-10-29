@@ -106,6 +106,7 @@ class TrainerProfileVC: UIViewController {
         let bioPresenter = Presentr(presentationType: .popup)
         bioPresenter.presentationType = .popup
         bioPresenter.backgroundOpacity = 0.50
+        bioPresenter.blurBackground = true
         bioPresenter.roundCorners = true
         bioPresenter.dismissOnSwipe = true
         let storyboard = UIStoryboard.init(name: "TrainerPopUp", bundle: nil)

@@ -75,37 +75,7 @@ struct AuthService {
             Auth.auth().removeStateDidChangeListener(authHandle)
         }
     }
-    
-    /*
-     ====================== WARNING ==========================
-     Only use this function where you create the AuthListener!
-     It can cause problems otherwise since the listener might
-     not be removed. You can also make sure that the listener
-     is removed.
-     =========================================================
-     */
-//    static func presentLogOut(viewController : UIViewController){
-//        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-//
-//        let signOutAction = UIAlertAction(title: "Log Out", style: .destructive) { _ in
-//            logUserOut()
-//        }
-//        alertController.addAction(signOutAction)
-//
-//        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-//        alertController.addAction(cancelAction)
-//
-//        viewController.present(alertController, animated: true)
-//    }
-//
-//    static func logUserOut(){
-//        do {
-//            try Auth.auth().signOut()
-//            
-//        } catch let error as NSError {
-//            assertionFailure("Error signing out: \(error.localizedDescription)")
-//        }
-//    }
+
     
     private static func loginErrors(error : Error, controller : UIViewController){
         switch (error.localizedDescription) {

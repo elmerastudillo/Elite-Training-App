@@ -18,6 +18,8 @@ class TrainerPrefVC: UIViewController {
     var lastname : String?
     var emailAdress : String?
     
+    var newMember: NewMember?
+    
    
     // MARK: - Button Outlets
      @IBOutlet weak var nextButton: UIButton!
@@ -82,14 +84,11 @@ class TrainerPrefVC: UIViewController {
         
         let storyboard = UIStoryboard.init(name: "NewMember", bundle: nil)
         let hoursOfWorkoutVC = storyboard.instantiateViewController(withIdentifier: "HoursOfWorkoutVC") as! HoursOfWorkoutVC
-        hoursOfWorkoutVC.firstname = firstname
-        hoursOfWorkoutVC.lastname = lastname
-        hoursOfWorkoutVC.emailAddress = emailAdress
-        hoursOfWorkoutVC.genderPreference = genderPreference
-        hoursOfWorkoutVC.trainingFocusPref = trainingFocusPref
+        newMember?.genderPreference = gender
+        newMember?.trainingPreference = focus
+        hoursOfWorkoutVC.newMember = newMember
         self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
         self.navigationController?.pushViewController(hoursOfWorkoutVC, animated: false)
-        
     }
     
     @IBAction func genderButtonPressed(_ sender: UIButton)

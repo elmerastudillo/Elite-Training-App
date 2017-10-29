@@ -29,20 +29,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rNR-UK-cKq">
-                                <rect key="frame" x="309" y="75" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="B4M-ld-G3f"/>
-                                    <constraint firstAttribute="height" constant="150" id="dqS-lG-5Ky"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Bio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLC-oZ-3do">
-                                <rect key="frame" x="157" y="397" width="455" height="160"/>
+                                <rect key="frame" x="100" y="365" width="568" height="209"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="455" id="Dpt-5y-mWm"/>
-                                    <constraint firstAttribute="height" constant="160" id="gOm-ks-vMN"/>
+                                    <constraint firstAttribute="height" constant="209" id="Zyn-aE-ZdM"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="25"/>
                                 <color key="textColor" red="0.58039215690000001" green="0.3294117647" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -60,41 +52,45 @@
                                     <action selector="doneButtonPressed:" destination="kpL-m3-8hG" eventType="touchUpInside" id="wWq-lX-AXc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqo-Sb-iYH">
-                                <rect key="frame" x="157" y="312" width="455" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IcH-KL-9Ko">
+                                <rect key="frame" x="100" y="290.5" width="568" height="67.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkn-in-ivx">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="37"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="30"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqo-Sb-iYH">
+                                        <rect key="frame" x="0.0" y="37" width="568" height="30.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="25"/>
+                                        <color key="textColor" red="0.58039215690000001" green="0.3294117647" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rNR-UK-cKq">
+                                <rect key="frame" x="284" y="82" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="4cY-fc-Hoc"/>
-                                    <constraint firstAttribute="width" constant="455" id="Ifl-cE-rR4"/>
+                                    <constraint firstAttribute="width" constant="200" id="Kqy-LP-nQh"/>
+                                    <constraint firstAttribute="height" constant="200" id="dqS-lG-5Ky"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                <color key="textColor" red="0.58039215690000001" green="0.3294117647" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkn-in-ivx">
-                                <rect key="frame" x="157" y="233" width="455" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="Q8v-PD-jIX"/>
-                                    <constraint firstAttribute="width" constant="455" id="k1g-dD-RrX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="23"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CzL-Q5-j2U" firstAttribute="centerX" secondItem="HWj-g3-gwU" secondAttribute="centerX" id="0oj-8k-Nes"/>
-                            <constraint firstItem="Dkn-in-ivx" firstAttribute="centerX" secondItem="lqo-Sb-iYH" secondAttribute="centerX" id="Mhu-6N-gDV"/>
-                            <constraint firstItem="rNR-UK-cKq" firstAttribute="top" secondItem="e58-XI-t0R" secondAttribute="bottom" constant="55" id="NLx-HK-mLn"/>
-                            <constraint firstItem="CzL-Q5-j2U" firstAttribute="leading" secondItem="QLC-oZ-3do" secondAttribute="trailing" constant="-402.5" id="NQQ-ew-v3V"/>
-                            <constraint firstItem="QLC-oZ-3do" firstAttribute="centerX" secondItem="HWj-g3-gwU" secondAttribute="centerX" id="NrR-Es-5gG"/>
+                            <constraint firstItem="IcH-KL-9Ko" firstAttribute="leading" secondItem="rNR-UK-cKq" secondAttribute="trailing" constant="-384" id="3sl-bl-hBe"/>
+                            <constraint firstItem="IcH-KL-9Ko" firstAttribute="leading" secondItem="HWj-g3-gwU" secondAttribute="leading" constant="100" id="60J-7F-LHg"/>
+                            <constraint firstItem="rNR-UK-cKq" firstAttribute="top" secondItem="e58-XI-t0R" secondAttribute="bottom" constant="62" id="NLx-HK-mLn"/>
                             <constraint firstItem="rNR-UK-cKq" firstAttribute="centerX" secondItem="HWj-g3-gwU" secondAttribute="centerX" id="VqA-n8-Dy3"/>
-                            <constraint firstItem="QLC-oZ-3do" firstAttribute="leading" secondItem="lqo-Sb-iYH" secondAttribute="trailing" constant="-455" id="XIK-p9-RGD"/>
+                            <constraint firstItem="QLC-oZ-3do" firstAttribute="top" secondItem="HWj-g3-gwU" secondAttribute="top" constant="365" id="chC-y3-Gnx"/>
                             <constraint firstItem="EDs-xL-hav" firstAttribute="top" secondItem="CzL-Q5-j2U" secondAttribute="bottom" constant="50" id="dJR-4V-xSq"/>
-                            <constraint firstItem="Dkn-in-ivx" firstAttribute="top" secondItem="rNR-UK-cKq" secondAttribute="bottom" constant="8" id="nDO-yw-RIA"/>
-                            <constraint firstItem="Dkn-in-ivx" firstAttribute="centerX" secondItem="rNR-UK-cKq" secondAttribute="centerX" id="rOR-9S-dnC"/>
-                            <constraint firstItem="lqo-Sb-iYH" firstAttribute="top" secondItem="Dkn-in-ivx" secondAttribute="bottom" constant="8" symbolic="YES" id="vJc-0D-QTz"/>
-                            <constraint firstItem="QLC-oZ-3do" firstAttribute="top" secondItem="lqo-Sb-iYH" secondAttribute="bottom" constant="35" id="x5L-Sx-qJ1"/>
+                            <constraint firstItem="QLC-oZ-3do" firstAttribute="centerX" secondItem="HWj-g3-gwU" secondAttribute="centerX" id="n8l-A2-5ID"/>
+                            <constraint firstAttribute="trailing" secondItem="IcH-KL-9Ko" secondAttribute="trailing" constant="100" id="oSc-3W-90W"/>
+                            <constraint firstItem="QLC-oZ-3do" firstAttribute="leading" secondItem="HWj-g3-gwU" secondAttribute="leading" constant="100" id="xNT-Mb-zX1"/>
+                            <constraint firstAttribute="trailing" secondItem="QLC-oZ-3do" secondAttribute="trailing" constant="100" id="z10-Gx-kbx"/>
+                            <constraint firstItem="QLC-oZ-3do" firstAttribute="top" secondItem="IcH-KL-9Ko" secondAttribute="bottom" constant="7" id="zy0-eX-7CY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -142,19 +138,19 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="9Q5-SP-8od">
-                                <rect key="frame" x="59" y="95.5" width="650" height="833"/>
+                                <rect key="frame" x="41.5" y="95.5" width="685" height="833"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="ReO-Pf-QQL">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="833"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="833"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQv-gd-QDW">
-                                                <rect key="frame" x="20" y="0.0" width="10" height="34"/>
+                                                <rect key="frame" x="22.5" y="0.0" width="10" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idq-RL-yeW" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="47" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="47" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="5AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -164,7 +160,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a7-nI-32Z" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="94" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="94" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="6AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -174,7 +170,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAh-9B-1rw" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="141" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="141" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="7AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -184,7 +180,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="115" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omy-Hd-zCH" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="188" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="188" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="8AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -194,7 +190,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="120" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pL-SA-tC1" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="235" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="235" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="9AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -204,7 +200,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="125" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cu-0z-eg9" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="282" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="282" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="10AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -214,7 +210,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="130" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wf-Rq-7Qj" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="329" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="329" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="11AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -224,7 +220,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="135" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAl-Xx-Dmy" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="376" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="376" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="12PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -234,7 +230,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="140" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxc-QD-8NY" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="423" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="423" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="1PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -244,7 +240,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="145" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHl-eD-mpk" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="470" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="470" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="2PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -254,7 +250,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="150" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0p-tT-9yi" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="517" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="517" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="3PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -264,7 +260,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="155" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dc-pL-z8j" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="564" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="564" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="4PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -274,7 +270,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="160" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8v-CZ-JQY" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="611" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="611" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="5PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -284,7 +280,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="165" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnZ-1M-CNt" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="658" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="658" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="6PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -294,7 +290,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="170" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybT-Fa-FzO" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="705" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="705" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="7PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -304,7 +300,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="175" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9V6-4Y-FrM" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="752" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="752" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="8PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -314,7 +310,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="180" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dx-sZ-lyx" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="799" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="799" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="9PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -359,20 +355,20 @@
                                             <constraint firstAttribute="trailing" secondItem="9V6-4Y-FrM" secondAttribute="trailing" id="ojd-aL-t2K"/>
                                             <constraint firstItem="HAh-9B-1rw" firstAttribute="leading" secondItem="ReO-Pf-QQL" secondAttribute="leading" id="pbQ-X3-gyE"/>
                                             <constraint firstAttribute="trailing" secondItem="HAh-9B-1rw" secondAttribute="trailing" id="s5H-VG-Q1R"/>
-                                            <constraint firstAttribute="width" constant="50" id="wNZ-ZN-veF"/>
+                                            <constraint firstAttribute="width" constant="55" id="wNZ-ZN-veF"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="d19-bi-8Ug">
-                                        <rect key="frame" x="100" y="0.0" width="50" height="833"/>
+                                        <rect key="frame" x="105" y="0.0" width="55" height="833"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOt-hr-6TF">
-                                                <rect key="frame" x="18" y="0.0" width="14" height="34"/>
+                                                <rect key="frame" x="20.5" y="0.0" width="14" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQI-dS-895" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="47" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="47" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="5AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -382,7 +378,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="205" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOx-K5-tGh" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="94" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="94" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="6AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -392,7 +388,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="210" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJN-8q-5AD" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="141" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="141" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="7AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -402,7 +398,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="215" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCw-jX-1G6" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="188" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="188" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="8AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -412,7 +408,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="220" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogp-HB-PHk" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="235" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="235" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="9AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -422,7 +418,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="225" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhh-Ru-ipP" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="282" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="282" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="10AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -432,7 +428,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="230" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6e-jJ-jWK" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="329" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="329" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="11AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -442,7 +438,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="235" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqT-UE-0dT" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="376" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="376" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="12PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -452,7 +448,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="240" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P4-nM-dP6" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="423" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="423" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="1PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -462,7 +458,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="245" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgC-ko-GOL" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="470" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="470" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="2PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -472,7 +468,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="250" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xz0-sU-DXh" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="517" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="517" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="3PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -482,7 +478,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="255" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gie-hh-yDF" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="564" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="564" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="4PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -492,7 +488,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="260" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAR-0g-XGc" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="611" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="611" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="5PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -502,7 +498,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="265" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wb-gU-lo3" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="658" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="658" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="6PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -512,7 +508,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="270" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ee6-Em-TMd" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="705" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="705" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="7PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -522,7 +518,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="275" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apl-Zq-5Sd" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="752" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="752" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="8PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -532,7 +528,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="280" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3m-PA-N4t" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="799" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="799" width="55" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <state key="normal" title="9PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -553,7 +549,7 @@
                                             <constraint firstItem="vOx-K5-tGh" firstAttribute="leading" secondItem="d19-bi-8Ug" secondAttribute="leading" id="IUA-xs-IWN"/>
                                             <constraint firstAttribute="trailing" secondItem="nCw-jX-1G6" secondAttribute="trailing" id="JxX-bN-tyE"/>
                                             <constraint firstAttribute="trailing" secondItem="cAR-0g-XGc" secondAttribute="trailing" id="Qt0-nY-ujj"/>
-                                            <constraint firstAttribute="width" constant="50" id="Rzy-Gn-1n8"/>
+                                            <constraint firstAttribute="width" constant="55" id="Rzy-Gn-1n8"/>
                                             <constraint firstItem="vQI-dS-895" firstAttribute="leading" secondItem="d19-bi-8Ug" secondAttribute="leading" id="U7w-qw-zeR"/>
                                             <constraint firstAttribute="trailing" secondItem="Rhh-Ru-ipP" secondAttribute="trailing" id="VVC-OF-678"/>
                                             <constraint firstAttribute="trailing" secondItem="vJN-8q-5AD" secondAttribute="trailing" id="WEz-Hn-7Qr"/>
@@ -581,16 +577,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="TdR-rh-yjd">
-                                        <rect key="frame" x="200" y="0.0" width="50" height="833"/>
+                                        <rect key="frame" x="210" y="0.0" width="55" height="833"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auc-jL-n9b">
-                                                <rect key="frame" x="20" y="0.0" width="10" height="34"/>
+                                                <rect key="frame" x="22.5" y="0.0" width="10" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3e-5l-DeW" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="47" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="47" width="55" height="34"/>
                                                 <state key="normal" title="5AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -599,7 +595,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="305" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCn-sW-pyY" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="94" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="94" width="55" height="34"/>
                                                 <state key="normal" title="6AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -608,7 +604,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="310" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd3-KY-DrL" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="141" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="141" width="55" height="34"/>
                                                 <state key="normal" title="7AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -617,7 +613,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="315" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHf-oZ-M2M" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="188" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="188" width="55" height="34"/>
                                                 <state key="normal" title="8AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -626,7 +622,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="320" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXj-iW-4L2" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="235" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="235" width="55" height="34"/>
                                                 <state key="normal" title="9AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -635,7 +631,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="325" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xy5-ZG-BPX" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="282" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="282" width="55" height="34"/>
                                                 <state key="normal" title="10AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -644,7 +640,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="330" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GC0-XL-5yK" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="329" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="329" width="55" height="34"/>
                                                 <state key="normal" title="11AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -653,7 +649,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="335" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxb-rh-tTW" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="376" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="376" width="55" height="34"/>
                                                 <state key="normal" title="12PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -662,7 +658,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="340" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uX-2A-oje" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="423" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="423" width="55" height="34"/>
                                                 <state key="normal" title="1PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -671,7 +667,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="345" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBY-qi-oge" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="470" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="470" width="55" height="34"/>
                                                 <state key="normal" title="2PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -680,7 +676,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="350" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YF-8x-7eP" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="517" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="517" width="55" height="34"/>
                                                 <state key="normal" title="3PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -689,7 +685,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="355" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVZ-dJ-yNY" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="564" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="564" width="55" height="34"/>
                                                 <state key="normal" title="4PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -698,7 +694,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="360" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WV-pD-QMk" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="611" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="611" width="55" height="34"/>
                                                 <state key="normal" title="5PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -707,7 +703,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="365" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWO-R4-0ET" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="658" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="658" width="55" height="34"/>
                                                 <state key="normal" title="6PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -716,7 +712,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="370" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufc-dX-ShN" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="705" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="705" width="55" height="34"/>
                                                 <state key="normal" title="7PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -725,7 +721,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="375" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbo-AK-GuE" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="752" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="752" width="55" height="34"/>
                                                 <state key="normal" title="8PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -734,7 +730,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="380" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRT-Uf-i1x" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="799" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="799" width="55" height="34"/>
                                                 <state key="normal" title="9PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -756,7 +752,7 @@
                                             <constraint firstAttribute="trailing" secondItem="2uX-2A-oje" secondAttribute="trailing" id="MIk-hB-COf"/>
                                             <constraint firstItem="GBY-qi-oge" firstAttribute="leading" secondItem="TdR-rh-yjd" secondAttribute="leading" id="N9j-6i-vI6"/>
                                             <constraint firstAttribute="trailing" secondItem="JCn-sW-pyY" secondAttribute="trailing" id="N9r-KJ-vgd"/>
-                                            <constraint firstAttribute="width" constant="50" id="QaB-PR-1zt"/>
+                                            <constraint firstAttribute="width" constant="55" id="QaB-PR-1zt"/>
                                             <constraint firstAttribute="trailing" secondItem="ufc-dX-ShN" secondAttribute="trailing" id="SD3-fY-lR4"/>
                                             <constraint firstAttribute="trailing" secondItem="NVZ-dJ-yNY" secondAttribute="trailing" id="T3t-YC-oYb"/>
                                             <constraint firstAttribute="trailing" secondItem="xy5-ZG-BPX" secondAttribute="trailing" id="TLg-kq-HXI"/>
@@ -782,16 +778,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="sGd-GS-6sD">
-                                        <rect key="frame" x="300" y="0.0" width="50" height="833"/>
+                                        <rect key="frame" x="315" y="0.0" width="55" height="833"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2p-PQ-JeC">
-                                                <rect key="frame" x="17.5" y="0.0" width="15.5" height="34"/>
+                                                <rect key="frame" x="20" y="0.0" width="15.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" tag="400" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dne-dM-Tuv" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="47" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="47" width="55" height="34"/>
                                                 <state key="normal" title="5AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -800,7 +796,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="405" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRQ-zX-5Jx" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="94" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="94" width="55" height="34"/>
                                                 <state key="normal" title="6AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -809,7 +805,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="410" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5F0-BV-GBQ" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="141" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="141" width="55" height="34"/>
                                                 <state key="normal" title="7AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -818,7 +814,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="415" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHQ-Ds-tan" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="188" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="188" width="55" height="34"/>
                                                 <state key="normal" title="8AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -827,7 +823,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="420" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTp-4C-S1B" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="235" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="235" width="55" height="34"/>
                                                 <state key="normal" title="9AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -836,7 +832,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="425" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTY-Y0-sHC" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="282" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="282" width="55" height="34"/>
                                                 <state key="normal" title="10AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -845,7 +841,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="430" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTM-E6-Qqb" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="329" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="329" width="55" height="34"/>
                                                 <state key="normal" title="11AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -854,7 +850,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="435" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BV-ih-XJM" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="376" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="376" width="55" height="34"/>
                                                 <state key="normal" title="12PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -863,7 +859,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="440" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMY-08-Kzs" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="423" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="423" width="55" height="34"/>
                                                 <state key="normal" title="1PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -872,7 +868,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="445" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tun-9E-L7G" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="470" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="470" width="55" height="34"/>
                                                 <state key="normal" title="2PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -881,7 +877,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="450" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEV-OL-bCW" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="517" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="517" width="55" height="34"/>
                                                 <state key="normal" title="3PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -890,7 +886,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="455" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rs-vM-bSC" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="564" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="564" width="55" height="34"/>
                                                 <state key="normal" title="4PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -899,7 +895,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="460" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-0o-E2M" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="611" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="611" width="55" height="34"/>
                                                 <state key="normal" title="5PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -908,7 +904,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="465" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQD-5y-1pN" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="658" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="658" width="55" height="34"/>
                                                 <state key="normal" title="6PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -917,7 +913,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="470" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXV-Sl-pWL" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="705" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="705" width="55" height="34"/>
                                                 <state key="normal" title="7PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -926,7 +922,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="475" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-gV-ENy" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="752" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="752" width="55" height="34"/>
                                                 <state key="normal" title="8PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -935,7 +931,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="480" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vU0-R6-PUU" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="799" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="799" width="55" height="34"/>
                                                 <state key="normal" title="9PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -961,7 +957,7 @@
                                             <constraint firstAttribute="trailing" secondItem="FEV-OL-bCW" secondAttribute="trailing" id="NTL-5p-e35"/>
                                             <constraint firstItem="PRQ-zX-5Jx" firstAttribute="leading" secondItem="sGd-GS-6sD" secondAttribute="leading" id="Pmo-Xu-6Ca"/>
                                             <constraint firstAttribute="trailing" secondItem="hXV-Sl-pWL" secondAttribute="trailing" id="S1P-qA-hxo"/>
-                                            <constraint firstAttribute="width" constant="50" id="Up7-8i-Tne"/>
+                                            <constraint firstAttribute="width" constant="55" id="Up7-8i-Tne"/>
                                             <constraint firstItem="hpT-0o-E2M" firstAttribute="leading" secondItem="sGd-GS-6sD" secondAttribute="leading" id="aO5-hA-hwd"/>
                                             <constraint firstAttribute="trailing" secondItem="8rs-vM-bSC" secondAttribute="trailing" id="al8-Oc-pX6"/>
                                             <constraint firstItem="qHQ-Ds-tan" firstAttribute="leading" secondItem="sGd-GS-6sD" secondAttribute="leading" id="aoF-MK-Dtu"/>
@@ -983,16 +979,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="F8c-6Q-nQr">
-                                        <rect key="frame" x="400" y="0.0" width="50" height="833"/>
+                                        <rect key="frame" x="420" y="0.0" width="55" height="833"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9c-Wt-UEU">
-                                                <rect key="frame" x="20" y="0.0" width="10" height="34"/>
+                                                <rect key="frame" x="22.5" y="0.0" width="10" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" tag="500" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCw-2J-FAV" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="47" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="47" width="55" height="34"/>
                                                 <state key="normal" title="5AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1001,7 +997,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="505" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5o-ij-jG7" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="94" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="94" width="55" height="34"/>
                                                 <state key="normal" title="6AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1010,7 +1006,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="510" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwA-6g-nDj" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="141" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="141" width="55" height="34"/>
                                                 <state key="normal" title="7AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1019,7 +1015,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="515" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9U-Z4-Hk2" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="188" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="188" width="55" height="34"/>
                                                 <state key="normal" title="8AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1028,7 +1024,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="520" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBz-6Q-HP0" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="235" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="235" width="55" height="34"/>
                                                 <state key="normal" title="9AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1037,7 +1033,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="525" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxQ-hH-7uP" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="282" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="282" width="55" height="34"/>
                                                 <state key="normal" title="10AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1046,7 +1042,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="530" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeh-Fy-tMZ" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="329" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="329" width="55" height="34"/>
                                                 <state key="normal" title="11AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1055,7 +1051,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="535" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdG-ek-d3f" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="376" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="376" width="55" height="34"/>
                                                 <state key="normal" title="12PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1064,7 +1060,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="540" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbY-IB-cny" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="423" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="423" width="55" height="34"/>
                                                 <state key="normal" title="1PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1073,7 +1069,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="545" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiL-4r-APn" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="470" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="470" width="55" height="34"/>
                                                 <state key="normal" title="2PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1082,7 +1078,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="550" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85u-yn-mF0" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="517" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="517" width="55" height="34"/>
                                                 <state key="normal" title="3PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1091,7 +1087,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="555" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyc-2E-ct3" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="564" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="564" width="55" height="34"/>
                                                 <state key="normal" title="4PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1100,7 +1096,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="560" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvo-YY-TJp" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="611" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="611" width="55" height="34"/>
                                                 <state key="normal" title="5PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1109,7 +1105,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="565" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrt-5t-vY4" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="658" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="658" width="55" height="34"/>
                                                 <state key="normal" title="6PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1118,7 +1114,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="570" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyZ-hW-BOS" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="705" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="705" width="55" height="34"/>
                                                 <state key="normal" title="7PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1127,7 +1123,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="575" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuV-5x-gSk" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="752" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="752" width="55" height="34"/>
                                                 <state key="normal" title="8PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1136,7 +1132,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="580" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YR4-Gu-zcm" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="799" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="799" width="55" height="34"/>
                                                 <state key="normal" title="9PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1166,7 +1162,7 @@
                                             <constraint firstAttribute="trailing" secondItem="fvo-YY-TJp" secondAttribute="trailing" id="Vzw-80-52f"/>
                                             <constraint firstItem="sBz-6Q-HP0" firstAttribute="leading" secondItem="F8c-6Q-nQr" secondAttribute="leading" id="Xzp-HV-7EU"/>
                                             <constraint firstItem="YR4-Gu-zcm" firstAttribute="leading" secondItem="F8c-6Q-nQr" secondAttribute="leading" id="bvE-UU-3ST"/>
-                                            <constraint firstAttribute="width" constant="50" id="coV-xJ-iMx"/>
+                                            <constraint firstAttribute="width" constant="55" id="coV-xJ-iMx"/>
                                             <constraint firstItem="Vyc-2E-ct3" firstAttribute="leading" secondItem="F8c-6Q-nQr" secondAttribute="leading" id="d2a-vF-cXO"/>
                                             <constraint firstAttribute="trailing" secondItem="rxQ-hH-7uP" secondAttribute="trailing" id="dgg-ra-tNv"/>
                                             <constraint firstAttribute="trailing" secondItem="zyZ-hW-BOS" secondAttribute="trailing" id="fJU-bN-uFx"/>
@@ -1184,16 +1180,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="esz-bu-g1b">
-                                        <rect key="frame" x="500" y="0.0" width="50" height="833"/>
+                                        <rect key="frame" x="525" y="0.0" width="55" height="833"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbR-LK-7nw">
-                                                <rect key="frame" x="20.5" y="0.0" width="9.5" height="34"/>
+                                                <rect key="frame" x="23" y="0.0" width="9.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" tag="600" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJr-6T-x7b" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="47" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="47" width="55" height="34"/>
                                                 <state key="normal" title="5AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1202,7 +1198,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="605" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TjY-nF-YcR" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="94" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="94" width="55" height="34"/>
                                                 <state key="normal" title="6AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1211,7 +1207,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="610" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OG-tr-Vf6" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="141" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="141" width="55" height="34"/>
                                                 <state key="normal" title="7AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1220,7 +1216,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="615" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tv9-0T-JcL" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="188" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="188" width="55" height="34"/>
                                                 <state key="normal" title="8AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1229,7 +1225,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="620" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ3-Lf-NWj" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="235" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="235" width="55" height="34"/>
                                                 <state key="normal" title="9AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1238,7 +1234,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="625" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BO3-Cb-D69" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="282" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="282" width="55" height="34"/>
                                                 <state key="normal" title="10AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1247,7 +1243,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="630" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8Q-tW-EAY" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="329" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="329" width="55" height="34"/>
                                                 <state key="normal" title="11AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1256,7 +1252,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="635" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJE-LH-qFk" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="376" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="376" width="55" height="34"/>
                                                 <state key="normal" title="12PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1265,7 +1261,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="640" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3f-Ab-q3d" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="423" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="423" width="55" height="34"/>
                                                 <state key="normal" title="1PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1274,7 +1270,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="645" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jz-Cq-4La" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="470" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="470" width="55" height="34"/>
                                                 <state key="normal" title="2PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1283,7 +1279,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="650" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LA-kd-Pns" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="517" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="517" width="55" height="34"/>
                                                 <state key="normal" title="3PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1292,7 +1288,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="655" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkh-CY-4e3" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="564" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="564" width="55" height="34"/>
                                                 <state key="normal" title="4PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1301,7 +1297,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="660" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3N-66-GGT" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="611" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="611" width="55" height="34"/>
                                                 <state key="normal" title="5PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1310,7 +1306,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="665" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ev-TT-NHB" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="658" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="658" width="55" height="34"/>
                                                 <state key="normal" title="6PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1319,7 +1315,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="670" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf9-c0-4pT" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="705" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="705" width="55" height="34"/>
                                                 <state key="normal" title="7PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1328,7 +1324,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="675" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cC-tz-OYI" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="752" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="752" width="55" height="34"/>
                                                 <state key="normal" title="8PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1337,7 +1333,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="680" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNj-2Z-Gyt" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="799" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="799" width="55" height="34"/>
                                                 <state key="normal" title="9PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1372,7 +1368,7 @@
                                             <constraint firstItem="0cC-tz-OYI" firstAttribute="leading" secondItem="esz-bu-g1b" secondAttribute="leading" id="eIV-yp-TiI"/>
                                             <constraint firstItem="yJE-LH-qFk" firstAttribute="leading" secondItem="esz-bu-g1b" secondAttribute="leading" id="f4c-Ce-GB8"/>
                                             <constraint firstAttribute="trailing" secondItem="BO3-Cb-D69" secondAttribute="trailing" id="gjs-AO-B52"/>
-                                            <constraint firstAttribute="width" constant="50" id="hLt-rv-gCB"/>
+                                            <constraint firstAttribute="width" constant="55" id="hLt-rv-gCB"/>
                                             <constraint firstItem="lkh-CY-4e3" firstAttribute="leading" secondItem="esz-bu-g1b" secondAttribute="leading" id="hlZ-F2-PYs"/>
                                             <constraint firstItem="R8Q-tW-EAY" firstAttribute="leading" secondItem="esz-bu-g1b" secondAttribute="leading" id="jIH-1D-uhl"/>
                                             <constraint firstItem="TjY-nF-YcR" firstAttribute="leading" secondItem="esz-bu-g1b" secondAttribute="leading" id="pRS-j1-MOb"/>
@@ -1385,16 +1381,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="4ZC-45-wQ7">
-                                        <rect key="frame" x="600" y="0.0" width="50" height="833"/>
+                                        <rect key="frame" x="630" y="0.0" width="55" height="833"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bad-Y0-Qa5">
-                                                <rect key="frame" x="20" y="0.0" width="10" height="34"/>
+                                                <rect key="frame" x="22.5" y="0.0" width="10" height="34"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="17"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" tag="700" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHK-Ev-JhB" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="47" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="47" width="55" height="34"/>
                                                 <state key="normal" title="5AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1403,7 +1399,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="705" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqH-fP-Vdi" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="94" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="94" width="55" height="34"/>
                                                 <state key="normal" title="6AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1412,7 +1408,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="710" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1N-Kr-bJO" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="141" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="141" width="55" height="34"/>
                                                 <state key="normal" title="7AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1421,7 +1417,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="715" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXy-DL-gpd" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="188" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="188" width="55" height="34"/>
                                                 <state key="normal" title="8AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1430,7 +1426,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="720" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8td-XE-XDC" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="235" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="235" width="55" height="34"/>
                                                 <state key="normal" title="9AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1439,7 +1435,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="725" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWy-xL-fSD" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="282" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="282" width="55" height="34"/>
                                                 <state key="normal" title="10AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1448,7 +1444,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="730" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3E-s3-NQB" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="329" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="329" width="55" height="34"/>
                                                 <state key="normal" title="11AM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1457,7 +1453,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="735" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW9-1V-qq5" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="376" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="376" width="55" height="34"/>
                                                 <state key="normal" title="12PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1466,7 +1462,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="740" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9R-8U-Iw1" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="423" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="423" width="55" height="34"/>
                                                 <state key="normal" title="1PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1475,7 +1471,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="745" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooZ-yy-xgZ" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="470" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="470" width="55" height="34"/>
                                                 <state key="normal" title="2PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1484,7 +1480,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="750" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOg-db-5jr" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="517" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="517" width="55" height="34"/>
                                                 <state key="normal" title="3PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1493,7 +1489,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="755" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLM-Tq-tkD" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="564" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="564" width="55" height="34"/>
                                                 <state key="normal" title="4PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1502,7 +1498,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="760" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tah-X8-ufw" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="611" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="611" width="55" height="34"/>
                                                 <state key="normal" title="5PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1511,7 +1507,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="765" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIm-M5-3jC" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="658" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="658" width="55" height="34"/>
                                                 <state key="normal" title="6PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1520,7 +1516,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="770" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJY-LZ-agi" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="705" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="705" width="55" height="34"/>
                                                 <state key="normal" title="7PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1529,7 +1525,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="775" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qB8-YX-h8m" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="752" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="752" width="55" height="34"/>
                                                 <state key="normal" title="8PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1538,7 +1534,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="780" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssi-y3-Y2t" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="799" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="799" width="55" height="34"/>
                                                 <state key="normal" title="9PM">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -1567,7 +1563,7 @@
                                             <constraint firstAttribute="trailing" secondItem="rHK-Ev-JhB" secondAttribute="trailing" id="Sew-Yh-c26"/>
                                             <constraint firstItem="zIm-M5-3jC" firstAttribute="leading" secondItem="4ZC-45-wQ7" secondAttribute="leading" id="SsN-UW-zqk"/>
                                             <constraint firstItem="sWy-xL-fSD" firstAttribute="leading" secondItem="4ZC-45-wQ7" secondAttribute="leading" id="UKu-cP-yBT"/>
-                                            <constraint firstAttribute="width" constant="50" id="VXO-ph-n6E"/>
+                                            <constraint firstAttribute="width" constant="55" id="VXO-ph-n6E"/>
                                             <constraint firstAttribute="trailing" secondItem="Ssi-y3-Y2t" secondAttribute="trailing" id="VnD-T5-dLL"/>
                                             <constraint firstAttribute="trailing" secondItem="sWy-xL-fSD" secondAttribute="trailing" id="VoT-u7-hxT"/>
                                             <constraint firstItem="eOg-db-5jr" firstAttribute="leading" secondItem="4ZC-45-wQ7" secondAttribute="leading" id="X7e-wt-qja"/>
@@ -1649,8 +1645,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nii-0V-KKv">
-                                <rect key="frame" x="209" y="683" width="350" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nii-0V-KKv">
+                                <rect key="frame" x="209" y="894" width="350" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="gek-rj-mgX"/>
                                     <constraint firstAttribute="width" constant="350" id="nPb-Ob-RdV"/>
@@ -1663,26 +1659,39 @@
                                     <action selector="doneButtonPressed:" destination="FHn-DR-H36" eventType="touchUpInside" id="kId-oj-oJT"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6xy-aH-kLx">
-                                <rect key="frame" x="134" y="313" width="500" height="277"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FULL NAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w7F-hJ-gwI">
+                                <rect key="frame" x="100" y="76" width="568" height="100"/>
                                 <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w7F-hJ-gwI">
-                                <rect key="frame" x="134" y="186" width="500" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="y7o-EP-yap"/>
+                                </constraints>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6xy-aH-kLx">
+                                <rect key="frame" x="100" y="207" width="568" height="315"/>
+                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="315" id="IEv-lr-3yd"/>
+                                </constraints>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Nii-0V-KKv" firstAttribute="centerX" secondItem="1NV-PK-rbJ" secondAttribute="centerX" id="Tuh-ey-Afz"/>
+                            <constraint firstAttribute="trailing" secondItem="6xy-aH-kLx" secondAttribute="trailing" constant="100" id="BXn-el-iI1"/>
+                            <constraint firstItem="w7F-hJ-gwI" firstAttribute="leading" secondItem="1NV-PK-rbJ" secondAttribute="leading" constant="100" id="Dk0-xS-P68"/>
+                            <constraint firstItem="6xy-aH-kLx" firstAttribute="centerX" secondItem="1NV-PK-rbJ" secondAttribute="centerX" id="HyX-sO-PPL"/>
+                            <constraint firstItem="Nii-0V-KKv" firstAttribute="centerX" secondItem="1NV-PK-rbJ" secondAttribute="centerX" id="I8P-vP-d8u"/>
+                            <constraint firstAttribute="trailing" secondItem="w7F-hJ-gwI" secondAttribute="trailing" constant="100" id="U9P-qR-S3V"/>
+                            <constraint firstItem="w7F-hJ-gwI" firstAttribute="centerX" secondItem="1NV-PK-rbJ" secondAttribute="centerX" id="f4e-i8-Pv8"/>
+                            <constraint firstItem="CLo-Wt-Sb3" firstAttribute="top" secondItem="Nii-0V-KKv" secondAttribute="bottom" constant="50" id="hEb-4d-vif"/>
+                            <constraint firstItem="w7F-hJ-gwI" firstAttribute="top" secondItem="s0I-6W-i0H" secondAttribute="bottom" constant="56" id="kjF-5e-qyY"/>
+                            <constraint firstItem="6xy-aH-kLx" firstAttribute="leading" secondItem="1NV-PK-rbJ" secondAttribute="leading" constant="100" id="muo-D7-trd"/>
+                            <constraint firstItem="6xy-aH-kLx" firstAttribute="top" secondItem="w7F-hJ-gwI" secondAttribute="bottom" constant="31" id="pma-gi-ppl"/>
                         </constraints>
                     </view>
                     <connections>
