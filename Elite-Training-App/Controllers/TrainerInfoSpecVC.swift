@@ -26,18 +26,18 @@ class TrainerInfoSpecVC: UIViewController {
     @IBOutlet weak var smallGroupButton: UIButton!
     @IBOutlet weak var natalButton: UIButton!
     @IBOutlet weak var runningAndEndButton: UIButton!
-    
+    @IBOutlet weak var doneButtonPressed: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.doneButtonPressed.layer.insertSublayer(GradientLayer.gradient(bounds: doneButtonPressed.bounds), at: 0)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
@@ -63,14 +63,20 @@ class TrainerInfoSpecVC: UIViewController {
         {
             guard let focus = sender.titleLabel?.text?.lowercased() else {return}
             trainingFocusPref[focus] = focus
-            
+            sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
         }
         else
         {
             guard let focus = sender.titleLabel?.text?.lowercased() else {return}
             trainingFocusPref.removeValue(forKey: focus)
-            
-            
+            guard let layers = sender.layer.sublayers else {return}
+            for layer in layers
+            {
+                if layer.name == "GradientLayer"
+                {
+                    layer.removeFromSuperlayer()
+                }
+            }
         }
     }
     

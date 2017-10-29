@@ -50,9 +50,11 @@ class TrainerInfoSchedVC: UIViewController {
     
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
-        for (_, value) in timeSlotDictionary
+        TrainerService.removeTrainerSchedule(forUID: Trainer.current.uid)
+        
+        for (key , value) in timeSlotDictionary
         {
-            TrainerService.updateTrainerSchedule(forUID: Trainer.current.uid, timeSlot: value)
+            TrainerService.updateTrainerSchedule(forUID: Trainer.current.uid, timeSlot: value, buttonTag: key)
         }
         self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
         self.navigationController?.popViewController(animated: true)
@@ -66,32 +68,37 @@ class TrainerInfoSchedVC: UIViewController {
             case 100..<200:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
-                let timeSlot = TimeSlot(dayOfTheWeek: "sunday", time: timeText)
+                let timeSlot = TimeSlot(dayOfTheWeek: "sunday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 200..<300:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
-                let timeSlot = TimeSlot(dayOfTheWeek: "monday", time: timeText)
+                let timeSlot = TimeSlot(dayOfTheWeek: "monday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 300..<400:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
-                let timeSlot = TimeSlot(dayOfTheWeek: "tuesday", time: timeText)
+                let timeSlot = TimeSlot(dayOfTheWeek: "tuesday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 400..<500:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
-                let timeSlot = TimeSlot(dayOfTheWeek: "wednesday", time: timeText)
+                let timeSlot = TimeSlot(dayOfTheWeek: "wednesday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 500..<600:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
-                let timeSlot = TimeSlot(dayOfTheWeek: "thursday", time: timeText)
+                let timeSlot = TimeSlot(dayOfTheWeek: "thursday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 600..<700:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 guard let timeText = sender.titleLabel?.text else { return }
-                let timeSlot = TimeSlot(dayOfTheWeek: "friday", time: timeText)
+                let timeSlot = TimeSlot(dayOfTheWeek: "friday", time: timeText, key: String(describing:sender.tag))
+                timeSlotDictionary[sender.tag] = timeSlot
+            case 700..<800:
+                sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                guard let timeText = sender.titleLabel?.text else { return }
+                let timeSlot = TimeSlot(dayOfTheWeek: "saturday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             default:
                 break

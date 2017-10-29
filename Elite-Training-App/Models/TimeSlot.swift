@@ -52,11 +52,13 @@ class TimeSlot
 {
     var dayOfTheWeek : String
     var time : String
+    var key : String
     
-    init(dayOfTheWeek: String, time: String)
+    init(dayOfTheWeek: String, time: String, key: String)
     {
         self.dayOfTheWeek = dayOfTheWeek
         self.time = time
+        self.key = key
     }
     
     init?(snapshot: DataSnapshot)
@@ -68,6 +70,7 @@ class TimeSlot
         
         self.dayOfTheWeek = dayOfTheWeek
         self.time = time
+        self.key = snapshot.key
     }
     
     var dictValue : [String:Any]

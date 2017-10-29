@@ -69,7 +69,7 @@ class TrainerSelectVC: UIViewController {
         }
         let currentTrainer = trainers[indexPath.item]
         let bioPresenter = Presentr(presentationType: .popup)
-        bioPresenter.presentationType = .custom(width: .sideMargin(value: 60), height: .sideMargin(value: 60), center: .center)
+        bioPresenter.presentationType = .custom(width: .sideMargin(value: 10), height: .sideMargin(value: 10), center: .center)
         bioPresenter.backgroundOpacity = 0.50
         bioPresenter.blurBackground = true
         bioPresenter.roundCorners = true
@@ -92,6 +92,7 @@ class TrainerSelectVC: UIViewController {
         let bioPresenter = Presentr(presentationType: .popup)
         bioPresenter.presentationType = .popup
         bioPresenter.backgroundOpacity = 0.50
+        bioPresenter.blurBackground = true
         bioPresenter.roundCorners = true
         bioPresenter.dismissOnSwipe = true
         let storyboard = UIStoryboard.init(name: "TrainerPopUp", bundle: nil)

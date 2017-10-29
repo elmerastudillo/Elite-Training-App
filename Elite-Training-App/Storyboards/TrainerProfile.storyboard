@@ -65,12 +65,12 @@
                                     <action selector="updateSchedButtonPressed:" destination="CNi-Dc-vSs" eventType="touchUpInside" id="uJy-Lc-1zU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebz-qO-F4D">
-                                <rect key="frame" x="224" y="873" width="350" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebz-qO-F4D">
+                                <rect key="frame" x="209" y="894" width="350" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="JOf-c1-n5T"/>
-                                    <constraint firstAttribute="width" constant="320" id="Ugz-U7-fMY"/>
+                                    <constraint firstAttribute="width" constant="350" id="iXy-Cx-GbR"/>
+                                    <constraint firstAttribute="height" constant="80" id="zLy-vq-4FJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
                                 <state key="normal" title="LOGOUT">
@@ -108,10 +108,11 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2bB-LN-GQl" firstAttribute="trailing" secondItem="1XX-wt-drr" secondAttribute="trailingMargin" id="6UQ-vw-fIg"/>
-                            <constraint firstItem="30h-vP-VuZ" firstAttribute="top" secondItem="Ebz-qO-F4D" secondAttribute="bottom" constant="50" id="asJ-ER-HxA"/>
+                            <constraint firstItem="30h-vP-VuZ" firstAttribute="top" secondItem="Ebz-qO-F4D" secondAttribute="bottom" constant="50" id="ko9-hF-ohX"/>
+                            <constraint firstItem="Ebz-qO-F4D" firstAttribute="centerX" secondItem="1XX-wt-drr" secondAttribute="centerX" id="lpF-nk-lxt"/>
                             <constraint firstItem="2bB-LN-GQl" firstAttribute="top" secondItem="cvm-wq-qKk" secondAttribute="bottom" constant="8" id="xCv-5i-mbG"/>
                         </constraints>
                     </view>
@@ -153,7 +154,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="doneButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="fe5-nJ-hmb"/>
+                                    <action selector="doneButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="A3l-hN-Hje"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.25" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6V-By-CLW">
@@ -432,7 +433,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="05U-Ol-LdM" firstAttribute="top" secondItem="H8P-dc-1bO" secondAttribute="bottom" constant="50" id="0PI-Ot-h0e"/>
                             <constraint firstItem="H8P-dc-1bO" firstAttribute="centerX" secondItem="XRS-74-usu" secondAttribute="centerX" id="bZ3-aV-uPR"/>
@@ -444,6 +445,7 @@
                         <outlet property="balanceAndStabButton" destination="Zh6-c9-Wd4" id="2hh-gg-G5C"/>
                         <outlet property="coreStrengthButton" destination="R9L-vn-s5h" id="u2Y-eX-M5m"/>
                         <outlet property="correctiveButton" destination="Eyi-k4-pWL" id="Wlq-HI-KnO"/>
+                        <outlet property="doneButtonPressed" destination="H8P-dc-1bO" id="b3h-sz-uer"/>
                         <outlet property="functionalMovementButton" destination="3P6-f3-bu6" id="dIE-fs-3ae"/>
                         <outlet property="leanAndToneButton" destination="Z1L-70-4pH" id="r7Z-zp-sBA"/>
                         <outlet property="natalButton" destination="xc0-ma-YSl" id="fQ7-H9-1gy"/>
