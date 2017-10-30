@@ -18,39 +18,7 @@ class TrainerTimeSlotVC: UIViewController {
     var eliteButtonArray : [EliteButton] = []
 
     @IBOutlet weak var doneButton: UIButton!
-    @IBOutlet weak var sunday5AMBttn: EliteButton!
-    @IBOutlet weak var sunday6AMBttn: EliteButton!
-    @IBOutlet weak var sunday7AMBttn: EliteButton!
-    @IBOutlet weak var sunday8AMBttn: EliteButton!
-    @IBOutlet weak var sunday9AMBttn: EliteButton!
-    @IBOutlet weak var sunday10AMBttn: EliteButton!
-    @IBOutlet weak var sunday11AMBttn: EliteButton!
-    @IBOutlet weak var sunday12PMBttn: EliteButton!
-    @IBOutlet weak var sunday1PMBttn: EliteButton!
-    @IBOutlet weak var sunday2PMBttn: EliteButton!
-    @IBOutlet weak var sunday3PMBttn: EliteButton!
-    @IBOutlet weak var sunday4PMBttn: EliteButton!
-    @IBOutlet weak var sunday5PMBttn: EliteButton!
-    @IBOutlet weak var sunday6PMBttn: EliteButton!
-    @IBOutlet weak var sunday7PMBttn: EliteButton!
-    @IBOutlet weak var sunday8PMBttn: EliteButton!
-    @IBOutlet weak var sunday9PMBttn: EliteButton!
-    @IBOutlet weak var monday5AMBttn: EliteButton!
-    @IBOutlet weak var monday6AMBttn: EliteButton!
-    @IBOutlet weak var monday7AMBttn: EliteButton!
-    @IBOutlet weak var monday8AMBttn: EliteButton!
-    @IBOutlet weak var monday9AMBttn: EliteButton!
-    @IBOutlet weak var monday10AMBttn: EliteButton!
-    @IBOutlet weak var monday11AMBttn: EliteButton!
-    @IBOutlet weak var monday12PMBttn: EliteButton!
-    @IBOutlet weak var monday1PMBttn: EliteButton!
-    @IBOutlet weak var monday2PMBttn: EliteButton!
-    @IBOutlet weak var monday3PMBttn: EliteButton!
-    @IBOutlet weak var monday4PMBttn: EliteButton!
-    @IBOutlet weak var monday5PMBttn: EliteButton!
-    @IBOutlet weak var monday6PMBttn: EliteButton!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 //        createViewBasedOnTimeSlot()
@@ -161,24 +129,33 @@ class TrainerTimeSlotVC: UIViewController {
     
     @IBAction func doneButtonPressed(sender: UIButton)
     {
+        
         // Send grid
         guard let member = self.newMember else { return }
         
-        guard let currentEmail = trainer?.emailAddress else { return }
-        let bodyString = ""
-        let personalization = Personalization(recipients: currentEmail)
-        let plainText = Content(contentType: ContentType.plainText, value: bodyString )
-        //let htmlText = Content(contentType: ContentType.htmlText, value: "<h1>Hello World</h1>")
-        let email = Email(
-            personalizations: [personalization],
-            from: Address(email: "savvyinc.jobs@gmail.com"),
-            content: [plainText],
-            subject: "New Client: \(member.firstName) \(member.lastName)"
-        )
-        do {
-            try Session.shared.send(request: email)
-        } catch {
-            print(error)
+        if !timeSlotDictionary.isEmpty{
+            var timeslots = ""
+            for (_,value) in timeSlotDictionary
+            {
+                timeslots += " \(value.dayOfTheWeek.firstUppercased) \(value.time)"
+                print(timeslots)
+            }
+            guard let currentEmail = trainer?.emailAddress else { return }
+            let bodyString = ""
+            let personalization = Personalization(recipients: currentEmail)
+            let plainText = Content(contentType: ContentType.plainText, value: bodyString )
+            //let htmlText = Content(contentType: ContentType.htmlText, value: "<h1>Hello World</h1>")
+            let email = Email(
+                personalizations: [personalization],
+                from: Address(email: "savvyinc.jobs@gmail.com"),
+                content: [plainText],
+                subject: "New Client: \(member.firstName) \(member.lastName)"
+            )
+            do {
+                try Session.shared.send(request: email)
+            } catch {
+                print(error)
+            }
         }
         
         print(timeSlotDictionary)

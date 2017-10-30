@@ -40,6 +40,7 @@
 		279F0D611F70F1FF00C0C132 /* TrainerInfoSchedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279F0D601F70F1FF00C0C132 /* TrainerInfoSchedVC.swift */; };
 		279FD1A91F84B565008EC6C2 /* TrainerPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279FD1A81F84B565008EC6C2 /* TrainerPopUp.storyboard */; };
 		279FD1AB1F84D031008EC6C2 /* TrainerTimeSlotVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279FD1AA1F84D031008EC6C2 /* TrainerTimeSlotVC.swift */; };
+		27CCA9D41FA86F7E00B3304D /* String+Uppercased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CCA9D31FA86F7E00B3304D /* String+Uppercased.swift */; };
 		27D667D41F93071C00D72097 /* proxima in Resources */ = {isa = PBXBuildFile; fileRef = 27D667D31F93071C00D72097 /* proxima */; };
 		27DA06541F7C20FB0073A1AA /* UIViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA06531F7C20FB0073A1AA /* UIViewController+Utilities.swift */; };
 		27DA06561F7C51810073A1AA /* TrainerBioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DA06551F7C51810073A1AA /* TrainerBioVC.swift */; };
@@ -85,6 +86,7 @@
 		279F0D601F70F1FF00C0C132 /* TrainerInfoSchedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainerInfoSchedVC.swift; path = Controllers/TrainerInfoSchedVC.swift; sourceTree = "<group>"; };
 		279FD1A81F84B565008EC6C2 /* TrainerPopUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TrainerPopUp.storyboard; path = Storyboards/TrainerPopUp.storyboard; sourceTree = "<group>"; };
 		279FD1AA1F84D031008EC6C2 /* TrainerTimeSlotVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerTimeSlotVC.swift; path = Controllers/TrainerTimeSlotVC.swift; sourceTree = "<group>"; };
+		27CCA9D31FA86F7E00B3304D /* String+Uppercased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+Uppercased.swift"; path = "Extensions/String+Uppercased.swift"; sourceTree = "<group>"; };
 		27D667D31F93071C00D72097 /* proxima */ = {isa = PBXFileReference; lastKnownFileType = folder; name = proxima; path = "Elite-Training-App/proxima"; sourceTree = SOURCE_ROOT; };
 		27DA06531F7C20FB0073A1AA /* UIViewController+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+Utilities.swift"; path = "Extensions/UIViewController+Utilities.swift"; sourceTree = "<group>"; };
 		27DA06551F7C51810073A1AA /* TrainerBioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainerBioVC.swift; path = Controllers/TrainerBioVC.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				272C34221F888B98005ED814 /* StorageReference.swift */,
 				278466981F7AD2940031B7BF /* UIImageView+Extension.swift */,
 				27DA06531F7C20FB0073A1AA /* UIViewController+Utilities.swift */,
+				27CCA9D31FA86F7E00B3304D /* String+Uppercased.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				27134A3E1F88935C009BF91D /* PhotoHelper.swift in Sources */,
 				279F0D591F70F0D600C0C132 /* TrainerSelectVC.swift in Sources */,
 				27DA06561F7C51810073A1AA /* TrainerBioVC.swift in Sources */,
+				27CCA9D41FA86F7E00B3304D /* String+Uppercased.swift in Sources */,
 				279F0D4D1F70EFC400C0C132 /* Trainer.swift in Sources */,
 				272613BC1F78ED73006947D4 /* TrainerCell.swift in Sources */,
 				27E3166A1F70E2AC00E30E69 /* AppDelegate.swift in Sources */,

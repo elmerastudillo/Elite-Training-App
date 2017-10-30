@@ -1596,37 +1596,6 @@
                     </view>
                     <connections>
                         <outlet property="doneButton" destination="EsF-mJ-bpp" id="6AR-DL-XPR"/>
-                        <outlet property="monday10AMBttn" destination="Rhh-Ru-ipP" id="IiA-6X-HtA"/>
-                        <outlet property="monday11AMBttn" destination="U6e-jJ-jWK" id="tjg-op-sLg"/>
-                        <outlet property="monday12PMBttn" destination="RqT-UE-0dT" id="rgk-vN-OkR"/>
-                        <outlet property="monday1PMBttn" destination="1P4-nM-dP6" id="uNF-dS-QuH"/>
-                        <outlet property="monday2PMBttn" destination="GgC-ko-GOL" id="c6z-OQ-lnM"/>
-                        <outlet property="monday3PMBttn" destination="Xz0-sU-DXh" id="3fO-K5-InM"/>
-                        <outlet property="monday4PMBttn" destination="gie-hh-yDF" id="WX6-v5-8La"/>
-                        <outlet property="monday5AMBttn" destination="vQI-dS-895" id="fyf-3J-KrZ"/>
-                        <outlet property="monday5PMBttn" destination="cAR-0g-XGc" id="gdk-Kf-iFx"/>
-                        <outlet property="monday6AMBttn" destination="vOx-K5-tGh" id="2CM-Uh-b8T"/>
-                        <outlet property="monday6PMBttn" destination="4Wb-gU-lo3" id="mC5-7r-RJN"/>
-                        <outlet property="monday7AMBttn" destination="vJN-8q-5AD" id="00O-Hn-3lE"/>
-                        <outlet property="monday8AMBttn" destination="nCw-jX-1G6" id="BJz-iT-5Fn"/>
-                        <outlet property="monday9AMBttn" destination="ogp-HB-PHk" id="tO0-Xg-sXc"/>
-                        <outlet property="sunday10AMBttn" destination="1Cu-0z-eg9" id="ynQ-ld-8Fl"/>
-                        <outlet property="sunday11AMBttn" destination="0wf-Rq-7Qj" id="ptb-03-H08"/>
-                        <outlet property="sunday12PMBttn" destination="YAl-Xx-Dmy" id="es4-jH-yls"/>
-                        <outlet property="sunday1PMBttn" destination="dxc-QD-8NY" id="m9m-BD-xNh"/>
-                        <outlet property="sunday2PMBttn" destination="sHl-eD-mpk" id="YsZ-KC-4tS"/>
-                        <outlet property="sunday3PMBttn" destination="V0p-tT-9yi" id="yXx-Eg-UF2"/>
-                        <outlet property="sunday4PMBttn" destination="1dc-pL-z8j" id="gJB-Lz-Z6w"/>
-                        <outlet property="sunday5AMBttn" destination="idq-RL-yeW" id="mbw-sq-4mj"/>
-                        <outlet property="sunday5PMBttn" destination="v8v-CZ-JQY" id="6kj-Rc-E0r"/>
-                        <outlet property="sunday6AMBttn" destination="4a7-nI-32Z" id="amX-Ti-ORE"/>
-                        <outlet property="sunday6PMBttn" destination="YnZ-1M-CNt" id="vPn-gI-Ajp"/>
-                        <outlet property="sunday7AMBttn" destination="HAh-9B-1rw" id="fgD-iu-YOI"/>
-                        <outlet property="sunday7PMBttn" destination="ybT-Fa-FzO" id="V93-na-1J9"/>
-                        <outlet property="sunday8AMBttn" destination="Omy-Hd-zCH" id="LJl-e7-B35"/>
-                        <outlet property="sunday8PMBttn" destination="9V6-4Y-FrM" id="bJC-46-cfw"/>
-                        <outlet property="sunday9AMBttn" destination="7pL-SA-tC1" id="yrA-Kh-2mj"/>
-                        <outlet property="sunday9PMBttn" destination="6dx-sZ-lyx" id="frT-75-dWM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o53-R1-Szv" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -157,7 +157,7 @@ extension TrainerSelectVC : UICollectionViewDataSource
         cell.selectButton.isHidden = true
         cell.infoButton.isHidden = true
         cell.nameLabel.text = trainer.fullname
-        cell.focusLabel.text = self.newMember?.trainingPreference
+        cell.focusLabel.text = self.newMember?.trainingPreference.firstUppercased
 //        cell.layer.borderWidth = 5.0
 //        cell.imageView.layer.insertSublayer(GradientLayer.gradientBorder(bounds: cell.imageView.bounds), at: 0)
 //        cell.layer.insertSublayer(GradientLayer.gradientBorder(bounds: cell.bounds), at: 0)

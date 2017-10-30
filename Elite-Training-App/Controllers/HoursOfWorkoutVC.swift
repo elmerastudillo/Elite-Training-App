@@ -38,6 +38,7 @@ class HoursOfWorkoutVC: UIViewController {
         nextButton.layer.cornerRadius = 5.0
         nextButton.layer.masksToBounds = true
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

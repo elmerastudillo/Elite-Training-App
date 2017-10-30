@@ -9,8 +9,10 @@
 import UIKit
 import Firebase
 import IQKeyboardManagerSwift
+import SendGrid
 
 typealias FIRUser = FirebaseAuth.User
+private var apiKey = "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"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         IQKeyboardManager.sharedManager().enable = true
+        Session.shared.authentication = Authentication.apiKey(apiKey)
         return true
     }
 
