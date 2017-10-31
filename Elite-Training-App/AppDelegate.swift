@@ -12,7 +12,7 @@ import IQKeyboardManagerSwift
 import SendGrid
 
 typealias FIRUser = FirebaseAuth.User
-private var apiKey = "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"
+private var apiKey = "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"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

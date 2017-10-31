@@ -135,23 +135,27 @@ class TrainerTimeSlotVC: UIViewController {
         
         if !timeSlotDictionary.isEmpty{
             var timeslots = ""
-            for (_,value) in timeSlotDictionary
+            for (_ ,value) in timeSlotDictionary
             {
-                timeslots += " \(value.dayOfTheWeek.firstUppercased) \(value.time)"
+                timeslots += "<li>\(value.dayOfTheWeek.firstUppercased) \(value.time)</li>"
                 print(timeslots)
             }
-            guard let currentEmail = trainer?.emailAddress else { return }
-            let bodyString = ""
-            let personalization = Personalization(recipients: currentEmail)
-            let plainText = Content(contentType: ContentType.plainText, value: bodyString )
-            //let htmlText = Content(contentType: ContentType.htmlText, value: "<h1>Hello World</h1>")
+            let fullname = "\(member.firstName) \(member.lastName)"
+            let focusType = "\(member.trainingPreference)"
+            let hoursPerWeek = "\(member.hoursPerWeek)"
+            let memberEmail = "\(member.email)"
+            let personalization = Personalization(recipients: memberEmail)
+            let html =
+            "<head><meta charset='UTF-8'> <title>Document</title></head><body><p>New client alert!</p><p>\(fullname) has requested to train with you. Here is some info on the client.</p><p>Name: \(fullname)</p><p>Focus: \(focusType.firstUppercased)</p><p>Weekly Activity: Works out \(hoursPerWeek) per week.</p><p>Time(s):<ul>\(timeslots)</ul></p><p>Please email them @ \(memberEmail)</p><p>Cheers, <br> The Elite Life & Fitness Team</p></body>"
+            let htmlText = Content(contentType: ContentType.htmlText, value: html)
             let email = Email(
                 personalizations: [personalization],
-                from: Address(email: "savvyinc.jobs@gmail.com"),
-                content: [plainText],
-                subject: "New Client: \(member.firstName) \(member.lastName)"
+                from: Address(email: "watson.g@iameliteny.com   "),
+                content: [htmlText],
+                subject: "New Client: \(fullname)"
             )
             do {
+                print(email)
                 try Session.shared.send(request: email)
             } catch {
                 print(error)

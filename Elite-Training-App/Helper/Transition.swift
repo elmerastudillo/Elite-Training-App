@@ -14,7 +14,7 @@ struct Transition
     static func fadeTransition() -> CATransition
     {
         let transition: CATransition = CATransition()
-        transition.duration = 0.4
+        transition.duration = 0.5
         transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         transition.type = kCATransitionFade
         return transition
