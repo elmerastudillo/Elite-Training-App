@@ -23,10 +23,9 @@ class TrainerInfoSchedVC: UIViewController {
     
 //    var timeSlotArr: [TimeSlot]?
     var timeSlotDictionary = [Int: TimeSlot]()
-    var timeSlotButtons: [UIButton]?
     var buttonIsSelected = false
-    
     @IBOutlet weak var doneButton: UIButton!
+    var eliteButtonArray : [EliteButton] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +33,31 @@ class TrainerInfoSchedVC: UIViewController {
         doneButton.layer.insertSublayer(GradientLayer.gradient(bounds: doneButton.bounds), at: 0)
         doneButton.layer.cornerRadius = 5.0
         doneButton.layer.masksToBounds = true
+        
+        self.lookForButton(view: self.view)
+        
+        NewMemberService.fetchSchedule(uid: Trainer.current.uid) { (timeslots) in
+            print(timeslots)
+            print(self.eliteButtonArray)
+            if !timeslots.isEmpty
+            {
+                for button in self.eliteButtonArray
+                {
+                    for slot in timeslots
+                    {
+                        if button.tag == Int(slot.key)
+                        {
+                            DispatchQueue.main.async {
+                                button.layer.insertSublayer(GradientLayer.gradient(bounds: button.bounds), at: 0)
+                                button.isSelected = true
+                                button.setTitleColor(UIColor.black, for: .selected)
+                                self.timeSlotDictionary[button.tag] = slot
+                            }
+                        }
+                    }
+                }
+            }
+        }
         
     }
 
@@ -67,36 +91,43 @@ class TrainerInfoSchedVC: UIViewController {
             {
             case 100..<200:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "sunday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 200..<300:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "monday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 300..<400:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "tuesday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 400..<500:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "wednesday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 500..<600:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "thursday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 600..<700:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "friday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 700..<800:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "saturday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
@@ -118,6 +149,26 @@ class TrainerInfoSchedVC: UIViewController {
         }
         
         print(timeSlotDictionary)
+    }
+    
+    // Using recursion to look inside nested views
+    func lookForButton(view: UIView)
+    {
+        let subviews = view.subviews
+        if subviews.count == 0 { return }
+        for v in subviews
+        {
+            if v is UIButton && v.tag != 0
+            {
+                let button = v as! EliteButton
+                self.eliteButtonArray.append(button)
+            }
+            else
+            {
+                print(v)
+                lookForButton(view: v)
+            }
+        }
     }
     
     /*

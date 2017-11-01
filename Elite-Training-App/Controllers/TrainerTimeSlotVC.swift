@@ -140,17 +140,18 @@ class TrainerTimeSlotVC: UIViewController {
                 timeslots += "<li>\(value.dayOfTheWeek.firstUppercased) \(value.time)</li>"
                 print(timeslots)
             }
+            guard let trainerEmail = trainer?.emailAddress else { return }
             let fullname = "\(member.firstName) \(member.lastName)"
             let focusType = "\(member.trainingPreference)"
             let hoursPerWeek = "\(member.hoursPerWeek)"
-            let memberEmail = "\(member.email)"
+            let memberEmail = "\(trainerEmail)"
             let personalization = Personalization(recipients: memberEmail)
             let html =
             "<head><meta charset='UTF-8'> <title>Document</title></head><body><p>New client alert!</p><p>\(fullname) has requested to train with you. Here is some info on the client.</p><p>Name: \(fullname)</p><p>Focus: \(focusType.firstUppercased)</p><p>Weekly Activity: Works out \(hoursPerWeek) per week.</p><p>Time(s):<ul>\(timeslots)</ul></p><p>Please email them @ \(memberEmail)</p><p>Cheers, <br> The Elite Life & Fitness Team</p></body>"
             let htmlText = Content(contentType: ContentType.htmlText, value: html)
             let email = Email(
                 personalizations: [personalization],
-                from: Address(email: "watson.g@iameliteny.com   "),
+                from: Address(email: "watson.g@iameliteny.com"),
                 content: [htmlText],
                 subject: "New Client: \(fullname)"
             )
@@ -175,42 +176,49 @@ class TrainerTimeSlotVC: UIViewController {
             case 100..<200:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 sender.layer.cornerRadius = 5.0
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "sunday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 200..<300:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 sender.layer.cornerRadius = 5.0
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "monday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 300..<400:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 sender.layer.cornerRadius = 5.0
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "tuesday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 400..<500:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 sender.layer.cornerRadius = 5.0
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "wednesday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 500..<600:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 sender.layer.cornerRadius = 5.0
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "thursday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 600..<700:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 sender.layer.cornerRadius = 5.0
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "friday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot
             case 700..<800:
                 sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
                 sender.layer.cornerRadius = 5.0
+                sender.setTitleColor(UIColor.black, for: .selected)
                 guard let timeText = sender.titleLabel?.text else { return }
                 let timeSlot = TimeSlot(dayOfTheWeek: "saturday", time: timeText, key: String(describing:sender.tag))
                 timeSlotDictionary[sender.tag] = timeSlot

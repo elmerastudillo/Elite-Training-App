@@ -56,7 +56,7 @@ class HoursOfWorkoutVC: UIViewController {
             if button.tag == sender.tag
             {
                 button.isSelected = true
-                
+                button.setTitleColor(UIColor.black, for: .selected)
                 button.layer.insertSublayer(GradientLayer.gradient(bounds: button.bounds), at: 0)
                 button.setNeedsDisplay()
                 hoursPerWeek = (button.titleLabel?.text?.lowercased())!

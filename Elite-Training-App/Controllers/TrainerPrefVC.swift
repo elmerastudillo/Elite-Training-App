@@ -100,6 +100,7 @@ class TrainerPrefVC: UIViewController {
             if button.tag == sender.tag
             {
                 button.isSelected = true
+                button.setTitleColor(UIColor.black, for: .selected)
                 button.layer.insertSublayer(GradientLayer.gradient(bounds: button.bounds), at: 0)
                 button.setNeedsDisplay()
                 genderPreference = (button.titleLabel?.text?.lowercased())!
@@ -133,6 +134,7 @@ class TrainerPrefVC: UIViewController {
                 
                 //self.layer.sublayers?[0].removeFromSuperlayer()
                 button.layer.insertSublayer(GradientLayer.gradient(bounds: button.bounds), at: 0)
+                button.setTitleColor(UIColor.black, for: .selected)
                 //self.layer.insertSubLayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
                 button.setNeedsDisplay()
                 //                self.layer.insertSublayer(Grad
