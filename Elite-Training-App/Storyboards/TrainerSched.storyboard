@@ -1497,10 +1497,10 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdM-rz-bnl">
-                                <rect key="frame" x="226.5" y="20" width="316" height="58.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Your schedule." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdM-rz-bnl">
+                                <rect key="frame" x="85" y="20" width="598" height="58.5"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="50"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1508,9 +1508,10 @@
                         <constraints>
                             <constraint firstItem="ZdM-rz-bnl" firstAttribute="centerX" secondItem="yZp-eV-Y5T" secondAttribute="centerX" id="10Q-Eb-6Bk"/>
                             <constraint firstItem="yh1-Ya-V3x" firstAttribute="top" secondItem="yZp-eV-Y5T" secondAttribute="top" constant="15" id="7uz-wY-BHl"/>
-                            <constraint firstItem="ZdM-rz-bnl" firstAttribute="top" secondItem="rTU-pl-ycZ" secondAttribute="top" id="IGq-rQ-DQI"/>
                             <constraint firstAttribute="bottom" secondItem="xPq-Uo-BDD" secondAttribute="bottom" constant="20" id="LNg-pu-Yw7"/>
+                            <constraint firstItem="ZdM-rz-bnl" firstAttribute="top" secondItem="rTU-pl-ycZ" secondAttribute="top" id="Rrx-8K-qzY"/>
                             <constraint firstItem="ucw-6c-C6F" firstAttribute="centerY" secondItem="yZp-eV-Y5T" secondAttribute="centerY" id="TsW-rQ-gnv"/>
+                            <constraint firstItem="ZdM-rz-bnl" firstAttribute="leading" secondItem="yZp-eV-Y5T" secondAttribute="leading" constant="85" id="X2Z-oD-AKE"/>
                             <constraint firstItem="rTU-pl-ycZ" firstAttribute="trailing" secondItem="yh1-Ya-V3x" secondAttribute="trailing" constant="15" id="a1q-uh-uiv"/>
                             <constraint firstItem="ucw-6c-C6F" firstAttribute="centerX" secondItem="yZp-eV-Y5T" secondAttribute="centerX" id="iwH-Gi-Jhe"/>
                             <constraint firstItem="xPq-Uo-BDD" firstAttribute="centerX" secondItem="rTU-pl-ycZ" secondAttribute="centerX" id="o9i-MF-lwi"/>

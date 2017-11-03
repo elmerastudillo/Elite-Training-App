@@ -31,15 +31,15 @@ class TrainerProfileVC: UIViewController {
         bioButton.layer.cornerRadius = 5.0
         bioButton.layer.masksToBounds = true
         
-        logoutButton.layer.insertSublayer(GradientLayer.gradient(bounds: bioButton.bounds), at: 0)
+        logoutButton.layer.insertSublayer(GradientLayer.gradient(bounds: logoutButton.bounds), at: 0)
         logoutButton.layer.cornerRadius = 5.0
         logoutButton.layer.masksToBounds = true
         
-        updateFocusButton.layer.insertSublayer(GradientLayer.gradient(bounds: bioButton.bounds), at: 0)
+        updateFocusButton.layer.insertSublayer(GradientLayer.gradient(bounds: updateFocusButton.bounds), at: 0)
         updateFocusButton.layer.cornerRadius = 5.0
         updateFocusButton.layer.masksToBounds = true
         
-        updateScheduleButton.layer.insertSublayer(GradientLayer.gradient(bounds: bioButton.bounds), at: 0)
+        updateScheduleButton.layer.insertSublayer(GradientLayer.gradient(bounds: updateScheduleButton.bounds), at: 0)
         updateScheduleButton.layer.cornerRadius = 5.0
         updateScheduleButton.layer.masksToBounds = true
         // Do any additional setup after loading the view.

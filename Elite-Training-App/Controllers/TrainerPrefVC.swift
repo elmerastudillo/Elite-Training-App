@@ -132,12 +132,9 @@ class TrainerPrefVC: UIViewController {
             {
                 button.isSelected = true
                 
-                //self.layer.sublayers?[0].removeFromSuperlayer()
                 button.layer.insertSublayer(GradientLayer.gradient(bounds: button.bounds), at: 0)
                 button.setTitleColor(UIColor.black, for: .selected)
-                //self.layer.insertSubLayer(GradientLayer.gradient(bounds: self.bounds), at: 0)
                 button.setNeedsDisplay()
-                //                self.layer.insertSublayer(Grad
                 trainingFocusPref = (button.titleLabel?.text?.lowercased())!
             }
             else

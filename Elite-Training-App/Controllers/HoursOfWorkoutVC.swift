@@ -84,8 +84,6 @@ class HoursOfWorkoutVC: UIViewController {
         guard let hoursPerWeek = self.hoursPerWeek
             else { return }
         self.newMember?.hoursPerWeek = hoursPerWeek
-        
-//        print(firstname + lastname + emailAddress + genderPreference + trainingFocusPref + hoursPerWeek)
         guard let member = self.newMember else { return }
         print(member)
         

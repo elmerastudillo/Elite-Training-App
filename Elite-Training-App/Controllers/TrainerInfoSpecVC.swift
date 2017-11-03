@@ -63,6 +63,7 @@ class TrainerInfoSpecVC: UIViewController {
         {
             guard let focus = sender.titleLabel?.text?.lowercased() else {return}
             trainingFocusPref[focus] = focus
+            sender.setTitleColor(UIColor.black, for: .selected)
             sender.layer.insertSublayer(GradientLayer.gradient(bounds: sender.bounds), at: 0)
         }
         else

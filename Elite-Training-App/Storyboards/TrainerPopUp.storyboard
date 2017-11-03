@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -53,18 +54,12 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IcH-KL-9Ko">
-                                <rect key="frame" x="100" y="290.5" width="568" height="67.5"/>
+                                <rect key="frame" x="100" y="321" width="568" height="37"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkn-in-ivx">
                                         <rect key="frame" x="0.0" y="0.0" width="568" height="37"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="30"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqo-Sb-iYH">
-                                        <rect key="frame" x="0.0" y="37" width="568" height="30.5"/>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="25"/>
-                                        <color key="textColor" red="0.58039215690000001" green="0.3294117647" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -76,11 +71,17 @@
                                     <constraint firstAttribute="height" constant="200" id="dqS-lG-5Ky"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Focus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqo-Sb-iYH">
+                                <rect key="frame" x="100" y="364" width="568" height="30.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="25"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.3294117647" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CzL-Q5-j2U" firstAttribute="centerX" secondItem="HWj-g3-gwU" secondAttribute="centerX" id="0oj-8k-Nes"/>
-                            <constraint firstItem="IcH-KL-9Ko" firstAttribute="leading" secondItem="rNR-UK-cKq" secondAttribute="trailing" constant="-384" id="3sl-bl-hBe"/>
                             <constraint firstItem="IcH-KL-9Ko" firstAttribute="leading" secondItem="HWj-g3-gwU" secondAttribute="leading" constant="100" id="60J-7F-LHg"/>
                             <constraint firstItem="rNR-UK-cKq" firstAttribute="top" secondItem="e58-XI-t0R" secondAttribute="bottom" constant="62" id="NLx-HK-mLn"/>
                             <constraint firstItem="rNR-UK-cKq" firstAttribute="centerX" secondItem="HWj-g3-gwU" secondAttribute="centerX" id="VqA-n8-Dy3"/>
@@ -117,10 +118,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When are you free to train?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xU-3b-isg">
-                                <rect key="frame" x="140" y="26" width="489" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When are you free to train?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xU-3b-isg">
+                                <rect key="frame" x="105" y="30" width="558" height="49"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="40"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsF-mJ-bpp">
@@ -1586,11 +1587,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7xU-3b-isg" firstAttribute="top" secondItem="qDw-ao-2nm" secondAttribute="bottom" constant="6" id="2aJ-r5-oYs"/>
+                            <constraint firstItem="7xU-3b-isg" firstAttribute="top" secondItem="qDw-ao-2nm" secondAttribute="bottom" constant="10" id="2aJ-r5-oYs"/>
                             <constraint firstItem="9Q5-SP-8od" firstAttribute="centerX" secondItem="5sT-47-wkf" secondAttribute="centerX" id="3v5-TY-oEn"/>
                             <constraint firstItem="7xU-3b-isg" firstAttribute="centerX" secondItem="5sT-47-wkf" secondAttribute="centerX" id="Cce-Gi-3Wo"/>
                             <constraint firstItem="9Q5-SP-8od" firstAttribute="centerY" secondItem="5sT-47-wkf" secondAttribute="centerY" id="FBH-rU-NVj"/>
                             <constraint firstItem="EsF-mJ-bpp" firstAttribute="centerX" secondItem="5sT-47-wkf" secondAttribute="centerX" id="J2P-bO-2Ye"/>
+                            <constraint firstItem="7xU-3b-isg" firstAttribute="leading" secondItem="5sT-47-wkf" secondAttribute="leadingMargin" constant="85" id="ht8-xs-4is"/>
                             <constraint firstItem="7At-X6-s9k" firstAttribute="top" secondItem="EsF-mJ-bpp" secondAttribute="bottom" constant="10" id="kyh-GE-FRT"/>
                         </constraints>
                     </view>
@@ -1600,7 +1602,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o53-R1-Szv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1329" y="86"/>
+            <point key="canvasLocation" x="1328.90625" y="85.546875"/>
         </scene>
         <!--Trainer Edit BioVC-->
         <scene sceneID="mV1-Z5-exg">
@@ -1630,22 +1632,22 @@
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FULL NAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w7F-hJ-gwI">
                                 <rect key="frame" x="100" y="76" width="568" height="100"/>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="y7o-EP-yap"/>
                                 </constraints>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6xy-aH-kLx">
                                 <rect key="frame" x="100" y="207" width="568" height="315"/>
-                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="315" id="IEv-lr-3yd"/>
                                 </constraints>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>

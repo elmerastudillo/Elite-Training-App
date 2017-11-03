@@ -28,14 +28,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your profile." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49w-tt-pwN">
-                                <rect key="frame" x="80" y="28" width="373" height="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your profile." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49w-tt-pwN">
+                                <rect key="frame" x="105" y="20" width="558" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="8xf-hZ-0Vd"/>
-                                    <constraint firstAttribute="width" constant="373" id="nSl-CN-XNH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWU-DA-5N0">
@@ -44,7 +43,7 @@
                                     <constraint firstAttribute="height" constant="32" id="JoX-9W-hgx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="25"/>
-                                <color key="textColor" red="0.58039215690000001" green="0.3294117647" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.73333333333333328" green="0.40392156862745099" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWo-b9-cBT">
@@ -93,11 +92,11 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Bo-Pz-C6D">
-                                <rect key="frame" x="314" y="188" width="140" height="140"/>
+                                <rect key="frame" x="284" y="128" width="200" height="200"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="gnf-Vm-jbf"/>
-                                    <constraint firstAttribute="height" constant="140" id="sk4-0N-A5C"/>
+                                    <constraint firstAttribute="width" constant="200" id="gnf-Vm-jbf"/>
+                                    <constraint firstAttribute="height" constant="200" id="sk4-0N-A5C"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25f-Jc-cwA">
@@ -131,7 +130,6 @@
                         <constraints>
                             <constraint firstItem="Aut-Rm-dmb" firstAttribute="top" secondItem="MWo-b9-cBT" secondAttribute="bottom" constant="74" id="0Wt-bV-z6H"/>
                             <constraint firstItem="2bB-LN-GQl" firstAttribute="trailing" secondItem="1XX-wt-drr" secondAttribute="trailingMargin" id="6UQ-vw-fIg"/>
-                            <constraint firstItem="49w-tt-pwN" firstAttribute="top" secondItem="2bB-LN-GQl" secondAttribute="top" id="9qg-6Q-bp3"/>
                             <constraint firstItem="MWo-b9-cBT" firstAttribute="top" secondItem="yWU-DA-5N0" secondAttribute="bottom" constant="87" id="Cc5-hn-9eP"/>
                             <constraint firstAttribute="trailing" secondItem="Aut-Rm-dmb" secondAttribute="trailing" constant="20" id="D5q-2B-oyY"/>
                             <constraint firstItem="Aut-Rm-dmb" firstAttribute="firstBaseline" secondItem="25f-Jc-cwA" secondAttribute="baseline" id="F95-ip-gCd"/>
@@ -140,14 +138,15 @@
                             <constraint firstItem="6Bo-Pz-C6D" firstAttribute="centerX" secondItem="1XX-wt-drr" secondAttribute="centerX" id="JG8-SQ-qYN"/>
                             <constraint firstItem="yWU-DA-5N0" firstAttribute="leading" secondItem="1XX-wt-drr" secondAttribute="leading" constant="150" id="Kgt-L2-dIl"/>
                             <constraint firstItem="yWU-DA-5N0" firstAttribute="top" secondItem="6Bo-Pz-C6D" secondAttribute="bottom" constant="48" id="KkA-lF-Cdf"/>
-                            <constraint firstItem="49w-tt-pwN" firstAttribute="top" secondItem="cvm-wq-qKk" secondAttribute="bottom" constant="8" id="Kl5-d8-xSu"/>
+                            <constraint firstItem="49w-tt-pwN" firstAttribute="top" secondItem="cvm-wq-qKk" secondAttribute="bottom" id="Kl5-d8-xSu"/>
                             <constraint firstItem="Aut-Rm-dmb" firstAttribute="bottom" secondItem="25f-Jc-cwA" secondAttribute="bottom" id="N8n-lR-uLc"/>
                             <constraint firstItem="Aut-Rm-dmb" firstAttribute="leading" secondItem="25f-Jc-cwA" secondAttribute="trailing" constant="88" id="U7b-nj-dYm"/>
+                            <constraint firstItem="49w-tt-pwN" firstAttribute="centerX" secondItem="1XX-wt-drr" secondAttribute="centerX" id="X8w-6q-LF8"/>
                             <constraint firstItem="Aut-Rm-dmb" firstAttribute="centerY" secondItem="25f-Jc-cwA" secondAttribute="centerY" id="Yhr-TG-FWZ"/>
                             <constraint firstItem="Aut-Rm-dmb" firstAttribute="top" secondItem="25f-Jc-cwA" secondAttribute="top" id="hGX-5v-jF7"/>
                             <constraint firstItem="25f-Jc-cwA" firstAttribute="leading" secondItem="1XX-wt-drr" secondAttribute="leadingMargin" id="hw9-OX-27J"/>
-                            <constraint firstItem="49w-tt-pwN" firstAttribute="leading" secondItem="1XX-wt-drr" secondAttribute="leadingMargin" constant="60" id="jT9-lg-N6R"/>
                             <constraint firstItem="MWo-b9-cBT" firstAttribute="centerX" secondItem="1XX-wt-drr" secondAttribute="centerX" id="jYL-Y6-dsy"/>
+                            <constraint firstItem="49w-tt-pwN" firstAttribute="leading" secondItem="1XX-wt-drr" secondAttribute="leadingMargin" constant="85" id="jht-Mm-v90"/>
                             <constraint firstItem="30h-vP-VuZ" firstAttribute="top" secondItem="Ebz-qO-F4D" secondAttribute="bottom" constant="50" id="ko9-hF-ohX"/>
                             <constraint firstItem="Aut-Rm-dmb" firstAttribute="trailing" secondItem="2bB-LN-GQl" secondAttribute="trailing" id="lCI-yt-boz"/>
                             <constraint firstItem="Ebz-qO-F4D" firstAttribute="centerX" secondItem="1XX-wt-drr" secondAttribute="centerX" id="lpF-nk-lxt"/>
@@ -198,105 +197,115 @@
                                     <action selector="doneButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="A3l-hN-Hje"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="gYZ-ZU-yae">
-                                <rect key="frame" x="114" y="192" width="540" height="565"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" alpha="0.25" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6V-By-CLW">
+                                <rect key="frame" x="698" y="28" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Kh5-9n-7bU"/>
+                                    <constraint firstAttribute="width" constant="50" id="Lr0-Vx-QDV"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Elite Logo"/>
+                                <connections>
+                                    <action selector="eliteButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="Kbc-lU-HHJ"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="gYZ-ZU-yae">
+                                <rect key="frame" x="104" y="230" width="560" height="565"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CtC-KZ-Rbf">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="565"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="CtC-KZ-Rbf">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="565"/>
                                         <subviews>
-                                            <button opaque="NO" tag="200" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3P6-f3-bu6" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="0.0" width="200" height="55"/>
+                                            <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3P6-f3-bu6" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="55"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" constant="230" id="ajk-N0-m8b"/>
                                                     <constraint firstAttribute="height" constant="55" id="dY4-0k-4vn"/>
-                                                    <constraint firstAttribute="width" constant="200" id="ska-VP-a5y"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Functional Movement">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="FUNCTIONAL MOVEMENT">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="focusButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="Bgs-Vf-Ap7"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="220" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyq-UN-Mfq" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="85" width="200" height="55"/>
+                                            <button opaque="NO" tag="220" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyq-UN-Mfq" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="85" width="230" height="55"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="MnK-UM-rIc"/>
                                                     <constraint firstAttribute="height" constant="55" id="cOC-tr-7ae"/>
+                                                    <constraint firstAttribute="width" constant="230" id="nmh-c1-219"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Weight Loss">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="WEIGHT LOSS">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="focusButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="Hox-M4-MKh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="240" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIB-fa-mtl" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="170" width="200" height="55"/>
+                                            <button opaque="NO" tag="240" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIB-fa-mtl" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="170" width="230" height="55"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="fQu-xv-w2U"/>
+                                                    <constraint firstAttribute="width" constant="230" id="c06-Fw-7h4"/>
                                                     <constraint firstAttribute="height" constant="55" id="gKm-l5-oGF"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Olympic PowerLifting">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="OLYMPIC POWERLIFTING">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="focusButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="SDI-bY-s3f"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="260" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyi-k4-pWL" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="255" width="200" height="55"/>
+                                            <button opaque="NO" tag="260" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyi-k4-pWL" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="255" width="230" height="55"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="7d2-Go-rQQ"/>
+                                                    <constraint firstAttribute="width" constant="230" id="MYh-PA-mZX"/>
                                                     <constraint firstAttribute="height" constant="55" id="iMW-ZZ-nCZ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Corrective">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="CORRECTIVE">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="focusButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="vbj-0Q-HZQ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="280" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQt-K6-5jE" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="340" width="200" height="55"/>
+                                            <button opaque="NO" tag="280" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQt-K6-5jE" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="340" width="230" height="55"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="9VV-0b-8Hf"/>
+                                                    <constraint firstAttribute="width" constant="230" id="800-ZN-SjX"/>
                                                     <constraint firstAttribute="height" constant="55" id="BgL-oL-cew"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Nutritional Guidance">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="NUTRITIONAL GUIDANCE">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="focusButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="QE1-aE-QdC"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="300" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9L-vn-s5h" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="425" width="200" height="55"/>
+                                            <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9L-vn-s5h" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="425" width="230" height="55"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="2fS-xm-QRr"/>
-                                                    <constraint firstAttribute="width" constant="200" id="cKq-oB-6lW"/>
+                                                    <constraint firstAttribute="width" constant="230" id="fqg-Gv-vGz"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Core Strength">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="CORE STRENGTH">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="focusButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="Ttd-ea-7kb"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="320" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xc0-ma-YSl" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="510" width="200" height="55"/>
+                                            <button opaque="NO" tag="320" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xc0-ma-YSl" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="510" width="230" height="55"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="1n3-qD-I8a"/>
+                                                    <constraint firstAttribute="width" constant="230" id="1IW-kQ-jJN"/>
                                                     <constraint firstAttribute="height" constant="55" id="wQa-YH-kSX"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Pre/Post Natal">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="PRE/POST NATAL">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -305,20 +314,20 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="3P6-f3-bu6" firstAttribute="leading" secondItem="CtC-KZ-Rbf" secondAttribute="leading" constant="20" symbolic="YES" id="FVD-I7-n0h"/>
+                                            <constraint firstAttribute="width" constant="230" id="gps-UN-7aH"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-Nk-oSd">
-                                        <rect key="frame" x="340" y="0.0" width="200" height="565"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-Nk-oSd">
+                                        <rect key="frame" x="330" y="0.0" width="230" height="565"/>
                                         <subviews>
-                                            <button opaque="NO" tag="210" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPr-yW-eu8" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="55"/>
+                                            <button opaque="NO" tag="210" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPr-yW-eu8" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="55"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="ZoZ-g9-DyO"/>
+                                                    <constraint firstAttribute="width" constant="230" id="RdD-k4-Tlc"/>
                                                     <constraint firstAttribute="height" constant="55" id="wV3-7U-hx3"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Strength &amp; Conditioning">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="STRENGTH &amp; CONDITIONING">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -331,14 +340,14 @@
                                                     <action selector="focusButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="ozp-RO-YKn"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="230" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5w-j7-q1u" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="85" width="200" height="55"/>
+                                            <button opaque="NO" tag="230" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5w-j7-q1u" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="85" width="230" height="55"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="dMy-6a-CG9"/>
+                                                    <constraint firstAttribute="width" constant="230" id="XPI-fV-nfE"/>
                                                     <constraint firstAttribute="height" constant="55" id="f4A-ZK-Gtl"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Rehabilitation">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="REHABILITATION">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -351,14 +360,14 @@
                                                     <action selector="focusButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="DPn-cb-rm1"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="250" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxo-5w-k8y" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="170" width="200" height="55"/>
+                                            <button opaque="NO" tag="250" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxo-5w-k8y" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="170" width="230" height="55"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="PjJ-JO-BMR"/>
+                                                    <constraint firstAttribute="width" constant="230" id="TiS-Jq-ZMs"/>
                                                     <constraint firstAttribute="height" constant="55" id="w8k-ch-dzZ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Obstacle Course">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="OBSTACLE COURSE">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -371,14 +380,14 @@
                                                     <action selector="focusButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="BZx-IW-AWl"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="270" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1L-70-4pH" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="255" width="200" height="55"/>
+                                            <button opaque="NO" tag="270" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1L-70-4pH" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="255" width="230" height="55"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" constant="230" id="17e-Bi-m6h"/>
                                                     <constraint firstAttribute="height" constant="55" id="jQI-fX-xoM"/>
-                                                    <constraint firstAttribute="width" constant="200" id="k4v-Lg-Fqk"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Lean &amp; Tone">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="LEAN &amp; TONE">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -391,14 +400,14 @@
                                                     <action selector="focusButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="IOG-bO-upa"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="290" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh6-c9-Wd4" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="340" width="200" height="55"/>
+                                            <button opaque="NO" tag="290" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh6-c9-Wd4" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="340" width="230" height="55"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="S7D-98-puF"/>
+                                                    <constraint firstAttribute="width" constant="230" id="4ST-mF-Fw7"/>
                                                     <constraint firstAttribute="height" constant="55" id="drg-Ph-r05"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Balance &amp; Stabilization">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="BALANCE &amp; STABILIZATION">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -411,14 +420,14 @@
                                                     <action selector="focusButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="4rS-BE-hLe"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="310" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2p-Qw-anp" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="425" width="200" height="55"/>
+                                            <button opaque="NO" tag="310" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2p-Qw-anp" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="425" width="230" height="55"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="0UM-Gc-Th0"/>
-                                                    <constraint firstAttribute="width" constant="200" id="TrS-67-Tkw"/>
+                                                    <constraint firstAttribute="width" constant="230" id="ZxI-Sd-VgS"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Small Group">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="SMALL GROUP">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -431,14 +440,14 @@
                                                     <action selector="focusButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="rV6-BC-Fb6"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="330" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHX-ut-ckH" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="510" width="200" height="55"/>
+                                            <button opaque="NO" tag="330" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHX-ut-ckH" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="510" width="230" height="55"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="d7u-gK-mk2"/>
+                                                    <constraint firstAttribute="width" constant="230" id="kyr-jx-PIp"/>
                                                     <constraint firstAttribute="height" constant="55" id="oWb-Ru-Ebu"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="17"/>
-                                                <state key="normal" title="Running &amp; Endurance">
+                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
+                                                <state key="normal" title="RUNNING &amp; ENDURANCE">
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -452,34 +461,30 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="5lI-zz-0WB"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Your focus." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb4-iK-LU2">
-                                <rect key="frame" x="80" y="50" width="301.5" height="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your focus." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb4-iK-LU2">
+                                <rect key="frame" x="85" y="20" width="598" height="70"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.25" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6V-By-CLW">
-                                <rect key="frame" x="698" y="28" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Kh5-9n-7bU"/>
-                                    <constraint firstAttribute="width" constant="50" id="Lr0-Vx-QDV"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="Elite Logo"/>
-                                <connections>
-                                    <action selector="eliteButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="Kbc-lU-HHJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="05U-Ol-LdM" firstAttribute="top" secondItem="H8P-dc-1bO" secondAttribute="bottom" constant="50" id="0PI-Ot-h0e"/>
+                            <constraint firstItem="gYZ-ZU-yae" firstAttribute="centerX" secondItem="XRS-74-usu" secondAttribute="centerX" id="Vji-8k-9sX"/>
                             <constraint firstItem="H8P-dc-1bO" firstAttribute="centerX" secondItem="XRS-74-usu" secondAttribute="centerX" id="bZ3-aV-uPR"/>
-                            <constraint firstItem="S6V-By-CLW" firstAttribute="trailing" secondItem="XRS-74-usu" secondAttribute="trailingMargin" constant="15" id="f0W-4q-Rnx"/>
-                            <constraint firstItem="S6V-By-CLW" firstAttribute="top" secondItem="VnB-dj-rnW" secondAttribute="bottom" constant="15" id="uBB-Yu-PhV"/>
-                            <constraint firstItem="sb4-iK-LU2" firstAttribute="leading" secondItem="XRS-74-usu" secondAttribute="leadingMargin" constant="60" id="xoW-7O-APG"/>
+                            <constraint firstItem="sb4-iK-LU2" firstAttribute="leading" secondItem="XRS-74-usu" secondAttribute="leading" constant="85" id="e1z-SC-DxI"/>
+                            <constraint firstItem="S6V-By-CLW" firstAttribute="trailing" secondItem="XRS-74-usu" secondAttribute="trailingMargin" id="f0W-4q-Rnx"/>
+                            <constraint firstItem="sb4-iK-LU2" firstAttribute="centerX" secondItem="XRS-74-usu" secondAttribute="centerX" id="mxi-Yg-FRC"/>
+                            <constraint firstItem="gYZ-ZU-yae" firstAttribute="centerY" secondItem="XRS-74-usu" secondAttribute="centerY" id="oJj-UZ-NUY"/>
+                            <constraint firstItem="sb4-iK-LU2" firstAttribute="top" secondItem="VnB-dj-rnW" secondAttribute="bottom" id="pQu-M3-fQw"/>
+                            <constraint firstItem="S6V-By-CLW" firstAttribute="top" secondItem="VnB-dj-rnW" secondAttribute="bottom" constant="8" id="uBB-Yu-PhV"/>
                         </constraints>
                     </view>
                     <connections>
@@ -502,24 +507,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="po1-j7-EW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="7"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="4r8-mt-2yM">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="9oY-Xe-r8i" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rcZ-13-Tyi">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="CNi-Dc-vSs" kind="relationship" relationship="rootViewController" id="ePF-9f-gFT"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sv9-hh-vrh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-580" y="9"/>
+            <point key="canvasLocation" x="1006.25" y="6.4453125"/>
         </scene>
     </scenes>
     <resources>
