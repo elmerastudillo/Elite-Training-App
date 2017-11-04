@@ -121,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ozc-G3-sFk">
-                                <rect key="frame" x="80" y="282.5" width="674" height="300"/>
+                                <rect key="frame" x="80" y="276" width="674" height="300"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FIRST NAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KWT-Lf-Fu0">
                                         <rect key="frame" x="0.0" y="0.0" width="674" height="80"/>
@@ -156,7 +156,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get to know each other." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHm-qx-jT2">
-                                <rect key="frame" x="130" y="20" width="574" height="146.5"/>
+                                <rect key="frame" x="105" y="20" width="624" height="140"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -179,7 +179,7 @@
                                     <constraint firstAttribute="width" constant="350" id="KyU-W2-Xcw"/>
                                     <constraint firstAttribute="height" constant="80" id="R8Q-nv-MJv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="24"/>
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -196,10 +196,9 @@
                             <constraint firstItem="e92-l1-0kn" firstAttribute="top" secondItem="4Er-XN-vKI" secondAttribute="bottom" constant="15" id="XkZ-1V-zmG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ozc-G3-sFk" secondAttribute="trailing" constant="60" id="ZP7-60-Djo"/>
                             <constraint firstItem="Ozc-G3-sFk" firstAttribute="leading" secondItem="bux-gP-aRT" secondAttribute="leadingMargin" constant="60" id="aOS-xz-MCW"/>
-                            <constraint firstItem="IHm-qx-jT2" firstAttribute="leading" secondItem="bux-gP-aRT" secondAttribute="leadingMargin" constant="110" id="bgg-9X-F1t"/>
+                            <constraint firstItem="IHm-qx-jT2" firstAttribute="leading" secondItem="bux-gP-aRT" secondAttribute="leadingMargin" constant="85" id="bgg-9X-F1t"/>
                             <constraint firstItem="IHm-qx-jT2" firstAttribute="top" secondItem="4Er-XN-vKI" secondAttribute="bottom" id="hv3-eA-4FQ"/>
                             <constraint firstItem="Ozc-G3-sFk" firstAttribute="top" secondItem="IHm-qx-jT2" secondAttribute="bottom" constant="116" id="olF-fS-Pzs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IHm-qx-jT2" secondAttribute="trailing" constant="110" id="ozB-tK-Ayb"/>
                             <constraint firstAttribute="trailing" secondItem="e92-l1-0kn" secondAttribute="trailing" constant="15" id="wZ7-KQ-LJM"/>
                             <constraint firstItem="kXy-Mm-M6a" firstAttribute="centerX" secondItem="bux-gP-aRT" secondAttribute="centerX" id="wbJ-ri-xr8"/>
                         </constraints>
@@ -223,7 +222,7 @@
                         <viewControllerLayoutGuide type="top" id="TkV-0M-UnZ"/>
                         <viewControllerLayoutGuide type="bottom" id="eJC-Tc-fCZ"/>
                     </layoutGuides>
-                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="oEZ-Kh-mGw">
+                    <view key="view" contentMode="scaleToFill" id="oEZ-Kh-mGw">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -239,7 +238,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trainer preferences." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p63-sb-laQ">
-                                <rect key="frame" x="145.5" y="20" width="544.5" height="73.5"/>
+                                <rect key="frame" x="153" y="20" width="529" height="70"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -251,7 +250,7 @@
                                     <constraint firstAttribute="width" constant="350" id="Rik-ST-vtv"/>
                                     <constraint firstAttribute="height" constant="80" id="sPo-gK-V8u"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="24"/>
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -260,15 +259,14 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-En-24d">
-                                <rect key="frame" x="137" y="241" width="560" height="630"/>
+                                <rect key="frame" x="137" y="237" width="570" height="630"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ZgH-Mz-N8N">
-                                        <rect key="frame" x="0.0" y="0.0" width="230" height="630"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ZgH-Mz-N8N">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="630"/>
                                         <subviews>
                                             <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY5-N7-rBD" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="235" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="230" id="GG2-Zh-MBU"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="rmj-HY-e3L"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
@@ -280,9 +278,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="220" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLQ-m8-YWZ" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="95" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="95" width="235" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="230" id="20k-vA-gy4"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="JzJ-ss-XCR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
@@ -294,10 +291,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="240" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="047-pm-O92" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="190" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="190" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="cVd-FC-ZoU"/>
-                                                    <constraint firstAttribute="width" constant="230" id="dq9-ax-dh8"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
                                                 <state key="normal" title="OLYMPIC POWERLIFTING">
@@ -308,9 +304,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="260" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5k-SM-n9K" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="285" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="285" width="235" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="230" id="UlO-pe-XJb"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="zPD-bA-ECp"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
@@ -322,9 +317,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="280" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2b-7q-PMg" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="380" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="380" width="235" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="230" id="Oi5-mb-V9Z"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="ufb-Q7-nDa"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
@@ -336,9 +330,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZu-Vz-bJv" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="475" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="475" width="235" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="230" id="MC6-RN-vpC"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="h8h-SL-NSa"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
@@ -350,9 +343,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="320" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8M-3u-y97" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="570" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="570" width="235" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="230" id="Jbb-j4-z2G"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="PJe-NR-EQm"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
@@ -365,21 +357,33 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="230" id="roS-0i-TX5"/>
+                                            <constraint firstItem="MLQ-m8-YWZ" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="3ky-cX-BfP"/>
+                                            <constraint firstItem="L8M-3u-y97" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="6tl-BB-bMp"/>
+                                            <constraint firstAttribute="trailing" secondItem="SZu-Vz-bJv" secondAttribute="trailing" id="8bJ-HO-Bpn"/>
+                                            <constraint firstAttribute="trailing" secondItem="Y5k-SM-n9K" secondAttribute="trailing" id="B6v-Qo-h2E"/>
+                                            <constraint firstItem="x2b-7q-PMg" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="BGy-WX-zcb"/>
+                                            <constraint firstItem="047-pm-O92" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="BTa-fF-7LN"/>
+                                            <constraint firstAttribute="trailing" secondItem="x2b-7q-PMg" secondAttribute="trailing" id="IjM-AM-TEP"/>
+                                            <constraint firstAttribute="trailing" secondItem="047-pm-O92" secondAttribute="trailing" id="Qbf-FC-9dU"/>
+                                            <constraint firstItem="SZu-Vz-bJv" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="VWm-lG-m6R"/>
+                                            <constraint firstAttribute="trailing" secondItem="KY5-N7-rBD" secondAttribute="trailing" id="eNL-GC-yWg"/>
+                                            <constraint firstAttribute="trailing" secondItem="MLQ-m8-YWZ" secondAttribute="trailing" id="htI-UL-JfO"/>
+                                            <constraint firstItem="KY5-N7-rBD" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="oyg-wo-NcH"/>
+                                            <constraint firstItem="Y5k-SM-n9K" firstAttribute="leading" secondItem="ZgH-Mz-N8N" secondAttribute="leading" id="qHa-OD-NoU"/>
+                                            <constraint firstAttribute="trailing" secondItem="L8M-3u-y97" secondAttribute="trailing" id="sTv-kF-l8a"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="h0Z-HE-zzC">
-                                        <rect key="frame" x="330" y="0.0" width="230" height="630"/>
+                                        <rect key="frame" x="335" y="0.0" width="235" height="630"/>
                                         <subviews>
                                             <button opaque="NO" tag="210" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS4-Xw-crJ" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="5qh-8z-aCu"/>
-                                                    <constraint firstAttribute="width" constant="230" id="VBt-Nk-Lcr"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="14"/>
                                                 <state key="normal" title="STRENGTH &amp; CONDITIONING">
-                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -392,34 +396,29 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="230" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCE-Bo-k4u" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="95" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="95" width="235" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="230" id="0yu-Lw-GhS"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="UB6-1y-f9X"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
                                                 <state key="normal" title="REHABILITATION">
-                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="trainerFocusButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="stX-mO-sbg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="250" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9q-Zq-JRY" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="190" width="230" height="60"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="230" id="VX6-aw-kQk"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="bej-9z-ZBx"/>
-                                                </constraints>
+                                                <rect key="frame" x="0.0" y="190" width="235" height="60"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
                                                 <state key="normal" title="OBSTACLE COURSE">
-                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -432,14 +431,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="270" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzh-E5-3y8" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="285" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="285" width="235" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="230" id="Ggc-Px-UgJ"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="c2M-g5-uHt"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
                                                 <state key="normal" title="LEAN &amp; TONE">
-                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -452,14 +450,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="290" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-xe-mUk" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="380" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="380" width="235" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="230" id="RRi-rR-RUk"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="ZO3-42-5D7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
                                                 <state key="normal" title="BALANCE &amp; STABILIZATION">
-                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -472,14 +469,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="310" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRC-oK-cjj" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="475" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="475" width="235" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="230" id="5c9-S3-o2u"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="LWN-yl-nnc"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
                                                 <state key="normal" title="SMALL GROUP">
-                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -492,14 +488,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="330" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-Sg-QFk" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="570" width="230" height="60"/>
+                                                <rect key="frame" x="0.0" y="570" width="235" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="230" id="9hd-df-6zL"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Bs1-Dw-FDO"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
                                                 <state key="normal" title="RUNNING &amp; ENDURANCE">
-                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -513,20 +508,33 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="230" id="Wy7-Xn-Aqk"/>
+                                            <constraint firstAttribute="trailing" secondItem="bzh-E5-3y8" secondAttribute="trailing" id="08V-mE-KPk"/>
+                                            <constraint firstItem="k9q-Zq-JRY" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="5Sq-Bc-Gad"/>
+                                            <constraint firstAttribute="trailing" secondItem="mRC-oK-cjj" secondAttribute="trailing" id="B6U-VV-wje"/>
+                                            <constraint firstItem="mRC-oK-cjj" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="IHA-Br-BHr"/>
+                                            <constraint firstAttribute="trailing" secondItem="V1D-Sg-QFk" secondAttribute="trailing" id="JPB-C2-wVw"/>
+                                            <constraint firstItem="V1D-Sg-QFk" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="PGh-4c-hUh"/>
+                                            <constraint firstItem="YCE-Bo-k4u" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="Vpd-5h-Irm"/>
+                                            <constraint firstItem="uNb-xe-mUk" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="Zii-xh-V3D"/>
+                                            <constraint firstItem="YS4-Xw-crJ" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="eQl-ul-uYz"/>
+                                            <constraint firstItem="bzh-E5-3y8" firstAttribute="leading" secondItem="h0Z-HE-zzC" secondAttribute="leading" id="ecF-En-0PJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="YS4-Xw-crJ" secondAttribute="trailing" id="gS7-a2-m7s"/>
+                                            <constraint firstAttribute="trailing" secondItem="k9q-Zq-JRY" secondAttribute="trailing" id="o5t-wG-Q40"/>
+                                            <constraint firstAttribute="trailing" secondItem="YCE-Bo-k4u" secondAttribute="trailing" id="xM1-p0-4hp"/>
+                                            <constraint firstAttribute="trailing" secondItem="uNb-xe-mUk" secondAttribute="trailing" id="y9p-1M-pbg"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="t5w-5a-HTL">
-                                <rect key="frame" x="137" y="154" width="540" height="55"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="135" translatesAutoresizingMaskIntoConstraints="NO" id="t5w-5a-HTL">
+                                <rect key="frame" x="132" y="149" width="570" height="55"/>
                                 <subviews>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-tc-rEg" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="55"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="Dws-tb-8t3"/>
-                                            <constraint firstAttribute="width" constant="80" id="peW-3r-IHA"/>
+                                            <constraint firstAttribute="width" constant="100" id="peW-3r-IHA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
                                         <state key="normal" title="MALE">
@@ -537,10 +545,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAM-wa-C2u" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                        <rect key="frame" x="230" y="0.0" width="80" height="55"/>
+                                        <rect key="frame" x="235" y="0.0" width="100" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="55" id="1ei-vG-eHx"/>
-                                            <constraint firstAttribute="width" constant="80" id="IWp-mC-cM7"/>
+                                            <constraint firstAttribute="width" constant="100" id="IWp-mC-cM7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
                                         <state key="normal" title="FEMALE">
@@ -551,9 +559,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="120" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXZ-Nt-YZL" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                        <rect key="frame" x="460" y="0.0" width="80" height="55"/>
+                                        <rect key="frame" x="470" y="0.0" width="100" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="PN5-C4-Wil"/>
+                                            <constraint firstAttribute="width" constant="100" id="PN5-C4-Wil"/>
                                             <constraint firstAttribute="height" constant="55" id="htY-Ba-75I"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
@@ -569,16 +577,17 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="t5w-5a-HTL" firstAttribute="leading" secondItem="YDN-En-24d" secondAttribute="trailing" constant="-560" id="6tc-ea-xKF"/>
-                            <constraint firstItem="9gK-QO-agI" firstAttribute="centerX" secondItem="YDN-En-24d" secondAttribute="centerX" id="7pn-Wb-JHj"/>
+                            <constraint firstItem="t5w-5a-HTL" firstAttribute="centerX" secondItem="oEZ-Kh-mGw" secondAttribute="centerX" id="3WR-qQ-y4U"/>
+                            <constraint firstItem="t5w-5a-HTL" firstAttribute="top" secondItem="p63-sb-laQ" secondAttribute="bottom" constant="59" id="9Hb-aG-BqP"/>
                             <constraint firstItem="p63-sb-laQ" firstAttribute="top" secondItem="TkV-0M-UnZ" secondAttribute="bottom" id="9Lk-SE-0yt"/>
                             <constraint firstAttribute="bottomMargin" secondItem="9gK-QO-agI" secondAttribute="bottom" constant="50" id="ILt-x7-m29"/>
-                            <constraint firstItem="YDN-En-24d" firstAttribute="centerY" secondItem="oEZ-Kh-mGw" secondAttribute="centerY" id="KQP-Z3-yRr"/>
+                            <constraint firstItem="YDN-En-24d" firstAttribute="width" secondItem="t5w-5a-HTL" secondAttribute="width" id="eYU-DS-eJo"/>
                             <constraint firstAttribute="trailing" secondItem="nR8-pZ-Qia" secondAttribute="trailing" constant="15" id="ipQ-UG-cTU"/>
+                            <constraint firstItem="t5w-5a-HTL" firstAttribute="centerX" secondItem="9gK-QO-agI" secondAttribute="centerX" id="jAM-jX-ANB"/>
+                            <constraint firstItem="YDN-En-24d" firstAttribute="leading" secondItem="oEZ-Kh-mGw" secondAttribute="leading" constant="137" id="jWG-ii-7Sr"/>
                             <constraint firstItem="nR8-pZ-Qia" firstAttribute="top" secondItem="TkV-0M-UnZ" secondAttribute="bottom" constant="15" id="lua-Q0-ufP"/>
-                            <constraint firstItem="YDN-En-24d" firstAttribute="top" secondItem="t5w-5a-HTL" secondAttribute="bottom" constant="32" id="noJ-sc-COY"/>
+                            <constraint firstItem="YDN-En-24d" firstAttribute="top" secondItem="t5w-5a-HTL" secondAttribute="bottom" constant="33" id="wB9-1A-mnx"/>
                             <constraint firstItem="p63-sb-laQ" firstAttribute="centerX" secondItem="oEZ-Kh-mGw" secondAttribute="centerX" id="x5g-om-waw"/>
-                            <constraint firstItem="YDN-En-24d" firstAttribute="centerX" secondItem="oEZ-Kh-mGw" secondAttribute="centerX" id="zeY-m9-fml"/>
                         </constraints>
                     </view>
                     <connections>
@@ -636,7 +645,7 @@
                                     <constraint firstAttribute="width" constant="350" id="dpt-rM-Izn"/>
                                     <constraint firstAttribute="height" constant="80" id="iMH-yb-cQi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="24"/>
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -654,7 +663,7 @@
                                             <constraint firstAttribute="width" constant="600" id="zXG-Za-nop"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="18"/>
-                                        <state key="normal" title="&lt; 3 Hours">
+                                        <state key="normal" title="&lt; 3 HOURS">
                                             <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -667,7 +676,7 @@
                                             <constraint firstAttribute="height" constant="80" id="g9W-CP-rPi"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="18"/>
-                                        <state key="normal" title="&lt; 5 Hours">
+                                        <state key="normal" title="&lt; 5 HOURS">
                                             <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -680,7 +689,7 @@
                                             <constraint firstAttribute="height" constant="80" id="d95-Uc-9f2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="18"/>
-                                        <state key="normal" title="&lt; 7 Hours">
+                                        <state key="normal" title="&lt; 7 HOURS">
                                             <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -693,7 +702,7 @@
                                             <constraint firstAttribute="height" constant="80" id="urY-Xx-212"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="18"/>
-                                        <state key="normal" title="10+ Hours">
+                                        <state key="normal" title="10+ HOURS">
                                             <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -703,7 +712,10 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often do you work out per week?" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvB-Qc-v37">
-                                <rect key="frame" x="169" y="20" width="496" height="219.5"/>
+                                <rect key="frame" x="85" y="20" width="490" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="490" id="BCy-8S-z1a"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -712,12 +724,10 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="gTO-0L-Y44" firstAttribute="top" secondItem="Tav-Hb-Rdx" secondAttribute="bottom" constant="15" id="7IH-4j-Y6E"/>
-                            <constraint firstItem="MvB-Qc-v37" firstAttribute="centerX" secondItem="BMx-K7-YjY" secondAttribute="centerX" id="GMF-LA-H3v"/>
                             <constraint firstItem="7wq-zN-vhN" firstAttribute="centerX" secondItem="BMx-K7-YjY" secondAttribute="centerX" id="NOe-xC-DRM"/>
-                            <constraint firstAttribute="trailing" secondItem="MvB-Qc-v37" secondAttribute="trailing" constant="169" id="PBQ-Fg-UXv"/>
                             <constraint firstItem="7wq-zN-vhN" firstAttribute="centerY" secondItem="BMx-K7-YjY" secondAttribute="centerY" id="dau-TT-2KA"/>
                             <constraint firstItem="MvB-Qc-v37" firstAttribute="top" secondItem="Tav-Hb-Rdx" secondAttribute="bottom" id="ldH-tl-oyD"/>
-                            <constraint firstItem="MvB-Qc-v37" firstAttribute="leading" secondItem="BMx-K7-YjY" secondAttribute="leading" constant="169" id="qKA-dS-cya"/>
+                            <constraint firstItem="MvB-Qc-v37" firstAttribute="leading" secondItem="BMx-K7-YjY" secondAttribute="leading" constant="85" id="qKA-dS-cya"/>
                             <constraint firstItem="9DR-7v-3vO" firstAttribute="centerX" secondItem="BMx-K7-YjY" secondAttribute="centerX" id="tlp-ke-7fl"/>
                             <constraint firstAttribute="trailing" secondItem="gTO-0L-Y44" secondAttribute="trailing" constant="15" id="u1c-AW-4dF"/>
                             <constraint firstAttribute="bottomMargin" secondItem="9DR-7v-3vO" secondAttribute="bottom" constant="50" id="yJD-u7-SeM"/>

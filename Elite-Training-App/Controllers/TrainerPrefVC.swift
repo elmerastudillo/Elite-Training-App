@@ -78,6 +78,7 @@ class TrainerPrefVC: UIViewController {
     }
 
     @IBAction func nexButtonPressed(_ sender: UIButton) {
+        print("Next button pressed")
         guard let gender = genderPreference, let focus = trainingFocusPref
             else { return alertController() }
         print(gender + focus)

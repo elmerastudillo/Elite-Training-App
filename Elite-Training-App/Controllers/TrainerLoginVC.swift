@@ -50,6 +50,8 @@ class TrainerLoginVC: UIViewController {
             TrainerService.fetchTrainer(forUID: trainer.uid) { (trainer) in
                 if let trainer = trainer {
                     Trainer.setCurrent(trainer, writeToUserDefaults: true)
+                    let defaults = UserDefaults.standard
+                    defaults.set(true, forKey: "userIsLoggedIn")
                     Trainer.loggedIn = true
                     print(trainer)
                     let storyboard = UIStoryboard.init(name: "TrainerProfile", bundle: nil)
