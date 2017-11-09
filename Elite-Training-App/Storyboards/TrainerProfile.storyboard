@@ -207,14 +207,14 @@
                                     <action selector="eliteButtonPressed:" destination="Xz2-7j-3AO" eventType="touchUpInside" id="Kbc-lU-HHJ"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="gYZ-ZU-yae">
-                                <rect key="frame" x="139.5" y="197.5" width="489" height="630"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="gYZ-ZU-yae">
+                                <rect key="frame" x="99" y="197.5" width="570" height="630"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="CtC-KZ-Rbf">
-                                        <rect key="frame" x="0.0" y="0.0" width="183" height="630"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="630"/>
                                         <subviews>
                                             <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3P6-f3-bu6" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="183" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="UNf-pa-rOd"/>
                                                 </constraints>
@@ -227,7 +227,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="220" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyq-UN-Mfq" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="95" width="183" height="60"/>
+                                                <rect key="frame" x="0.0" y="95" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="iqR-0d-v5f"/>
                                                 </constraints>
@@ -240,7 +240,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="240" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIB-fa-mtl" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="190" width="183" height="60"/>
+                                                <rect key="frame" x="0.0" y="190" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="OMF-ve-ues"/>
                                                 </constraints>
@@ -253,7 +253,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="260" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyi-k4-pWL" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="285" width="183" height="60"/>
+                                                <rect key="frame" x="0.0" y="285" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="d6a-ie-xad"/>
                                                 </constraints>
@@ -266,7 +266,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="280" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQt-K6-5jE" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="380" width="183" height="60"/>
+                                                <rect key="frame" x="0.0" y="380" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="2aR-yn-npK"/>
                                                 </constraints>
@@ -279,7 +279,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9L-vn-s5h" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="475" width="183" height="60"/>
+                                                <rect key="frame" x="0.0" y="475" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="1sr-3K-VeB"/>
                                                 </constraints>
@@ -292,7 +292,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="320" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xc0-ma-YSl" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="570" width="183" height="60"/>
+                                                <rect key="frame" x="0.0" y="570" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="tzB-5F-zKE"/>
                                                 </constraints>
@@ -323,10 +323,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-Nk-oSd">
-                                        <rect key="frame" x="283" y="0.0" width="206" height="630"/>
+                                        <rect key="frame" x="335" y="0.0" width="235" height="630"/>
                                         <subviews>
                                             <button opaque="NO" tag="210" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPr-yW-eu8" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="206" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="bbp-nT-4kK"/>
                                                 </constraints>
@@ -345,7 +345,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="230" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5w-j7-q1u" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="95" width="206" height="60"/>
+                                                <rect key="frame" x="0.0" y="95" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="oLr-sz-t76"/>
                                                 </constraints>
@@ -364,7 +364,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="250" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxo-5w-k8y" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="190" width="206" height="60"/>
+                                                <rect key="frame" x="0.0" y="190" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="i76-YQ-VDg"/>
                                                 </constraints>
@@ -383,7 +383,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="270" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1L-70-4pH" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="285" width="206" height="60"/>
+                                                <rect key="frame" x="0.0" y="285" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="kjJ-Qd-vNu"/>
                                                 </constraints>
@@ -402,7 +402,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="290" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zh6-c9-Wd4" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="380" width="206" height="60"/>
+                                                <rect key="frame" x="0.0" y="380" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="1Qc-u3-tA7"/>
                                                 </constraints>
@@ -421,7 +421,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="310" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2p-Qw-anp" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="475" width="206" height="60"/>
+                                                <rect key="frame" x="0.0" y="475" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="N2f-0z-Q7f"/>
                                                 </constraints>
@@ -440,7 +440,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="330" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHX-ut-ckH" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="570" width="206" height="60"/>
+                                                <rect key="frame" x="0.0" y="570" width="235" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="4Oq-KR-dI2"/>
                                                 </constraints>
@@ -477,9 +477,12 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="570" id="Lqr-4j-RTN"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your focus." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb4-iK-LU2">
-                                <rect key="frame" x="85" y="40" width="598" height="70"/>
+                                <rect key="frame" x="85" y="40" width="598" height="73.5"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>

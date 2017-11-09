@@ -238,7 +238,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trainer preferences." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p63-sb-laQ">
-                                <rect key="frame" x="153" y="40" width="529" height="70"/>
+                                <rect key="frame" x="105" y="40" width="625.5" height="70"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -259,7 +259,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-En-24d">
-                                <rect key="frame" x="137" y="257" width="570" height="630"/>
+                                <rect key="frame" x="132" y="307" width="570" height="630"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ZgH-Mz-N8N">
                                         <rect key="frame" x="0.0" y="0.0" width="235" height="630"/>
@@ -527,7 +527,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="135" translatesAutoresizingMaskIntoConstraints="NO" id="t5w-5a-HTL">
-                                <rect key="frame" x="132" y="169" width="570" height="55"/>
+                                <rect key="frame" x="132" y="219" width="570" height="55"/>
                                 <subviews>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cil-tc-rEg" customClass="EliteButton" customModule="Elite_Training_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="55"/>
@@ -578,13 +578,14 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="t5w-5a-HTL" firstAttribute="centerX" secondItem="oEZ-Kh-mGw" secondAttribute="centerX" id="3WR-qQ-y4U"/>
-                            <constraint firstItem="t5w-5a-HTL" firstAttribute="top" secondItem="p63-sb-laQ" secondAttribute="bottom" constant="59" id="9Hb-aG-BqP"/>
                             <constraint firstItem="p63-sb-laQ" firstAttribute="top" secondItem="TkV-0M-UnZ" secondAttribute="bottom" constant="20" id="9Lk-SE-0yt"/>
+                            <constraint firstItem="t5w-5a-HTL" firstAttribute="centerX" secondItem="YDN-En-24d" secondAttribute="centerX" id="Esx-FD-gSt"/>
                             <constraint firstAttribute="bottomMargin" secondItem="9gK-QO-agI" secondAttribute="bottom" constant="50" id="ILt-x7-m29"/>
+                            <constraint firstItem="9gK-QO-agI" firstAttribute="centerX" secondItem="oEZ-Kh-mGw" secondAttribute="centerX" id="KiZ-em-sls"/>
+                            <constraint firstItem="9gK-QO-agI" firstAttribute="top" secondItem="YDN-En-24d" secondAttribute="bottom" constant="45" id="PWX-JZ-0Wh"/>
+                            <constraint firstItem="p63-sb-laQ" firstAttribute="leading" secondItem="oEZ-Kh-mGw" secondAttribute="leadingMargin" constant="85" id="Zu9-zU-525"/>
                             <constraint firstItem="YDN-En-24d" firstAttribute="width" secondItem="t5w-5a-HTL" secondAttribute="width" id="eYU-DS-eJo"/>
                             <constraint firstAttribute="trailing" secondItem="nR8-pZ-Qia" secondAttribute="trailing" constant="15" id="ipQ-UG-cTU"/>
-                            <constraint firstItem="t5w-5a-HTL" firstAttribute="centerX" secondItem="9gK-QO-agI" secondAttribute="centerX" id="jAM-jX-ANB"/>
-                            <constraint firstItem="YDN-En-24d" firstAttribute="leading" secondItem="oEZ-Kh-mGw" secondAttribute="leading" constant="137" id="jWG-ii-7Sr"/>
                             <constraint firstItem="nR8-pZ-Qia" firstAttribute="top" secondItem="TkV-0M-UnZ" secondAttribute="bottom" constant="15" id="lua-Q0-ufP"/>
                             <constraint firstItem="YDN-En-24d" firstAttribute="top" secondItem="t5w-5a-HTL" secondAttribute="bottom" constant="33" id="wB9-1A-mnx"/>
                             <constraint firstItem="p63-sb-laQ" firstAttribute="centerX" secondItem="oEZ-Kh-mGw" secondAttribute="centerX" id="x5g-om-waw"/>
