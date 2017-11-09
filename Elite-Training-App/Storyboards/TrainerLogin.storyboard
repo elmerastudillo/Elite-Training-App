@@ -84,7 +84,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STa-Y4-zgQ">
-                                <rect key="frame" x="105" y="20" width="559" height="70"/>
+                                <rect key="frame" x="105" y="40" width="559" height="70"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -93,7 +93,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="O2v-v9-ir1" firstAttribute="centerX" secondItem="bff-My-7z1" secondAttribute="centerX" id="29D-pV-Jnm"/>
-                            <constraint firstItem="STa-Y4-zgQ" firstAttribute="top" secondItem="cz0-Sk-YRQ" secondAttribute="bottom" id="B7S-vO-gDr"/>
+                            <constraint firstItem="STa-Y4-zgQ" firstAttribute="top" secondItem="cz0-Sk-YRQ" secondAttribute="bottom" constant="20" id="B7S-vO-gDr"/>
                             <constraint firstItem="pHI-vv-jEp" firstAttribute="top" secondItem="bff-My-7z1" secondAttribute="top" constant="316" id="C70-wd-GRL"/>
                             <constraint firstItem="STa-Y4-zgQ" firstAttribute="centerX" secondItem="bff-My-7z1" secondAttribute="centerX" id="GNB-GH-zTL"/>
                             <constraint firstItem="XYc-Dn-tf1" firstAttribute="top" secondItem="O2v-v9-ir1" secondAttribute="bottom" constant="55" id="Vwd-LK-Oa4"/>

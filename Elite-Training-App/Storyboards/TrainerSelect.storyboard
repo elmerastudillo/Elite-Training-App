@@ -124,7 +124,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a trainer." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYl-z8-k7U">
-                                <rect key="frame" x="80" y="20" width="551" height="112"/>
+                                <rect key="frame" x="80" y="40" width="551" height="112"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="NNx-9B-CrQ"/>
                                 </constraints>
@@ -136,7 +136,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hYl-z8-k7U" firstAttribute="leading" secondItem="p4w-YL-1aC" secondAttribute="leadingMargin" constant="60" id="40f-Dn-xFR"/>
-                            <constraint firstItem="hYl-z8-k7U" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" id="Ic3-fo-NWe"/>
+                            <constraint firstItem="hYl-z8-k7U" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" constant="20" id="Ic3-fo-NWe"/>
                             <constraint firstItem="G0g-mC-DLV" firstAttribute="top" secondItem="y6T-zh-jVz" secondAttribute="bottom" id="Kt7-8h-Luh"/>
                             <constraint firstAttribute="trailing" secondItem="y6T-zh-jVz" secondAttribute="trailing" id="Pky-Fa-eUY"/>
                             <constraint firstItem="G0g-mC-DLV" firstAttribute="top" secondItem="sSw-ts-siO" secondAttribute="bottom" constant="50" id="SFA-50-39Z"/>

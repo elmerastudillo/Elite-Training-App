@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your profile." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49w-tt-pwN">
-                                <rect key="frame" x="105" y="20" width="558" height="80"/>
+                                <rect key="frame" x="105" y="40" width="558" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="8xf-hZ-0Vd"/>
                                 </constraints>
@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWU-DA-5N0">
-                                <rect key="frame" x="150" y="476" width="468" height="32"/>
+                                <rect key="frame" x="150" y="496" width="468" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="JoX-9W-hgx"/>
                                 </constraints>
@@ -46,7 +46,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWo-b9-cBT">
-                                <rect key="frame" x="224" y="595" width="320" height="80"/>
+                                <rect key="frame" x="224" y="615" width="320" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="By4-fI-1od"/>
@@ -76,7 +76,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Bo-Pz-C6D">
-                                <rect key="frame" x="234" y="128" width="300" height="300"/>
+                                <rect key="frame" x="234" y="148" width="300" height="300"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="gnf-Vm-jbf"/>
@@ -95,7 +95,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="fwx-Nu-HG8">
-                                <rect key="frame" x="34" y="760" width="700" height="80"/>
+                                <rect key="frame" x="34" y="780" width="700" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25f-Jc-cwA">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
@@ -143,7 +143,7 @@
                             <constraint firstItem="6Bo-Pz-C6D" firstAttribute="centerX" secondItem="1XX-wt-drr" secondAttribute="centerX" id="JG8-SQ-qYN"/>
                             <constraint firstItem="yWU-DA-5N0" firstAttribute="leading" secondItem="1XX-wt-drr" secondAttribute="leading" constant="150" id="Kgt-L2-dIl"/>
                             <constraint firstItem="yWU-DA-5N0" firstAttribute="top" secondItem="6Bo-Pz-C6D" secondAttribute="bottom" constant="48" id="KkA-lF-Cdf"/>
-                            <constraint firstItem="49w-tt-pwN" firstAttribute="top" secondItem="cvm-wq-qKk" secondAttribute="bottom" id="Kl5-d8-xSu"/>
+                            <constraint firstItem="49w-tt-pwN" firstAttribute="top" secondItem="cvm-wq-qKk" secondAttribute="bottom" constant="20" id="Kl5-d8-xSu"/>
                             <constraint firstItem="fwx-Nu-HG8" firstAttribute="top" secondItem="MWo-b9-cBT" secondAttribute="bottom" constant="85" id="SuK-iK-JHo"/>
                             <constraint firstItem="49w-tt-pwN" firstAttribute="centerX" secondItem="1XX-wt-drr" secondAttribute="centerX" id="X8w-6q-LF8"/>
                             <constraint firstItem="MWo-b9-cBT" firstAttribute="centerX" secondItem="1XX-wt-drr" secondAttribute="centerX" id="jYL-Y6-dsy"/>
@@ -479,7 +479,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your focus." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb4-iK-LU2">
-                                <rect key="frame" x="85" y="20" width="598" height="70"/>
+                                <rect key="frame" x="85" y="40" width="598" height="70"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -494,7 +494,7 @@
                             <constraint firstItem="S6V-By-CLW" firstAttribute="trailing" secondItem="XRS-74-usu" secondAttribute="trailingMargin" id="f0W-4q-Rnx"/>
                             <constraint firstItem="sb4-iK-LU2" firstAttribute="centerX" secondItem="XRS-74-usu" secondAttribute="centerX" id="mxi-Yg-FRC"/>
                             <constraint firstItem="gYZ-ZU-yae" firstAttribute="centerY" secondItem="XRS-74-usu" secondAttribute="centerY" id="oJj-UZ-NUY"/>
-                            <constraint firstItem="sb4-iK-LU2" firstAttribute="top" secondItem="VnB-dj-rnW" secondAttribute="bottom" id="pQu-M3-fQw"/>
+                            <constraint firstItem="sb4-iK-LU2" firstAttribute="top" secondItem="VnB-dj-rnW" secondAttribute="bottom" constant="20" id="pQu-M3-fQw"/>
                             <constraint firstItem="S6V-By-CLW" firstAttribute="top" secondItem="VnB-dj-rnW" secondAttribute="bottom" constant="8" id="uBB-Yu-PhV"/>
                         </constraints>
                     </view>

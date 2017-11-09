@@ -1640,7 +1640,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit Bio." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuI-Kd-Luh">
-                                <rect key="frame" x="105" y="35" width="225.5" height="74"/>
+                                <rect key="frame" x="105" y="40" width="225.5" height="74"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1665,7 +1665,7 @@
                             <constraint firstItem="kuI-Kd-Luh" firstAttribute="leading" secondItem="1NV-PK-rbJ" secondAttribute="leadingMargin" constant="85" id="NLo-tT-bYp"/>
                             <constraint firstAttribute="trailing" secondItem="w7F-hJ-gwI" secondAttribute="trailing" constant="100" id="U9P-qR-S3V"/>
                             <constraint firstItem="w7F-hJ-gwI" firstAttribute="centerX" secondItem="1NV-PK-rbJ" secondAttribute="centerX" id="f4e-i8-Pv8"/>
-                            <constraint firstItem="kuI-Kd-Luh" firstAttribute="top" secondItem="s0I-6W-i0H" secondAttribute="bottom" constant="15" id="gJp-1l-oqm"/>
+                            <constraint firstItem="kuI-Kd-Luh" firstAttribute="top" secondItem="s0I-6W-i0H" secondAttribute="bottom" constant="20" id="gJp-1l-oqm"/>
                             <constraint firstItem="CLo-Wt-Sb3" firstAttribute="top" secondItem="Nii-0V-KKv" secondAttribute="bottom" constant="50" id="hEb-4d-vif"/>
                             <constraint firstItem="w7F-hJ-gwI" firstAttribute="top" secondItem="s0I-6W-i0H" secondAttribute="bottom" constant="119" id="kjF-5e-qyY"/>
                             <constraint firstItem="6xy-aH-kLx" firstAttribute="leading" secondItem="1NV-PK-rbJ" secondAttribute="leading" constant="100" id="muo-D7-trd"/>
