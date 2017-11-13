@@ -322,7 +322,7 @@
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="ufb-Q7-nDa"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
-                                                <state key="normal" title="NUTRTIONAL GUIDANCE">
+                                                <state key="normal" title="NUTRITIONAL GUIDANCE">
                                                     <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
