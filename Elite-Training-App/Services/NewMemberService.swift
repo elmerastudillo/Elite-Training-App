@@ -66,8 +66,6 @@ struct NewMemberService
                     if trainer.gender == gender
                     {
                         // Optional Gender
-                        print(trainer.gender)
-                        print(gender)
                         matchedTrainers.append(trainer)
                     }
                     dg.leave()

@@ -75,7 +75,7 @@ class TrainerProfileVC: UIViewController {
         trainerImageView.isUserInteractionEnabled = true
         trainerImageView.roundedImage()
         trainerImageView.addGestureRecognizer(tapGesture)
-        trainerImageView.backgroundColor = UIColor.blue
+        trainerImageView.backgroundColor = UIColor(red: 187/255, green: 103/255, blue: 211/255, alpha: 1)
         
         authHandle = AuthService.authListener(viewController: self)
         guard let trainerImageURL = URL(string: Trainer.current.profileImage!) else { return }
@@ -131,7 +131,6 @@ class TrainerProfileVC: UIViewController {
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
         do {
             try Auth.auth().signOut()
-            Trainer.loggedIn = false
             self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
             self.navigationController?.popToRootViewController(animated: false)
         } catch let error as NSError {

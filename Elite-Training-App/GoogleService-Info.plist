@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>495820994650-0nsejlpju8rkmmmj8qc1kdqn6brje0c9.apps.googleusercontent.com</string>
+	<string>495820994650-orvnoi2skorspudbhdkd9ujhdgt647sf.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.495820994650-0nsejlpju8rkmmmj8qc1kdqn6brje0c9</string>
+	<string>com.googleusercontent.apps.495820994650-orvnoi2skorspudbhdkd9ujhdgt647sf</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDW_xmQlBgy5unECzkSMd_ob5sEWZidJEs</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,23 +17,23 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.AI.Elite-Training-App</string>
+	<string>com.ai.elite-training-app</string>
 	<key>PROJECT_ID</key>
 	<string>elite-fitness-app</string>
 	<key>STORAGE_BUCKET</key>
 	<string>elite-fitness-app.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:495820994650:ios:8ab933297193276e</string>
+	<string>1:495820994650:ios:6d62551622bbb872</string>
 	<key>DATABASE_URL</key>
 	<string>https://elite-fitness-app.firebaseio.com</string>
 </dict>
