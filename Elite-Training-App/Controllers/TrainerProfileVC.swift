@@ -131,6 +131,7 @@ class TrainerProfileVC: UIViewController {
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
         do {
             try Auth.auth().signOut()
+            Trainer.loggedIn = false
             self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
             self.navigationController?.popToRootViewController(animated: false)
         } catch let error as NSError {

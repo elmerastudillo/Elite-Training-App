@@ -23,4 +23,10 @@ class TrainerCell: UICollectionViewCell {
         infoButton.layer.masksToBounds = true
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.imageView.layer.cornerRadius = self.imageView.bounds.size.width / 2
+        self.imageView.layer.masksToBounds = true
+    }
+    
 }
