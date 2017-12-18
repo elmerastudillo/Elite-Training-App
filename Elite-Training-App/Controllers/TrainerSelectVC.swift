@@ -27,7 +27,6 @@ class TrainerSelectVC: UIViewController {
         guard let member = newMember else { return }
         NewMemberService.queryForTrainer(focus: member.trainingPreference, gender: member.genderPreference) { (trainers) in
             self.trainers = trainers
-            print(self.trainers)
             DispatchQueue.main.async {
                 self.trainerSelectVC.reloadData()
             }
@@ -150,7 +149,7 @@ extension TrainerSelectVC : UICollectionViewDataSource
         let trainer = trainers[indexPath.item]
         //cell.backgroundColor = UIColor.darkGray
 //        cell.imageView.backgroundColor = UIColor.purple
-        //cell.imageView.roundedImage()
+        cell.imageView.roundedImage()
 //        cell.imageView.layer.addSublayer(GradientLayer.gradientBorder(bounds: cell.bounds))
         
         cell.selectButton.isHidden = true

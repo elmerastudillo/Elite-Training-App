@@ -348,7 +348,7 @@
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="PJe-NR-EQm"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="15"/>
-                                                <state key="normal" title="PRE/POST NATAL">
+                                                <state key="normal" title="PRE &amp; POST NATAL">
                                                     <color key="titleColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>

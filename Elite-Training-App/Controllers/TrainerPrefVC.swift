@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class TrainerPrefVC: UIViewController {
 
@@ -104,7 +105,12 @@ class TrainerPrefVC: UIViewController {
                 button.setTitleColor(UIColor.black, for: .selected)
                 button.layer.insertSublayer(GradientLayer.gradient(bounds: button.bounds), at: 0)
                 button.setNeedsDisplay()
-                genderPreference = (button.titleLabel?.text?.lowercased())!
+                var genderStr = (button.titleLabel?.text?.lowercased())!
+                if button.titleLabel?.text?.lowercased() == "n/a"
+                {
+                    genderStr = genderStr.replacingOccurrences(of: "/", with: "")
+                }
+                genderPreference = genderStr
             }
             else
             {
