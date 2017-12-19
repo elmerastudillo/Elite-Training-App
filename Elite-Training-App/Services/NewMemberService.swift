@@ -63,7 +63,12 @@ struct NewMemberService
                 trainerRef.observeSingleEvent(of: .value, with: { (trainerSnapshot) in
                     print(trainerSnapshot)
                     let trainer: Trainer = Trainer(snapshot: trainerSnapshot)!
-                    if trainer.gender == gender
+                    // Checking if gender is applicable or not
+                    if gender == "na"
+                    {
+                        matchedTrainers.append(trainer)
+                    }
+                    else if trainer.gender == gender
                     {
                         // Optional Gender
                         matchedTrainers.append(trainer)
