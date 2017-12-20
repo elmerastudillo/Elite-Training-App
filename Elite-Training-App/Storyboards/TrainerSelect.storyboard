@@ -45,16 +45,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YSh-XD-oEB">
-                                                    <rect key="frame" x="35" y="65" width="260" height="260"/>
+                                                    <rect key="frame" x="35" y="72" width="260" height="260"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="260" id="O3w-wI-9ny"/>
                                                         <constraint firstAttribute="width" constant="260" id="fsv-lJ-Af8"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IH5-T7-uEi">
-                                                    <rect key="frame" x="10" y="370.5" width="310" height="40"/>
+                                                    <rect key="frame" x="10" y="375.5" width="310" height="35"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="1RH-B0-Csq"/>
+                                                        <constraint firstAttribute="height" constant="35" id="1RH-B0-Csq"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
                                                     <color key="textColor" red="0.58039215686274503" green="0.32941176470588235" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
@@ -73,7 +73,7 @@
                                                     </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi3-hQ-GfV">
-                                                    <rect key="frame" x="10" y="335" width="310" height="30.5"/>
+                                                    <rect key="frame" x="10" y="342" width="310" height="30.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30.5" id="VNL-Nj-bpk"/>
                                                     </constraints>
@@ -104,7 +104,7 @@
                                             <constraint firstAttribute="trailingMargin" secondItem="bi3-hQ-GfV" secondAttribute="trailing" constant="10" id="LG8-v6-yo0"/>
                                             <constraint firstAttribute="bottom" secondItem="IH5-T7-uEi" secondAttribute="bottom" constant="20" id="SfG-f7-u68"/>
                                             <constraint firstItem="IH5-T7-uEi" firstAttribute="leading" secondItem="kis-0C-LTU" secondAttribute="leadingMargin" constant="10" id="TBJ-op-KeW"/>
-                                            <constraint firstItem="IH5-T7-uEi" firstAttribute="top" secondItem="bi3-hQ-GfV" secondAttribute="bottom" constant="5" id="bnI-Ij-AFb"/>
+                                            <constraint firstItem="IH5-T7-uEi" firstAttribute="top" secondItem="bi3-hQ-GfV" secondAttribute="bottom" constant="3" id="bnI-Ij-AFb"/>
                                             <constraint firstItem="bi3-hQ-GfV" firstAttribute="leading" secondItem="kis-0C-LTU" secondAttribute="leadingMargin" constant="10" id="csc-0A-G3F"/>
                                             <constraint firstItem="YSh-XD-oEB" firstAttribute="centerX" secondItem="kis-0C-LTU" secondAttribute="centerX" id="dxH-Dk-U9p"/>
                                             <constraint firstItem="PRk-rn-BzC" firstAttribute="centerX" secondItem="kis-0C-LTU" secondAttribute="centerX" id="qzo-A9-I6r"/>
