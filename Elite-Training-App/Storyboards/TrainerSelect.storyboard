@@ -45,10 +45,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YSh-XD-oEB">
-                                                    <rect key="frame" x="25" y="45" width="280" height="280"/>
+                                                    <rect key="frame" x="35" y="65" width="260" height="260"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="280" id="O3w-wI-9ny"/>
-                                                        <constraint firstAttribute="width" constant="280" id="fsv-lJ-Af8"/>
+                                                        <constraint firstAttribute="height" constant="260" id="O3w-wI-9ny"/>
+                                                        <constraint firstAttribute="width" constant="260" id="fsv-lJ-Af8"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IH5-T7-uEi">
