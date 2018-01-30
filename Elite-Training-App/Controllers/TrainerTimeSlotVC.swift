@@ -161,10 +161,19 @@ class TrainerTimeSlotVC: UIViewController {
             } catch {
                 print(error)
             }
+            
+            let alertVC = UIAlertController(title:"Alert", message: "Trainer \(trainer?.fullname ?? "Empty") has received your request", preferredStyle: .alert)
+            alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: { (alert) in
+                self.dismiss(animated: true, completion: nil)
+            }))
+            self.present(alertVC, animated: true, completion: nil)
+            
         }
-        
-        print(timeSlotDictionary)
-        dismiss(animated: true, completion: nil)
+        else
+        {
+            print(timeSlotDictionary)
+            dismiss(animated: true, completion: nil)
+        }
     }
     
     

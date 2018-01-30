@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
-            timestampString = "532250035.257978"
+            timestampString = "539048786.130513"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "262"
-            endingLineNumber = "262"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
             landmarkName = "lookForButton(view:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
-            timestampString = "532250035.258518"
+            timestampString = "539048786.131523"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
-            timestampString = "532250035.258895"
+            timestampString = "539048786.132128"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -86,22 +86,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
-            timestampString = "532250035.25929"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "doneButtonPressed(sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -122,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
-            timestampString = "532250035.259713"
+            timestampString = "539048786.13258"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "136"
@@ -138,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
-            timestampString = "532250035.260068"
+            timestampString = "539048786.132966"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
@@ -193,6 +177,54 @@
             endingLineNumber = "31"
             landmarkName = "EliteButtonPressed(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
+            timestampString = "539048786.133399"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "doneButtonPressed(sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Elite_Training_App.TrainerTimeSlotVC.doneButtonPressed(sender: __ObjC.UIButton) -&gt; ()"
+                  moduleName = "Elite-Training-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
+                  timestampString = "539036556.994145"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "167"
+                  endingLineNumber = "167"
+                  offsetFromSymbolStart = "8829">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Elite_Training_App.TrainerTimeSlotVC.doneButtonPressed(sender: __ObjC.UIButton) -&gt; ()"
+                  moduleName = "Elite-Training-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
+                  timestampString = "539036557.000833"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "168"
+                  endingLineNumber = "168"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
