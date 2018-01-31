@@ -151,7 +151,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a trainer." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYl-z8-k7U">
-                                <rect key="frame" x="80" y="40" width="551" height="112"/>
+                                <rect key="frame" x="100" y="40" width="511" height="112"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="NNx-9B-CrQ"/>
                                 </constraints>
@@ -159,10 +159,23 @@
                                 <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOD-ef-bg6">
+                                <rect key="frame" x="20" y="40" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="FFE-av-HMp"/>
+                                    <constraint firstAttribute="width" constant="48" id="d9F-59-yrV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="QX5-1J-FwL" eventType="touchUpInside" id="Frx-7b-N8f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hYl-z8-k7U" firstAttribute="leading" secondItem="p4w-YL-1aC" secondAttribute="leadingMargin" constant="60" id="40f-Dn-xFR"/>
+                            <constraint firstItem="WOD-ef-bg6" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" constant="20" id="1rH-YE-5iB"/>
+                            <constraint firstItem="hYl-z8-k7U" firstAttribute="leading" secondItem="p4w-YL-1aC" secondAttribute="leadingMargin" constant="80" id="40f-Dn-xFR"/>
                             <constraint firstItem="hYl-z8-k7U" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" constant="20" id="Ic3-fo-NWe"/>
                             <constraint firstItem="G0g-mC-DLV" firstAttribute="top" secondItem="y6T-zh-jVz" secondAttribute="bottom" id="Kt7-8h-Luh"/>
                             <constraint firstAttribute="trailing" secondItem="y6T-zh-jVz" secondAttribute="trailing" id="Pky-Fa-eUY"/>
@@ -171,6 +184,7 @@
                             <constraint firstItem="YZq-me-b93" firstAttribute="trailing" secondItem="p4w-YL-1aC" secondAttribute="trailingMargin" constant="15" id="aG2-0n-Ydx"/>
                             <constraint firstItem="sSw-ts-siO" firstAttribute="centerX" secondItem="p4w-YL-1aC" secondAttribute="centerX" id="gRp-bx-hXR"/>
                             <constraint firstItem="y6T-zh-jVz" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" constant="120" id="gSY-Zx-L5Z"/>
+                            <constraint firstItem="WOD-ef-bg6" firstAttribute="leading" secondItem="p4w-YL-1aC" secondAttribute="leading" constant="20" id="ih5-nL-hsl"/>
                             <constraint firstItem="hYl-z8-k7U" firstAttribute="centerX" secondItem="p4w-YL-1aC" secondAttribute="centerX" constant="-28.5" id="xWB-je-UxW"/>
                             <constraint firstItem="YZq-me-b93" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" constant="15" id="yTZ-3h-ZQ7"/>
                         </constraints>
@@ -187,5 +201,6 @@
     </scenes>
     <resources>
         <image name="Elite Logo" width="341" height="341"/>
+        <image name="back" width="48" height="48"/>
     </resources>
 </document>

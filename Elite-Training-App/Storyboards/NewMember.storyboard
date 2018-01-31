@@ -156,7 +156,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get to know each other." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHm-qx-jT2">
-                                <rect key="frame" x="105" y="40" width="624" height="140"/>
+                                <rect key="frame" x="110" y="40" width="614" height="140"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -187,16 +187,30 @@
                                     <action selector="nextButtonPressed:" destination="4MC-Pg-Gg4" eventType="touchUpInside" id="ifx-b5-zyh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XK7-LI-WQX">
+                                <rect key="frame" x="20" y="40" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Cq3-Jh-jHd"/>
+                                    <constraint firstAttribute="width" constant="48" id="iok-QQ-WJD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="4MC-Pg-Gg4" eventType="touchUpInside" id="xIn-hz-JAL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="XK7-LI-WQX" firstAttribute="top" secondItem="4Er-XN-vKI" secondAttribute="bottom" constant="20" id="2uH-l9-TSV"/>
                             <constraint firstItem="8hV-F6-s3y" firstAttribute="top" secondItem="kXy-Mm-M6a" secondAttribute="bottom" constant="50" id="3Y8-xO-3VL"/>
                             <constraint firstItem="Ozc-G3-sFk" firstAttribute="centerX" secondItem="bux-gP-aRT" secondAttribute="centerX" id="9dx-yv-K3x"/>
+                            <constraint firstItem="XK7-LI-WQX" firstAttribute="leading" secondItem="bux-gP-aRT" secondAttribute="leading" constant="20" id="LEc-8G-WA8"/>
                             <constraint firstItem="IHm-qx-jT2" firstAttribute="centerX" secondItem="bux-gP-aRT" secondAttribute="centerX" id="PhC-bY-FYg"/>
                             <constraint firstItem="e92-l1-0kn" firstAttribute="top" secondItem="4Er-XN-vKI" secondAttribute="bottom" constant="15" id="XkZ-1V-zmG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ozc-G3-sFk" secondAttribute="trailing" constant="60" id="ZP7-60-Djo"/>
                             <constraint firstItem="Ozc-G3-sFk" firstAttribute="leading" secondItem="bux-gP-aRT" secondAttribute="leadingMargin" constant="60" id="aOS-xz-MCW"/>
-                            <constraint firstItem="IHm-qx-jT2" firstAttribute="leading" secondItem="bux-gP-aRT" secondAttribute="leadingMargin" constant="85" id="bgg-9X-F1t"/>
+                            <constraint firstItem="IHm-qx-jT2" firstAttribute="leading" secondItem="bux-gP-aRT" secondAttribute="leadingMargin" constant="90" id="bgg-9X-F1t"/>
                             <constraint firstItem="IHm-qx-jT2" firstAttribute="top" secondItem="4Er-XN-vKI" secondAttribute="bottom" constant="20" id="hv3-eA-4FQ"/>
                             <constraint firstItem="Ozc-G3-sFk" firstAttribute="top" secondItem="IHm-qx-jT2" secondAttribute="bottom" constant="116" id="olF-fS-Pzs"/>
                             <constraint firstAttribute="trailing" secondItem="e92-l1-0kn" secondAttribute="trailing" constant="15" id="wZ7-KQ-LJM"/>
@@ -212,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eqy-l9-aDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286.71875" y="-38.0859375"/>
+            <point key="canvasLocation" x="1286.3309352517986" y="-38.309352517985616"/>
         </scene>
         <!--Trainer PrefVC-->
         <scene sceneID="QpH-MH-Uck">
@@ -238,7 +252,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trainer preferences." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p63-sb-laQ">
-                                <rect key="frame" x="105" y="40" width="625.5" height="70"/>
+                                <rect key="frame" x="110" y="40" width="615.5" height="70"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -574,16 +588,30 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5r-EM-0VI">
+                                <rect key="frame" x="20" y="40" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="4aH-5W-QLS"/>
+                                    <constraint firstAttribute="width" constant="48" id="PWJ-UV-LZc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="QTO-0b-OZT" eventType="touchUpInside" id="1Fo-1r-muG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="t5w-5a-HTL" firstAttribute="centerX" secondItem="oEZ-Kh-mGw" secondAttribute="centerX" id="3WR-qQ-y4U"/>
+                            <constraint firstItem="s5r-EM-0VI" firstAttribute="top" secondItem="TkV-0M-UnZ" secondAttribute="bottom" constant="20" id="4KE-N9-Mqs"/>
                             <constraint firstItem="p63-sb-laQ" firstAttribute="top" secondItem="TkV-0M-UnZ" secondAttribute="bottom" constant="20" id="9Lk-SE-0yt"/>
+                            <constraint firstItem="s5r-EM-0VI" firstAttribute="leading" secondItem="oEZ-Kh-mGw" secondAttribute="leading" constant="20" id="B8H-xy-Zog"/>
                             <constraint firstItem="t5w-5a-HTL" firstAttribute="centerX" secondItem="YDN-En-24d" secondAttribute="centerX" id="Esx-FD-gSt"/>
                             <constraint firstAttribute="bottomMargin" secondItem="9gK-QO-agI" secondAttribute="bottom" constant="50" id="ILt-x7-m29"/>
                             <constraint firstItem="9gK-QO-agI" firstAttribute="centerX" secondItem="oEZ-Kh-mGw" secondAttribute="centerX" id="KiZ-em-sls"/>
                             <constraint firstItem="9gK-QO-agI" firstAttribute="top" secondItem="YDN-En-24d" secondAttribute="bottom" constant="45" id="PWX-JZ-0Wh"/>
-                            <constraint firstItem="p63-sb-laQ" firstAttribute="leading" secondItem="oEZ-Kh-mGw" secondAttribute="leadingMargin" constant="85" id="Zu9-zU-525"/>
+                            <constraint firstItem="p63-sb-laQ" firstAttribute="leading" secondItem="oEZ-Kh-mGw" secondAttribute="leadingMargin" constant="90" id="Zu9-zU-525"/>
                             <constraint firstItem="YDN-En-24d" firstAttribute="width" secondItem="t5w-5a-HTL" secondAttribute="width" id="eYU-DS-eJo"/>
                             <constraint firstAttribute="trailing" secondItem="nR8-pZ-Qia" secondAttribute="trailing" constant="15" id="ipQ-UG-cTU"/>
                             <constraint firstItem="nR8-pZ-Qia" firstAttribute="top" secondItem="TkV-0M-UnZ" secondAttribute="bottom" constant="15" id="lua-Q0-ufP"/>
@@ -713,7 +741,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often do you work out per week?" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvB-Qc-v37">
-                                <rect key="frame" x="85" y="40" width="490" height="210"/>
+                                <rect key="frame" x="90" y="40" width="490" height="210"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="490" id="BCy-8S-z1a"/>
                                 </constraints>
@@ -721,17 +749,31 @@
                                 <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWC-tB-QFI">
+                                <rect key="frame" x="20" y="40" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="5sp-zP-Vc0"/>
+                                    <constraint firstAttribute="width" constant="48" id="MH8-TP-TXE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="EsD-IU-qty" eventType="touchUpInside" id="xBu-58-QfP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="SWC-tB-QFI" firstAttribute="leading" secondItem="BMx-K7-YjY" secondAttribute="leading" constant="20" id="14A-UN-J7A"/>
                             <constraint firstItem="gTO-0L-Y44" firstAttribute="top" secondItem="Tav-Hb-Rdx" secondAttribute="bottom" constant="15" id="7IH-4j-Y6E"/>
                             <constraint firstItem="7wq-zN-vhN" firstAttribute="centerX" secondItem="BMx-K7-YjY" secondAttribute="centerX" id="NOe-xC-DRM"/>
                             <constraint firstItem="7wq-zN-vhN" firstAttribute="centerY" secondItem="BMx-K7-YjY" secondAttribute="centerY" id="dau-TT-2KA"/>
                             <constraint firstItem="MvB-Qc-v37" firstAttribute="top" secondItem="Tav-Hb-Rdx" secondAttribute="bottom" constant="20" id="ldH-tl-oyD"/>
-                            <constraint firstItem="MvB-Qc-v37" firstAttribute="leading" secondItem="BMx-K7-YjY" secondAttribute="leading" constant="85" id="qKA-dS-cya"/>
+                            <constraint firstItem="MvB-Qc-v37" firstAttribute="leading" secondItem="BMx-K7-YjY" secondAttribute="leading" constant="90" id="qKA-dS-cya"/>
                             <constraint firstItem="9DR-7v-3vO" firstAttribute="centerX" secondItem="BMx-K7-YjY" secondAttribute="centerX" id="tlp-ke-7fl"/>
                             <constraint firstAttribute="trailing" secondItem="gTO-0L-Y44" secondAttribute="trailing" constant="15" id="u1c-AW-4dF"/>
                             <constraint firstAttribute="bottomMargin" secondItem="9DR-7v-3vO" secondAttribute="bottom" constant="50" id="yJD-u7-SeM"/>
+                            <constraint firstItem="SWC-tB-QFI" firstAttribute="top" secondItem="Tav-Hb-Rdx" secondAttribute="bottom" constant="20" id="z4Y-Kf-uSq"/>
                         </constraints>
                     </view>
                     <connections>
@@ -767,5 +809,6 @@
     <resources>
         <image name="Elite Logo" width="341" height="341"/>
         <image name="Elite Photo" width="768" height="1023"/>
+        <image name="back" width="48" height="48"/>
     </resources>
 </document>

@@ -162,6 +162,12 @@ class TrainerPrefVC: UIViewController {
         }
     }
     
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.popViewController(animated: false)
+    }
+    
+    
     // MARK: - Helper Functions
     func alertController()
     {

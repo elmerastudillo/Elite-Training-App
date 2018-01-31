@@ -70,9 +70,13 @@ class ContactVC: UIViewController {
        {
             presentAlertController(errorString: "There can be no empty fields")
        }
-      
-        
     }
+    
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.popViewController(animated: false)
+    }
+    
     
     // MARK: - Helper functions
     func presentAlertController(errorString: String)

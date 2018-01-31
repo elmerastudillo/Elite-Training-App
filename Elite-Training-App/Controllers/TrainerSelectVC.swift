@@ -104,6 +104,14 @@ class TrainerSelectVC: UIViewController {
         self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
         self.navigationController?.popToRootViewController(animated: false)
     }
+    
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.navigationController?.view.layer.add(Transition.fadeTransition(), forKey: nil)
+        self.navigationController?.popViewController(animated: false)
+    }
+    
+    
+    
 }
 
 extension TrainerSelectVC : UICollectionViewDelegate
