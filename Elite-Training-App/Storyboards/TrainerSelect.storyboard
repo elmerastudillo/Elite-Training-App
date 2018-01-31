@@ -151,10 +151,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a trainer." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYl-z8-k7U">
-                                <rect key="frame" x="100" y="40" width="511" height="112"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="112" id="NNx-9B-CrQ"/>
-                                </constraints>
+                                <rect key="frame" x="110" y="40" width="491" height="70"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="60"/>
                                 <color key="textColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -175,7 +172,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WOD-ef-bg6" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" constant="20" id="1rH-YE-5iB"/>
-                            <constraint firstItem="hYl-z8-k7U" firstAttribute="leading" secondItem="p4w-YL-1aC" secondAttribute="leadingMargin" constant="80" id="40f-Dn-xFR"/>
+                            <constraint firstItem="hYl-z8-k7U" firstAttribute="leading" secondItem="p4w-YL-1aC" secondAttribute="leadingMargin" constant="90" id="40f-Dn-xFR"/>
                             <constraint firstItem="hYl-z8-k7U" firstAttribute="top" secondItem="AyN-6W-KnF" secondAttribute="bottom" constant="20" id="Ic3-fo-NWe"/>
                             <constraint firstItem="G0g-mC-DLV" firstAttribute="top" secondItem="y6T-zh-jVz" secondAttribute="bottom" id="Kt7-8h-Luh"/>
                             <constraint firstAttribute="trailing" secondItem="y6T-zh-jVz" secondAttribute="trailing" id="Pky-Fa-eUY"/>
