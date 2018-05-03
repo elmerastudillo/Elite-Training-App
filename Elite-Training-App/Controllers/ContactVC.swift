@@ -18,10 +18,14 @@ class ContactVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         nextButton.layer.addSublayer(GradientLayer.gradient(bounds: nextButton.bounds))
         nextButton.layer.cornerRadius = 5.0
         nextButton.layer.masksToBounds = true
         configureView()
+        
+//        firstNameTF.attributedPlaceholder = NSAttributedString(string: "placeholder text", attributes: [NSForegroundColorAttributeName: UIColor.lightGray])
+        
     }
 
     override func didReceiveMemoryWarning() {
