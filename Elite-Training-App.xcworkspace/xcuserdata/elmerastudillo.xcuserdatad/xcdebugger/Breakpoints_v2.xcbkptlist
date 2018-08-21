@@ -166,7 +166,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Elite-Training-App/Controllers/WelcomeVC.swift"
@@ -193,36 +193,68 @@
             endingLineNumber = "169"
             landmarkName = "doneButtonPressed(sender:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Elite-Training-App/Controllers/TrainerLoginVC.swift"
+            timestampString = "556572582.554263"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "loginButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Elite-Training-App/StorageService.swift"
+            timestampString = "556573100.887597"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "uploadImage(_:at:completion:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Elite_Training_App.TrainerTimeSlotVC.doneButtonPressed(sender: __ObjC.UIButton) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.StorageMetadata&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Elite_Training_App.StorageService.uploadImage(__ObjC.UIImage, at: __ObjC.StorageReference, completion: (Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Elite-Training-App"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
-                  timestampString = "539036556.994145"
+                  urlString = "file:///Users/elmerastudillo/Downloads/Elite-Training-App-master/Elite-Training-App/StorageService.swift"
+                  timestampString = "556572582.76433"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "167"
-                  endingLineNumber = "167"
-                  offsetFromSymbolStart = "8829">
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "786">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in Elite_Training_App.TrainerTimeSlotVC.doneButtonPressed(sender: __ObjC.UIButton) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;__ObjC.StorageMetadata&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static Elite_Training_App.StorageService.uploadImage(__ObjC.UIImage, at: __ObjC.StorageReference, completion: (Swift.Optional&lt;Foundation.URL&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Elite-Training-App"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/elmerastudillo/Desktop/Elite-Training-App/Elite-Training-App/Elite-Training-App/Controllers/TrainerTimeSlotVC.swift"
-                  timestampString = "539036557.000833"
+                  urlString = "file:///Users/elmerastudillo/Downloads/Elite-Training-App-master/Elite-Training-App/StorageService.swift"
+                  timestampString = "556572582.765922"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "168"
-                  endingLineNumber = "168"
-                  offsetFromSymbolStart = "15">
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "26">
                </Location>
             </Locations>
          </BreakpointContent>

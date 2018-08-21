@@ -6,6 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/Presentr.svg?style=flat)](http://cocoapods.org/pods/Presentr)
 [![License](https://img.shields.io/cocoapods/l/Presentr.svg?style=flat)](http://cocoapods.org/pods/Presentr)
 [![codebeat badge](https://codebeat.co/badges/f89d5cdf-b0c3-441d-b4e1-d56dcea48544)](https://codebeat.co/projects/github-com-icalialabs-presentr)
+![Made with Love by Icalia Labs](https://img.shields.io/badge/With%20love%20by-Icalia%20Labs-ff3434.svg)
 
 *Presentr is a simple customizable wrapper for the Custom View Controller Presentation API introduced in iOS 8.*
 
@@ -20,6 +21,17 @@ This can be cumbersome, specially if you do it multiple times in your app. **Pre
 *These are just examples of an Alert UI presented in multiple ways. But, with Presentr you can present any custom View Controller you create in any of the Presentation types, or create your own custom one!*
 
 ## What's New
+
+#### 1.3.1 (April 15/ 2018)
+- New `FlipHorizontal` transition type (thanks to @falkobuttler)
+- New `CoverFromCorner` transition type (thanks to @freakdragon)
+- New `customOrientation` ModalSize (thanks to @freakdragon)
+- KeyboardTranslation now works for all Presentation Type's (thanks to @oxozle)
+- Other bug fixes & improvements
+
+#### 1.3
+- Swift 4 / Xcode 9 / iOS 11 Support
+- Bug fixes
 
 #### 1.2.0
 - You can add custom BackgroundView. (thanks to @clebta)
@@ -55,6 +67,7 @@ This can be cumbersome, specially if you do it multiple times in your app. **Pre
 | <= 0.1.8 |  Swift 2.2  | >= iOS 8.0  |
 | == 0.2.1 |    Swift 2.3 | >= iOS 8.0 |
 | >= 1.0.0 | Swift 3.0 | >= iOS 9.0 |
+| >= 1.3 | Swift 4.0 | >= iOS 9.0 |
 
 ## Installation
 

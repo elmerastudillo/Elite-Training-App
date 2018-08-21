@@ -15,7 +15,8 @@ struct AuthService {
     
     // Signs in as an authenticated user on Firebase
     static func signIn(controller : UIViewController, email: String, password: String, completion: @escaping (FIRUser?) -> Void){
-        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+        
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             DispatchQueue.main.async {
 //                SVProgressHUD.show(withStatus: "Logging in...")
             }
@@ -30,7 +31,7 @@ struct AuthService {
             DispatchQueue.main.async {
 //                SVProgressHUD.dismiss()
             }
-            return completion(user)
+            return completion(result?.user)
         }
     }
     
@@ -93,7 +94,7 @@ struct AuthService {
             break;
         case "There is no user record corresponding to this identifier. The user may have been deleted.":
             let wrongPasswordAlert = UIAlertController(title: "No Account Found", message:
-                "We couldn't find an account that corresponds to that email. Do you want to create an account?", preferredStyle: UIAlertControllerStyle.alert)
+                "We couldn't find an account that corresponds to that email.", preferredStyle: UIAlertControllerStyle.alert)
             wrongPasswordAlert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default,handler: nil))
             controller.present(wrongPasswordAlert, animated: true, completion: nil)
             break;

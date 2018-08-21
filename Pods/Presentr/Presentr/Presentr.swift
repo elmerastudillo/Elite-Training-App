@@ -9,15 +9,18 @@
 import Foundation
 import UIKit
 
-struct PresentrConstants {
-    struct Values {
-        static let defaultSideMargin: Float = 30.0
-        static let defaultHeightPercentage: Float = 0.66
+public enum PresentrConstants {
+
+    public enum Values {
+        public static let defaultSideMargin: Float = 30.0
+        public static let defaultHeightPercentage: Float = 0.66
     }
-    struct Strings {
-        static let alertTitle = "Alert"
-        static let alertBody = "This is an alert."
+
+    public enum Strings {
+        public static let alertTitle = "Alert"
+        public static let alertBody = "This is an alert."
     }
+    
 }
 
 public enum DismissSwipeDirection {
@@ -216,7 +219,7 @@ public extension UIViewController {
     ///   - viewController: The view controller to be presented.
     ///   - animated: Animation setting for the presentation.
     ///   - completion: Completion handler.
-    func customPresentViewController(_ presentr: Presentr, viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
+    func customPresentViewController(_ presentr: Presentr, viewController: UIViewController, animated: Bool, completion: (() -> Void)? = nil) {
         presentr.presentViewController(presentingViewController: self,
                                        presentedViewController: viewController,
                                        animated: animated,

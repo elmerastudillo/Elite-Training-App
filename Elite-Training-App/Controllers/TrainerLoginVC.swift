@@ -42,7 +42,7 @@ class TrainerLoginVC: UIViewController {
                 print("error: FIRUser does not exist!")
                 return
             }
-            
+            print(trainer.uid)
             TrainerService.fetchTrainer(forUID: trainer.uid) { (trainer) in
                 if let trainer = trainer {
                     Trainer.setCurrent(trainer, writeToUserDefaults: true)
